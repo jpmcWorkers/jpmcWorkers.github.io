@@ -2,13 +2,15 @@
 
 Our current activity is to fight the RTO mandate with coordinated collective action.
 
-<h1 style="color:red !important">Participation is Safe and Effective</h1>
+<h1 style="color:red !important">Participation is Protected by Law</h1>
 
 Retaliation is against the law. The National Labor Relations Board
 [prosecutes violations vigorously](https://www.nlrb.gov/about-nlrb/rights-we-protect/our-enforcement-activity/protected-concerted-activity)
 and there's little chance the bank would risk its all-important *reputation* on a violation.
 
-More links about our rights and the programs that protect them are towards the end of the page.
+* [National Labor Relations Board: Your Rights](https://www.nlrb.gov/about-nlrb/rights-we-protect/your-rights)
+* [National Labor Relations Board: Brochures and Infographics](https://www.nlrb.gov/news-publications/publications/brochures)
+* [Department of Labor: Anti-Retaliation Initiative](https://www.dol.gov/sites/dolgov/files/general/labortaskforce/docs/508_union-fs-8.pdf)
 
 # JPMC Workers, Unite!
 **You have nothing to lose but RTO.**
@@ -59,14 +61,6 @@ If you're tired of:
 **Together, we can make a difference.**
 
 (Link to petition coming soon.)
-
-## Signing is safe.
-
-### The law is on our side:
-
-* [National Labor Relations Board: Your Rights](https://www.nlrb.gov/about-nlrb/rights-we-protect/your-rights)
-* [National Labor Relations Board: Brochures and Infographics](https://www.nlrb.gov/news-publications/publications/brochures)
-* [Department of Labor: Anti-Retaliation Initiative](https://www.dol.gov/sites/dolgov/files/general/labortaskforce/docs/508_union-fs-8.pdf)
 
 ### It Worked for Wells Fargo.
 
