@@ -8,6 +8,8 @@ Retaliation is against the law. The National Labor Relations Board
 [prosecutes violations vigorously](https://www.nlrb.gov/about-nlrb/rights-we-protect/our-enforcement-activity/protected-concerted-activity)
 and there's little chance the bank would risk its all-important *reputation* on a violation.
 
+More links about our rights and the programs that protect them are towards the end of the page.
+
 # JPMC Workers, Unite!
 **You have nothing to lose but RTO.**
 
