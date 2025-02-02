@@ -6,45 +6,58 @@ Our current activity is to fight the RTO mandate with coordinated collective act
 
 ## YOU CAN'T COERCE CULTURE.
 
-JPMorgan Chase is a global company, and that should include your home office.
+JPMorgan Chase is a global leader. As such, it must recognize that a truly inclusive workforce extends beyond the office doors -- right into our homes.
 
-**Remote work is no longer a luxury!** It's a cornerstone of work-life balance that lets us:
+**Remote work is no longer a luxury!** It's an essential element of work-life balance. It allows us to:
 
-1. Stay productive in a quiet space
-2. Cook and clean our homes
-3. Care for our loved ones
-4. Get enough sleep!
+* Stay productive in a quiet, personalized workspace
+* Manage household chores
+* Care for our families and loved ones
+* Get enough rest to stay healthy and focused
 
-every single day.
-If you work at JPMC and:
+For those of us who:
 
-* have people or pets to care for
-* live an long way from your office
-* have any sort of disability yourself
-* don't have staff to cook and clean for you daily
+* Care for children, elders, or pets
+* Live far from the office
+* Have disabilities that make commuting difficult
+* Don’t have a private staff to manage daily household tasks
 
-You are negatively affected by RTO.
+The Return to Office (RTO) mandate is no mere inconvenience. It's a setback.
 
-Five days a week in-office is an outdated policy -- a fossil from a time when it was impossible to work from home.
+Five days a week in the office is outdated. It's a relic from a time before remote work was possible and effective. Yet, the Operating Committee is forcing us back to the office full-time:
 
-Yet the Operating Committee is forcing us back into the office five days a week,
-
-* despite the firm posting record profits under remote and hybrid work
-* under an attendance policy that only punishes and never rewards
-* without compensation for increased childcare, time, and travel costs
-* without even guaranteeing you have a desk to work on!
+* Despite record profits being made while employees worked remotely and in hybrid settings
+* With an attendance policy that punishes, rather than rewards
+* Without compensation for increased costs like childcare, travel, or time spent commuting
+* And without even guaranteeing you a desk to work at once you’re there!
 
 ## We are professionals, and we should be treated like it.
 
-If you don't want to add HOURS OF TRAFFIC to your work-day just to take Zoom calls in-office...
+If you're tired of:
 
-If you don't want to sacrifice your time with loved ones for a billionaire's idea of 'culture'...
+* Adding hours of commuting to your workday just to take Zoom calls in person
+* Sacrificing time with your loved ones for a billionaire’s vision of "culture"
+* Facing the threat of discipline or termination because of where you work
+* Losing your work-life balance
 
-If you think it's wrong to be disciplined or terminated because of *where* you create shareholder value...
 
-If your work-life balance is better with remote work...
+## You are not alone.
 
-You are not alone. Sign your name. Let your voice be heard.
+**Sign the petition, stand with us, and make your voice heard.**
+
+**Together, we can make a difference.**
 
 (Link to petition coming soon.)
+
+## Signing is safe.
+
+### The law is on our side:
+
+* https://www.dol.gov/sites/dolgov/files/general/labortaskforce/docs/508_union-fs-8.pdf
+* https://www.nlrb.gov/about-nlrb/rights-we-protect/the-law/discriminating-against-employees-because-of-their-union
+* https://www.nlrb.gov/news-publications/publications/brochures
+
+### It Worked for Wells Fargo
+
+(Details coming soon.)
 
