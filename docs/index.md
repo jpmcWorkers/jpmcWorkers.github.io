@@ -74,6 +74,8 @@ Currently 34 branches and two professional offices are unionized with the Commun
 
 ### Spies will say Lies.
 
-* [Union-Busting Play-Book](https://UnionBustingPlayBook.com)
+* [Union-Busting Play-Book](https://UnionBustingPlayBook.com) explains the underhanded tactics employers tend to use
+  to discredit and discourage union participation. Read through it to inoculate yourself against the propaganda.
+  *If the employer were not desperately worried about what a union might win for the workers, why campaign against them?*
 
 
