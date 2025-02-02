@@ -2,13 +2,22 @@
 
 Our current activity is to fight the RTO mandate with coordinated collective action.
 
-# JPMC Workers, Unite! You have nothing to lose but RTO!
+# JPMC Workers, Unite!
+**You have nothing to lose but RTO.**
+
+<h1 color="red">Participation is Safe and Effective</h1>
+
+Retaliation is against the law. The National Labor Relations Board
+[prosecutes violations vigorously](https://www.nlrb.gov/about-nlrb/rights-we-protect/our-enforcement-activity/protected-concerted-activity)
+and there's little chance the bank would risk its all-important *reputation* on a violation.
 
 ## YOU CAN'T COERCE CULTURE.
 
 JPMorgan Chase is a global leader. As such, it must recognize that a truly inclusive workforce extends beyond the office doors -- right into our homes.
 
-**Remote work is no longer a luxury!** It's an essential element of work-life balance. It allows us to:
+## Remote work is no longer a luxury!
+
+It has become an essential element of work-life balance. It allows us to:
 
 * Stay productive in a quiet, personalized workspace
 * Manage household chores
@@ -57,7 +66,9 @@ If you're tired of:
 * [National Labor Relations Board: Brochures and Infographics](https://www.nlrb.gov/news-publications/publications/brochures)
 * [Department of Labor: Anti-Retaliation Initiative](https://www.dol.gov/sites/dolgov/files/general/labortaskforce/docs/508_union-fs-8.pdf)
 
-### It Worked for Wells Fargo
+### It Worked for Wells Fargo.
 
-(Details coming soon.)
+Currently 34 branchs and two professional offices are unionized with the Communication Workers of America.
+
+(More details coming soon.)
 
