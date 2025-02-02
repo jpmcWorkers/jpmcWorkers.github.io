@@ -32,10 +32,13 @@ For those of us who:
 
 * Care for children, elders, or pets
 * Live far from the office
-* Have disabilities that make commuting difficult
+* Have health conditions or disabilities that make commuting difficult
+* Get migranes from the fluorescent lights or incessant noise
 * Don’t have a private staff to manage daily household tasks
+* Live with someone immunocompromised (or are so ourselves)
+* Or, have simply built a life around the parameters of remote / hybrid work in light of management's repeated claims that it was here to stay
 
-The Return to Office (RTO) mandate is no mere inconvenience. It's a setback.
+The Return-to-Office (RTO) mandate is no mere inconvenience. It's an arbitrary, capricious punishment for great performance; and a return to the bad-old-days.
 
 Five days a week in the office is outdated. It's a relic from a time before remote work was possible and effective. Yet, the Operating Committee is forcing us back to the office full-time:
 
@@ -51,7 +54,7 @@ If you're tired of:
 * Adding hours of commuting to your workday just to take Zoom calls in person
 * Sacrificing time with your loved ones for a billionaire’s vision of "culture"
 * Facing the threat of discipline or termination because of where you work
-* Losing your work-life balance
+* Fouling your work-life balance
 
 
 ## You are not alone.
@@ -62,9 +65,15 @@ If you're tired of:
 
 (Link to petition coming soon.)
 
+
 ### It Worked for Wells Fargo.
 
-Currently 34 branchs and two professional offices are unionized with the Communication Workers of America.
+Currently 34 branches and two professional offices are unionized with the Communication Workers of America.
 
 (More details coming soon.)
+
+### Spies will say Lies.
+
+* [Union-Busting Play-Book](https://UnionBustingPlayBook.com)
+
 
