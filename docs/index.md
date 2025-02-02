@@ -2,7 +2,7 @@
 
 Our current activity is to fight the RTO mandate with coordinated collective action.
 
-<h1 style="font-color:red !important">Participation is Safe and Effective</h1>
+<h1 style="color:red !important">Participation is Safe and Effective</h1>
 
 Retaliation is against the law. The National Labor Relations Board
 [prosecutes violations vigorously](https://www.nlrb.gov/about-nlrb/rights-we-protect/our-enforcement-activity/protected-concerted-activity)
