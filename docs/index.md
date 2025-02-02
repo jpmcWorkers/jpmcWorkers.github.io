@@ -53,9 +53,14 @@ If you're tired of:
 
 ### The law is on our side:
 
-* https://www.dol.gov/sites/dolgov/files/general/labortaskforce/docs/508_union-fs-8.pdf
-* https://www.nlrb.gov/about-nlrb/rights-we-protect/the-law/discriminating-against-employees-because-of-their-union
-* https://www.nlrb.gov/news-publications/publications/brochures
+* [DOL Anti-Retaliation Initiative](https://www.dol.gov/sites/dolgov/files/general/labortaskforce/docs/508_union-fs-8.pdf)
+* [NLRB on Interfering with employee rights](https://www.nlrb.gov/about-nlrb/rights-we-protect/the-law/discriminating-against-employees-because-of-their-union)
+* [NLRB Brochures and Infographics](https://www.nlrb.gov/news-publications/publications/brochures)
+
+----
+
+	DOL = Department of Labor
+	NLRB = National Labor Relations Board
 
 ### It Worked for Wells Fargo
 
