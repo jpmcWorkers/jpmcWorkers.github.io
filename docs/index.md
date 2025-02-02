@@ -53,14 +53,9 @@ If you're tired of:
 
 ### The law is on our side:
 
-* [NLRB: Your Rights](https://www.nlrb.gov/about-nlrb/rights-we-protect/your-rights)
-* [NLRB Brochures and Infographics](https://www.nlrb.gov/news-publications/publications/brochures)
-* [DOL: Anti-Retaliation Initiative](https://www.dol.gov/sites/dolgov/files/general/labortaskforce/docs/508_union-fs-8.pdf)
-
-----
-
-	NLRB = National Labor Relations Board
-	DOL = Department of Labor
+* [National Labor Relations Board: Your Rights](https://www.nlrb.gov/about-nlrb/rights-we-protect/your-rights)
+* [National Labor Relations Board: Brochures and Infographics](https://www.nlrb.gov/news-publications/publications/brochures)
+* [Department of Labor: Anti-Retaliation Initiative](https://www.dol.gov/sites/dolgov/files/general/labortaskforce/docs/508_union-fs-8.pdf)
 
 ### It Worked for Wells Fargo
 
