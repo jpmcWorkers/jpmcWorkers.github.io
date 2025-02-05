@@ -12,8 +12,6 @@ and there's little chance the bank would risk its all-important *reputation* on 
 * [National Labor Relations Board: Brochures and Infographics](https://www.nlrb.gov/news-publications/publications/brochures)
 * [Department of Labor: Anti-Retaliation Initiative](https://www.dol.gov/sites/dolgov/files/general/labortaskforce/docs/508_union-fs-8.pdf)
 
-# JPMC Workers, Unite!
-**You have nothing to lose but RTO.**
 
 ## YOU CAN'T COERCE CULTURE.
 
@@ -33,14 +31,16 @@ For those of us who:
 * Care for children, elders, or pets
 * Live far from the office
 * Have health conditions or disabilities that make commuting difficult
-* Get migranes from the fluorescent lights or incessant noise
+* Get migranes from the fluorescent lights or incessant noise of the office
 * Don’t have a private staff to manage daily household tasks
 * Live with someone immunocompromised (or are so ourselves)
-* Or, have simply built a life around the parameters of remote / hybrid work in light of management's repeated claims that it was here to stay
+* Or, have simply built a life around the parameters of remote / hybrid work in light of management's long-repeated claims that it was here to stay
 
-The Return-to-Office (RTO) mandate is no mere inconvenience. It's an arbitrary, capricious punishment for great performance; and a return to the bad-old-days.
+The Return-to-Office (RTO) mandate is no mere inconvenience.
+It's an arbitrary, capricious *punishment* for great performance; and a return to the bad-old-days.
 
-Five days a week in the office is outdated. It's a relic from a time before remote work was possible and effective. Yet, the Operating Committee is forcing us back to the office full-time:
+Five days a week in the office is outdated. It's a relic from a time before remote work was possible and effective.
+Yet, the Operating Committee is forcing us back to the office full-time:
 
 * Despite record profits being made while employees worked remotely and in hybrid settings
 * With an attendance policy that punishes, rather than rewards
