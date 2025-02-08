@@ -62,23 +62,29 @@ We the undersigned hereby demand of JPMC:
 
 6. Enable remote-capable workers to work from any JPMC corporate office in the region.
 
-==================================
+-----------------------
 
 # Why is this important? 
 
 The firm's most valuable asset is its sterling reputation.
 To keep that reputation out of harm's way, the customers and the shareholders
-need for it not
+need for it not to
 [run off its best and brightest](https://www.hrdive.com/news/rto-mandates-lead-to-brain-drain-attrition/734989/)
 (or most vulnerable) employees.
 [They'll be extra hard to replace.](https://www.shrm.org/topics-tools/news/employee-relations/rto-mandates-lead-to-higher-turnover--recruiting-challenges)
-Who will train the next generation of workers? How many recruit-level mistakes,
-unmitigated by a departed expert, before something goes
+RTO policies can and will continue to threaten the morale of employees,
+[resulting in loss of skilled employees](https://fortune.com/2024/12/13/return-to-office-mandate-risk-losing-top-performers-study/)
+who consistently meet key performance indicators (KPIs).
+Indeed our own CFO, Jeremy Barron,
+[declared publicly that attrition is bad for business and leads to negative effects.](https://www.barrons.com/livecoverage/chase-wells-fargo-bank-america-citi-earnings/card/jpmorgan-cfo-says-firm-isn-t-hoping-office-push-prompts-attrition-UcpzAPU4dZikOvwkZ6sk)
+Who will train the next generation of workers? How many recruit-level mistakes
+will go unmitigated by a departed expert before something goes
 [Knight-Capital-style?](https://www.henricodolfing.com/2019/06/project-failure-case-study-knight-capital.html)
+Given the bank's pivotal role in the global financial system, more than just employees should be concerned.
 
 RTO is also an unethical strategy of
 [under-the-table discrimination carrying significant legal risks.](https://disasteravoidanceexperts.com/the-rising-legal-risks-of-rto-policies/)
-
+The boss-man may not care, but many customers will.
 
 Our company’s [Business Principles](https://www.jpmorganchase.com/content/dam/jpmc/jpmorgan-chase-and-co/documents/how-we-do-business.pdf),
 which the CEO personally signed, make it our duty as employees to “Provide constant feedback -- tell people when they are doing a good job and, more important, when they are not”. Mr. Dimon, we believe you are making a terrible mistake. Given that “leadership is an honor and a responsibility”, we hope that you are able to recognize that this RTO policy does not “Help our people take care of themselves”, nor does it promote open dialogue.
@@ -88,17 +94,14 @@ our purpose as a company to
 [“Make dreams possible for everyone, everywhere, everyday”](https://www.jpmorganchase.com/content/dam/jpmc/jpmorgan-chase-and-co/documents/how-we-do-business.pdf)
 is unattainable when employees are repeatedly deceived, disregarded, and silenced:
 First hybrid was the way, the truth, the light.
-Then the [Managing Directors told you what they thought of RTO in April of '23](https://www.reuters.com/business/finance/jpmorgan-employees-gripe-about-dimons-return-to-office-edict-2023-04-27/),
+Then the [Managing Directors told you how little they thought of RTO in April of '23](https://www.reuters.com/business/finance/jpmorgan-employees-gripe-about-dimons-return-to-office-edict-2023-04-27/),
 but that got shut down quick.
-More recently, the internal comments on the global RTO edict were shut down before lunch.
+More recently, the internal comments on the global RTO edict of 10 January were shut down before lunch.
 
 Studies consistently show that
 [remote work delivers proven results on productivity,](https://bospar.com/press-release/bospars-10th-anniversary-research-confirms-remote-work-drives-superior-business-outcomes/)
 including [reducing turnover and increasing profits](https://hbr.org/2024/10/one-company-a-b-tested-hybrid-work-heres-what-they-found)
-as retaining seniority is important. During the years since COVID lock-downs began, JPMC employees' work has continuously produced record profits for the bank – all while working from home and from the office in a hybrid and manner. RTO policies can and will continue to threaten the morale of employees,
-[resulting in loss of skilled employees](https://fortune.com/2024/12/13/return-to-office-mandate-risk-losing-top-performers-study/)
-who consistently meet key performance indicators (KPIs).
-Indeed our own CFO, Jeremy Barron,
-[declared publicly that attrition is bad for business and leads to negative effects.](https://www.barrons.com/livecoverage/chase-wells-fargo-bank-america-citi-earnings/card/jpmorgan-cfo-says-firm-isn-t-hoping-office-push-prompts-attrition-UcpzAPU4dZikOvwkZ6sk)
-Surely this outweighs any imagined benefits to brainstorming or collaboration.
+as retaining seniority is important. During the years since COVID lock-downs began, JPMC employees' work has continuously produced record profits for the bank – all while working from home and from the office in a hybrid and manner.
+
+But the Darling of Wall Street and CEO of the world's biggest bank thinks otherwise.
 
