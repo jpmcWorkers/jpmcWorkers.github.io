@@ -38,8 +38,10 @@ One more thing: You took an [8.3% raise to $39 million](https://finance.yahoo.co
 this past year. We get it: CEO's make a ton of money. But most of us didn't even keep up with the
 [2.9% rate of inflation in 2024,](https://www.bls.gov/news.release/cpi.nr0.htm)
 and many got nothing! With record net income of $58.5 billion, you can do better than that.
-You pointed out in the next segment of the same interview that people know if you don’t care.
-You’re absolutely right, Mr. Dimon. Raise disparities like this leave no doubt.
+
+You pointed out [this interview on 60 Minutes recently](https://youtu.be/2REdbQasKX4?t=1426)
+that caring is critical for leadership; that people know if you don’t care.
+You’re absolutely right, Mr. Dimon. What we've seen recently leaves little room for doubt.
 
 It is our sacred duty to reject RTO, but also to support:
 
