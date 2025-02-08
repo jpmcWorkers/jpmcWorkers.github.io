@@ -102,7 +102,7 @@ Indeed our own CFO, Jeremy Barron,
 
 An increasing number of workers have their suspicions about the true motives behind RTO.
 One-quarter of top corporate leaders and nearly one-fifth of HR executives have said the quiet part out loud:
-[They hope RTO mandates lead to “voluntary turnover.”] (https://www.kornferry.com/insights/this-week-in-leadership/using-rto-to-cut-staff)
+[They hope RTO mandates lead to “voluntary turnover.”](https://www.kornferry.com/insights/this-week-in-leadership/using-rto-to-cut-staff)
 If there's any of this going on under the covers at JPMC, then we ask:
 Who will train the next generation of workers? How many recruit-level mistakes
 will go unmitigated by a departed expert before something goes
