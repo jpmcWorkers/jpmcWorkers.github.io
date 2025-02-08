@@ -22,7 +22,7 @@ the anointed few in the disconcertingly-magical new building on Park Avenue.
 
 Your recent 100% return-to-office (RTO) mandate is transparently an attempt to turn back the
 clock to the bad-old-days: Bad for business, bad for the customer, bad for the shareholder.
-It's also terrible corporate citizenship. Finally, its genesys emphasizes a lack of trust
+It's also terrible corporate citizenship. Finally, its genesis emphasizes a lack of trust
 between mercurial management and worried labor force that undermines leadership and risks
 toppling the financial empire that is JPMorganChase.
 
@@ -37,7 +37,7 @@ With record net income of $58.5 billion, you can do better than that.
 You pointed out in the next segment of the same interview that people know if you're a BSer;
 if you don't care. You're absolutely right, and disparities like this leave us quite certain.
 
-It is our sacred duty to reject RTO, but also to suppport:
+It is our sacred duty to reject RTO, but also to support:
 
 * Our rights as employees under the National Labor Relations Act and other laws.
 * Stable, predictable, comfortable, and efficient working conditions.
