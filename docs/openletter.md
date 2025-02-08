@@ -28,6 +28,15 @@ toppling the financial empire that is JPMorganChase.
 
 And no, Mr. Dimon. Luxurious new microwave ovens in the break rooms will not fix the problem.
 
+One more thing: You took an [8.3% raise to $39 million](https://finance.yahoo.com/news/jamie-dimon-gets-3-million-120701261.html)
+this past year
+[without even being able to coherently explain what you do to Leslie Stahl of CBS.](https://youtu.be/2REdbQasKX4?t=1132)
+Most of us didn't even keep up with the
+[2.9% rate of inflation in 2024.](https://www.bls.gov/news.release/cpi.nr0.htm)
+With record net income of $58.5 billion, you can do better than that.
+You pointed out in the next segment of the same interview that people know if you're a BSer;
+if you don't care. You're absolutely right, and disparities like this leave us quite certain.
+
 It is our sacred duty to reject RTO, but also to suppport:
 
 * Our rights as employees under the National Labor Relations Act and other laws.
@@ -52,15 +61,17 @@ We the undersigned hereby demand of JPMC:
    cut the noise; supply respectable keyboards and mice and screens; provide parking.
    While you're at it, maybe throw in some fruits or snacks. You can afford it!
 
-4. Publish salary and compensation data in aggregate for its workforce,
+4. Publish aggregated salary and compensation data in for the workforce,
    broken down by job role and seniority without retaliation as stated in the
    [Department of Labor's Pay Transparency Nondiscrimination Provision](https://www.dol.gov/sites/dolgov/files/ofccp/pdf/pay-transp_%20English_formattedESQA508c.pdf).
 
 5. Reward results, with raises and bonuses proportionate to the firm's yearly profits,
-   based on merit and productivity. Refrain from penalizing workers based on *where*
-   they happen to acheive that productivity.
+   based on merit and productivity -- not whether that productivity happens at the office.
 
 6. Enable remote-capable workers to work from any JPMC corporate office in the region.
+
+7. Last and *most important,* we know that only collective bargaining can
+   assure us of any lasting gains. Therefore, *respect our right to organize!*
 
 -----------------------
 
