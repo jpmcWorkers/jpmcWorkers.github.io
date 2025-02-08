@@ -39,7 +39,7 @@ this past year. We get it: CEO's make a ton of money. But most of us didn't even
 [2.9% rate of inflation in 2024,](https://www.bls.gov/news.release/cpi.nr0.htm)
 and many got nothing! With record net income of $58.5 billion, you can do better than that.
 
-You pointed out [this interview on 60 Minutes recently](https://youtu.be/2REdbQasKX4?t=1426)
+You said in [this interview on 60 Minutes recently](https://youtu.be/2REdbQasKX4?t=1426)
 that caring is critical for leadership; that people know if you don’t care.
 You’re absolutely right, Mr. Dimon. What we've seen recently leaves little room for doubt.
 
