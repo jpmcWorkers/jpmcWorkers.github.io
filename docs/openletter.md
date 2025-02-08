@@ -15,7 +15,7 @@ new employees came up to speed just fine for the last five years on the hybrid m
 Hybrid may not suit in-person services, but it's the way of the future almost everywhere else.
 Management repeated for years that it was *the best way to run the bank* and here to stay.
 Indeed, it's often the only way to get any work done! The office has become overcrowded
-and getting worse, noisy, and hard to concentrate in. Our teams are smeared
+and getting worse, noisy, and hard to concentrate in. Our teams are scattered
 across the globe (increasingly in low-wage countries) so that half the people are on zoom
 calls at any time, or wake up early to talk to India and Asia. The workstations are sub-par.
 Finally, creature comforts are often sorely lacking -- unless you happen to be one of
@@ -25,9 +25,9 @@ Your recent 100% return-to-office (RTO) mandate is transparently an attempt to t
 clock to the bad-old-days: Bad for business, bad for the customer, bad for the shareholder.
 It's also terrible corporate citizenship, both on environmental grounds and for unfairly
 pushing out women, caretakers, senior workers, and those with long term disabilities.
-(Surely you did not forget
-[renewing your commitment to diversity, equity, and inclusion?](https://www.cnbc.com/2025/01/22/cnbc-transcript-jpmorgan-chase-chairman-ceo-jamie-dimon-speaks-with-cnbcs-squawk-box-from-the-world-economic-forum-in-davos-switzerland-today.html)
-Oh wait! That interview happened *after* the RTO mandate. Something doesn't add up!)
+In light of your
+[recommitment to diversity, equity, and inclusion](https://www.cnbc.com/2025/01/22/cnbc-transcript-jpmorgan-chase-chairman-ceo-jamie-dimon-speaks-with-cnbcs-squawk-box-from-the-world-economic-forum-in-davos-switzerland-today.html)
+in January, something doesn't add up! Many such employees now feel confused and betrayed.
 
 Finally, the underhanded process that birthed the RTO mandate emphasized a lack of trust
 between mercurial management and a deeply worried labor force that undermines leadership and risks
