@@ -22,20 +22,24 @@ the anointed few in the disconcertingly-magical new building on Park Avenue.
 
 Your recent 100% return-to-office (RTO) mandate is transparently an attempt to turn back the
 clock to the bad-old-days: Bad for business, bad for the customer, bad for the shareholder.
-It's also terrible corporate citizenship. Finally, its genesis emphasizes a lack of trust
-between mercurial management and worried labor force that undermines leadership and risks
+It's also terrible corporate citizenship, both on environmental grounds and for unfairly
+pushing out women, caretakers, senior workers, and those with long term disabilities.
+(Surely you did not forget
+[renewing your commitment to diversity, equity, and inclusion?](https://www.cnbc.com/2025/01/22/cnbc-transcript-jpmorgan-chase-chairman-ceo-jamie-dimon-speaks-with-cnbcs-squawk-box-from-the-world-economic-forum-in-davos-switzerland-today.html)
+Oh wait! That interview happened *after* the RTO mandate. Something doesn't add up!)
+
+Finally, the underhanded process by which the RTO mandate was birthed emphasizes a lack of trust
+between mercurial management and a deeply worried labor force that undermines leadership and risks
 toppling the financial empire that is JPMorganChase.
 
 And no, Mr. Dimon. Luxurious new microwave ovens in the break rooms will not fix the problem.
 
 One more thing: You took an [8.3% raise to $39 million](https://finance.yahoo.com/news/jamie-dimon-gets-3-million-120701261.html)
-this past year
-[without even being able to coherently explain what you do to Leslie Stahl of CBS.](https://youtu.be/2REdbQasKX4?t=1132)
-Most of us didn't even keep up with the
-[2.9% rate of inflation in 2024.](https://www.bls.gov/news.release/cpi.nr0.htm)
-With record net income of $58.5 billion, you can do better than that.
-You pointed out in the next segment of the same interview that people know if you're a BSer;
-if you don't care. You're absolutely right, and disparities like this leave us quite certain.
+this past year. We get it: CEO's make a ton of money. But most of us didn't even keep up with the
+[2.9% rate of inflation in 2024,](https://www.bls.gov/news.release/cpi.nr0.htm)
+and many got nothing! With record net income of $58.5 billion, you can do better than that.
+You pointed out in the next segment of the same interview that people know if you don’t care.
+You’re absolutely right, Mr. Dimon. Raise disparities like this leave no doubt.
 
 It is our sacred duty to reject RTO, but also to support:
 
