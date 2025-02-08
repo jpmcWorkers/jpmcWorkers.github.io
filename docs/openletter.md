@@ -1,4 +1,4 @@
-# Open Letter to Chairman and CEO Jamie Dimon
+# Open Letter to JPMorganChase Chairman and CEO Jamie Dimon
 
 We, the workers of JPMorganChase (JPMC), are concerned about the future of our workplace:
 its integrity, employee satisfaction, and the toxicity that metastasized in our company
@@ -6,18 +6,19 @@ culture in the last couple of months. As devoted employees, we must advocate for
 best: not merely for ourselves, but also for the customer, the shareholder, and the nation.
 
 Six years ago, full-time in-office was the norm. Covid-19 lock-downs forced change upon
-the world. It was uncomfortable, but we adapted. So must you. Corporate America does not
-"pretend" to work-from-home (WFH): It achieves record profits and productivity, cuts costs,
-and improves morale, retention, and carbon footprint. Furthermore, new employees came up to
-speed just fine for the last five years.
+the world. It was uncomfortable, but we adapted. So must you. Hybrid workers do not merely
+"pretend" to work-from-home (WFH):
+[The science clearly shows no loss in productivity, yet considerable cost savings.](https://www.nature.com/articles/s41586-024-07500-2)
+It also improves morale, retention, and carbon footprint. Here at JPMC,
+new employees came up to speed just fine for the last five years on the hybrid model.
 
-WFH may not be for in-person services, but for almost everyone else, it's the way of the
-future. Management repeated for years that it was *the best way to run the bank* and here
-to stay. Indeed, it's often the only way to get any work done! The office environment is
-now overcrowded and getting worse, noisy, and hard to concentrate in. Our teams are smeared
+Hybrid may not suit in-person services, but it's the way of the future almost everywhere else.
+Management repeated for years that it was *the best way to run the bank* and here to stay.
+Indeed, it's often the only way to get any work done! The office has become overcrowded
+and getting worse, noisy, and hard to concentrate in. Our teams are smeared
 across the globe (increasingly in low-wage countries) so that half the people are on zoom
-calls at any time, or waking up early to talk to India and Asia. The workstations are sub-par.
-Finally, the creature comforts are often sorely lacking -- unless you happen to be one of
+calls at any time, or wake up early to talk to India and Asia. The workstations are sub-par.
+Finally, creature comforts are often sorely lacking -- unless you happen to be one of
 the anointed few in the disconcertingly-magical new building on Park Avenue.
 
 Your recent 100% return-to-office (RTO) mandate is transparently an attempt to turn back the
@@ -28,7 +29,7 @@ pushing out women, caretakers, senior workers, and those with long term disabili
 [renewing your commitment to diversity, equity, and inclusion?](https://www.cnbc.com/2025/01/22/cnbc-transcript-jpmorgan-chase-chairman-ceo-jamie-dimon-speaks-with-cnbcs-squawk-box-from-the-world-economic-forum-in-davos-switzerland-today.html)
 Oh wait! That interview happened *after* the RTO mandate. Something doesn't add up!)
 
-Finally, the underhanded process by which the RTO mandate was birthed emphasizes a lack of trust
+Finally, the underhanded process that birthed the RTO mandate emphasized a lack of trust
 between mercurial management and a deeply worried labor force that undermines leadership and risks
 toppling the financial empire that is JPMorganChase.
 
@@ -54,7 +55,7 @@ It is our sacred duty to reject RTO, but also to support:
 * Reduced pollution, cost-burden, and time of commuting to and from the office.
 * Relief from the mental-health costs of disingenuous and untrustworthy management culture.
 
-We the undersigned hereby demand of JPMC:
+**We the undersigned hereby demand of JPMC:**
 
 1. Retain (or return to) the flexible hybrid-working model for those job categories that
    have already worked under it -- regardless of rank -- and direct investment to enable
@@ -83,7 +84,11 @@ We the undersigned hereby demand of JPMC:
 
 # Why is this important? 
 
-The firm's most valuable asset is its sterling reputation.
+This is not just about JPMorganChase and its disaffected employees.
+What happens at the world's largest bank is influential across the industry.
+Our fight is everyone's fight.
+
+A bank's most valuable asset is its sterling reputation.
 To keep that reputation out of harm's way, the customers and the shareholders
 need for it not to
 [run off its best and brightest](https://www.hrdive.com/news/rto-mandates-lead-to-brain-drain-attrition/734989/)
@@ -94,6 +99,11 @@ RTO policies can and will continue to threaten the morale of employees,
 who consistently meet key performance indicators (KPIs).
 Indeed our own CFO, Jeremy Barron,
 [declared publicly that attrition is bad for business and leads to negative effects.](https://www.barrons.com/livecoverage/chase-wells-fargo-bank-america-citi-earnings/card/jpmorgan-cfo-says-firm-isn-t-hoping-office-push-prompts-attrition-UcpzAPU4dZikOvwkZ6sk)
+
+An increasing number of workers have their suspicions about the true motives behind RTO.
+One-quarter of top corporate leaders and nearly one-fifth of HR executives have said the quiet part out loud:
+[They hope RTO mandates lead to “voluntary turnover.”] (https://www.kornferry.com/insights/this-week-in-leadership/using-rto-to-cut-staff)
+If there's any of this going on under the covers at JPMC, then we ask:
 Who will train the next generation of workers? How many recruit-level mistakes
 will go unmitigated by a departed expert before something goes
 [Knight-Capital-style?](https://www.henricodolfing.com/2019/06/project-failure-case-study-knight-capital.html)
