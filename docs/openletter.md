@@ -98,7 +98,9 @@ More recently, the internal comments on the global RTO edict of 10 January were 
 Studies consistently show that
 [remote work delivers proven results on productivity,](https://bospar.com/press-release/bospars-10th-anniversary-research-confirms-remote-work-drives-superior-business-outcomes/)
 including [reducing turnover and increasing profits](https://hbr.org/2024/10/one-company-a-b-tested-hybrid-work-heres-what-they-found)
-as retaining seniority is important. During the years since COVID lock-downs began, JPMC employees' work has continuously produced record profits for the bank – all while working from home and from the office in a hybrid and manner.
+as retaining seniority is important. During the years since COVID lock-downs began,
+JPMC employees' work has continuously produced record profits for the bank – all while
+working from home and from the office in a hybrid manner.
 
 But the Darling of Wall Street and CEO of the world's biggest bank thinks otherwise.
 
