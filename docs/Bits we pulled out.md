@@ -18,7 +18,9 @@ One more thing: You took an [8.3% raise to $39 million](https://finance.yahoo.co
 5. Reward results with raises and bonuses proportionate to the firm's yearly profits,
    based on merit and productivity -- not based on the location where that productivity happens.
 
-6. Enable remote-capable workers to work from any JPMC corporate office in the region when they do choose to work in-office.
+3. Improve the office environment! Provide enough space and desks. Add cube walls to
+   cut the noise. Supply respectable and ergonomic peripherals and monitors. Provide and/or develop sufficient parking.
+   Provide more free ammenities, such as meals, fruits, snacks, and more. You can afford it!
 
 7. Last and *most important,* we know that only collective bargaining can
    assure us of any lasting gains. Therefore, *respect our right to organize!*

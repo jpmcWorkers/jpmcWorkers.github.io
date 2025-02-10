@@ -27,7 +27,7 @@ noisy, and hard to concentrate in, and only continues to worsen. Our teams are s
 across the globe so that half the people are on zoom calls at any time, and many wake up
 early to talk to India and Asia. The in-office workstations in most locations are minimalist
 and uncomfortable. Due to unassigned first-come-first-served seating, we can't even personalize
-keyboard and mouse to fit our comforts. Finally, there's a huge disparity in amenities from
+keyboard and mouse to fit our comforts. There is also a huge disparity in amenities from
 one office to the next. Most of us will not be assigned to the new, highly-automated building
 on Park Avenue in NYC.
 
@@ -54,9 +54,7 @@ It is our duty as concerned employees to reject your RTO mandate, but also to su
 
 2. Direct investment to enable more categories of workers to experience the same.
 
-3. Improve the office environment! Provide enough space and desks. Add cube walls to
-   cut the noise. Supply respectable and ergonomic peripherals and monitors. Provide and/or develop sufficient parking.
-   Provide more free ammenities, such as meals, fruits, snacks, and more. You can afford it!
+3. Enable remote-capable workers to work from any JPMC corporate office in the region when they do choose to work in-office.
 
 -----------------------
 
