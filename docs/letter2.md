@@ -44,8 +44,6 @@ make the office experience noisy, inefficient, and uncomfortable.
 To put the cherry on top, unassigned seating makes it impractical even to
 supply one's own preferred keyboard or mouse.
 
-RTO does not enhance productivity. It diminishes it.
-
 ## Culture, Leadership, and the Loss of Trust
 
 Management in many locations said for years that the hybrid model was here to stay --
