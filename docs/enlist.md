@@ -1,4 +1,4 @@
-# JPMC Workers Alliance -- Quick Indoc
+# JPMC Workers Alliance -- Quick Intro and Enlistment Guide
 
 **Mission:** To improve working conditions, benefits, pay, and/or job security for all JPMC employees. The RTO mandate of 2025 brought us together, so hybrid work is our first goal.
 
@@ -7,17 +7,17 @@
 **Core Beliefs:**
 
 * The only way for us to get *and keep* concessions from management will be collective bargaining and ultimately a union contract.
-* It will be a long grind to get there, but there we will get -- with your help.
+* It will be a long grind to get there, but we can do it together -- with your help.
 * The Company has a fiduciary duty to fight tooth-and-nail on every front: propaganda, intimidation, tirades, lies, threats -- in rare cases they may even commit violence (and may try to blame it on us).
-* We shall not flag or fail. We shall go on to the end, we shall fight in the offices, we shall fight in the news media, we shall fight with growing confidence and growing strength in the break rooms and hallways.
-  We shall defend our mission, whatever the cost may be. We shall fight in the parking lots, we shall fight in the job boards and the streets, we shall fight on the internet; we shall never surrender!
-  And even if this movement or a large part of it were subjugated and starving, then our colleagues in other companies and industries, supplemented by our numbers, would carry on the struggle, until,
-  in God’s good time, the New World, with all its power and might, steps forth to the rescue and the liberation of the old.
+* We shall not flag or fail. We shall go on to the end, we shall persist in the offices, we shall inform the news media, we shall organize with growing confidence and growing strength in the break rooms and hallways.
+  We shall continue our mission, whatever the cost may be. We shall discuss in the parking lots, we shall influence the job boards and the streets, we shall advocate on the internet; we shall never surrender!
+  And even if this movement or a large part of it were forced out the door, then our colleagues in other companies and industries, supplemented by our numbers, would carry on the struggle, until,
+  in good time, *the Worker* is on an equal footing with *Management* in setting fair standards for work and its compensation.
 
 ## Convenient Links:
 
 * [JWA Web Site](jpmcWorkers.com)
-* The Petition: [coworker.org/p/jpmcWorkers](https://coworker.org/p/jpmcWorkers) -- sign it to get on our mailing list. So JD ignores it: We can get louder.
+* The Petition: [coworker.org/p/jpmcWorkers](https://coworker.org/p/jpmcWorkers) -- sign it to get on our mailing list. When Dimon ignores it, we can get louder.
 
 **Resources:**
 
@@ -39,18 +39,19 @@ Versions exist for PC, Mac, Linux, Android, and iPhone/iPad.
 It's recommended to [install on your phone](https://signal.org/install) first, and then sync to your desktop.
 
 * [JWA Announcements](https://signal.group/#CjQKIA9LUxuzRjiImriCzuLFQ2gtLQ7F5Zzut_11RrYqlZYcEhBfREi9xBUBjAzFlS7gZ7ZM): Low-volume administrative posts and updates.
-* [Coworker Chat](https://signal.group/#CjQKIDwqEmiOXpi1kQZJfa2N44RVa6NbyJtzuZ1Cgl4pSynoEhAP8fCsXOMG3deiLPJ-4G8m): Any sympathetic employee is welcome, from any level. High volume.
-* [Organizing Group Chat](https://signal.group/#CjQKIPuBz1rZK3in9h_NKCWeHFswRV0f23ZebaZnh_6Exg6gEhAEeE8AMe2MY05FPjJzap8t): Union Business happens here. No Managers Allowed, per [National Labor Relations Act of 1935 as amended.](https://www.law.cornell.edu/uscode/text/29/chapter-7/subchapter-II)
+* [Coworker Chat](https://signal.group/#CjQKIDwqEmiOXpi1kQZJfa2N44RVa6NbyJtzuZ1Cgl4pSynoEhAP8fCsXOMG3deiLPJ-4G8m): Any sympathetic JPMC employee is welcome, from any level. High volume.
+* [Organizing Group Chat](https://signal.group/#CjQKIPuBz1rZK3in9h_NKCWeHFswRV0f23ZebaZnh_6Exg6gEhAEeE8AMe2MY05FPjJzap8t): Union Business happens here. No Managers Allowed, per [National Labor Relations Act of 1935 as amended.](https://www.law.cornell.edu/uscode/text/29/chapter-7/subchapter-II). Representatives from both UE and CWA/CBB are present.
 * [Political Economy and Ideology](https://signal.group/#CjQKIIUyPrU0tXVxkHysbfoiAiOAkWJ6hDsOIn79TZn6XOWJEhDXmd7RBojwJKslZNMzeXzc): All talk of politics or economics goes here. May get snarky; stays respectful though.
 * There is also a "dark-comedy" group which you can ask about. It tends to attract NSFW content, so we don't link it here directly.
 
-Representatives from both UE and CWA/CBB are present in the Organizing chat.
+**Abbreviations:**
 
-* UE = United Electrical
+* UE = United Electrical, one of the first unions we heard back from.
 * CWA = Communication Workers of America, the same people the Wells Fargo unions affiliated with.
 * CBB = Committee for Better Banks, the branch of CWA specifically focused on financial institutions.
 
-Eventually we formally affiliate with one of them.
+We anticipate formally affiliating with one or both of them when the time is right.
+(Why both? Different bargaining units...)
 
 ## Current Rules:
 
@@ -74,8 +75,6 @@ Merely participating in hiring interviews does not make you a manager. (It simpl
 * The chats do get chatty, so manage your phone notifications.
 
 ## Background:
-
-
 
 We are not here to throw rocks. We are building an army capable of standing up to the world's largest financial empire -- and winning.
 Rome wasn't built in a day, and we will certainly all face RTO. But let us recall the morning of 7 December 1941:
