@@ -1,0 +1,137 @@
+# Questions and Answers -- or, Countering the Propaganda
+
+In coming days or weeks, expect the company to start showing its hand in the propaganda-fight for hearts and minds.
+They're gearing up to keep us divided -- fighting amongst ourselves for whatever scraps they toss our way.
+We need to understand the real facts, stripped of corporate mendacity and propaganda.
+
+Like all companies, ours is in business to make money -- but that's only half the story.
+What happens to the money that it makes? Here are some ways it can be used:
+
+* Pay Dividends to Owners / Shareholders
+* Expand the business
+* Save for a rainy day
+* Pay the Upper Management / Top Executives
+* Pay the Workers -- like us
+
+**Who controls where this money goes?** Why, the top executives do, of course!
+It's only natural they'd want to direct as much as possible into their own pockets.
+
+Executives realise that any improvement to Worker quality-of-life, working conditions, benefits, or *(gasp!)* wages,
+immediately translates to a reduction in what they can pay themselves. So they fight like tigers to prevent it.
+
+But let's be real. Executives serve a valuable function, but no part of a company can function without the rest.
+Labor deserves a fair piece of the pie too, both in working conditions and compensation.
+The only question is what's fair? Should it be, *the worst they can treat you and you don't leave?*
+Or should it more properly be, *the best they can treat you and they don't fold?*
+
+A major battleground in this fight is propaganda. The company will do things; say things; put out loaded statements posing as unbiased facts.
+They're going to try to convince you -- *of whatever they need you to believe* -- so that you sit down and take what you've always gotten,
+rather than joining hands with fellow workers and demanding more, in a way that cannot be dismissed or ignored.
+
+As long as we're isolated -- bargaining only on behalf of ourselves -- the company has all the leverage.
+They can issue "take-it-or-leave-it" ultimatums, counting on "leave-it" to be infeasible or uncomfortable or worse.
+Only through collective bargaining and the threat of coordinated big-A Action can we get any leverage.
+Only through a contract -- a *union* contract -- will we be able to retain any of the gains we make thereby.
+
+# The Company has Many Tactics.
+
+## Corporate Talking Points
+
+The first line of attack against workers self-organizing is to teach the management some scripted talking-points.
+These usually go like:
+
+* **Half-Truth:** But the company treats you well!
+
+The same group of employees behind the now-famous petition (Thanks for the shout-out,
+Jamie Dimon!) collected data from a survey that went around in January. It shows that
+95% of us are unhappy with how the company treats us: Keeping us in the dark about 
+planned changes; "altering the deal" whenever the CEO wills it; and pitting employees
+against each other for a shrinking piece of that growing pie called profit.
+
+To be fair, it's not Victorian Times, and it's not the Industrial Revolution.
+But the reason for improvement beyond those horrid conditions is regulation,
+and the regulation only exists because labor organized itself to get things written into law.
+By default, a company will do little more than it must under the law -- and sometimes less,
+if it can get away with it -- in respect of working conditions.
+
+*For example: We're told we'll get 30 days notice, **consistent with the law,** for RTO in places that aren't ready.*
+
+The only way to get anything more than the minimum is to organize and unionize.
+
+* **Distraction:** Look at this Shiny New Headquarters!
+
+Most of us don't benefit. Current estimates put the cost at $3,000,000,000.
+That's over ten thousand dollars per employee globally,
+and vastly more if you divide instead by the number of people to be assigned there.
+It's not built for workers; it's a real-estate play.
+Wouldn't you rather have the cash in your pocket?
+
+* **True, but not in a good way:** The Company values a direct working relationship with employees.
+
+The company values? Of course it does.
+
+Remember who controls the money. With 300,000 one-on-one relationships, we're stuck in
+a race to the bottom, competing to be the lowest bidder in terms of compensation,
+respect, working conditions, and quality-of-life: The company holds all the cards.
+Only through collective bargaining can we hope to leverage for ourselves a fair
+share of that sweet, sweet profit that our efforts enable and create.
+
+* **Half-truth:** The company believes employees prefer to be treated as individuals,
+  and will do just fine without a union.
+
+It's not about what *the company* believes, is it? We should like the truth!
+
+Americans have been sold a mythos of rugged individualism for decades.
+The company would like us to believe that we're all temporarily-embarassed billionaires
+awaiting our big break. In any case, big breaks don't come from working for The Man
+as divided individuals, coordinated only by Management.
+
+The way to succeed, in business as in war, is with a unified front.
+Shoulder to shoulder in unity, with interlocked shields, the
+Roman Legions marched unopposed wherever they chose. But should one man
+break ranks, rout would soon follow.
+
+When we submit to be treated as individuals, we are divided and made to compete against
+each other. We would do better to cooperate.
+
+* **Outright Lie:** The union just wants your dues-money. They don't care about you.
+
+**Remember:** The union is *identically* us employees (in a specific bargaining unit).
+We care about ourselves because we *are* ourselves.
+Yes, we would have a relationship with a national organization,
+but each union local is its own legal entity, operated democratically by the vote of its members.
+
+**So what's up with dues, then? What does that 1.3% buy me?**
+
+First of all, there are no dues before a contract, just like no taxation without representation.
+Furthermore, a contract will certainly *not* lower your pay. (Why on Earth would we agree to that?)
+In fact, on average union workers get paid 13% more. (Look it up!) Nowhere else can you
+find a 10x return on investment. So while nobody can *promise* any specific increase,
+we can say that the statistics are in our favor.
+
+Next, the national organization performs a range of services for us.
+Think of them like the lawyer you'd bring to a court case: They know how to negotiate,
+how to navigate the process, how work the levers of law and government in our favor.
+That leaves us regular people free to do the work we actually know how to do.
+
+Another big point is the assistance fund. Some people call it "strike insurance":
+Basically, on the off chance that a bargaining unit collectively elects to strike,
+then the assistance fund pays out a stipend to help members keep the lights on during.
+It won't put your kids through college, but it's something.
+
+Last, as a member of a legally-recognized union, you get certain additional legal rights.
+We'll talk more about that in the next section.
+
+* **Wishful Thinking / Disinformation:** The Company believes itself best able to solve
+  problems one-on-one, employee-to-manager, rather than through a third-party.
+
+Either way, you'd still have access to the management chain -- even one-on-one, if that's your preference.
+However, one-on-one, there are no witnesses. *We all know what happens when there are no witnesses.*
+   
+If you're fixing to have an uncomfortable conversation with management, wouldn't you rather
+have a colleague in your corner? You'd have that right under the law, if you were in a union.
+
+A union is no mere "third party". It is composed exclusively of non-management workers in
+your same company -- in the same bargaining unit. And one of the services it offers is
+formal dispute resolution. When you choose to use it, the union can negotiate on your
+behalf to get problems fixed.
