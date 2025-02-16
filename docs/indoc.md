@@ -1,6 +1,6 @@
 # JPMC Workers Alliance -- Quick Indoc
 
-**Raison d'être:** To improve working conditions, benefits, pay, and/or job security for all JPMC employees. The RTO mandate of 2025 brought us together, so hybrid work is our first goal.
+**Mission:** To improve working conditions, benefits, pay, and/or job security for all JPMC employees. The RTO mandate of 2025 brought us together, so hybrid work is our first goal.
 
 **Current Leadership Structure:** Rag-Tag Band of Misfits.
 
