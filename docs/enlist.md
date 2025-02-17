@@ -41,8 +41,7 @@ It's recommended to [install on your phone](https://signal.org/install) first, a
 * [JWA Announcements](https://signal.group/#CjQKIA9LUxuzRjiImriCzuLFQ2gtLQ7F5Zzut_11RrYqlZYcEhBfREi9xBUBjAzFlS7gZ7ZM): Low-volume administrative posts and updates.
 * [Coworker Chat](https://signal.group/#CjQKIDwqEmiOXpi1kQZJfa2N44RVa6NbyJtzuZ1Cgl4pSynoEhAP8fCsXOMG3deiLPJ-4G8m): Any sympathetic JPMC employee is welcome, from any level. High volume.
 * [Organizing Group Chat](https://signal.group/#CjQKIPuBz1rZK3in9h_NKCWeHFswRV0f23ZebaZnh_6Exg6gEhAEeE8AMe2MY05FPjJzap8t): Union Business happens here. No Managers Allowed, per [National Labor Relations Act of 1935 as amended.](https://www.law.cornell.edu/uscode/text/29/chapter-7/subchapter-II). Representatives from both UE and CWA/CBB are present.
-* [Political Economy and Ideology](https://signal.group/#CjQKIIUyPrU0tXVxkHysbfoiAiOAkWJ6hDsOIn79TZn6XOWJEhDXmd7RBojwJKslZNMzeXzc): All talk of politics or economics goes here. May get snarky; stays respectful though.
-* There is also a "dark-comedy" group which you can ask about. It tends to attract NSFW content, so we don't link it here directly.
+* There are other chats for locations and specific topics. Ask when you get in, or topics may be redirected there.
 
 **Abbreviations:**
 
