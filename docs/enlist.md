@@ -76,7 +76,7 @@ Merely participating in hiring interviews does not make you a manager. (It simpl
 
 ## Background:
 
-We are not here to throw rocks. We are building an army capable of standing up to one of the world's largest financial empires -- and winning.
+We are not here to throw rocks. We are building an alliance of workers capable of standing up to one of the world's largest financial empires -- and winning.
 Rome wasn't built in a day, and we will certainly all face RTO. It will hurt, but it will also:
 
 * Shock us out of complacency
