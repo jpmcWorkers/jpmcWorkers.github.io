@@ -40,7 +40,7 @@ Only through a contract -- a *union* contract -- will we be able to retain any o
 The first line of attack against workers self-organizing is to teach the management some scripted talking-points.
 These usually go like:
 
-* **Half-Truth:** But the company treats you well!
+### **Half-Truth:** But the company treats you well!
 
 > **Cole’s Notes:** Have they asked the employees how they feel about that?
 > That’s a very one-sided statement without a lot of info to back it up.
@@ -62,7 +62,7 @@ if it can get away with it -- in respect of working conditions.
 
 The only way to get anything more than the minimum is to organize and unionize.
 
-* **Distraction:** Look at this Shiny New Headquarters!
+### **Distraction:** Look at this Shiny New Headquarters!
 
 Most of us don't benefit. Current estimates put the cost at $3,000,000,000.
 That's over ten thousand dollars per employee globally,
@@ -70,7 +70,7 @@ and vastly more if you divide instead by the number of people to be assigned the
 It's not built for workers; it's a real-estate play.
 Wouldn't you rather have the cash in your pocket?
 
-* **True, but not in a good way:** The Company values a direct working relationship with employees.
+### **True, but not in a good way:** The Company values a direct working relationship with employees.
 
 The company values? Of course it does.
 
@@ -86,7 +86,7 @@ share of that sweet, sweet profit that our efforts enable and create.
 > power from the hands of people who do not value you, only the working relationship they have that controls you.
 
 
-* **Half-truth:** The company believes employees prefer to be treated as individuals,
+### **Half-truth:** The company believes employees prefer to be treated as individuals,
   and will do just fine without a union.
 
 It's not about what *the company* believes, is it? We should like the truth!
@@ -112,7 +112,7 @@ each other. We would do better to cooperate.
 > setting, but that is exactly what we have now.
 > Do you feel like you’re “prospering”? My guess is that the answer is no.
 
-* **Outright Lie:** The union just wants your dues-money. They don't care about you.
+### **Outright Lie:** The union just wants your dues-money. They don't care about you.
 
 **Remember:** The union is *identically* us employees (in a specific bargaining unit).
 We care about ourselves because we *are* ourselves.
@@ -140,7 +140,7 @@ It won't put your kids through college, but it's something.
 Last, as a member of a legally-recognized union, you get certain additional legal rights.
 We'll talk more about that in the next section.
 
-* **Wishful Thinking / Disinformation:** The Company believes itself best able to solve
+### **Wishful Thinking / Disinformation:** The Company believes itself best able to solve
   problems one-on-one, employee-to-manager, rather than through a third-party.
 
 Either way, you'd still have access to the management chain -- even one-on-one, if that's your preference.
@@ -161,7 +161,7 @@ behalf to get problems fixed.
 > like a feudal state than any form of democracy I would recognize.
 > Wouldn’t you rather hold your work to that same democratic standard?
 
-* **Scare Tactics:** You'll be made to strike!
+### **Scare Tactics:** You'll be made to strike!
 
 Not in the sense the Executives would have you believe.
 
@@ -174,7 +174,7 @@ negotiations break down or grievances go chronically unresolved.
 [Work stopages are at historic low levels](https://www.bls.gov/wsp/factsheets/summary-of-work-stoppages-in-the-united-states.htm)
 according to [Bureau of Labor Statistics data.](https://www.bls.gov/web/wkstp/annual-listing.htm)
 
-* **Despair Tactics:** You'll wait forever on a contract / It can take years...
+### **Despair Tactics:** You'll wait forever on a contract / It can take years...
 
 This just means the company intends to act in bad faith. That's *literally* against the law.
 It's also common to the point of being usual. Fortunately, our national partners -- whether
@@ -182,7 +182,7 @@ we affiliate with CWA or UE or any other -- know how to hold the company to acco
 
 Getting a contract is never easy, but it's totally worthwhile.
 
-* **Bullying:** In the current political climate, we don't have to follow the law.
+### **Bullying:** In the current political climate, we don't have to follow the law.
 
 The political climate is what it is. That does *not* mean we bow down before our corporate overlords and beg alms.
 Some things will be more difficult than they might have been a few years ago,
