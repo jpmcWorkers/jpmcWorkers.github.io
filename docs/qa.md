@@ -42,6 +42,10 @@ These usually go like:
 
 * **Half-Truth:** But the company treats you well!
 
+> **Cole’s Notes:** Have they asked the employees how they feel about that?
+> That’s a very one-sided statement without a lot of info to back it up.
+> Claims asserted without evidence can be dismissed without evidence.
+
 The same group of employees behind the now-famous petition (Thanks for the shout-out,
 Jamie Dimon!) collected data from a survey that went around in January. It shows that
 95% of us are unhappy with how the company treats us: Keeping us in the dark about 
@@ -76,6 +80,12 @@ respect, working conditions, and quality-of-life: The company holds all the card
 Only through collective bargaining can we hope to leverage for ourselves a fair
 share of that sweet, sweet profit that our efforts enable and create.
 
+> **Cole’s Notes:** The company values the direct working relationship because that is a relationship it can control.
+> Workers unionizing and fighting that relationship dynamic is exactly what they fear: a loss of control.
+> With a union, you and your co-workers have the power to take that control back, to wrestle the levers of
+> power from the hands of people who do not value you, only the working relationship they have that controls you.
+
+
 * **Half-truth:** The company believes employees prefer to be treated as individuals,
   and will do just fine without a union.
 
@@ -93,6 +103,14 @@ break ranks, rout would soon follow.
 
 When we submit to be treated as individuals, we are divided and made to compete against
 each other. We would do better to cooperate.
+
+> **Cole’s Notes:** The company may believe this, but is it true? The evidence you show here says that it is not.
+> Working as a union does not mean that people cannot be treated as individuals, but it means that we are not
+> obligated to be treated *only* as individuals. The company has the power to discard or ignore the opinions of
+> individuals, and that’s why they want to treat employees that way. It is impossible for the company to treat
+> a voluntary union of workers this way. The company claims that we will all succeed and prosper in a union-free
+> setting, but that is exactly what we have now.
+> Do you feel like you’re “prospering”? My guess is that the answer is no.
 
 * **Outright Lie:** The union just wants your dues-money. They don't care about you.
 
@@ -135,3 +153,41 @@ A union is no mere "third party". It is composed exclusively of non-management w
 your same company -- in the same bargaining unit. And one of the services it offers is
 formal dispute resolution. When you choose to use it, the union can negotiate on your
 behalf to get problems fixed.
+
+> **Cole’s Notes:** This is correct. A union is you! A union is a democratic alliance of workers,
+> ratified and approved by its members. Look at history: we are a society that claims to value democracy,
+> placing it above all else. Why would we accept anything but democracy from our workplaces?
+> Management wants to maintain the system they have, which is deeply hierarchical and structured more
+> like a feudal state than any form of democracy I would recognize.
+> Wouldn’t you rather hold your work to that same democratic standard?
+
+* **Scare Tactics:** You'll be made to strike!
+
+Not in the sense the Executives would have you believe.
+
+We only strike if we, the union members ourselves, vote to do so. The same is true for other,
+less-disruptive labor actions such as [work-to-rule](https://en.wikipedia.org/wiki/Work-to-rule)
+or [Blue Flu](https://en.wikipedia.org/wiki/Blue_flu).
+
+In practice, strikes are generally rare and short-lived. They're a nuclear option for when
+negotiations break down or grievances go chronically unresolved.
+[Work stopages are at historic low levels](https://www.bls.gov/wsp/factsheets/summary-of-work-stoppages-in-the-united-states.htm)
+according to [Bureau of Labor Statistics data.](https://www.bls.gov/web/wkstp/annual-listing.htm)
+
+* **Despair Tactics:** You'll wait forever on a contract / It can take years...
+
+This just means the company intends to act in bad faith. That's *literally* against the law.
+It's also common to the point of being usual. Fortunately, our national partners -- whether
+we affiliate with CWA or UE or any other -- know how to hold the company to account.
+
+Getting a contract is never easy, but it's totally worthwhile.
+
+* **Bullying:** In the current political climate, we don't have to follow the law.
+
+The political climate is what it is. That does *not* mean we bow down before our corporate overlords and beg alms.
+Some things will be more difficult than they might have been a few years ago,
+but let's don't forget our spiritual forebears who struggled for and won the right to organize,
+written into law in 1935. They operated largely without a legal framework for protected concerted activity,
+and in time they won. If they can do it, so can we. Just -- be prepared for a long, hard struggle.
+This is not a battle; it's a war -- and a war we can win, *together!*
+
