@@ -86,8 +86,7 @@ share of that sweet, sweet profit that our efforts enable and create.
 > power from the hands of people who do not value you, only the working relationship they have that controls you.
 
 
-### **Half-truth:** The company believes employees prefer to be treated as individuals,
-  and will do just fine without a union.
+### **Half-truth:** The company believes employees prefer to be treated as individuals, and will do just fine without a union.
 
 It's not about what *the company* believes, is it? We should like the truth!
 
@@ -140,8 +139,7 @@ It won't put your kids through college, but it's something.
 Last, as a member of a legally-recognized union, you get certain additional legal rights.
 We'll talk more about that in the next section.
 
-### **Wishful Thinking / Disinformation:** The Company believes itself best able to solve
-  problems one-on-one, employee-to-manager, rather than through a third-party.
+### **Wishful Thinking / Disinformation:** The Company believes itself best able to solve problems one-on-one, employee-to-manager, rather than through a third-party.
 
 Either way, you'd still have access to the management chain -- even one-on-one, if that's your preference.
 However, one-on-one, there are no witnesses. *We all know what happens when there are no witnesses.*
