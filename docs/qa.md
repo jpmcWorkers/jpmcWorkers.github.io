@@ -159,6 +159,13 @@ behalf to get problems fixed.
 > like a feudal state than any form of democracy I would recognize.
 > Wouldn’t you rather hold your work to that same democratic standard?
 
+### **Delay:** Wait and see / We've done so much already!
+
+We've seen what years of the status quo brought us: Arbitrary and unreasonable surprise edicts from on high,
+with no power to resist it. The company may even offer some token concession in an effort to silence us.
+But make no mistake: Once dissent is quashed, the concession soon disappears.
+The corporate goal is not happy, fulfulled workers; their goal is profit, pure and simple.
+
 ### **Scare Tactics:** You'll be made to strike!
 
 Not in the sense the Executives would have you believe.
