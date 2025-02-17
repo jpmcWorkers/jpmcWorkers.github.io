@@ -16,10 +16,10 @@ What happens to the money that it makes? Here are some ways it can be used:
 **Who controls where this money goes?** Why, the top executives do, of course!
 It's only natural they'd want to direct as much as possible into their own pockets.
 
-Executives realise that any improvement to Worker quality-of-life, working conditions, benefits, or *(gasp!)* wages,
+Executives realise that any improvement to Worker quality-of-life, working conditions, benefits, or wages,
 immediately translates to a reduction in what they can pay themselves. So they fight like tigers to prevent it.
 
-But let's be real. Executives serve a valuable function, but no part of a company can function without the rest.
+Let's be real. Executives serve a valuable function, but no part of a company can function without the rest.
 Labor deserves a fair piece of the pie too, both in working conditions and compensation.
 The only question is what's fair? Should it be, *the worst they can treat you and you don't leave?*
 Or should it more properly be, *the best they can treat you and they don't fold?*
