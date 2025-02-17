@@ -76,17 +76,13 @@ Merely participating in hiring interviews does not make you a manager. (It simpl
 
 ## Background:
 
-We are not here to throw rocks. We are building an army capable of standing up to the world's largest financial empire -- and winning.
-Rome wasn't built in a day, and we will certainly all face RTO. But let us recall the morning of 7 December 1941:
-The Empire of Japan dealt a terrible blow to the United States' smaller Pacific fleet, putting 19 ships and many airfields out of action.
-Less than four years later, the United States Navy accepted Japan's unconditional surrender aboard the USS Missouri.
-
-RTO will be like our Pearl Harbor. It will hurt, but it will also:
+We are not here to throw rocks. We are building an army capable of standing up to one of the world's largest financial empires -- and winning.
+Rome wasn't built in a day, and we will certainly all face RTO. It will hurt, but it will also:
 
 * Shock us out of complacency
 * Attract sympathizers
 * Help us convince the undecided and the misinformed.
 
 For now, we need to build a robust whisper-network and find a way to understand the scope of our reach.
-We also need some volunteers to take on specific collateral duties related to organizing and indoctrination.
+We also need some volunteers to take on specific collateral duties related to organizing.
 
