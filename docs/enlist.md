@@ -16,7 +16,7 @@
 
 ## Convenient Links:
 
-* [JWA Web Site](jpmcWorkers.com)
+* [JWA Web Site](https://jpmcWorkers.com)
 * The Petition: [coworker.org/p/jpmcWorkers](https://coworker.org/p/jpmcWorkers) -- sign it to get on our mailing list. When Dimon ignores it, we can get louder.
 
 **Resources:**
@@ -37,6 +37,7 @@ You'll need to [download Signal](https://signal.org/download/) to join the chat 
 It is the most secure messaging solution available to the general public.
 Versions exist for PC, Mac, Linux, Android, and iPhone/iPad.
 It's recommended to [install on your phone](https://signal.org/install) first, and then sync to your desktop.
+*(NB: Signal cannot display chat history from before you joined, due to its cryptographic protocol.)*
 
 * [JWA Announcements](https://signal.group/#CjQKIA9LUxuzRjiImriCzuLFQ2gtLQ7F5Zzut_11RrYqlZYcEhBfREi9xBUBjAzFlS7gZ7ZM): Low-volume administrative posts and updates.
 * [Organizing Group Chat](https://signal.group/#CjQKIPuBz1rZK3in9h_NKCWeHFswRV0f23ZebaZnh_6Exg6gEhAEeE8AMe2MY05FPjJzap8t): Union Business happens here. No Managers Allowed, per [National Labor Relations Act of 1935 as amended.](https://www.law.cornell.edu/uscode/text/29/chapter-7/subchapter-II). Representatives from both UE and CWA/CBB are present.
