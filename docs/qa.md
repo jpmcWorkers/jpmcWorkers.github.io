@@ -65,25 +65,23 @@ The only way to get anything more than the minimum is to organize and unionize.
 ### **Distraction:** Look at this Shiny New Headquarters!
 
 Most of us don't benefit. Current estimates put the cost at $3,000,000,000.
-That's over ten thousand dollars per employee globally,
-and vastly more if you divide instead by the number of people to be assigned there.
+That's enough to buy everyone assigned there a small house in rural Texas.
+Globally, it's over ten thousand dollars per employee.
 It's not built for workers; it's a real-estate play.
 Wouldn't you rather have the cash in your pocket?
 
 ### **True, but not in a good way:** The Company values a direct working relationship with employees.
 
-The company values? Of course it does.
+The company values the direct working relationship because that is a relationship it can control.
+Workers unionizing and fighting that relationship dynamic is exactly what they fear: a loss of control.
+With a union, you and your co-workers have the power to take that control back, to wrestle the levers of
+power from the hands of people who do not value you, only the working relationship they have that controls you.
 
 Remember who controls the money. With 300,000 one-on-one relationships, we're stuck in
 a race to the bottom, competing to be the lowest bidder in terms of compensation,
 respect, working conditions, and quality-of-life: The company holds all the cards.
 Only through collective bargaining can we hope to leverage for ourselves a fair
 share of that sweet, sweet profit that our efforts enable and create.
-
-> **Cole’s Notes:** The company values the direct working relationship because that is a relationship it can control.
-> Workers unionizing and fighting that relationship dynamic is exactly what they fear: a loss of control.
-> With a union, you and your co-workers have the power to take that control back, to wrestle the levers of
-> power from the hands of people who do not value you, only the working relationship they have that controls you.
 
 
 ### **Half-truth:** The company believes employees prefer to be treated as individuals, and will do just fine without a union.
