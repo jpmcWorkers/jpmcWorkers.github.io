@@ -11,6 +11,7 @@ The model lacks full union power, but has made significant inroads in establishi
 * Takes our brand to the next level.
 * Creates mind-share.
 * Facilitates growth toward super-majority.
+* Does not need to worry about bargaining units.
 
 JPMC won’t recognize this immediately; that comes with time.
 
