@@ -1,25 +1,43 @@
-# Current Status of the RTO Opposition:
+# JPMC Workers Alliance : Main Page
 
-We got a lot of attention for opposing the RTO mandate with
-[this petition](https://www.coworker.org/p/jpmcWorkers)
-laying out the case for hybrid work, the reality of the modern office,
-what's going on with our culture and leadership,
-and the loss of trust that came out of the whole RTO process.
+We'll keep this updated typically on weekends. Check back each Monday for the latest.
 
-We are clearly a big enough effort to be on the CEO's mind:
-[He gave us a salty answer on 12 February 2025 at the town hall in Ohio.](https://www.reddit.com/r/FinancialCareers/comments/1iosoxd/jpmorgan_ceo_i_dont_care_how_many_people_sign/)
-But don't let apathy win! Things worth having take time and effort. We're not giving up; we're refocusing. 
+## Rights you should know you have:
 
-**Your signature gets us closer to unity and eventual victory. It also lets coworker.org forward you our newsletter.**
+* [USA: Protected Concerted Activities](https://www.nlrb.gov/sites/default/files/attachments/pages/node-184/nlrb-flyer-627.pdf)
+* UK: Coming Soon
 
-* We do NOT see your e-mail address. That stays with coworker.org.
+## We are everywhere.
 
-# You will not be disciplined for signing the petition.
+We have members in New York, Delaware, Florida, Illinois, Ohio, Texas, California, and Washington, as well as several cities in the United Kingdom.
 
-* Retaliation is infeasible: Signatures will be kept secret until there are far too many to discriminate against.
+To get connected, the best way to start is to build a network of trustworthy colleagues.
+Open up about what's really going on *at a safe time and place where you won't be overheard.*
+Ask others about how RTO impacts them. Relate.
+Get colleagues sharing our social and video feeds. 
+And then keep building your network.
+Sooner or later, these networks will begin to merge into larger groups,
+especially if you have lunch with someone new each day.
+
+## Why to Still Sign the RTO Opposition Petition:
+
+If you signed [the petition](https://www.coworker.org/p/jpmcWorkers) as an employee, thank you for your courage and leadership.
+Signatures have slowed down considerably as of the end of February.
+We are hoping for a bump during the first week of March as people begin to feel the effects of 5-day RTO.
+
+At this point, the CEO has made it abundantly clear that he will not heed a petition.
+The value of delivering it is therefore doubtful.
+However, signing [the petition](https://www.coworker.org/p/jpmcWorkers) still gets you on a mailing list.
+*We do NOT see your e-mail address. That stays with coworker.org.*
+This is one way for the core group to try to reach out.
+Expect mails -- they'll probably be marked "promotions" -- from us "via coworker.org".
+
+### You will not be disciplined for signing the petition.
+
+* Retaliation is infeasible: All names will be kept secret until there are far too many to discriminate against.
 * [Retaliation is also against the law](https://www.nlrb.gov/sites/default/files/attachments/pages/node-251/employee-rights-under-the-nlra-poster-11-x-17-version-pdf-2022.pdf).
 
-# Join the Movement!
+## Join the Movement!
 
 Sign the petition at [coworker.org/p/jpmcWorkers](https://www.coworker.org/p/jpmcWorkers)
 
