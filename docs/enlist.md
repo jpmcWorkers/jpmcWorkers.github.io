@@ -14,6 +14,12 @@
   And even if this movement or a large part of it were forced out the door, then our colleagues in other companies and industries, supplemented by our numbers, would carry on the struggle, until,
   in good time, *the Worker* is on an equal footing with *Management* in setting fair standards for work and its compensation.
 
+## Watch This First!
+
+[Unionizing Play-list](https://www.youtube.com/watch?v=wpujlRvWnRo&list=PLSsMjnJMaObX1jNgK905AYyM99nrfqPi8)
+
+Afterwards, read through the resources as well.
+
 ## Convenient Links:
 
 * [JWA Web Site](https://jpmcWorkers.com)
@@ -21,6 +27,7 @@
 
 **Resources:**
 
+* [The Condensed Labor-Rights Flyer](https://www.nlrb.gov/sites/default/files/attachments/pages/node-184/nlrb-flyer-627.pdf)
 * [What Unions actually do -- and do not!](https://aflcio.org/what-unions-do).
 * [Things employers do to fight unions, and how to debunk their lies](https://unionbustingplaybook.com/).
 * JPMC-specific counter-propaganda -- coming soon.
@@ -29,7 +36,7 @@
   [Posters](https://www.nlrb.gov/news-publications/publications/employee-rights-notice-posting) --
   [Explained](https://www.nlrb.gov/about-nlrb/rights-we-protect/your-rights) --
   [The Law](https://www.law.cornell.edu/uscode/text/29/chapter-7/subchapter-II)
-
+* [Video Training For Us](https://www.youtube.com/@organizeworkers)
 
 **Chat Groups:**
 
@@ -65,6 +72,18 @@ We anticipate formally affiliating with one or both of them when the time is rig
 There's a [technical definition in the act](https://www.law.cornell.edu/definitions/uscode.php?width=840&height=800&iframe=true&def_id=29-USC-1697229976-858777245&term_occur=999&term_src=title:29:chapter:7:subchapter:II:section:152),
 but as a general guide: If you have the authority to get someone (of your own choosing) hired, fired, disciplined, or similar -- you're a manager.
 Merely participating in hiring interviews does not make you a manager. (It simply means your own manager trusts your judgement and discretion.)
+
+The company has a lot of people who seem to blur the line between management and labor.
+
+*Example:* Alice and Bob are in Houston on the same team. Alice is a VP, and Bob is an Associate. The rest of the team is in other cities.
+Alice works for Carol, an ED in London. Carol has told Bob that he reports to Alice, but Carol hired Bob and does the annual evaluations for both.
+Meanwhile, Alice cannot access manager tools in go/me.
+
+In this case, Alice and Bob should confer together with Carol to determine exactly what authority Alice really has.
+If it's simply about having a local contact to call in sick, then Alice is not a manager.
+On the other hand, if Carol plans to rubber-stamp Alice's discretion to hire/fire/discipline,
+then Alice does act as a de-facto manager. In either case, it's important for Bob to be part of
+the same conversation.
 
 ## Tips:
 
