@@ -16,7 +16,7 @@
 
 ## Watch This First!
 
-[Unionizing Play-list](https://www.youtube.com/watch?v=wpujlRvWnRo&list=PLSsMjnJMaObX1jNgK905AYyM99nrfqPi8)
+* [Unionizing Play-list](https://www.youtube.com/watch?v=wpujlRvWnRo&list=PLSsMjnJMaObX1jNgK905AYyM99nrfqPi8)
 
 Afterwards, read through the resources as well.
 
