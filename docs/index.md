@@ -5,7 +5,7 @@ We'll keep this updated typically on weekends. Check back each Monday for the la
 ## Rights you should know you have:
 
 * [USA: Protected Concerted Activities](https://www.nlrb.gov/sites/default/files/attachments/pages/node-184/nlrb-flyer-627.pdf)
-* UK: Coming Soon
+* [UK: Your rights at work](https://www.gov.uk/browse/working/rights-trade-unions)
 
 ## We are everywhere.
 
