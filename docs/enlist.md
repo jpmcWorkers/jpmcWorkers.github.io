@@ -50,6 +50,7 @@ Afterwards, read through the resources as well.
 * [Your rights at work](https://www.gov.uk/browse/working/rights-trade-unions)
 * [Employment Rights Act 1996](https://www.legislation.gov.uk/ukpga/1996/18)
 * [Flexible Working Arrangement Law](https://www.legislation.gov.uk/ukpga/1996/18/part/8A/data.pdf)
+* [Applying for Flexible Working](https://www.gov.uk/flexible-working/applying-for-flexible-working)
 
 ## Chat Groups:
 
