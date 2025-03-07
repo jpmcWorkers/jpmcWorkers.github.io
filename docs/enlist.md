@@ -4,7 +4,13 @@
 
 **Current Leadership Structure:** Rag-Tag Band of Misfits.
 
-**Core Beliefs:**
+## Watch This First!
+
+* [Everything You Want to Know About Unions](https://www.youtube.com/watch?v=Bd5x7vRZlT4) **Note: US-oriented, but still useful for UK.**
+
+Afterwards, read through the resources as well.
+
+## Core Beliefs:
 
 * The only way for us to get *and keep* concessions from management will be collective bargaining and ultimately a union contract.
 * It will be a long grind to get there, but we can do it together -- with your help.
@@ -14,31 +20,38 @@
   And even if this movement or a large part of it were forced out the door, then our colleagues in other companies and industries, supplemented by our numbers, would carry on the struggle, until,
   in good time, *the Worker* is on an equal footing with *Management* in setting fair standards for work and its compensation.
 
-## Watch This First!
-
-* [Unionizing Play-list](https://www.youtube.com/watch?v=wpujlRvWnRo&list=PLSsMjnJMaObX1jNgK905AYyM99nrfqPi8)
-
-Afterwards, read through the resources as well.
 
 ## Convenient Links:
 
 * [JWA Web Site](https://jpmcWorkers.com)
 * The Petition: [coworker.org/p/jpmcWorkers](https://coworker.org/p/jpmcWorkers) -- sign it to get on our mailing list. When Dimon ignores it, we can get louder.
 
-**Resources:**
+## Resources:
 
-* [The Condensed Labor-Rights Flyer](https://www.nlrb.gov/sites/default/files/attachments/pages/node-184/nlrb-flyer-627.pdf)
+**General**
+
 * [What Unions actually do -- and do not!](https://aflcio.org/what-unions-do).
-* [Things employers do to fight unions, and how to debunk their lies](https://unionbustingplaybook.com/).
+* [Unionizing Play-list](https://www.youtube.com/watch?v=wpujlRvWnRo&list=PLSsMjnJMaObX1jNgK905AYyM99nrfqPi8)
 * JPMC-specific counter-propaganda -- coming soon.
+* [Video Training For Us](https://www.youtube.com/@organizeworkers)
+* [Things employers do to fight unions, and how to debunk their lies](https://unionbustingplaybook.com/).
+
+**US-Specific**
+
+* [Labor-Rights Flyer](https://www.nlrb.gov/sites/default/files/attachments/pages/node-184/nlrb-flyer-627.pdf)
 * Your rights as a (non-supervisory) worker under the NLRA:
   [Brochures](https://www.nlrb.gov/news-publications/publications/brochures) --
   [Posters](https://www.nlrb.gov/news-publications/publications/employee-rights-notice-posting) --
   [Explained](https://www.nlrb.gov/about-nlrb/rights-we-protect/your-rights) --
   [The Law](https://www.law.cornell.edu/uscode/text/29/chapter-7/subchapter-II)
-* [Video Training For Us](https://www.youtube.com/@organizeworkers)
 
-**Chat Groups:**
+**UK-Specific**
+
+* [Your rights at work](https://www.gov.uk/browse/working/rights-trade-unions)
+* [Employment Rights Act 1996](https://www.legislation.gov.uk/ukpga/1996/18)
+* [Flexible Working Arrangement Law](https://www.legislation.gov.uk/ukpga/1996/18/part/8A/data.pdf)
+
+## Chat Groups:
 
 You'll need to [download Signal](https://signal.org/download/) to join the chat groups.
 It is the most secure messaging solution available to the general public.
