@@ -12,7 +12,7 @@ especially at the very lowest levels. [Here's a guide.](/mgr)
 
 For everyone's safety and security, there's no easy front-door you can walk in just yet.
 Know that we are working behind the scenes to meet the challenges we'll face in coming weeks and months.
-Meanwhile, you can help prepare the way:
+While we focus on safe growth, you can help prepare the way:
 
 * Get to know your colleagues as people, not mere cogs in a machine. Learn what they enjoy doing, what makes them happy, etc.
 * Include members of your own team, others you collaborate with, and those you regularly bump into.
