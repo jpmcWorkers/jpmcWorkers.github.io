@@ -1,6 +1,6 @@
 # JPMC Workers Alliance -- Quick Intro and Enlistment Guide
 
-**Mission:** To improve working conditions, benefits, pay, and/or job security for all JPMC employees. The RTO mandate of 2025 brought us together, so hybrid work is our first goal.
+**Mission:** To improve working conditions, benefits, pay, schedules, and/or job security for all JPMC employees. The RTO mandate of 2025 brought us together, so a return to hybrid work will always be a goal -- but there are others.
 
 **Current Leadership Structure:** Rag-Tag Band of Misfits.
 
@@ -72,32 +72,15 @@ See also [how to do group-calls in Signal](https://support.signal.org/hc/en-us/a
 * CWA = Communication Workers of America, the same people the Wells Fargo unions affiliated with.
 * CBB = Committee for Better Banks, the branch of CWA specifically focused on financial institutions.
 
-We anticipate formally affiliating with one or both of them when the time is right.
-(Why both? Different bargaining units...)
+We anticipate formally affiliating with one of them when the time is right.
+
 
 ## Current Rules:
 
 * Don't do anything illegal.
 * Act with Respect.
 * Balance consensus with initiative.
-
-**Am I a manager?**
-
-There's a [technical definition in the act](https://www.law.cornell.edu/definitions/uscode.php?width=840&height=800&iframe=true&def_id=29-USC-1697229976-858777245&term_occur=999&term_src=title:29:chapter:7:subchapter:II:section:152),
-but as a general guide: If you have the authority to get someone (of your own choosing) hired, fired, disciplined, or similar -- you're a manager.
-Merely participating in hiring interviews does not make you a manager. (It simply means your own manager trusts your judgement and discretion.)
-
-The company has a lot of people who seem to blur the line between management and labor.
-
-*Example:* Alice and Bob are in Houston on the same team. Alice is a VP, and Bob is an Associate. The rest of the team is in other cities.
-Alice works for Carol, an ED in London. Carol has told Bob that he reports to Alice, but Carol hired Bob and does the annual evaluations for both.
-Meanwhile, Alice cannot access manager tools in go/me.
-
-In this case, Alice and Bob should confer together with Carol to determine exactly what authority Alice really has.
-If it's simply about having a local contact to call in sick, then Alice is not a manager.
-On the other hand, if Carol plans to rubber-stamp Alice's discretion to hire/fire/discipline,
-then Alice does act as a de-facto manager. In either case, it's important for Bob to be part of
-the same conversation.
+* Managers cannot join -- it's against the law. (There are some not-really-managers. [Check here.](/mgr))
 
 ## Tips:
 
