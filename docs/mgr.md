@@ -1,6 +1,12 @@
-# Am I a manager?
+# Am I a manager or supervisor?
+
+If you are a manager or supervisor, you cannot join a union.
 
 Things that make you a manager:
+
+* You formulate, determine, and effectuate management policies by expressing and making operative decisions of your employer.
+
+Things that make you a supervisor:
 
 * Authority to hire, fire, evaluate, discipline, or reassign employees (or contractors)
 * Employees (or contractors) who reasonably believe that you have such authority
@@ -11,8 +17,11 @@ Things that do not make you a manager:
 * Working in HR
 * Being a Senior Associate or VP
 
-On the US side, there is a [technical definition](https://www.law.cornell.edu/definitions/uscode.php?width=840&height=800&iframe=true&def_id=29-USC-1697229976-858777245&term_occur=999&term_src=title:29:chapter:7:subchapter:II:section:152)
-in the National Labor Relations Act.
+On the US side, there is a technical definition of
+[supervisor](https://www.law.cornell.edu/definitions/uscode.php?width=840&height=800&iframe=true&def_id=29-USC-1697229976-858777245&term_occur=999&term_src=title:29:chapter:7:subchapter:II:section:152)
+and
+[manager](https://www.law.cornell.edu/wex/managerial_employee)
+in the National Labor Relations Act. 
 
 *Example:* Alice and Bob are in Houston on the same team.
 Alice is a VP, and Bob is an Associate.
