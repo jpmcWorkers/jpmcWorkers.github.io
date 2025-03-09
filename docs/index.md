@@ -10,11 +10,16 @@ We'll keep this updated typically on weekends. Check back each Monday for the la
 Generally, and despite what you may have been told,
 **you *are allowed* to talk with other employees** about your
 
-* Pay
-* Benefits
-* Working Conditions
-* Hours
-* Job security -- or lack thereof
+* Pay,
+* Benefits,
+* Working Conditions,
+* Hours,
+* Job security -- or lack thereof,
+* Unions -- forming them, joining them,
+  [how they work](https://www.youtube.com/watch?v=Bd5x7vRZlT4),
+  [what they do](https://aflcio.org/what-unions-do),
+  [how and why companies try to prevent them](https://unionBustingPlayBook.com),
+* or any other related topic
 
 at all times and places where you can talk about other non-work subjects such as sports or current events.
 Classically this includes breaks and lunch, but also parking lots or other gatherings.
@@ -23,6 +28,8 @@ Classically this includes breaks and lunch, but also parking lots or other gathe
 
 Consider that any device, network, or space that the employer owns or controls may be spying for the employer.
 The best place to speak freely is someplace the company does not control.
+
+**[Say No to Union Busters](https://www.reddit.com/r/union/comments/1j754p1/say_no_to_union_busters/)**
 
 ## We are everywhere.
 

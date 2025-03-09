@@ -2,7 +2,7 @@
 
 **Mission:** To improve working conditions, benefits, pay, schedules, and/or job security for all JPMC employees. The RTO mandate of 2025 brought us together, so a return to hybrid work will always be a goal -- but there are others.
 
-**Current Leadership Structure:** Rag-Tag Band of Misfits.
+**Current Leadership Structure:** "Rag-Tag Band of Misfits" is evolving into the next stage.
 
 ## Watch This First!
 
@@ -39,12 +39,13 @@ Afterwards, read through the resources as well.
 
 **US-Specific**
 
+Your rights as a (non-supervisory) worker under the NLRA:
+
 * [Labor-Rights Flyer](https://www.nlrb.gov/sites/default/files/attachments/pages/node-184/nlrb-flyer-627.pdf)
-* Your rights as a (non-supervisory) worker under the NLRA:
-  [Brochures](https://www.nlrb.gov/news-publications/publications/brochures) --
-  [Posters](https://www.nlrb.gov/news-publications/publications/employee-rights-notice-posting) --
-  [Explained](https://www.nlrb.gov/about-nlrb/rights-we-protect/your-rights) --
-  [The Law](https://www.law.cornell.edu/uscode/text/29/chapter-7/subchapter-II)
+* [Brochures](https://www.nlrb.gov/news-publications/publications/brochures)
+* [Posters](https://www.nlrb.gov/news-publications/publications/employee-rights-notice-posting)
+* [Explained](https://www.nlrb.gov/about-nlrb/rights-we-protect/your-rights)
+* [The Law](https://www.law.cornell.edu/uscode/text/29/chapter-7/subchapter-II)
 
 **UK-Specific**
 
@@ -64,6 +65,10 @@ It's recommended to [install on your phone](https://signal.org/install) first, a
 * [JWA Announcements](https://signal.group/#CjQKIA9LUxuzRjiImriCzuLFQ2gtLQ7F5Zzut_11RrYqlZYcEhBfREi9xBUBjAzFlS7gZ7ZM): Low-volume administrative posts and updates.
 * Organizing Group Chat: *By invitation.* Union Business happens here. No Managers Allowed. Representatives from both UE and CWA/CBB are present.
 * There are other chats for locations and specific topics. Ask when you get in, or topics may be redirected there.
+
+As we grow, concerns for trust and safety grow with us.
+Therefore, to gain access to the main organizing group,
+someone already in the group will have to invite you and tell an admin how they know you.
 
 See also [how to do group-calls in Signal](https://support.signal.org/hc/en-us/articles/360052977792-Group-Calling-Voice-or-Video).
 
