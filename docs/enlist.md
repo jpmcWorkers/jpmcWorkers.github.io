@@ -53,6 +53,7 @@ Your rights as a (non-supervisory) worker under the NLRA:
 * [Employment Rights Act 1996](https://www.legislation.gov.uk/ukpga/1996/18)
 * [Flexible Working Arrangement Law](https://www.legislation.gov.uk/ukpga/1996/18/part/8A/data.pdf)
 * [Applying for Flexible Working](https://www.gov.uk/flexible-working/applying-for-flexible-working)
+* [ACAS code for Flexible Working](https://www.acas.org.uk/statutory-flexible-working-requests)
 
 ## Chat Groups:
 
