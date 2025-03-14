@@ -1,3 +1,40 @@
+* [Union-Busting: Last Week Tonight](https://www.youtube.com/watch?v=Gk8dUXRpoy8)
+
+=========
+
+
+We got a lot of attention for opposing the RTO mandate with
+[this petition]
+laying out the case for hybrid work, the reality of the modern office,
+what's going on with our culture and leadership,
+and the loss of trust that came out of the whole RTO process.
+
+We are clearly a big enough effort to be on the CEO's mind:
+[He gave us a salty answer on 12 February 2025 at the town hall in Ohio.](https://www.reddit.com/r/FinancialCareers/comments/1iosoxd/jpmorgan_ceo_i_dont_care_how_many_people_sign/)
+But don't let apathy win! Things worth having take time and effort. We're not giving up; we're refocusing. 
+
+**Your signature gets us closer to unity and eventual victory. It also lets coworker.org forward you our newsletter.**
+
+=======
+
+Many of us knowledge-workers have had conversations with fellow employees about the impact of a traditional 5/40 in-office schedule. All but a tiny minority consider it a solution in search of a problem; certainly not a valid solution to any of the problems we actually have. It’s contrary to the public interest, a tax on working, a pointless time-sink, an obstacle to success for every stakeholder but one – all the problems we laid out in the petition – and solves nothing worth solving.
+
+Make no mistake: The same 317,000 bright, innovative JPMC employees who spent the last five years bringing not just record revenues,
+[but also record profits,](https://www.reuters.com/business/finance/jpmorgan-profit-jumps-dealmakers-traders-ride-market-rebound-2025-01-15/)
+to the company are perfectly capable of solving whatever problems we set our minds to solving. 
+
+For now, think of the JWA as an open-secret society, free to join* but still in its infancy, with a primary mission to grow up to full size and strength. Fortunately, there are ways to exercise influence while we’re still figuring out bargaining units and gaining the numbers to require union elections. 
+
+Meanwhile, expect the bank to resist, passively at first and later more actively. They may ignore us, ridicule us, deny us, or encourage people to do these things – for one reason: A non-union employer does not wish to lose the dominant negotiating position it holds over the terms of our employment. And make no mistake: the bank is already prepared to fight. (If you happen to be a manager reading this, we can’t collude with you, but we certainly would not complain if, for example, corporate talking points went unsaid or propaganda got misfiled before it made its way to a bulletin board.)
+
+The most important thing in all of this, though, is that 
+
+We hold some key advantages. Chief among them is our ability to begin conversations, one-on-one or in small groups, with other employees on the level and 
+
+We are embarking on this mission one person at a time. Each  But 
+
+We're building a computer-virus for the mind: It reproduces by getting people to propagate the entire virus, and its payload is to add courage and cooperation sufficient to overcome the competing virus that Corporate America has instilled into the general population.
+
 
 [without even being able to coherently explain what you do to Leslie Stahl of CBS.](https://youtu.be/2REdbQasKX4?t=1132)
 

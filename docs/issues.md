@@ -1,0 +1,54 @@
+# JWA: Issues 
+
+Different job categories will have different motivations to join together and militate for change.
+For example, software developers might be paid well *compared to other professions,*
+but face long hours, high stress, unrealistic deadlines, and poor guidance.
+Meanwhile, lock-box employees might have consistent hours but low pay and a dirty environment.
+
+The RTO mandate of early 2025 brought us together, but here's an abstraction of what our members have brought up.
+
+## Universal Issues:
+
+* Pay / Compensation:
+	* Fairness: Are fresh graduates making more than old hands? Are men making more than women for the same work? Am I paid much less than my peers?
+	* Transparency: How can we tell the answers to the questions above?
+	* Participation: The company keeps posting record annual **profits** over and over and over again. We did that. Record profits demand record pay!
+	* Get rid of that filthy arbitration clause in the employment contracts!
+
+* Working Conditions:
+	* Clean, Safe, Healthy Working Environment
+	* Well-defined procedures that actually work
+	* Regular, relevant, and effective training
+	* Fair treatment from management
+	* Reasonable accomodations for workers with special needs
+	* For remote-parking, will shuttles be available throughout the day for e.g. late arrivals / emergency departures?
+
+* Benefits
+	* Parking: Downtown, parking is an expensive challenge. At campuses, parking is not secure and often remote.
+	* Child care: Your kid grows old on the Bright Horizons wait-list. Also, it's comparatively expensive.
+	* Meals, whether downtown or in campuses, are unreasonably expensive (or time-consuming, if prepared at home).
+
+* Hours / Schedule
+	* We've proven that hybrid/remote works great, regardless of what noise comes out of the CEO's mouth. Bring it back!
+	* The company wants to increase efficiency via modern technology. That should translate into less hours worked.
+
+* Job Security
+	* People should not be fired or disciplined for arbitrary or capricious reasons.
+	* Performance Reviews need to be accurate and unbiased.
+
+* Advancement
+	* When someone has the requisite skills and the experience, advancement should follow.
+	* Skills-training needs to become a regular part of our job; not merely an optional extra.
+
+* Corporate Governance / Sustainability
+	* We talk a good game about the environment, inclusiveness, and so forth -- but it doesn't always show in our actions.
+	* Public Transit Benefit would help with parking and get cars off the road.
+	* Sustainability is Work-from-Home. (Hybrid model seems to be the sweet-spot for most.)
+	* EV chargers in corporate parking lots would encourage EV adoption
+	* We should also angle for a worker representative on the board
+
+
+## Issues By Job Category:
+
+* To be determined.
+
