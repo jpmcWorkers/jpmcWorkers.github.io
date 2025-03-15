@@ -1,27 +1,29 @@
 # JWA: Issues 
 
-Different job categories will have different motivations to join together and militate for change.
-For example, software developers might be paid well *compared to other professions,*
-but face long hours, high stress, unrealistic deadlines, and poor guidance.
-Meanwhile, lock-box employees might have consistent hours but low pay and a dirty environment.
-
 The RTO mandate of early 2025 brought us together, but here's an abstraction of what our members have brought up.
 
-## Universal Issues:
+## Top Issues -- Per Survey Metric (so far):
 
-* Pay / Compensation:
-	* Fairness: Are fresh graduates making more than old hands? Are men making more than women for the same work? Am I paid much less than my peers?
-	* Transparency: How can we tell the answers to the questions above?
-	* Participation: The company keeps posting record annual **profits** over and over and over again. We did that. Record profits demand record pay!
-	* Get rid of that filthy arbitration clause in the employment contracts!
+* **RTO is bad for workers:** commute, noise, expense, caregiver needs, disability, neurodivergence, etc.
+* **Pay is not keeping up:** with cost of living, to say nothing of record profits. The math isn't mathing.
+
+**Note:** It's not our job to make a business case for our demands: *Of course* they'd cost money. *That's why the company tries to fight them.* But without workers, there *is* no business. We deserve a fair say in how profits get spent. Our power derives from our collective solidarity: They can't fire *everyone* if all -- or even most of us -- stand together.
+
+## Universal Issues:
 
 * Working Conditions:
 	* Clean, Safe, Healthy Working Environment
 	* Well-defined procedures that actually work
 	* Regular, relevant, and effective training
 	* Fair treatment from management
-	* Reasonable accomodations for workers with special needs
+	* Reasonable accommodations for workers with special needs
 	* For remote-parking, will shuttles be available throughout the day for e.g. late arrivals / emergency departures?
+
+* Pay / Compensation:
+	* Fairness: Are fresh graduates making more than old hands? Are men making more than women for the same work? Am I paid much less than my peers?
+	* Transparency: How can we tell the answers to the questions above?
+	* Participation: The company keeps posting record annual **profits** over and over and over again. We did that. Record profits demand record pay!
+	* Get rid of that filthy arbitration clause in the employment contracts!
 
 * Benefits
 	* Parking: Downtown, parking is an expensive challenge. At campuses, parking is not secure and often remote.
@@ -31,6 +33,7 @@ The RTO mandate of early 2025 brought us together, but here's an abstraction of 
 * Hours / Schedule
 	* We've proven that hybrid/remote works great, regardless of what noise comes out of the CEO's mouth. Bring it back!
 	* The company wants to increase efficiency via modern technology. That should translate into less hours worked.
+	* Some companies have had success with a 4-day work-week. Why not us? (Meetings expand to fill time...)
 
 * Job Security
 	* People should not be fired or disciplined for arbitrary or capricious reasons.
@@ -47,8 +50,12 @@ The RTO mandate of early 2025 brought us together, but here's an abstraction of 
 	* EV chargers in corporate parking lots would encourage EV adoption
 	* We should also angle for a worker representative on the board
 
+## Focus by Job Category:
 
-## Issues By Job Category:
+Different job categories will have different motivations to join together and militate for change.
+For example, software developers might be paid well *compared to other professions,*
+but face long hours, high stress, unrealistic deadlines, and poor guidance.
+Meanwhile, lock-box employees might have consistent hours but low pay and a dirty environment.
 
-* To be determined.
-
+Differences here may ultimately delineate bargaining units -- but that's a future problem.
+Right now we're looking to build community around commonality.
