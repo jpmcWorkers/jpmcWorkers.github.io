@@ -16,7 +16,7 @@ The RTO mandate of early 2025 brought us together, but here's an abstraction of 
 	* Well-defined procedures that actually work
 	* Regular, relevant, and effective training
 	* Fair treatment from management
-	* Reasonable accommodations for employees with disabilities
+	* Reasonable accommodations for employees under the Americans with Disabilities Act and/or local equivalant
 	* For remote-parking, will shuttles be available throughout the day for e.g. late arrivals / emergency departures?
 
 * Pay / Compensation and Advancement:
