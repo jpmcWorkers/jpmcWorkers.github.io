@@ -35,6 +35,10 @@ The best place to speak freely is someplace the company does not control.
 
 We have members in New York, Delaware, Florida, Illinois, Ohio, Texas, Arizona, California, and Washington, as well as several cities in the United Kingdom.
 
+## UK FWA Guidance:
+
+If you are in the UK, read [this post.](https://www.reddit.com/r/JPMorganChase/comments/1jee5ap/jpmc_rtto_if_you_are_in_the_uk_do_this_uk/)
+
 ## Join the Movement!
 
 [Click here to learn how.](/join_us)
@@ -53,7 +57,7 @@ We got a good bit of media attention at the time and raised much awareness for o
 Our CEO's profanity-laced words became famous on 12 February when he declared,
 "I don't care how many people sign that f___ing petition".
 That shows he knows about it; that he is paying attention to *our* impact on the media;
-and that he knows that a good many of us had the courage to sign.
+and that he knows that a good many of us (nearly 2,000) had the courage to sign *despite* our fears.
 
 It also shows that we're going to need a bigger movement.
 That's why we're now recommending steps that will build
@@ -61,3 +65,4 @@ community, leadership, and solidarity among the rank-and-file
 in a way that help us all achieve better conditions -- together.
 
 **United, We Stand!**
+
