@@ -100,5 +100,5 @@ as retaining seniority is important. During the years since COVID lock-downs beg
 JPMC employees' work has continuously produced record profits for the bank – all while
 working from home and from the office in a hybrid manner.
 
-But the Darling of Wall Street and CEO of the world's biggest bank thinks otherwise.
+But the Darling of Wall Street and CEO of the nation's biggest bank thinks otherwise.
 
