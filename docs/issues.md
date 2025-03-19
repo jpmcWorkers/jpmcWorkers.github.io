@@ -40,6 +40,7 @@ The RTO mandate of early 2025 brought us together, but here's an abstraction of 
 * Job Security
 	* People should not be fired or disciplined for arbitrary or capricious reasons.
 	* Performance Reviews need to be accurate and unbiased.
+	* Stop offshoring our positions -- or threatening to do it.
 
 * Environmental Stewardship
 	* We talk a good game about the environment, so shouldn't we get out of the fossil-fuels business?
@@ -48,6 +49,7 @@ The RTO mandate of early 2025 brought us together, but here's an abstraction of 
 	* Sustainability is Work-from-Home. (Hybrid model seems to be the sweet-spot for most.)
 
 * Corporate Governance
+	* Transparency: Lay bare the real reasons management chooses to do things.
 	* Worker representation on the board
 
 ## Focus by Job Category:
