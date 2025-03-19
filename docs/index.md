@@ -2,6 +2,8 @@
 
 We'll keep this updated typically on weekends. Check back each Monday for the latest.
 
+* Sign up for [e-mail alerts!](https://actionnetwork.org/forms/jpmcworkers-signup)
+
 ## Rights you should know you have:
 
 * [USA: Protected Concerted Activities](https://www.nlrb.gov/sites/default/files/attachments/pages/node-184/nlrb-flyer-627.pdf)
@@ -42,8 +44,6 @@ If you are in the UK, read [this post.](https://www.reddit.com/r/JPMorganChase/c
 ## Join the Movement!
 
 [Click here to learn how.](/join_us)
-
-You can also [sign up for e-mail alerts!](https://actionnetwork.org/forms/jpmcworkers-signup)
 
 
 ## RTO Petition Status
