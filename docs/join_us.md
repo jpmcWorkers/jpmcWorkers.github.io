@@ -2,7 +2,7 @@
 
 ## Can I join?
 
-Most employees can join. Managers cannot.
+Most employees and contractors can join. Only managers and supervisors cannot.
 
 The company has a few people who seem to blur the line between management and labor,
 especially at the very lowest levels. [Here's a guide.](/mgr)
@@ -50,6 +50,9 @@ They should not insist on joining. If you get trouble in this regard,
 
 As your group grows, occasional small conflicts are inevitable. However,
 these should normally stay relatively calm and fizzle out quickly.
+Don't be afraid to take an active role in guiding conversation towards
+common ground.
+
 Frequent or sustained arguments are a red flag that something is wrong.
 As a **social leader,** it's your job to step in and fix things.
 
@@ -66,6 +69,20 @@ kick someone out, but it hurts a lot more over time to keep a toxic person in
 the group. Don't be afraid to rip off the band-aid if necessary.
 
 
-### Step Two: Coming Soon.
+### Step Two: Get in Contact
+
+**Option A: Committee for Better Banks**
+
+The Committee for Better Banks is a coalition of bank workers, community and consumer advocacy groups, and labor organizations.
+
+Go to [this link](https://betterbanks.org/contact) and fill in your information.
+Explain in your message that you work for JPMC and are interested in joining the JPMC Workers Alliance.
+**Use a personal e-mail and phone number.**
+In due time, someone should contact you.
+
+**Option B: Organic Growth**
+
+As social groups from step one grow, sooner or later they'll meet.
+Take this opportunity to introduce each other and coalesce into a larger unit.
 
 
