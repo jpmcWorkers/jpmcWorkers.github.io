@@ -141,22 +141,22 @@ A quick and dirty memory aid:
 
 	(TBD)
 
-	### Addressing fear of collective action 
+### Addressing fear of collective action 
 
-	Reflection questions for our organizers: 
+Reflection questions for our organizers: 
 
-	1. Why am I afraid of collective action?
-	2. Why do I think others are afraid of collective action?
-	3. What do I think will move them through that fear?
+1. Why am I afraid of collective action?
+2. Why do I think others are afraid of collective action?
+3. What do I think will move them through that fear?
 
-	Best Practices in addressing fear of collective action:
+Best Practices in addressing fear of collective action:
 
-	* Always acknowledge fear, never underplay it 
-	* Share your experience with moving through fear
-	* Expose the cost inaction versus cost of action 
-		* Example: 
-			* “How long can you stay in this job if you have to keep enduring this issue?”
-			* “ What has been the effect of you having to endure this issue on your work and private life? How much longer can you take it?”
+* Always acknowledge fear, never underplay it 
+* Share your experience with moving through fear
+* Expose the cost inaction versus cost of action 
+	* Example: 
+		* “How long can you stay in this job if you have to keep enduring this issue?”
+		* “ What has been the effect of you having to endure this issue on your work and private life? How much longer can you take it?”
 
 ### Other Questions We Have?
 
