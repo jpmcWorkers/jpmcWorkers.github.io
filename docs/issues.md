@@ -18,6 +18,7 @@ The RTO mandate of early 2025 brought us together, but here's an abstraction of 
 	* Fair treatment from management
 	* Reasonable accommodations for employees under the Americans with Disabilities Act and/or local equivalent
 	* For remote-parking, will shuttles be available throughout the day for e.g. late arrivals / emergency departures?
+	* Is there access to to adequate lunch facilities?
 
 * Pay / Compensation and Advancement:
 	* Fairness: Are fresh graduates making more than old hands? Are men making more than women for the same work? Am I paid much less than my peers?
