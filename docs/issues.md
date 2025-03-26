@@ -42,6 +42,7 @@ The RTO mandate of early 2025 brought us together, but here's an abstraction of 
 	* People should not be fired or disciplined for arbitrary or capricious reasons.
 	* Performance Reviews need to be accurate and unbiased.
 	* Stop offshoring our positions -- or threatening to do it.
+	* People get moved into new positions they didn't sign up for. What recourse do we have?
 
 * Environmental Stewardship
 	* We talk a good game about the environment, so shouldn't we get out of the fossil-fuels business?
