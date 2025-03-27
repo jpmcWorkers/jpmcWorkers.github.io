@@ -4,6 +4,8 @@ We'll keep this updated typically on weekends. Check back each Monday for the la
 
 * Sign up for [e-mail alerts!](https://actionnetwork.org/forms/jpmcworkers-signup)
 * Our [Issues Platform](/issues)
+* [Join Us!](/join_us)
+* [Get in Contact](/contact)
 
 ## Current Operation:
 
@@ -26,7 +28,7 @@ any one of us could do on our own. However, there are statutory time-limits.
 * [US: ADA Rights, Laws, Resources](https://www.verywellhealth.com/americans-with-disabilities-act-5220487)
 * If you are in the UK, read [this post.](https://www.reddit.com/r/JPMorganChase/comments/1jee5ap/jpmc_rtto_if_you_are_in_the_uk_do_this_uk/)
 
-Overview of how this is *supposed* to work:
+Overview of how this is *supposed* to work (USA perspective):
 
 1. You have a disability.
 2. Your employer has 15 or more employees.
