@@ -1,21 +1,17 @@
-## Current Status of the RTO Petition:
+# RTO Petition Status
 
-Signatures started dropping off significantly around the 1,800 mark.
-Many thought that this was due to people's natural fear of retalliation.
+If you have already signed [the petition](/openletter) as an employee,
+thank you for your courage and solidarity.
 
-**Update on Our Workplace Flexibility Initiative**
+At this point, that particular operation has largely run its course.
+We got a good bit of media attention at the time and raised much awareness for our cause.
 
-Thank you for your overwhelming support and engagement with our workplace flexibility petition. With nearly 2,000 signatures, you've made it clear that this issue matters deeply to our community at Chase. As we navigate this first week of the full return-to-office mandate, we wanted to provide an important update on our approach.
+Our CEO's profanity-laced words became famous on 12 February when he declared,
+"I don't care how many people sign that f___ing petition".
+That shows he knows about it; that he is paying attention to *our* impact on the media;
+and that he knows that a good many of us (nearly 2,000) had the courage to sign *despite* our fears.
 
-**Protecting Our Supporters:**
-
-After careful consideration of feedback from signers, non-signers, and our understanding of leadership's position, we have decided not to formally submit the individual names attached to the petition. This decision was made to protect everyone who supported our cause from potential individual targeting. We will instead reference the total number of supporters when communicating with leadership, demonstrating the significant opposition to the mandate while safeguarding individual privacy.
-
-**Supporting Concerned Colleagues:**
-
-We've heard that some colleagues are experiencing anxiety about potential retaliation. If you know someone who has expressed fear about signing the petition, please reach out to reassure them that their name and email will remain confidential. Our primary concern is creating a safe environment for all employees to express their workplace needs without fear.
-
-**Moving Forward Together:**
-
-We are actively planning the next steps to address the RTO mandate. We are researching effective ways to organize our voices to continue advocating for workplace flexibility that benefits both employees and Chase. We remain committed to finding constructive solutions that acknowledge the diverse needs of our workforce while maintaining our professional standards.
-We will be sharing more detailed plans in the coming weeks. In the meantime, we encourage anyone interested in contributing to reach out to us.
+It also shows that we're going to need a bigger movement.
+That's why we're now recommending steps that will build
+community, leadership, and solidarity among the rank-and-file
+in a way that help us all achieve better conditions -- together.

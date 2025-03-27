@@ -3,6 +3,36 @@
 We'll keep this updated typically on weekends. Check back each Monday for the latest.
 
 * Sign up for [e-mail alerts!](https://actionnetwork.org/forms/jpmcworkers-signup)
+* Our [Issues Platform](/issues)
+
+## Current Operation:
+
+The Employer has made it unreasonably difficult for people with long-term medical conditions or
+disabilities to obtain the reasonable accommodations their private doctors prescribe
+in accordance with either the *Americans with Disabilities Act (US)* or *Equality Act of 2010 (UK)*.
+There is a limited list of valid reasons not to provide a requested accommodation,
+and *"everyone else will want one too"* **is not on that list!**
+
+If you or someone you know has been affected by this -- especially if the issue is
+brought on or made worse by recent policy changes (such as RTO or hot-desking) --
+then we are looking to [get in contact.](/contact)
+
+**Time is of the essence!** We have some options to fight this problem in an organized,
+coordinated manner which stands an excellent chance to move further and faster than
+any one of us could do on our own. However, there are statutory time-limits.
+
+* [Contact us about ADA / FWA accommodations!](/contact)
+* [US: ADA.GOV Guide to Disability Rights Laws](https://www.ada.gov/resources/disability-rights-guide/)
+* [US: ADA Rights, Laws, Resources](https://www.verywellhealth.com/americans-with-disabilities-act-5220487)
+* If you are in the UK, read [this post.](https://www.reddit.com/r/JPMorganChase/comments/1jee5ap/jpmc_rtto_if_you_are_in_the_uk_do_this_uk/)
+
+Overview of how this is *supposed* to work:
+
+1. You have a disability.
+2. Your employer has 15 or more employees.
+3. You have a written request for accommodation from the qualified healthcare provider of your choice.
+4. The requested accommodation does not "place an undue burden on the employer." *(It does not! We've all been WFHing for years!)*
+5. Employer must provide the requested accommodation in accordance with the law!
 
 ## Rights you should know you have:
 
@@ -37,32 +67,14 @@ The best place to speak freely is someplace the company does not control.
 
 We have members in New York, Delaware, Florida, Illinois, Ohio, Texas, Arizona, California, and Washington, as well as several cities in the United Kingdom.
 
-## UK FWA Guidance:
-
-If you are in the UK, read [this post.](https://www.reddit.com/r/JPMorganChase/comments/1jee5ap/jpmc_rtto_if_you_are_in_the_uk_do_this_uk/)
-
 ## Join the Movement!
 
 [Click here to learn how.](/join_us)
 
 
-## RTO Petition Status
+## Prior Operations:
 
-If you have already signed [the petition](/openletter) as an employee,
-thank you for your courage and solidarity.
-
-At this point, that particular operation has largely run its course.
-We got a good bit of media attention at the time and raised much awareness for our cause.
-
-Our CEO's profanity-laced words became famous on 12 February when he declared,
-"I don't care how many people sign that f___ing petition".
-That shows he knows about it; that he is paying attention to *our* impact on the media;
-and that he knows that a good many of us (nearly 2,000) had the courage to sign *despite* our fears.
-
-It also shows that we're going to need a bigger movement.
-That's why we're now recommending steps that will build
-community, leadership, and solidarity among the rank-and-file
-in a way that help us all achieve better conditions -- together.
+* [The Anti-RTO Petition](/rto_petition_status)
 
 **United, We Stand!**
 

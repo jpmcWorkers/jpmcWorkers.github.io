@@ -6,6 +6,7 @@ The RTO mandate of early 2025 brought us together, but here's an abstraction of 
 
 * **RTO is bad for workers:** commute, noise, expense, caregiver needs, disability, neurodivergence, etc.
 * **Pay is not keeping up:** with cost of living, to say nothing of record profits. The math isn't mathing.
+* **Transparent and Fair ADA / Reasonable-Accommodation Process:** The bank seems to be ignoring its legal obligation to provide medically-indicated accommodations until someone hires a labor lawyer. That's unethical, and a point where we can probably score some early progress through collective action.
 
 **Note:** It's not our job to make a business case for our demands: *Of course* they'd cost money. *That's why the company tries to fight them.* But without workers, there *is* no business. We deserve a fair say in these matters.
 
