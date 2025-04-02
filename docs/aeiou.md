@@ -1,5 +1,11 @@
 # Conversation and Recruitment Training
 
+## The Video Training:
+
+If you do nothing else,
+[WATCH THIS VIDEO](https://www.youtube.com/watch?v=uEoDXHLXUFU)
+before you start trying to recruit people.
+
 ## Extremely Short Version: A-E-I-O-U
 
 A quick and dirty memory aid:
