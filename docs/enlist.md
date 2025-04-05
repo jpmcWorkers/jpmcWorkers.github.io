@@ -55,23 +55,17 @@ Your rights as a (non-supervisory) worker under the NLRA:
 * [Applying for Flexible Working](https://www.gov.uk/flexible-working/applying-for-flexible-working)
 * [ACAS code for Flexible Working](https://www.acas.org.uk/statutory-flexible-working-requests)
 
-## Chat Groups:
+## Chat Group:
 
-You'll need to [download Signal](https://signal.org/download/) to join the chat groups.
-It is the most secure messaging solution available to the general public.
-Versions exist for PC, Mac, Linux, Android, and iPhone/iPad.
-It's recommended to [install on your phone](https://signal.org/install) first, and then sync to your desktop.
-*(NB: Signal cannot display chat history from before you joined, due to its cryptographic protocol.)*
-
-* [JWA Announcements](https://signal.group/#CjQKIA9LUxuzRjiImriCzuLFQ2gtLQ7F5Zzut_11RrYqlZYcEhBfREi9xBUBjAzFlS7gZ7ZM): Low-volume administrative posts and updates.
-* Organizing Group Chat: *By invitation.* Union Business happens here. No Managers Allowed. Representatives from both UE and CWA/CBB are present.
-* There are other chats for locations and specific topics. Ask when you get in, or topics may be redirected there.
+You'll need to [have a Discord account](https://discord.com/) to join the JWA server.
+It is a flexible, customizable, and robust platform in which we have established a secure vetting process.
+Versions exist for PC, browser, Android, and iPhone/iPad. Request an invitation to the server by using the methods found on [our contact page](https://jpmcworkers.com/contact).
 
 As we grow, concerns for trust and safety grow with us.
 Therefore, to gain access to the main organizing group,
 someone already in the group will have to invite you and tell an admin how they know you.
 
-See also [how to do group-calls in Signal](https://support.signal.org/hc/en-us/articles/360052977792-Group-Calling-Voice-or-Video).
+Discord is also the location of our weekly unionization voice/video calls, available to all non-managerial JPMC employees.
 
 **Abbreviations:**
 
