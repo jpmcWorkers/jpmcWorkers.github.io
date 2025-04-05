@@ -22,7 +22,7 @@ You're already subscribed to hear about our progress. How else can you help?
 * Start a weekly lunch-meetup at your in-person location.
 * Track JPMC practices in relation to labor laws and violations. Bring your observations with you to the online community, where we have been curating them.
 * Submit reports, complaints, tips, and other forms of official outreach (both within the firm and via government routes) in order to grease the wheels of bureaucracy.
-* Spread the word: Print and display or distribute as many of [these posters/business cards](jpmcWorkers.github.io/tree/main/docs/img/posters) as you feel comfortable with.
+* Spread the word: Print and display or distribute as many of [these posters/business cards](https://github.com/jpmcWorkers/jpmcWorkers.github.io/tree/main/docs/img/posters) as you feel comfortable with.
 * Continue to encourage more people to also sign [the petition](https://www.coworker.org/petitions/professional-dignity), as continual growth of the number of signers will lend credence and confidence to our cause.
 * Give any amount of time, money, or effort to improve our conditions as JPMC employees and build a community that cannot be divided.
 
