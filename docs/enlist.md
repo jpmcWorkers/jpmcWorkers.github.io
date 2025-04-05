@@ -25,7 +25,7 @@ Afterwards, read through the resources as well.
 ## Convenient Links:
 
 * [JWA Web Site](https://jpmcWorkers.com)
-* The Petition: [coworker.org/p/jpmcWorkers](https://coworker.org/p/jpmcWorkers) -- sign it to get on our mailing list. When Dimon ignores it, we can get louder.
+* [Mailing list](https://actionnetwork.org/forms/jpmcworkers-signup)
 
 ## Resources:
 
