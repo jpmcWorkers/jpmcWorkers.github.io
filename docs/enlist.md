@@ -72,6 +72,7 @@ Discord is also the location of our weekly unionization voice/video calls, avail
 * UE = United Electrical, one of the first unions we heard back from.
 * CWA = Communication Workers of America, the same people the Wells Fargo unions affiliated with.
 * CBB = Committee for Better Banks, the branch of CWA specifically focused on financial institutions.
+* ULP = [Unfair labor practice](https://www.unionfacts.com/article/unfair-labor-practices/)
 
 We anticipate formally affiliating with one of them when the time is right.
 
