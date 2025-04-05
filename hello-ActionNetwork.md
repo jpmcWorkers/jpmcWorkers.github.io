@@ -2,7 +2,8 @@ To our lovely friends who signed up for our mailing list:
 
 Whether you found our mailing list as a continuation of the Coworker.org petition, via jpmcworkers.com, or even from one of the flyers we've printed out, welcome! We're in this effort for the long haul, and we're hoping that you are, too.
 
-* To recap the effort so far: on January 20th 2025, JPMC corporate announced internally that flexible and remote work would be ending. Employees started speaking out via internal channels of communication, which led to like-minded discussion via external channels of communication.
+To recap the effort so far: 
+* On January 20th 2025, JPMC corporate announced internally that flexible and remote work would be ending. Employees started speaking out via internal channels of communication, which led to like-minded discussion via external channels of communication.
 * On February 10th, we published [our petition](https://www.coworker.org/petitions/professional-dignity). By the time Jamie Dimon [disregarded it verbally](https://www.reuters.com/business/finance/jpmorgan-ceo-dimon-derides-in-office-work-pushback-demands-efficiency-2025-02-13/) during his town hall on February 12th, it already had hundreds of signatures.
 * On March 3rd, many JPMC corporate sites started the 5-day return to office. Many more sites will be starting on April 21st, and several other corporations continue to follow the RTO trend. 
 
