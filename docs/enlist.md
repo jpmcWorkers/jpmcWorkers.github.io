@@ -57,9 +57,9 @@ Your rights as a (non-supervisory) worker under the NLRA:
 
 ## Chat Group:
 
-You'll need to [have a Discord account](https://discord.com/) to join the JWA server.
-It is a flexible, customizable, and robust platform in which we have established a secure vetting process.
-Versions exist for PC, browser, Android, and iPhone/iPad. Request an invitation to the server by using the methods found on [our contact page](https://jpmcworkers.com/contact).
+You'll need to [have a Discord account](https://discord.com/) to join the JWA server. It can even be a spare account for better anonymity, if you prefer!
+Discord is a flexible, customizable, and robust platform in which we have established a secure vetting process. Versions exist for PC, browser, Android, and iPhone/iPad. 
+Request an invitation to the server by asking a friend who is already in it, or by using the methods found on [our contact page](https://jpmcworkers.com/contact).
 
 As we grow, concerns for trust and safety grow with us.
 Therefore, to gain access to the main organizing group,
