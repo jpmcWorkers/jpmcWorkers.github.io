@@ -21,12 +21,12 @@ Our [mailing list](https://actionnetwork.org/forms/jpmcworkers-signup) will keep
 Would you join the movement?
 
 Stand and be counted, even anonymously!
-Join our secure Discord server to hang out and share opinions and feedback (See https://jpmcworkers.com/contact )
-Have face-to-face conversations with future members, and start a weekly lunch-meetup
-Track JPMC practices in relation to labor laws and violations
-Submit reports, complaints, tips, and other forms of official outreach (both within the firm and via government routes) in order to grease the wheels of bureaucracy
-Spread the word: Print and display or distribute as many of these posters as you feel comfortable with. (Gather posters into a dropbox/repository and include the link here)
-Give any amount of time, money, or effort to improve our conditions as JPMC employees
+* Join our secure Discord server to hang out and share opinions and feedback (See https://jpmcworkers.com/contact for instructions on how to request an invitation)
+* Have face-to-face conversations with future members, and start a weekly lunch-meetup
+* Track JPMC practices in relation to labor laws and violations
+* Submit reports, complaints, tips, and other forms of official outreach (both within the firm and via government routes) in order to grease the wheels of bureaucracy
+* Spread the word: Print and display or distribute as many of [these posters/business cards](jpmcWorkers.github.io/tree/main/docs/img/posters) as you feel comfortable with. 
+* Give any amount of time, money, or effort to improve our conditions as JPMC employees
 
 This will be the final communication sent via Coworker.org. We thank you kindly for your time in reading this, and hope to see you on the other side of action.
 
