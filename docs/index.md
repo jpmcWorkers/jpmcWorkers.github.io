@@ -9,6 +9,8 @@ We'll keep this updated typically on weekends. Check back each Monday for the la
 
 ## Current Operation:
 
+In the process of researching and fighting to retain our WFH, we have pursued multiple avenues to see what it takes to accomplish this simple goal. We have discovered that even the most obvious and dire accommodation request cases for WFH/FWA/hybrid schedules are being denied, delayed, and deflected. Additionally, *other* reasonable accommodations requests are falling victim to the same treatment. This pattern of systemic discrimination against the very real (but reasonable) needs being expressed by JPMC employees is, as you can imagine, both very illegal and unethical. Pursuing this route of regaining WFH for those who need it as an accommodation could pave the way to regaining it for the rest of us (and more) in the future.
+
 The Employer has made it unreasonably difficult for people with long-term medical conditions or
 disabilities to obtain the reasonable accommodations their private doctors prescribe
 in accordance with either the *Americans with Disabilities Act (US)* or *Equality Act of 2010 (UK)*.
