@@ -78,18 +78,22 @@ Having information about upcoming anti-union propaganda, internal discussions of
 and the like can help us formulate proper responses and render their actions impotent.
 Knowledge is power, and you have access to what others may not.
 
-**Push back on upper management interference**
+**Push back on upper management interference.**
 Upper management will likely encourage you to take actions regularly to interfere in union action or provide information. If you hear these kinds of requests, inform them of the possible legal issues that may result from this action, and that you are not comfortable possibly breaking the law in this way. Pushing back from managers may make upper leadership less likely to issue these kinds of requests in the future, and makes it clear to leadership that they cannot simply issue demands and expect to be obeyed. Create a culture of principled conscientious objection.
 
 **Leave our literature / posters / pamphlets in place.**
-Upper management may ask you to remove those pamphlets. It is both legal and safe to refuse (or simply not do so) as removing them may qualify as illegal interference under the NLRA.
+Upper management may ask you to remove those pamphlets.
+It is both legal and safe to refuse (or simply "forget") for removing them may qualify as illegal interference under the NLRA.
 
 **Share the law with fellow managers / peers.**
-By providing clarifications of the NLRA to your fellow managers, you are protecting them from unnecessary ULPs and other legal risk. By phrasing in a way that compliance with this law minimizes legal and reputational risk, you have plausible deniability as to whether you are supportive of the union or not if leadership investigates you
+By providing clarifications of the NLRA to your fellow managers,
+you are protecting them from unnecessary ULPs and other legal risk.
+By phrasing in a way that compliance with this law minimizes legal and reputational risk,
+you have plausible deniability as to whether you support our union or not, should leadership investigate you.
 
-**Do not repeat union-busting talking-points**
-such as "we're family", "people value individual treatment", or "union is unnecessary"
-These are the three most common anti-union talking points, but you may hear others.
+**Do not repeat anti-union talking-points,**
+such as "we're like family", "people value individual treatment", "union is unnecessary", or "employees are treated well".
+These are the four most common anti-union talking points, but you may hear others from corporate training programs or the like.
 
 **You are never obligated to spread anti-union propaganda,** even if you are not protected by the NLRA.
 This falls under standard freedom of speech protections, and is something you are free to refuse.
@@ -115,13 +119,13 @@ Anyone can file a ULP on behalf of anyone else, publicly or anonymously.
 use malicious compliance, bureaucratic slowdowns, and feigned ignorance to defend the union.
 
 Every action that upper management plans to use against the union will require action from their subordinates: that’s you.
-You can choose to willfully misinterpret those requests, interpret them excessively specifically,
+**You can choose** to willfully misinterpret those requests, interpret them excessively specifically,
 or even use the bureaucracy inherent in the system against it.
-A careful examination of almost any request can find loopholes that can be exploited while giving yourself a valid excuse.
+A careful examination of almost any request can find loopholes to exploit while giving yourself a valid excuse.
 This shouldn’t be overused as it could result in negative impacts to yourself,
 but it can be done with a certain regularity depending on your own specific circumstances.
 
 Naturally, **all of these require careful consideration** of your own needs and leadership structure,
-but these can be a starting point to work from.
+but this should provide a starting point to work from.
 
 
