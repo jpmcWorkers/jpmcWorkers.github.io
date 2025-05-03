@@ -1,8 +1,18 @@
 # Questions and Answers -- or, Countering the Propaganda
 
-In coming days or weeks, expect the company to start showing its hand in the propaganda-fight for hearts and minds.
-They're gearing up to keep us divided -- fighting amongst ourselves for whatever scraps they toss our way.
+As workers begin to question the status quo and contemplate bettering their circumstances through
+collective action, companies take notice and eventually gear up for a propaganda war.
+The company will do, say, or publish *whatever* brain-rot will make us sit down and get back to
+making the *capitalist class* even richer than they already are, rather than joining hands with
+fellow workers and claiming our rightful share of the surplus *our* labor creates.
+
+The first line of attack against workers self-organizing is to teach the management some scripted
+talking-points to keep us divided -- fighting amongst ourselves and distracted from the prize.
+
 We need to understand the real facts, stripped of corporate mendacity and propaganda.
+
+
+### **Myth:** There's no money in the budget for raises.
 
 Like all companies, ours is in business to make money -- but that's only half the story.
 What happens to the money that it makes? Here are some ways it can be used:
@@ -24,43 +34,38 @@ Labor deserves a fair piece of the pie too, both in working conditions and compe
 The only question is what's fair? Should it be, *the worst they can treat you and you don't leave?*
 Or should it more properly be, *the best they can treat you and they don't fold?*
 
-A major battleground in this fight is propaganda. The company will do things; say things; put out loaded statements posing as unbiased facts.
-They're going to try to convince you -- *of whatever they need you to believe* -- so that you sit down and take what you've always gotten,
-rather than joining hands with fellow workers and demanding more, in a way that cannot be dismissed or ignored.
-
 As long as we're isolated -- bargaining only on behalf of ourselves -- the company has all the leverage.
 They can issue "take-it-or-leave-it" ultimatums, counting on "leave-it" to be infeasible or uncomfortable or worse.
 Only through collective bargaining and the threat of coordinated big-A Action can we get any leverage.
 Only through a contract -- a *union* contract -- will we be able to retain any of the gains we make thereby.
 
-# The Company has Many Tactics.
-
-## Corporate Talking Points
-
-The first line of attack against workers self-organizing is to teach the management some scripted talking-points.
-These usually go like:
 
 ### **Half-Truth:** But the company treats you well!
 
-> **Cole’s Notes:** Have they asked the employees how they feel about that?
-> That’s a very one-sided statement without a lot of info to back it up.
-> Claims asserted without evidence can be dismissed without evidence.
+But do they really treat you how you want to be treated?
+Or do they *alter the deal* whenever the CEO gets salty about Friday night phone calls?
+Do they keep us in the dark about planned changes so that we find out from news media leaks instead?
+If you're lucky enough to have a clean and safe work site, then what's happening with your work/life balance?
 
-The same group of employees behind the now-famous petition (Thanks for the shout-out,
-Jamie Dimon!) collected data from a survey that went around in January. It shows that
-95% of us are unhappy with how the company treats us: Keeping us in the dark about 
-planned changes; "altering the deal" whenever the CEO wills it; and pitting employees
-against each other for a shrinking piece of that growing pie called profit.
+The simps and sycophants will point out how much better life is for today's white-collar worker
+than the black-lung factories of Industrial-Revolution era coal mining.
+*But this is the wrong standard.*
 
-To be fair, it's not Victorian Times, and it's not the Industrial Revolution.
-But the reason for improvement beyond those horrid conditions is regulation,
-and the regulation only exists because labor organized itself to get things written into law.
-By default, a company will do little more than it must under the law -- and sometimes less,
-if it can get away with it -- in respect of working conditions.
+We *can* do better now, and we *should* do better now.
+To do that, we will need to understand:
 
-*For example: We're told we'll get 30 days notice, **consistent with the law,** for RTO in places that aren't ready.*
+* What is right and wrong with working conditions and worker treatment generally?
+* What are the underlying causes of these conditions, and how can we affect them?
+* What is the true situation of the company, so that we can suss out what is achievable?
+* What steps will bring us towards our goals *as a society of workers* rather than as individuals in zero-sum competition with each other?
 
-The only way to get anything more than the minimum is to organize and unionize.
+
+The same group of employees behind the now-famous petition (Thanks for the shout-out, Jamie Dimon!)
+collected data from a survey that went around in January.
+It shows that 95% of us are unhappy with how the company treats us.
+
+A decent respect for human dignity compels us to insist *collectively* on improvements.
+The only way to *actually influence* the status quo is to organize, unionize, and *fight for what's right!*
 
 ### **Distraction:** Look at this Shiny New Headquarters!
 
@@ -156,6 +161,23 @@ behalf to get problems fixed.
 > Management wants to maintain the system they have, which is deeply hierarchical and structured more
 > like a feudal state than any form of democracy I would recognize.
 > Wouldn’t you rather hold your work to that same democratic standard?
+
+### **Threats / Disinformation:** You can’t negotiate your salary once unionized.
+
+As things stand now, most people's only realistic opportunity to negotiate salary is when they're hired.
+Think back to January: Do we negotiate our raises or are they handed down to us from the executives
+with a "take it or leave it" overtone? For that matter, did you even get a raise? Many of us did not.
+Many more got a pittance. And what is our alternative? Go for a walk? These days, the grass is not much
+greener on the other side of the street. We need to fertilize our own fields.
+
+Typically with a union contract, pay scales and raises and the conditions for them would be laid out as part of the
+contract *which we re-negotiate collectively from time to time.*
+Something akin to [this military pay scale](https://www.militaryfactory.com/military_pay_scale.php) could be negotiated,
+adjusted for the kind of work done and the level of risks and responsibilities involved.
+I'd like to see profit sharing also be a defined part of it.
+
+By the way, not all unions are the same in this regard. NFL, MLB, and NBA players are unionized but still negotiate individual contracts.
+
 
 ### **Delay:** Wait and see / We've done so much already!
 
