@@ -49,9 +49,9 @@ If you're lucky enough to have a clean and safe work site, then what's happening
 
 The simps and sycophants will point out how much better life is for today's white-collar worker
 than the black-lung factories of Industrial-Revolution era coal mining.
-*But this is the wrong standard.*
-
-We *can* do better now, and we *should* do better now.
+And it is -- *because of unions!* But this is *still the wrong standard.*
+The world is at a far better baseline now than a hundred years ago.
+Today, we *can* do better and we *should* do better.
 To do that, we will need to understand:
 
 * What is right and wrong with working conditions and worker treatment generally?
@@ -59,13 +59,14 @@ To do that, we will need to understand:
 * What is the true situation of the company, so that we can suss out what is achievable?
 * What steps will bring us towards our goals *as a society of workers* rather than as individuals in zero-sum competition with each other?
 
-
-The same group of employees behind the now-famous petition (Thanks for the shout-out, Jamie Dimon!)
+The same group of employees behind the [now-famous petition](/openletter)
+(Thanks for the shout-out, Jamie Dimon!)
 collected data from a survey that went around in January.
 It shows that 95% of us are unhappy with how the company treats us.
 
 A decent respect for human dignity compels us to insist *collectively* on improvements.
 The only way to *actually influence* the status quo is to organize, unionize, and *fight for what's right!*
+
 
 ### **Distraction:** Look at this Shiny New Headquarters!
 
@@ -74,6 +75,31 @@ That's enough to buy everyone assigned there a small house in rural Texas.
 Globally, it's over ten thousand dollars per employee.
 It's not built for workers; it's a real-estate play.
 Wouldn't you rather have the cash in your pocket?
+
+
+## **Division:** You want *those people* to be included?
+
+Historically, a classic union-busting tactic was to take
+advantage of racism and similar ingrained social disparities.
+However, today's workers are much more egalitarian.
+Yes, we do want *those people* to benefit. Equal pay for equal work!
+
+Another common divisive tactic is to point out the so-called "free-rider problem":
+People in right-to-work states (i.e. everywhere JPMC has an office) cannot be
+compelled to join a union or pay the (miniscule) dues that come with a union contract.
+The rule functions to undermine solidarity on the job by pitting workers who pay
+dues against workers who do not.
+
+[The answer is straightforward:](https://www.labornotes.org/blogs/2016/04/dealing-freeloaders)
+"Freeloaders" are only a problem if you see the union as a third-party service provider,
+which ours is not. Rather, we are a group of concerned workers taking action on issues that we care about.
+By having *all* workers' backs -- even non-members -- we create goodwill and tend to win people over.
+
+Finally, unions *anywhere* make life better for workers *everywhere.*
+This is the [union spill-over effect](https://www.google.com/search?q=union+spill-over+effect).
+The boss would have us sacrifice our own gains just to keep others down.
+No such pettiness afflicts our members. A win is a win.
+
 
 ### **True, but not in a good way:** The Company values a direct working relationship with employees.
 
