@@ -20,7 +20,7 @@ Stand and be counted, even anonymously!
 * Have face-to-face conversations with future members, and start a weekly lunch-meetup
 * Track JPMC practices in relation to labor laws and violations
 * Submit reports, complaints, tips, and other forms of official outreach (both within the firm and via government routes) in order to grease the wheels of bureaucracy
-* Spread the word: Print and display or distribute as many of [these posters/business cards](jpmcWorkers.github.io/tree/main/docs/img/posters) as you feel comfortable with. 
+* Spread the word: Print and display or distribute as many of [these posters/business cards](https://github.com/jpmcWorkers/jpmcWorkers.github.io/tree/main/docs/img/posters) as you feel comfortable with. 
 * Give any amount of time, money, or effort to improve our conditions as JPMC employees
 
 Although this will not necessarily be the final communication sent via Coworker.org, we will be providing more in-depth communications via the mailing list and online community mentioned above, and therefore encourage you to exlore those as well. Please do not hesitate to ask more people to also sign the petition, as continual growth of the number of signers will lend credence and confidence to our cause. We thank you kindly for your time in reading this, and hope to see you on the other side of action.
