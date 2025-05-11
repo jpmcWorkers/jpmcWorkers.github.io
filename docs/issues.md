@@ -37,7 +37,7 @@ The RTO mandate of early 2025 brought us together, but here's an abstraction of 
 * Hours / Schedule
 	* Some companies have had success with a 4-day work-week. Why not us? (Meetings expand to fill time?)
 	* We've proven that hybrid/remote works great, regardless of what noise comes out of the CEO's mouth. Bring it back!
-	* The company wants to increase efficiency via modern technology. That should translate into less hours worked.
+	* The company wants to increase efficiency via modern technology. That should translate into fewer hours worked, not mere job losses.
 
 * Job Security
 	* People should not be fired or disciplined for arbitrary or capricious reasons.
