@@ -21,10 +21,10 @@
 **A:** That’s totally fine. Many folks are doing hybrid work or flex hours. We’re encouraging people to match up with others on similar schedules — even if it's just 1–2 days a week. Something is better than nothing.
 
 **Q:** What if I need to leave early or have an emergency?  
-**A:** You’re not locked in. but we are going to look into more specifics we can do/use to help here
+**A:** Carpooling is built on solidarity and looking out for each other, not just convenience. We don’t have funds to cover last-minute rides like Ubers however you might from saving gas money. We will however, do everything we can as a group to help each other out. That might mean finding another driver, a nearby coworker. You will never be left behind with us.
 
 **Q:** Is this approved by JPMC?  
-**A:** This is an employee-led effort. We're not affiliated with management. But there’s nothing stopping coworkers from organizing smarter commutes together — and if it builds enough momentum, it might just inspire some institutional support.
+**A:** This is an employee-led effort. We're not affiliated with management. There’s nothing stopping coworkers from organizing smarter commutes together — and if it builds enough momentum, it might just inspire some institutional support.
 
 **Q:** Is it safe?  
 **A:** You only ride with people you’re comfortable with. Many people start with teammates or known coworkers. We also encourage clear expectations and communication (no surprise 45-minute detours for coffee).
