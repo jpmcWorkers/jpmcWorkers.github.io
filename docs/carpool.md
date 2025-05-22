@@ -7,7 +7,7 @@
 **Q:** Why is the Workers Alliance promoting carpooling?  
 **A:** Parking is a headache, gas prices are high, and traffic is getting worse. Carpooling is a grassroots way for us as coworkers to take back some control over our commutes, reduce costs, and make things a little more sane — without waiting on corporate to fix it.
 
-**Q:** What are the benefits for me personally?  
+**Q:** What are the benefits for me personally?
  * Save money on gas and maintenance.
  * Share the drive (or skip it entirely some days).
  * Reduce stress and avoid parking battles.
@@ -24,7 +24,7 @@
 **A:** Carpooling is built on solidarity and looking out for each other, not just convenience. We don’t have funds to cover last-minute rides like Ubers however you might from saving gas money. We will however, do everything we can as a group to help each other out. That might mean finding another driver, a nearby coworker. You will never be left behind with us.
 
 **Q:** Is this approved by JPMC?  
-**A:** This is an employee-led effort. We're not affiliated with management. There’s nothing stopping coworkers from organizing smarter commutes together — and if it builds enough momentum, it might just inspire some institutional support.
+**A:** This is an employee-led effort. We're not affiliated with management. There’s nothing stopping coworkers from organizing smarter, more effecient commutes, together.
 
 **Q:** Is it safe?  
 **A:** You only ride with people you’re comfortable with. Many people start with teammates or known coworkers. We also encourage clear expectations and communication (no surprise 45-minute detours for coffee).
