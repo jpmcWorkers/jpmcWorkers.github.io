@@ -3,6 +3,7 @@
 We'll keep this updated typically on weekends. Check back each Monday for the latest.
 
 * Sign up for [e-mail alerts!](https://actionnetwork.org/forms/jpmcworkers-signup?source=website)
+* Past [Newsletter Archive](/news)
 * Our [Issues Platform](/issues)
 * [Join Us!](/join_us)
 * [Get in Contact](/contact)
