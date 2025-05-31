@@ -2,7 +2,7 @@
 
 We'll keep this updated typically on weekends. Check back each Monday for the latest.
 
-* Sign up for [e-mail alerts!](https://actionnetwork.org/forms/jpmcworkers-signup)
+* Sign up for [e-mail alerts!](https://actionnetwork.org/forms/jpmcworkers-signup?source=website)
 * Our [Issues Platform](/issues)
 * [Join Us!](/join_us)
 * [Get in Contact](/contact)
@@ -11,7 +11,7 @@ We'll keep this updated typically on weekends. Check back each Monday for the la
 ## Rights you should know you have:
 
 * [USA: Protected Concerted Activities](https://www.nlrb.gov/sites/default/files/attachments/pages/node-184/nlrb-flyer-627.pdf)
-* [UK: Your rights at work](https://www.gov.uk/browse/working/rights-trade-unions)
+* [UK: Your Rights at Work](https://www.gov.uk/browse/working/rights-trade-unions)
 
 Generally, and despite what you may have been told,
 **you *are allowed* to talk with other employees** about your
