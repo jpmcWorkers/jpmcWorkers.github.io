@@ -39,12 +39,16 @@ The general plan is:
 		* Their tax id, fax number, address, etc.
 		* The reason for requesting electrolysis network adequacy is there are no in network providers per Included Health.
 4. Pester Cigna until they give you pre-approval. **Do not proceed without approval, or reimbursement will be denied.**
-5. Find out from Cigna your coverage budget per-session. Arrange your sessions to spend about this much per session. (You may need more sessions.)
+5. Find out from Cigna your coverage budget per-session.
+    * Call `800-790-3086`.
+    * Ask to speak with an *LGBT One Guide Representative*.
+    * Get them to quote you the *Maximum Reimbursable Rate* for **Electrolysis CPT 17380**.
+    * Arrange your sessions to spend about this much per session. (You may need more sessions.)
 6. Get the electrolysis clinic to provide receipts with:
 	* Letter head with name of location, address, phone and fax number
 	* Amount billed
 	* Diagnosis code `F.64.0 gender dysphoria`
-	* Procedure code `cpt 17380` for electrolysis
+	* Procedure code `CPT 17380` for electrolysis
 	* A written or diagram of area on each treatment session
 7. Pay up front out of pocket and get the full receipts.
 8. E-mail the receipts to Jacki.Trammell@CignaHealthcare.com who will work with you on the claim for reimbursement.
