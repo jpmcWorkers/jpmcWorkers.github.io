@@ -5,7 +5,7 @@ def entry(filename):
 
 def is_image(filename):
 	base, ext = os.path.splitext(filename)
-	return ext.lower() in (".png", ".jpg", ".jpeg")
+	return ext.lower() in (".png", ".jpg", ".jpeg", ".webp")
 
 schedule = sorted(filter(is_image, os.listdir(".")), key=str.lower)
 body = "".join(map(entry, schedule))
