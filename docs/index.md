@@ -12,6 +12,7 @@ We'll keep this updated typically on weekends. Check back each Monday for the la
 ## Rights you should know you have:
 
 * [USA: Protected Concerted Activities](https://www.nlrb.gov/sites/default/files/attachments/pages/node-184/nlrb-flyer-627.pdf)
+* [USA: Employee Rights under the NLRA](https://www.nlrb.gov/sites/default/files/attachments/pages/node-251/employee-rights-under-the-nlra-poster-11-x-17-version-pdf-2022.pdf)
 * [UK: Your Rights at Work](https://www.gov.uk/browse/working/rights-trade-unions)
 
 Generally, and despite what you may have been told,
