@@ -6,6 +6,7 @@ Whether you want to support our mission or just want to stay on the right side o
 **This document is broken into three parts:**
 
 * How to tell if you are *in fact* a supervisor in the eyes of the law.
+* Can you be fired? (Spoiler: You'd have to try.)
 * Actions for the manager that must remain circumspect in their support to avoid retaliation by management.
 * Actions for managers who can afford to be more openly supportive to our cause.
 
@@ -14,7 +15,6 @@ All of the actions listed under the circumspect section can also likely be taken
 **Note:** This is written from a USA perspective.
 If you are in the UK or elsewhere, the broad generalities still apply but the precise laws and boundaries will differ slightly.
 We aim to get a UK review soon.
-
 
 ## Am I a manager or supervisor?
 
@@ -52,6 +52,36 @@ If it's simply about having a local contact to call in sick, then Alice is not a
 On the other hand, if Carol plans to rubber-stamp Alice's discretion to hire/fire/discipline,
 then Alice does act as a de-facto manager. In either case, it's important for Bob to be part of
 the same conversation.
+
+## Can I be fired for this?
+
+Certain activities are considered *unfair labor practices* by the employer.
+*Don't do those things,* and you should be fine from a legal perspective.
+Doing those illegal things could create liability for the employer,
+which may be the fastest path to a pointed conversation with an HR representative.
+
+Later on in this document there are some links to resources that should help keep you on the right side of the law.
+
+It's a long tradition for employers to resist the formation of unions.
+Arguably that's short-sighted, because a healthy relationship between management and labor
+tends to be good for both in the long run. However, institutions naturally resist change,
+and so it may be wise to keep your support on the down-low.
+
+**The question comes up about joining our discord.**
+
+Certain people in the finance industry are subject to invasive monitoring of their personal lives.
+If you are one of those people, the company has probably demanded that you install monitoring software on your cell phone, on pain of being fired.
+In that case, it would probably be smarter to stay on the sidelines.
+
+Otherwise, the union-related channels are strictly walled off. As a manager, you'll never see it.
+You'll also not be exposed to people's real names or identities.
+
+There are, very deliberately, spaces welcoming to all persons interested in the labor movement,
+as well as safe spaces for people with *diverse attributes* ranging from race and religion to
+disablity status, parenthood, veterans, the whole works -- because you don't stop being a person
+when the powers that be grant you a direct report or three.
+
+This also gives you a way to supply unique insights. Interpret that sentence how you will.
 
 ## Circumspect actions
 
