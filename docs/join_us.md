@@ -80,14 +80,14 @@ Explain in your message that you work for JPMC and are interested in joining the
 **Use a personal e-mail and phone number.**
 In due time, someone should contact you.
 
-**Option B: Reach out via email - jpmcworkers@gmail.com **
+**Option B: Reach out via email - jpmcworkers@gmail.com**.
 Tell us your story, and ask for an invitation to the community. We'll be in touch.
 
-**Option C: Subscribe to the [mailing list](https://actionnetwork.org/forms/jpmcworkers-signup)**
+**Option C: Subscribe to the [mailing list](https://actionnetwork.org/forms/jpmcworkers-signup)**.
 At least once per month, if not more frequently, we will be sending out an email with union status updates, and an invitation link to the community.
 
 
-###Step Three: Now you're in the union! Now what?
+### Step Three: Now you're in the union! Now what?
 
 What are some ways recently-joined union members can show their enthusiasm for the cause and get some skin in the game?
 
@@ -99,6 +99,9 @@ What are some ways recently-joined union members can show their enthusiasm for t
 * Share ideas, or take initiative to make already-existing ideas happen
 * Be part of the flyering campaign - hang up posters, and show/tell us about it
 * Show up for lunchtime meetups at work
-* Wear union-logo pins/merch (once we have some)
+* Wear or otherwise display union-logo buttons/magnets/keychains upon your person, desk, bag, car, etc.
 * Post about us on social media and/or relevant sites, and share in the community so we know you did it and we can boost each others' posts
 * If you have conversations with your coworkers that are relevant, tell us about them! Mention names if you know them 🙂
+* Start to build out a list or map of other union-eligible colleagues in your bargaining unit, which can be loosely based on your cost center and/or manager's manager. Remember that they must reside in the same country you do! Emailing a complete list to jpmcworkers@gmail.com will gain you a pip of recognition in the community.
+* Equip yourself with [business cards](/img/posters/NOTICE_-_right_to_join_a_union_blue.png), know-your-rights posters, and [SPIT booklets](/img/posters/Union_Propaganda_Booklets_2.png) to hand to your office-mates when the need or opportunity arises.
+* Join in on the carpooling effort, and practice [AEIOU](https://jpmcworkers.com/aeiou) while you commute!
