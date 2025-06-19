@@ -7,6 +7,7 @@ We'll keep this updated typically on weekends. Check back each Monday for the la
 * Our [Issues Platform](/issues)
 * [Join Us!](/join_us)
 * [Get in Contact](/contact)
+* [Poster Archive](/img/posters)
 * [Information for Managers / Supervisors](/mgr)
 
 ## Rights you should know you have:
