@@ -8,6 +8,7 @@ We'll keep this updated typically on weekends. Check back each Monday for the la
 * [Join Us!](/join_us)
 * [Get in Contact](/contact)
 * [Poster Archive](/img/posters)
+* [The SPIT Booklet](/booklet/SPIT.pdf) -- you should be able to send this directly to a printing service.
 * [Information for Managers / Supervisors](/mgr)
 
 ## Rights you should know you have:
