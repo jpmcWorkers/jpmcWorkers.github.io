@@ -66,7 +66,7 @@ This is all personal information for you, the patient.
 ### Page Two
 
 * Provider Information:
-    * This is the doctor who is "prescribing" laser hair removal.
+    * This is the doctor who is "prescribing" electrolysis.
     * The "Office Information" section refers again to physician services, not electrolysis services.
     * You are probably *not* requesting Network Adequacy for this *provider.*
 
@@ -76,7 +76,7 @@ This is all personal information for you, the patient.
     * You are indeed requesting Network Adequacy for this *facility.*
 
 * Service Infomation:
-    * `Electrolysis for face and neck -- There are no in-network providers of, nor facilities for, this service in-state, per search via both Included Health and Cigna's own transgender care coordination team.`
+    * `Electrolysis for face and neck -- There are no in-network providers of, nor facilities for, this service within the patient's service area, per search via both Included Health and Cigna's own transgender care coordination team.`
 
 ### Page Three
 
@@ -87,7 +87,7 @@ This is all personal information for you, the patient.
 * Service Requested:
     * Procedure Name: `Electrolysis`
     * CPT Code: `17380`
-    * # of Units: 99
+    * \# of Units: 99
         * (One line of this is enough...)
     * Is this a request for...: No, and No.
 * Additional Infomation:
