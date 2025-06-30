@@ -30,7 +30,7 @@ The general plan is:
 	* find nobody in-network with reasonable driving distance,
 	* and recommend a non-network provider.
 3. Get a *primary doctor or surgeon* as the ordering md to:
-	* Submit clinical information/ Letter of medical necessity that supports the surgery or procedure that is being requested that includes:
+	* Prepare clinical information / Letter of medical necessity that supports the surgery or procedure that is being requested that includes:
 		* All the same information as the behavioral health letter
 		* Their tax id, fax number, address, etc.
 	* Fill out and sign the [Medical-Network Adequacy Provision Exception Form](https://static.cigna.com/assets/chcp/pdf/resourceLibrary/medical/medical-network-exception-request-form.pdf) with:
@@ -38,7 +38,10 @@ The general plan is:
 		* Electrolysis location
 		* Their tax id, fax number, address, etc.
 		* The reason for requesting electrolysis network adequacy is there are no in network providers per Included Health.
-4. Pester Cigna until they give you pre-approval. **Do not proceed without approval, or reimbursement will be denied.**
+        * See notes below on how to fill out this form
+    * The entire package - behavioral health, medical necessity, and network adequacy --
+      gets faxed *together* to 833-213-9222 (the number on the NAP Medical form's first page).
+4. Wait 10 business days, then pester Cigna (Transgender care team) until they give you pre-approval. **Do not proceed without approval, or reimbursement will be denied.**
 5. Find out from Cigna your coverage budget per-session.
     * Call `800-790-3086`.
     * Ask to speak with an *LGBT One Guide Representative*.
@@ -54,4 +57,52 @@ The general plan is:
 8. E-mail the receipts to Jacki.Trammell@CignaHealthcare.com who will work with you on the claim for reimbursement.
 9. Pray. (It should be fine.)
 
+## Filling out the Medical-Network Adequacy Provision (NAP) Exception Request Form
 
+### Page One
+
+This is all personal information for you, the patient.
+
+### Page Two
+
+* Provider Information:
+    * This is the doctor who is "prescribing" laser hair removal.
+    * The "Office Information" section refers again to physician services, not electrolysis services.
+    * You are probably *not* requesting Network Adequacy for this *provider.*
+
+* Facility Information:
+    * This is the place that's going to do your electrolysis.
+    * If the electrologist won't provide a tax ID number (or has no fax), explain their reasoning in the "Additional Infomation" section on page 3.
+    * You are indeed requesting Network Adequacy for this *facility.*
+
+* Service Infomation:
+    * `Electrolysis for face and neck -- There are no in-network providers of, nor facilities for, this service in-state, per search via both Included Health and Cigna's own transgender care coordination team.`
+
+### Page Three
+
+* Past Medical History:
+    * Primary Diagnosis Code: `F.64.0`
+    * Primary Diagnosis Description: `Gender Disphoria`
+    * All else: Leave blank
+* Service Requested:
+    * Procedure Name: `Electrolysis`
+    * CPT Code: `17380`
+    * # of Units: 99
+        * (One line of this is enough...)
+    * Is this a request for...: No, and No.
+* Additional Infomation:
+    * Note here if the electrologist won't provide a TIN or FAX number, and why they say.
+    * Where Performed: Other - `Electrologist's Office`
+* Authorization:
+    * Contact Name: Your doctor
+    * HCP Signer's Name: Your doctor
+    * Name of the person completing the form: Your doctor
+
+### Then what?
+
+Send it to your doctor in as pre-filled a state as possible so they have an easy time with it.
+Remind your doctor to include both letters and the form in a package and to fax to
+the **NAP Medical** number on the first page of the form. (Currently that's 833-213-9222.)
+
+If you still have questions, call Cigna (number on the back of your card, or 800-790-3086)
+and ask for the transgender care team. (You may need to ask for "operator" to get past the robot.)
