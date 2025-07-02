@@ -11,6 +11,13 @@ These are sized to fit US 8.5 x 11 inch paper.
 * [The SPIT Booklet in color](./SPIT-color.pdf)
 * [The SPIT Booklet in black and white](./SPIT-bw.pdf)
 
+###  -- Build Yours Now
+
+* [Your Right to Union in color](./Right-to-Union.pdf)
+
+A version optimized for black-and-white is forthcoming.
+The color version *will work* if printed in B&W.
+
 ## A4-sized (210 x 297 mm) -- Everywhere else
 
 A4 paper is a bit taller and narrower than US Letter.
