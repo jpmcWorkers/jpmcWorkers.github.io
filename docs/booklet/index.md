@@ -44,7 +44,7 @@ The basic layout is:
 <table border="1">
 <tr><td>Page 6</td><td>Page 5</td><td>Page 4</td><td>Page 3</td></tr>
 <tr><td>Back Cover</td><td>Front Cover</td><td>Page 1</td><td>Page 2</td></tr>
-</table
+</table>
 
 Note that the top row is upside down.
 
