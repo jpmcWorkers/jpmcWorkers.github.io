@@ -2,7 +2,7 @@
 
 These should be PDFs that you can send directly to a printing service, or they should work on any printer.
 
-* [Here's a video on how to fold them.](https://drive.google.com/file/d/1FzsRiA-pQ1MA2J8yq9QZb-EI1QUqpxTN/view?usp=drive_link)
+* [Here's a video on how to fold them.](https://www.youtube.com/watch?v=CnHDdw4_2n0)
 
 The following booklets make specific reference to US labor law, and are sized to fit US Letter (8.5 x 11 inch) paper.
 
