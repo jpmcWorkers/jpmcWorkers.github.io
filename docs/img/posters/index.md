@@ -43,6 +43,7 @@
 <a target="_blank" href="Layoffs_and_Profits1.png"><img src="Layoffs_and_Profits1.png" width="206" height="250"></a>
 
 ## Posters and Pamphlets - Actions
+<a target="_blank" href="July_2025_Ice_cream_social.png"><img src="July_2025_Ice_cream_social.png" width="206" height="250"></a>
 <a target="_blank" href="Boycott0.5x-greyscale.png"><img src="Boycott0.5x-greyscale.png" width="206" height="250"></a>
 <a target="_blank" href="Boycott0.5x.png"><img src="Boycott0.5x.png" width="206" height="250"></a>
 <a target="_blank" href="Pizza party.png"><img src="Pizza party.png" width="206" height="250"></a>
