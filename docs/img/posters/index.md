@@ -1,4 +1,22 @@
 # Printables Gallery
+[Banners](#banners) - [Booklets](#booklets---make-your-own) - [Business cards](#business-cards) -  [Buttons](#buttons) -  [Posters - Agitation](#posters---agitation) -  [Posters and Pamphlets - Actions](#posters-and-pamphlets---actions) -  [Posters - Reactions](#posters---reactions) -  [Info - Know Your Rights](#info---know-your-rights)
+
+## Banners
+<a target="_blank" href="Targets-ADA.png"><img src="Targets-ADA.png" alt="Targets-ADA" width="150" height="150"></a>
+<a target="_blank" href="Targets-Diversity.png"><img src="Targets-Diversity.png" alt="Targets-Diversity" width="150" height="150"></a>
+<a target="_blank" href="Targets-Profits.png"><img src="Targets-Profits.png" alt="Targets-Profits" width="150" height="150"></a>
+<a target="_blank" href="Targets-WFH.png"><img src="Targets-WFH.png" alt="Targets-WFH" width="150" height="150"></a>
+<a target="_blank" href="Printable_Banner.png"><img src="Printable_Banner.png" alt="Printable_Banner for hanging at events" width="450" height="150"></a>
+<a target="_blank" href="Banner_-_R_-1500x750.png"><img src="Banner_-_R_-1500x750.png" alt="Banner for ActionNetwork" width="300" height="150"></a>
+
+## Booklets - <a target="_blank" href="https://jpmcworkers.com/booklet/">make your own!</a>
+<a target="_blank" href="Booklets collection.jpg"><img src="Booklets collection.jpg" alt="Booklets collection" width="200" height="150"></a>
+<a target="_blank" href="Booklet - 101.png"><img src="Booklet - 101.png" alt="Booklet - 101" width="193" height="150"></a>
+<a target="_blank" href="Booklet - Boss makes a dollar.png"><img src="Booklet - Boss makes a dollar.png" alt="Booklet - Boss makes a dollar" width="193" height="150"></a>
+<a target="_blank" href="Booklet - July 2025.png"><img src="Booklet - July 2025.png" alt="Booklet - July 2025" width="193" height="150"></a>
+<a target="_blank" href="Booklet - Now or with contract.png"><img src="Booklet - Now or with contract.png" alt="Booklet - Now or with contract" width="193" height="150"></a>
+<a target="_blank" href="Booklet - Right to union.png"><img src="Booklet - Right to union.png" alt="Booklet - Right to union" width="193" height="150"></a>
+<a target="_blank" href="Booklet - SPIT.png"><img src="Booklet - SPIT.png" alt="Booklet - SPIT" width="193" height="150"></a>
 
 ## Business cards
 <a target="_blank" href="business-card-RetailMedium-greyscale.png"><img src="business-card-RetailMedium-greyscale.png" alt="greyscale-business-card" width="262" height="150"></a>
@@ -9,6 +27,12 @@
 <a target="_blank" href="Retail_BackMedium.png"><img src="Retail_BackMedium.png" alt="Retail_BackMedium.png" width="262" height="150"></a>
 <a target="_blank" href="Retail_BWMedium.png"><img src="Retail_BWMedium.png" alt="Retail_BWMedium.png" width="262" height="150"></a>
 <a target="_blank" href="RetailMedium.png"><img src="RetailMedium.png" alt="RetailMedium.png" width="262" height="150"></a>
+
+## Buttons
+<a target="_blank" href="JWA_Logo_-_The_status_quo_is_the_real_hazardgold.png"><img src="JWA_Logo_-_The_status_quo_is_the_real_hazardgold.png" alt="Status quo button" width="150" height="150"></a>
+<a target="_blank" href="JWA_Logo_-Pride.png"><img src="JWA_Logo_-Pride.png" alt="JWA_Logo_-Pride" width="150" height="150"></a>
+<a target="_blank" href="JWA_Logo_-Pride_Button_Equality_-_No_Gradient.png"><img src="JWA_Logo_-Pride_Button_Equality_-_No_Gradient.png" alt="JWA_Logo_-Pride_Button_Equality_-_No_Gradient" width="150" height="150"></a>
+<a target="_blank" href="JWA_Logo_-Pride_Button_Queer.png"><img src="JWA_Logo_-Pride_Button_Queer.png" alt="JWA_Logo_-Pride_Button_Queer" width="150" height="150"></a>
 
 ## Posters - Agitation
 <a target="_blank" href="Boss_Makes_A_Dollar0.5x - bw.png"><img src="Boss_Makes_A_Dollar0.5x - bw.png" alt="Boss_Makes_A_Dollar0.5x - bw.png" width="206" height="250"></a>
