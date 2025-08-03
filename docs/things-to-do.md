@@ -44,12 +44,11 @@ High-visibility, low-pressure: design one-sheet flyers or social graphics with t
 
 ---
 
-## Newsletter / Email Blasts
+## Newsletter / Email
 
 Keep supporters informed and engaged in writing:
 - Task: Draft a 100‑word story from last meeting: “What did we learn today?”  
 - Task: Insert two photos or pull‑quotes into a one‑pager; send it via group email or place printed copies in lunchroom  
-- Task: Upload email list from last month to a MailChimp or Campaign Monitor campaign and schedule a “join‑the‑meeting” reminder
 
 **Best for:** Writers, planners, analytical introverts or hybrid types.
 
