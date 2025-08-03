@@ -1,0 +1,35 @@
+name: Build Jekyll Site
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch: # Allows manual triggering
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+      with:
+        submodules: recursive
+        
+    - name: Build with Jekyll
+      uses: actions/jekyll-build-pages@v1
+      with:
+        source: ./docs
+        destination: ./docs/_site
+        future: false
+        build_revision: ${{ github.sha }}
+        verbose: true
+        token: ${{ secrets.GITHUB_TOKEN }}
+        
+    - name: Upload compiled site
+      uses: actions/upload-artifact@v4
+      with:
+        name: compiled-site
+        path: ./docs/_site
+        retention-days: 30 
