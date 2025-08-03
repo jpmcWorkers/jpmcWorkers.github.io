@@ -7,12 +7,12 @@ Jump straight to the task category that fits your energy or style:
 
 - [Mapping & Data Entry](#mapping--data-entry)
 - [Flyers & Graphics](#flyers--graphics)
-- [Newsletter / Email Blasts](#newsletter--email‐blasts)
+- [Newsletter / Email Blasts](#newsletter--emailblasts)
 - [Social Media / Text Outreach](#social-media--text-outreach)
-- [One-on-One Conversations](#one-on-one-conversations)
-- [Tabling or Hand‑out Shifts](#tabling-or-hand-out-shifts)
-- [Phone‑banking & Follow‑ups](#phone‑banking--follow‑ups)
-- [Meeting Helper / Greeter / Note‑Taker](#meeting-helper--greeter--note‑taker)
+- [One-on-One Conversations](#oneonone-conversations)
+- [Tabling or Hand‑out Shifts](#tabling-or-handout-shifts)
+- [Phone‑banking & Follow‑ups](#phonebanking--followups)
+- [Meeting Helper / Greeter / Note‑Taker](#meeting-helper--greeter--notetaker)
 - [Event Logistics](#event-logistics)
 
 ---
