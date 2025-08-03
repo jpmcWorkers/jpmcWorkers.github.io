@@ -7,7 +7,7 @@ Jump straight to the task category that fits your energy or style:
 
 - [Mapping & Data Entry](#mapping--data-entry)
 - [Flyers & Graphics](#flyers--graphics)
-- [Newsletter / Email Blasts](#newsletter--emailblasts)
+- [Newsletter / Email](#newsletter--email)
 - [Social Media / Text Outreach](#social-media--text-outreach)
 - [One-on-One Conversations](#oneonone-conversations)
 - [Tabling or Hand‑out Shifts](#tabling-or-handout-shifts)
