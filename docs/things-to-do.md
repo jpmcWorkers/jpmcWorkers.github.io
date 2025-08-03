@@ -7,12 +7,12 @@ Jump straight to the task category that fits your energy or style:
 
 - [Mapping & Data Entry](#mapping--data-entry)
 - [Flyers & Graphics](#flyers--graphics)
-- [Newsletter / Email Blasts](#newsletter--email‐blasts)
+- [Newsletter / Email](#newsletter--email)
 - [Social Media / Text Outreach](#social-media--text-outreach)
-- [One-on-One Conversations](#one-on-one-conversations)
-- [Tabling or Hand‑out Shifts](#tabling-or-hand-out-shifts)
-- [Phone‑banking & Follow‑ups](#phone‑banking--follow‑ups)
-- [Meeting Helper / Greeter / Note‑Taker](#meeting-helper--greeter--note‑taker)
+- [One-on-One Conversations](#oneonone-conversations)
+- [Tabling or Hand‑out Shifts](#tabling-or-handout-shifts)
+- [Phone‑banking & Follow‑ups](#phonebanking--followups)
+- [Meeting Helper / Greeter / Note‑Taker](#meeting-helper--greeter--notetaker)
 - [Event Logistics](#event-logistics)
 
 ---
@@ -44,12 +44,11 @@ High-visibility, low-pressure: design one-sheet flyers or social graphics with t
 
 ---
 
-## Newsletter / Email Blasts
+## Newsletter / Email
 
 Keep supporters informed and engaged in writing:
 - Task: Draft a 100‑word story from last meeting: “What did we learn today?”  
 - Task: Insert two photos or pull‑quotes into a one‑pager; send it via group email or place printed copies in lunchroom  
-- Task: Upload email list from last month to a MailChimp or Campaign Monitor campaign and schedule a “join‑the‑meeting” reminder
 
 **Best for:** Writers, planners, analytical introverts or hybrid types.
 
