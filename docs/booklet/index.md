@@ -8,7 +8,7 @@ The following booklets make specific reference to US labor law, and are sized to
 
 <a target="_blank" href="https://jpmcworkers.com/img/posters/Booklets%20collection.jpg"><img src="https://jpmcworkers.com/img/posters/Booklets%20collection.jpg" alt="Booklets collection" width="400" height="300"></a>
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/CnHDdw4_2n0?si=4cQ8qlr2bymKDczF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen />
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/CnHDdw4_2n0?si=4cQ8qlr2bymKDczF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen> </iframe>
 
 *We would love if someone would create booklets suitable for other countries.*
 
