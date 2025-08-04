@@ -1,5 +1,5 @@
 # Printables Gallery
-[Banners](#banners) - [Booklets](#booklets---make-your-own) - [Business cards](#business-cards) -  [Buttons](#buttons) -  [Posters - Agitation](#posters---agitation) -  [Posters and Pamphlets - Actions](#posters-and-pamphlets---actions) -  [Posters - Reactions](#posters---reactions) -  [Info - Know Your Rights](#info---know-your-rights)
+[Banners](#banners) - [Booklets](#booklets---make-your-own) - [Business cards](#business-cards) -  [Buttons](#buttons) -  [Posters: Agitation](#posters---agitation) -  [Posters and Pamphlets: Actions](#posters-and-pamphlets---actions) -  [Posters: Reactions](#posters---reactions) -  [Info: Know Your Rights](#info---know-your-rights)
 
 ## Banners
 <a target="_blank" href="Targets-ADA.png"><img src="Targets-ADA.png" alt="Targets-ADA" width="150" height="150"></a>
@@ -9,6 +9,8 @@
 <a target="_blank" href="Printable_Banner.png"><img src="Printable_Banner.png" alt="Printable_Banner for hanging at events" width="450" height="150"></a>
 <a target="_blank" href="Banner_-_R_-1500x750.png"><img src="Banner_-_R_-1500x750.png" alt="Banner for ActionNetwork" width="300" height="150"></a>
 
+[[top]](https://jpmcworkers.com/img/posters/)
+
 ## Booklets - <a target="_blank" href="https://jpmcworkers.com/booklet/">make your own!</a>
 <a target="_blank" href="Booklets collection.jpg"><img src="Booklets collection.jpg" alt="Booklets collection" width="200" height="150"></a>
 <a target="_blank" href="Booklet - 101.png"><img src="Booklet - 101.png" alt="Booklet - 101" width="193" height="150"></a>
@@ -17,6 +19,8 @@
 <a target="_blank" href="Booklet - Now or with contract.png"><img src="Booklet - Now or with contract.png" alt="Booklet - Now or with contract" width="193" height="150"></a>
 <a target="_blank" href="Booklet - Right to union.png"><img src="Booklet - Right to union.png" alt="Booklet - Right to union" width="193" height="150"></a>
 <a target="_blank" href="Booklet - SPIT.png"><img src="Booklet - SPIT.png" alt="Booklet - SPIT" width="193" height="150"></a>
+
+[[top]](https://jpmcworkers.com/img/posters/)
 
 ## Business cards
 <a target="_blank" href="business-card-RetailMedium-greyscale.png"><img src="business-card-RetailMedium-greyscale.png" alt="greyscale-business-card" width="262" height="150"></a>
@@ -28,11 +32,15 @@
 <a target="_blank" href="Retail_BWMedium.png"><img src="Retail_BWMedium.png" alt="Retail_BWMedium.png" width="262" height="150"></a>
 <a target="_blank" href="RetailMedium.png"><img src="RetailMedium.png" alt="RetailMedium.png" width="262" height="150"></a>
 
+[[top]](https://jpmcworkers.com/img/posters/)
+
 ## Buttons
 <a target="_blank" href="JWA_Logo_-_The_status_quo_is_the_real_hazardgold.png"><img src="JWA_Logo_-_The_status_quo_is_the_real_hazardgold.png" alt="Status quo button" width="150" height="150"></a>
 <a target="_blank" href="JWA_Logo_-Pride.png"><img src="JWA_Logo_-Pride.png" alt="JWA_Logo_-Pride" width="150" height="150"></a>
 <a target="_blank" href="JWA_Logo_-Pride_Button_Equality_-_No_Gradient.png"><img src="JWA_Logo_-Pride_Button_Equality_-_No_Gradient.png" alt="JWA_Logo_-Pride_Button_Equality_-_No_Gradient" width="150" height="150"></a>
 <a target="_blank" href="JWA_Logo_-Pride_Button_Queer.png"><img src="JWA_Logo_-Pride_Button_Queer.png" alt="JWA_Logo_-Pride_Button_Queer" width="150" height="150"></a>
+
+[[top]](https://jpmcworkers.com/img/posters/)
 
 ## Posters - Agitation
 <a target="_blank" href="Boss_Makes_A_Dollar0.5x - bw.png"><img src="Boss_Makes_A_Dollar0.5x - bw.png" alt="Boss_Makes_A_Dollar0.5x - bw.png" width="206" height="250"></a>
@@ -66,6 +74,8 @@
 <a target="_blank" href="Layoffs_and_Profits1bw.png"><img src="Layoffs_and_Profits1bw.png" width="206" height="250"></a>
 <a target="_blank" href="Layoffs_and_Profits1.png"><img src="Layoffs_and_Profits1.png" width="206" height="250"></a>
 
+[[top]](https://jpmcworkers.com/img/posters/)
+
 ## Posters and Pamphlets - Actions
 <a target="_blank" href="July_2025_Ice_cream_social.png"><img src="July_2025_Ice_cream_social.png" width="206" height="250"></a>
 <a target="_blank" href="Boycott0.5x-greyscale.png"><img src="Boycott0.5x-greyscale.png" width="206" height="250"></a>
@@ -75,6 +85,8 @@
 <a target="_blank" href="Carpool1.png"><img src="Carpool1.png" width="206" height="250"></a>
 <a target="_blank" href="Trifold side 1.png"><img src="Trifold side 1.png" width="250" height="206"></a>
 <a target="_blank" href="Trifold side 2.png"><img src="Trifold side 2.png" width="250" height="206"></a>
+
+[[top]](https://jpmcworkers.com/img/posters/)
 
 ## Posters - Reactions
 <a target="_blank" href="BRG0.5x - bw.png"><img src="BRG0.5x - bw.png" width="206" height="250"></a>
@@ -91,6 +103,8 @@
 <a target="_blank" href="sad children.png"><img src="sad children.png" width="206" height="250"></a>
 <a target="_blank" href="sad dogs.png"><img src="sad dogs.png" width="206" height="250"></a>
 
+[[top]](https://jpmcworkers.com/img/posters/)
+
 ## Info - Know Your Rights
 <a target="_blank" href="spit.webp"><img src="spit.webp" width="206" height="250"></a>
 <a target="_blank" href="Union_Propaganda_Booklets_2.png"><img src="Union_Propaganda_Booklets_2.png" width="250" height="206"></a>
@@ -98,5 +112,7 @@
 <a target="_blank" href="kyr - remedies.jpg"><img src="kyr - remedies.jpg" width="206" height="250"></a>
 <a target="_blank" href="kyr_immigration.png"><img src="kyr_immigration.png" width="206" height="250"></a>
 <a target="_blank" href="kyr_weingarten.png"><img src="kyr_weingarten.png" width="206" height="250"></a>
+
+[[top]](https://jpmcworkers.com/img/posters/)
 
 Do you have ideas for more, or even designs of your own? Email us! jpmcworkers@gmail.com
