@@ -6,6 +6,8 @@ These should be PDFs that you can send directly to a printing service, or they s
 
 The following booklets make specific reference to US labor law, and are sized to fit US Letter (8.5 x 11 inch) paper.
 
+<a target="_blank" href="https://jpmcworkers.com/img/posters/Booklets%20collection.jpg"><img src="https://jpmcworkers.com/img/posters/Booklets%20collection.jpg" alt="Booklets collection" width="400" height="300"></a>
+
 *We would love if someone would create booklets suitable for other countries.*
 
 **Tips on authoring booklets of your own are at the bottom of this page.**
