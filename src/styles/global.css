@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom base styles */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: "Inter", system-ui, sans-serif;
+    line-height: 1.6;
+    color: #374151;
+    background-color: #f9fafb;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Inter", system-ui, sans-serif;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #111827;
+  }
+}
+
+/* Custom component styles */
+@layer components {
+  .btn-primary {
+    @apply bg-jpmc-blue-600 hover:bg-jpmc-blue-700 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 shadow-sm hover:shadow-md;
+  }
+  
+  .btn-secondary {
+    @apply bg-white border-2 border-jpmc-blue-600 text-jpmc-blue-600 hover:bg-jpmc-blue-50 font-semibold py-3 px-6 rounded-lg transition-all duration-300 shadow-sm hover:shadow-md;
+  }
+  
+  .btn-accent {
+    @apply bg-jpmc-gold-500 hover:bg-jpmc-gold-600 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 shadow-sm hover:shadow-md;
+  }
+  
+  .card {
+    @apply bg-white p-6 rounded-xl shadow-sm border border-gray-200 hover:shadow-md transition-shadow duration-300;
+  }
+  
+  .card-elevated {
+    @apply bg-white p-8 rounded-xl shadow-lg border border-gray-200;
+  }
+  
+  .gradient-hero {
+    @apply bg-gradient-to-br from-jpmc-blue-600 via-jpmc-blue-700 to-jpmc-blue-800;
+  }
+  
+  .gradient-subtle {
+    @apply bg-gradient-to-r from-jpmc-blue-50 to-jpmc-gold-50;
+  }
+  
+  .section-light {
+    @apply bg-white;
+  }
+  
+  .section-gray {
+    @apply bg-gray-50;
+  }
+  
+  .section-blue {
+    @apply bg-jpmc-blue-50;
+  }
+  
+  .text-muted {
+    @apply text-gray-600;
+  }
+  
+  .text-emphasis {
+    @apply text-jpmc-blue-700 font-semibold;
+  }
+  
+  .border-subtle {
+    @apply border-gray-200;
+  }
+  
+  .border-accent {
+    @apply border-jpmc-blue-200;
+  }
+}
+
+/* Custom utility styles */
+@layer utilities {
+  .text-shadow {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .text-shadow-lg {
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  }
+  
+  .glass-effect {
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+} 

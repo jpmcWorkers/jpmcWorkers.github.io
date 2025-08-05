@@ -1,0 +1,19 @@
+{
+  "name": "jpmc-workers-astro",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "deploy": "npm run build"
+  },
+  "dependencies": {
+    "@astrojs/tailwind": "^6.0.2",
+    "@tailwindcss/vite": "^4.1.11",
+    "astro": "^4.16.18",
+    "tailwindcss": "^3.4.17"
+  }
+}
