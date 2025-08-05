@@ -4,6 +4,7 @@ export interface Props {
   description?: string;
 }
 import '../styles/global.css';
+import { getBasePath } from '../utils/paths';
 const { title, description = "We are a dedicated team of JPMC employees devoted to a simple mission: Better working conditions for all JPMC employees worldwide." } = Astro.props;
 ---
 
@@ -13,7 +14,7 @@ const { title, description = "We are a dedicated team of JPMC employees devoted 
     <meta charset="UTF-8" />
     <meta name="description" content={description} />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/png" href="/img/96x96.png" />
+    <link rel="icon" type="image/png" href={getBasePath('img/96x96.png')} />
     <title>{title}</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,7 +28,7 @@ const { title, description = "We are a dedicated team of JPMC employees devoted 
           <div class="flex items-center justify-between">
             <!-- Logo -->
             <div class="flex items-center space-x-4">
-              <img src="/img/96x96.png" alt="JPMC Workers Alliance Logo" class="w-12 h-12" />
+              <img src={getBasePath('img/96x96.png')} alt="JPMC Workers Alliance Logo" class="w-12 h-12" />
               <div class="hidden md:block">
                 <h1 class="text-xl font-bold text-jpmc-blue">JPMC</h1>
                 <h2 class="text-lg font-semibold text-jpmc-red">WORKERS</h2>
@@ -76,10 +77,10 @@ const { title, description = "We are a dedicated team of JPMC employees devoted 
               <div class="space-y-2">
                 <h4 class="text-sm font-medium text-jpmc-blue uppercase tracking-wide">Main</h4>
                 <ul class="space-y-1">
-                  <li><a href="/" class="block py-2 px-3 text-jpmc-dark hover:text-jpmc-blue hover:bg-gray-50 rounded-md transition-colors">Home</a></li>
-                  <li><a href="/mission" class="block py-2 px-3 text-jpmc-dark hover:text-jpmc-blue hover:bg-gray-50 rounded-md transition-colors">Our Mission</a></li>
-                  <li><a href="/join-us" class="block py-2 px-3 text-jpmc-dark hover:text-jpmc-blue hover:bg-gray-50 rounded-md transition-colors">Join the Alliance</a></li>
-                  <li><a href="/contact" class="block py-2 px-3 text-jpmc-dark hover:text-jpmc-blue hover:bg-gray-50 rounded-md transition-colors">Contact Us</a></li>
+                                     <li><a href="/" class="block py-2 px-3 text-jpmc-dark hover:text-jpmc-blue hover:bg-gray-50 rounded-md transition-colors">Home</a></li>
+                   <li><a href="/mission" class="block py-2 px-3 text-jpmc-dark hover:text-jpmc-blue hover:bg-gray-50 rounded-md transition-colors">Our Mission</a></li>
+                   <li><a href="/join-us" class="block py-2 px-3 text-jpmc-dark hover:text-jpmc-blue hover:bg-gray-50 rounded-md transition-colors">Join the Alliance</a></li>
+                   <li><a href="/contact" class="block py-2 px-3 text-jpmc-dark hover:text-jpmc-blue hover:bg-gray-50 rounded-md transition-colors">Contact Us</a></li>
                 </ul>
               </div>
 
@@ -87,11 +88,11 @@ const { title, description = "We are a dedicated team of JPMC employees devoted 
               <div class="space-y-2">
                 <h4 class="text-sm font-medium text-jpmc-red uppercase tracking-wide">News & Updates</h4>
                 <ul class="space-y-1">
-                  <li><a href="/news" class="block py-2 px-3 text-jpmc-dark hover:text-jpmc-red hover:bg-gray-50 rounded-md transition-colors">News & Announcements</a></li>
-                  <li><a href="/docs/news/2025-07" class="block py-2 px-3 text-jpmc-dark hover:text-jpmc-red hover:bg-gray-50 rounded-md transition-colors">Latest Updates</a></li>
-                  <li><a href="/docs/blog/2025-02-14-Hello" class="block py-2 px-3 text-jpmc-dark hover:text-jpmc-red hover:bg-gray-50 rounded-md transition-colors">Blog</a></li>
-                  <li><a href="/docs/openletter" class="block py-2 px-3 text-jpmc-dark hover:text-jpmc-red hover:bg-gray-50 rounded-md transition-colors">Open Letters</a></li>
-                  <li><a href="/docs/rto_petition_status" class="block py-2 px-3 text-jpmc-dark hover:text-jpmc-red hover:bg-gray-50 rounded-md transition-colors">Petition Status</a></li>
+                                     <li><a href="/news" class="block py-2 px-3 text-jpmc-dark hover:text-jpmc-red hover:bg-gray-50 rounded-md transition-colors">News & Announcements</a></li>
+                   <li><a href="/docs/news/2025-07" class="block py-2 px-3 text-jpmc-dark hover:text-jpmc-red hover:bg-gray-50 rounded-md transition-colors">Latest Updates</a></li>
+                   <li><a href="/docs/blog/2025-02-14-Hello" class="block py-2 px-3 text-jpmc-dark hover:text-jpmc-red hover:bg-gray-50 rounded-md transition-colors">Blog</a></li>
+                   <li><a href="/docs/openletter" class="block py-2 px-3 text-jpmc-dark hover:text-jpmc-red hover:bg-gray-50 rounded-md transition-colors">Open Letters</a></li>
+                   <li><a href="/docs/rto_petition_status" class="block py-2 px-3 text-jpmc-dark hover:text-jpmc-red hover:bg-gray-50 rounded-md transition-colors">Petition Status</a></li>
                 </ul>
               </div>
 
@@ -99,11 +100,11 @@ const { title, description = "We are a dedicated team of JPMC employees devoted 
               <div class="space-y-2">
                 <h4 class="text-sm font-medium text-jpmc-gold uppercase tracking-wide">Issues & Resources</h4>
                 <ul class="space-y-1">
-                  <li><a href="/issues-and-resources" class="block py-2 px-3 text-jpmc-dark hover:text-jpmc-gold hover:bg-gray-50 rounded-md transition-colors">Issues & Resources</a></li>
-                  <li><a href="/docs/issues" class="block py-2 px-3 text-jpmc-dark hover:text-jpmc-gold hover:bg-gray-50 rounded-md transition-colors">Key Issues</a></li>
-                  <li><a href="/docs/qa" class="block py-2 px-3 text-jpmc-dark hover:text-jpmc-gold hover:bg-gray-50 rounded-md transition-colors">FAQ</a></li>
-                  <li><a href="/docs/aeiou" class="block py-2 px-3 text-jpmc-dark hover:text-jpmc-gold hover:bg-gray-50 rounded-md transition-colors">Training</a></li>
-                  <li><a href="/docs/booklet" class="block py-2 px-3 text-jpmc-dark hover:text-jpmc-gold hover:bg-gray-50 rounded-md transition-colors">Materials</a></li>
+                                     <li><a href="/issues-and-resources" class="block py-2 px-3 text-jpmc-dark hover:text-jpmc-gold hover:bg-gray-50 rounded-md transition-colors">Issues & Resources</a></li>
+                   <li><a href="/docs/issues" class="block py-2 px-3 text-jpmc-dark hover:text-jpmc-gold hover:bg-gray-50 rounded-md transition-colors">Key Issues</a></li>
+                   <li><a href="/docs/qa" class="block py-2 px-3 text-jpmc-dark hover:text-jpmc-gold hover:bg-gray-50 rounded-md transition-colors">FAQ</a></li>
+                   <li><a href="/docs/aeiou" class="block py-2 px-3 text-jpmc-dark hover:text-jpmc-gold hover:bg-gray-50 rounded-md transition-colors">Training</a></li>
+                   <li><a href="/docs/booklet" class="block py-2 px-3 text-jpmc-dark hover:text-jpmc-gold hover:bg-gray-50 rounded-md transition-colors">Materials</a></li>
                 </ul>
               </div>
 
@@ -111,11 +112,11 @@ const { title, description = "We are a dedicated team of JPMC employees devoted 
               <div class="space-y-2">
                 <h4 class="text-sm font-medium text-jpmc-blue uppercase tracking-wide">What Can I Do</h4>
                 <ul class="space-y-1">
-                  <li><a href="/what-can-i-do" class="block py-2 px-3 text-jpmc-dark hover:text-jpmc-blue hover:bg-gray-50 rounded-md transition-colors">Take Action</a></li>
-                  <li><a href="/docs/join_us" class="block py-2 px-3 text-jpmc-dark hover:text-jpmc-blue hover:bg-gray-50 rounded-md transition-colors">Join the Alliance</a></li>
-                  <li><a href="/docs/enlist" class="block py-2 px-3 text-jpmc-dark hover:text-jpmc-blue hover:bg-gray-50 rounded-md transition-colors">Recruitment Guide</a></li>
-                  <li><a href="/docs/carpool" class="block py-2 px-3 text-jpmc-dark hover:text-jpmc-blue hover:bg-gray-50 rounded-md transition-colors">Carpool Program</a></li>
-                  <li><a href="/docs/contact" class="block py-2 px-3 text-jpmc-dark hover:text-jpmc-blue hover:bg-gray-50 rounded-md transition-colors">Contact Us</a></li>
+                                     <li><a href="/what-can-i-do" class="block py-2 px-3 text-jpmc-dark hover:text-jpmc-blue hover:bg-gray-50 rounded-md transition-colors">Take Action</a></li>
+                   <li><a href="/docs/join_us" class="block py-2 px-3 text-jpmc-dark hover:text-jpmc-blue hover:bg-gray-50 rounded-md transition-colors">Join the Alliance</a></li>
+                   <li><a href="/docs/enlist" class="block py-2 px-3 text-jpmc-dark hover:text-jpmc-blue hover:bg-gray-50 rounded-md transition-colors">Recruitment Guide</a></li>
+                   <li><a href="/docs/carpool" class="block py-2 px-3 text-jpmc-dark hover:text-jpmc-blue hover:bg-gray-50 rounded-md transition-colors">Carpool Program</a></li>
+                   <li><a href="/docs/contact" class="block py-2 px-3 text-jpmc-dark hover:text-jpmc-blue hover:bg-gray-50 rounded-md transition-colors">Contact Us</a></li>
                 </ul>
               </div>
 
@@ -170,7 +171,7 @@ const { title, description = "We are a dedicated team of JPMC employees devoted 
             <!-- Logo and description -->
             <div class="space-y-4">
               <div class="flex items-center space-x-3">
-                <img src="/img/96x96.png" alt="JPMC Workers Alliance Logo" class="w-10 h-10" />
+                <img src={getBasePath('img/96x96.png')} alt="JPMC Workers Alliance Logo" class="w-10 h-10" />
                 <div>
                   <h3 class="font-bold text-jpmc-blue">JPMC</h3>
                   <h4 class="font-semibold text-jpmc-red">WORKERS</h4>
@@ -186,10 +187,10 @@ const { title, description = "We are a dedicated team of JPMC employees devoted 
             <div class="space-y-4">
               <h4 class="font-semibold text-jpmc-gold">Quick Links</h4>
               <ul class="space-y-2 text-sm">
-                <li><a href="/mission" class="hover:text-jpmc-blue transition-colors">Our Mission</a></li>
-                <li><a href="/join-us" class="hover:text-jpmc-blue transition-colors">Join the Alliance</a></li>
-                <li><a href="/contact" class="hover:text-jpmc-blue transition-colors">Contact Us</a></li>
-                <li><a href="/news" class="hover:text-jpmc-blue transition-colors">Latest News</a></li>
+                                 <li><a href="/mission" class="hover:text-jpmc-blue transition-colors">Our Mission</a></li>
+                 <li><a href="/join-us" class="hover:text-jpmc-blue transition-colors">Join the Alliance</a></li>
+                 <li><a href="/contact" class="hover:text-jpmc-blue transition-colors">Contact Us</a></li>
+                 <li><a href="/news" class="hover:text-jpmc-blue transition-colors">Latest News</a></li>
               </ul>
             </div>
             
