@@ -1,3 +1,9 @@
+---
+title: "All Hands Meeting Guide"
+description: "Guidance for participating in all-hands meetings and asking questions about working conditions."
+order: 6
+---
+
 # All Hands On Deck!
 
 To build our movement, we need everyone’s skills. React with the emoji that best fits where you can help:

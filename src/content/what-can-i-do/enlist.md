@@ -1,3 +1,9 @@
+---
+title: "JPMC Workers Alliance -- Quick Intro and Enlistment Guide"
+description: "Learn how to join the JPMC Workers Alliance and get involved in improving working conditions."
+order: 2
+---
+
 # JPMC Workers Alliance -- Quick Intro and Enlistment Guide
 
 **Mission:** To improve working conditions, benefits, pay, schedules, and/or job security for all JPMC employees. The RTO mandate of 2025 brought us together, so a return to hybrid work will always be a goal -- but there are others.

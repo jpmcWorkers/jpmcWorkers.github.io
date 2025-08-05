@@ -1,3 +1,9 @@
+---
+title: "Questions and Answers -- Countering the Propaganda"
+description: "Learn how to counter corporate propaganda and understand the real facts about unions and collective action."
+order: 1
+---
+
 # Questions and Answers -- or, Countering the Propaganda
 
 As workers begin to question the status quo and contemplate bettering their circumstances through

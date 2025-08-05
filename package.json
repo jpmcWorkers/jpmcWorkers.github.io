@@ -11,6 +11,7 @@
     "deploy": "npm run build"
   },
   "dependencies": {
+    "@tailwindcss/typography": "^0.5.16",
     "@tailwindcss/vite": "^4.1.11",
     "astro": "^5.12.8",
     "tailwindcss": "^4.1.11"

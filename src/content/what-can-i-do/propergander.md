@@ -1,4 +1,10 @@
-Management Talking Points:
+---
+title: "Propaganda and Counter-Propaganda"
+description: "Understanding corporate propaganda and how to counter it with facts and solidarity."
+order: 5
+---
+
+# Management Talking Points:
 
 1. Don't probe (it's illegal)
 2. Don't discourage discussion (it's illegal)
