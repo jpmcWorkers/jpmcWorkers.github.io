@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 on:
   # Runs on pushes targeting the default branch
   push:
-    branches: ["astro"]
+    branches: ["main", "astro"]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -28,7 +28,7 @@ jobs:
       - name: Checkout your repository using git
         uses: actions/checkout@v4
       - name: Install, build, and upload your site
-        uses: withastro/action@v1
+        uses: withastro/action@v3
 
   # Deployment job
   deploy:
