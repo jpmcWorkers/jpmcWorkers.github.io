@@ -7,7 +7,9 @@ const sortedEntries = whatCanIDoEntries.sort((a, b) => (a.data.order || 999) - (
 ---
 
 <div class="space-y-2">
-  <h4 class="text-sm font-medium text-jpmc-blue uppercase tracking-wide">What Can I Do</h4>
+  <a href="what-can-i-do">
+    <h4 class="text-sm font-medium text-jpmc-blue uppercase tracking-wide">What Can I Do</h4>
+  </a>
   <ul class="space-y-1">
     {sortedEntries.map((entry) => (
       <li>

@@ -56,6 +56,15 @@
   --color-jpmc-gray-900: #111827;
   --color-jpmc-gray-950: #030712;
   
+  /* Semantic color mappings for better contrast and accessibility */
+  --color-jpmc-dark: #1f2937; /* Dark gray for primary text - good contrast */
+  --color-jpmc-light: #f9fafb; /* Light gray for backgrounds */
+  
+  /* High contrast text colors */
+  --color-jpmc-blue: #0369a1; /* Darker blue for better contrast */
+  --color-jpmc-red: #b91c1c; /* Darker red for better contrast */
+  --color-jpmc-gold: #b45309; /* Darker gold for better contrast */
+  
   /* Semantic color mappings */
   --color-primary-50: var(--color-jpmc-blue-50);
   --color-primary-100: var(--color-jpmc-blue-100);
@@ -143,6 +152,27 @@
     font-weight: 700;
     line-height: 1.2;
     color: var(--color-jpmc-gray-900);
+  }
+  
+  /* Ensure links have good contrast */
+  a {
+    color: var(--color-jpmc-blue-700);
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: var(--color-jpmc-blue-800);
+    text-decoration: underline;
+  }
+  
+  /* Improve text contrast for better readability */
+  .text-muted {
+    color: var(--color-jpmc-gray-600) !important;
+  }
+  
+  .text-emphasis {
+    color: var(--color-jpmc-blue-700) !important;
+    font-weight: 600;
   }
 }
 
