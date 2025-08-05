@@ -116,12 +116,45 @@ Use Tailwind CSS classes with the custom JPMC color palette:
 
 ## 🚀 Deployment
 
-### GitHub Pages
-1. Build the project: `npm run build`
-2. Deploy the `dist/` folder to GitHub Pages
+### GitHub Pages (Recommended)
+This project is configured for automatic deployment to GitHub Pages using GitHub Actions.
+
+#### Setup Instructions:
+1. **Enable GitHub Pages** in your repository settings:
+   - Go to Settings → Pages
+   - Set Source to "GitHub Actions"
+
+2. **Push to main branch**: The site will automatically build and deploy when you push to the `main` branch.
+
+3. **Manual deployment**: You can also trigger deployment manually from the Actions tab.
+
+#### Configuration:
+- **Site URL**: `https://jpmcWorkers.github.io`
+- **Build Command**: `npm run build`
+- **Output Directory**: `dist/`
+
+The GitHub Actions workflow (`.github/workflows/deploy.yml`) handles:
+- Installing dependencies
+- Building the Astro site
+- Deploying to GitHub Pages
+
+### Local Development
+```bash
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+
+# Build for production
+npm run build
+
+# Preview production build
+npm run preview
+```
 
 ### Netlify/Vercel
-The project is ready for deployment on Netlify or Vercel with zero configuration.
+The project is also ready for deployment on Netlify or Vercel with zero configuration.
 
 ## 📄 License
 
