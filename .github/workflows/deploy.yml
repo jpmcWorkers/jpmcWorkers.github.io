@@ -29,6 +29,8 @@ jobs:
         uses: actions/checkout@v4
       - name: Install, build, and upload your site
         uses: withastro/action@v3
+        with:
+          nojekyll: true
 
   # Deployment job
   deploy:
