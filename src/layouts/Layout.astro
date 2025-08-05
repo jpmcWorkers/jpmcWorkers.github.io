@@ -4,7 +4,6 @@ export interface Props {
   description?: string;
 }
 import '../styles/global.css';
-import { getBasePath } from '../utils/paths';
 const { title, description = "We are a dedicated team of JPMC employees devoted to a simple mission: Better working conditions for all JPMC employees worldwide." } = Astro.props;
 ---
 
@@ -14,7 +13,8 @@ const { title, description = "We are a dedicated team of JPMC employees devoted 
     <meta charset="UTF-8" />
     <meta name="description" content={description} />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/png" href={getBasePath('img/96x96.png')} />
+    {Astro.site && Astro.site.toString().includes('nivoset.github.io') && <base href="/workers.github.io/" />}
+    <link rel="icon" type="image/png" href="/img/96x96.png" />
     <title>{title}</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,7 +28,7 @@ const { title, description = "We are a dedicated team of JPMC employees devoted 
           <div class="flex items-center justify-between">
             <!-- Logo -->
             <div class="flex items-center space-x-4">
-              <img src={getBasePath('img/96x96.png')} alt="JPMC Workers Alliance Logo" class="w-12 h-12" />
+                             <img src="/img/96x96.png" alt="JPMC Workers Alliance Logo" class="w-12 h-12" />
               <div class="hidden md:block">
                 <h1 class="text-xl font-bold text-jpmc-blue">JPMC</h1>
                 <h2 class="text-lg font-semibold text-jpmc-red">WORKERS</h2>
@@ -171,7 +171,7 @@ const { title, description = "We are a dedicated team of JPMC employees devoted 
             <!-- Logo and description -->
             <div class="space-y-4">
               <div class="flex items-center space-x-3">
-                <img src={getBasePath('img/96x96.png')} alt="JPMC Workers Alliance Logo" class="w-10 h-10" />
+                                 <img src="/img/96x96.png" alt="JPMC Workers Alliance Logo" class="w-10 h-10" />
                 <div>
                   <h3 class="font-bold text-jpmc-blue">JPMC</h3>
                   <h4 class="font-semibold text-jpmc-red">WORKERS</h4>

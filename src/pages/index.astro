@@ -1,6 +1,5 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import { getBasePath } from '../utils/paths';
 ---
 
 <Layout title="JPMC Workers Alliance - Better Working Conditions for All">
@@ -10,7 +9,7 @@ import { getBasePath } from '../utils/paths';
     <div class="relative container mx-auto px-4 text-center text-white">
       <div class="max-w-4xl mx-auto">
         <div class="flex justify-center mb-8">
-          <img src={getBasePath('img/banner.png')} alt="JPMC Workers Alliance Banner" class="max-w-full h-auto rounded-lg shadow-2xl" />
+                     <img src="/img/banner.png" alt="JPMC Workers Alliance Banner" class="max-w-full h-auto rounded-lg shadow-2xl" />
         </div>
         <h1 class="text-4xl md:text-6xl font-bold mb-6">
           <span class="text-jpmc-blue-200">JPMC</span>
@@ -63,7 +62,7 @@ import { getBasePath } from '../utils/paths';
             <h3 class="text-xl font-bold mb-2 text-gray-700 group-hover:text-gray-800">Get in Contact</h3>
             <p class="text-muted">Reach out to us with questions or concerns.</p>
           </a>
-          <a href={getBasePath('img/posters')} class="card group hover:border-gray-400">
+          <a href="/img/posters" class="card group hover:border-gray-400">
             <h3 class="text-xl font-bold mb-2 text-gray-700 group-hover:text-gray-800">Poster Archive</h3>
             <p class="text-muted">Download and share our educational materials.</p>
           </a>
