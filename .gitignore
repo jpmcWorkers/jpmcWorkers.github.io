@@ -1,1 +1,5 @@
 .~lock.*#
+node_modules
+dist
+.astro
+.vscode
