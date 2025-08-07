@@ -1,5 +1,5 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="JPMC Workers Alliance - What can i do?">
@@ -9,7 +9,11 @@ import Layout from '../layouts/Layout.astro';
     <div class="relative container mx-auto px-4 text-center text-white">
       <div class="max-w-4xl mx-auto">
         <div class="flex justify-center mb-8">
-                     <img src="img/banner.png" alt="JPMC Workers Alliance Banner" class="max-w-full h-auto rounded-lg shadow-2xl" />
+          <img
+            src="img/banner.png"
+            alt="JPMC Workers Alliance Banner"
+            class="max-w-full h-auto rounded-lg shadow-2xl"
+          />
         </div>
         <h1 class="text-4xl md:text-6xl font-bold mb-6">
           <span class="text-jpmc-blue-200">JPMC</span>
@@ -19,52 +23,102 @@ import Layout from '../layouts/Layout.astro';
           <span class="text-jpmc-blue-200">ALLIANCE</span>
         </h1>
         <p class="text-xl md:text-2xl mb-8 text-gray-100">
-          We are a dedicated team of JPMC employees devoted to a simple mission: 
-          <span class="font-semibold text-jpmc-gold-300">Better working conditions for all JPMC employees worldwide.</span>
+          We are a dedicated team of JPMC employees devoted to a simple mission:
+          <span class="font-semibold text-jpmc-gold-300"
+            >Better working conditions for all JPMC employees worldwide.</span
+          >
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
-          <a href="join-us" class="btn-primary">
-            Join the Alliance
-          </a>
-          <a href="mission" class="btn-secondary">
-            Learn More
-          </a>
+          <a href="join-us" class="btn-primary"> Join the Alliance </a>
+          <a href="mission" class="btn-secondary"> Learn More </a>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Quick Links Section -->
-  <section class="py-16 section-light">
+  <section class="py-16 content-blue">
     <div class="container mx-auto px-4">
       <div class="max-w-4xl mx-auto">
-        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">
           Get Involved
         </h2>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <a href="https://actionnetwork.org/forms/jpmcworkers-signup?source=website" class="card group hover:border-jpmc-blue-300">
-            <h3 class="text-xl font-bold mb-2 text-jpmc-blue-700 group-hover:text-jpmc-blue-800">Sign up for e-mail alerts!</h3>
-            <p class="text-muted">Stay informed about our latest updates and actions.</p>
+          <a
+            href="https://actionnetwork.org/forms/jpmcworkers-signup?source=website"
+            class="card group hover:border-jpmc-blue-300 dark:bg-jpmc-gray-800"
+          >
+            <h3
+              class="text-xl font-bold mb-2 content-blue group-hover:text-jpmc-blue-800"
+            >
+              Sign up for e-mail alerts!
+            </h3>
+            <p class="text-muted">
+              Stay informed about our latest updates and actions.
+            </p>
           </a>
-          <a href="/news" class="card group hover:border-jpmc-red-300">
-            <h3 class="text-xl font-bold mb-2 text-jpmc-red-700 group-hover:text-jpmc-red-800">Newsletter Archive</h3>
+          <a
+            href="/news"
+            class="card group hover:border-jpmc-red-300 dark:bg-jpmc-gray-800"
+          >
+            <h3
+              class="text-xl font-bold mb-2 content-red group-hover:text-jpmc-red-800"
+            >
+              Newsletter Archive
+            </h3>
             <p class="text-muted">Read our past newsletters and updates.</p>
           </a>
-          <a href="/issues" class="card group hover:border-jpmc-gold-300">
-            <h3 class="text-xl font-bold mb-2 text-jpmc-gold-700 group-hover:text-jpmc-gold-800">Issues Platform</h3>
-            <p class="text-muted">Learn about the key issues we're addressing.</p>
+          <a
+            href="/issues"
+            class="card group hover:border-jpmc-gold-300 dark:bg-jpmc-gray-800"
+          >
+            <h3
+              class="text-xl font-bold mb-2 content-gold group-hover:text-jpmc-gold-800"
+            >
+              Issues Platform
+            </h3>
+            <p class="text-muted">
+              Learn about the key issues we're addressing.
+            </p>
           </a>
-          <a href="/join-us" class="card group hover:border-jpmc-blue-300">
-            <h3 class="text-xl font-bold mb-2 text-jpmc-blue-700 group-hover:text-jpmc-blue-800">Join Us!</h3>
-            <p class="text-muted">Become part of the movement for better working conditions.</p>
+          <a
+            href="/join-us"
+            class="card group hover:border-jpmc-blue-300 dark:bg-jpmc-gray-800"
+          >
+            <h3
+              class="text-xl font-bold mb-2 content-blue group-hover:text-jpmc-blue-800"
+            >
+              Join Us!
+            </h3>
+            <p class="text-muted">
+              Become part of the movement for better working conditions.
+            </p>
           </a>
-          <a href="/contact" class="card group hover:border-gray-400">
-            <h3 class="text-xl font-bold mb-2 text-gray-700 group-hover:text-gray-800">Get in Contact</h3>
-            <p class="text-muted">Reach out to us with questions or concerns.</p>
+          <a
+            href="/contact"
+            class="card group hover:border-gray-400 dark:bg-jpmc-gray-800"
+          >
+            <h3
+              class="text-xl font-bold mb-2 text-gray-700 group-hover:text-gray-800 dark:text-jpmc-gray-300"
+            >
+              Get in Contact
+            </h3>
+            <p class="text-muted">
+              Reach out to us with questions or concerns.
+            </p>
           </a>
-          <a href="/img/posters" class="card group hover:border-gray-400">
-            <h3 class="text-xl font-bold mb-2 text-gray-700 group-hover:text-gray-800">Poster Archive</h3>
-            <p class="text-muted">Download and share our educational materials.</p>
+          <a
+            href="/img/posters"
+            class="card group hover:border-gray-400 dark:bg-jpmc-gray-800"
+          >
+            <h3
+              class="text-xl font-bold mb-2 text-gray-700 group-hover:text-gray-800 dark:text-jpmc-gray-300"
+            >
+              Poster Archive
+            </h3>
+            <p class="text-muted">
+              Download and share our educational materials.
+            </p>
           </a>
         </div>
       </div>
@@ -72,28 +126,41 @@ import Layout from '../layouts/Layout.astro';
   </section>
 
   <!-- Rights Section -->
-  <section class="py-16 section-gray">
+  <section class="py-16 content-blue-light">
     <div class="container mx-auto px-4">
       <div class="max-w-4xl mx-auto">
-        <h2 class="text-3xl md:text-4xl font-bold text-center mb-8 text-gray-900">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-8">
           Rights You Should Know You Have
         </h2>
-        <div class="card-elevated">
+        <div class="card-elevated dark:bg-jpmc-gray-800">
           <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-            <a href="https://www.nlrb.gov/sites/default/files/attachments/pages/node-184/nlrb-flyer-627.pdf" class="text-jpmc-blue-600 hover:text-jpmc-blue-700 font-semibold">
+            <a
+              href="https://www.nlrb.gov/sites/default/files/attachments/pages/node-184/nlrb-flyer-627.pdf"
+              class="content-blue hover:text-jpmc-blue-700 font-semibold"
+            >
               USA: Protected Concerted Activities
             </a>
-            <a href="https://www.nlrb.gov/sites/default/files/attachments/pages/node-251/employee-rights-under-the-nlra-poster-11-x-17-version-pdf-2022.pdf" class="text-jpmc-blue-600 hover:text-jpmc-blue-700 font-semibold">
+            <a
+              href="https://www.nlrb.gov/sites/default/files/attachments/pages/node-251/employee-rights-under-the-nlra-poster-11-x-17-version-pdf-2022.pdf"
+              class="content-blue hover:text-jpmc-blue-700 font-semibold dark:bg-jpmc-gray-700"
+            >
               USA: Employee Rights under the NLRA
             </a>
-            <a href="https://www.gov.uk/browse/working/rights-trade-unions" class="text-jpmc-blue-600 hover:text-jpmc-blue-700 font-semibold">
+            <a
+              href="https://www.gov.uk/browse/working/rights-trade-unions"
+              class="content-blue hover:text-jpmc-blue-700 font-semibold dark:bg-jpmc-gray-700"
+            >
               UK: Your Rights at Work
             </a>
           </div>
-          
-          <div class="bg-jpmc-gold-50 p-6 rounded-lg border-l-4 border-jpmc-gold-500">
-            <h3 class="text-xl font-bold text-gray-900 mb-4">You ARE Allowed to Talk About:</h3>
-            <ul class="space-y-2 text-gray-700">
+
+          <div
+            class="content-gold p-6 rounded-lg border-l-4 border-jpmc-gold-500 dark:bg-jpmc-gray-700!"
+          >
+            <h3 class="text-xl font-bold mb-4">
+              You ARE Allowed to Talk About:
+            </h3>
+            <ul class="space-y-2">
               <li class="flex items-start">
                 <span class="text-jpmc-red-500 mr-2">•</span>
                 Pay, Benefits, Working Conditions, Hours
@@ -111,9 +178,10 @@ import Layout from '../layouts/Layout.astro';
                 Any other related topic
               </li>
             </ul>
-            <p class="mt-4 text-sm text-gray-600">
-              <strong>Important:</strong> Consider that any device, network, or space that the employer owns or controls may be monitored. 
-              The best place to speak freely is someplace the company does not control.
+            <p class="mt-4 text-sm text-muted">
+              <strong>Important:</strong> Consider that any device, network, or space
+              that the employer owns or controls may be monitored. The best place
+              to speak freely is someplace the company does not control.
             </p>
           </div>
         </div>
@@ -122,41 +190,75 @@ import Layout from '../layouts/Layout.astro';
   </section>
 
   <!-- Current Operation Section -->
-  <section class="py-16 section-gray">
+  <section class="py-16 content-blue-light">
     <div class="container mx-auto px-4">
       <div class="max-w-4xl mx-auto">
         <h2 class="text-3xl md:text-4xl font-bold text-center mb-8">
           Current Operation: Fighting for Accommodations
         </h2>
-        <div class="section-light p-8 rounded-lg">
+        <div class="content-blue p-8 rounded-lg">
           <p class="text-lg mb-6">
-            We have discovered that even the most obvious and dire accommodation request cases for WFH/FWA/hybrid schedules are being denied, delayed, and deflected. 
-            Additionally, <em>other</em> reasonable accommodations requests are falling victim to the same treatment.
+            We have discovered that even the most obvious and dire accommodation
+            request cases for WFH/FWA/hybrid schedules are being denied,
+            delayed, and deflected. Additionally, <em>other</em> reasonable accommodations
+            requests are falling victim to the same treatment.
           </p>
-          
-          <div class="bg-jpmc-red-200 bg-opacity-50 p-6 rounded-lg border-l-4 border-jpmc-red-500 mb-6">
-            <h3 class="text-xl font-bold mb-3">This Pattern is Illegal and Unethical</h3>
+
+          <div
+            class="content-red p-6 rounded-lg border-l-4 border-jpmc-red-500 mb-6 dark:bg-jpmc-gray-700!"
+          >
+            <h3 class="text-xl font-bold mb-3">
+              This Pattern is Illegal and Unethical
+            </h3>
             <p>
-              The Employer has made it unreasonably difficult for people with long-term medical conditions or disabilities to obtain the reasonable accommodations 
-              their private doctors prescribe in accordance with either the <em>Americans with Disabilities Act (US)</em> or <em>Equality Act of 2010 (UK)</em>.
+              The Employer has made it unreasonably difficult for people with
+              long-term medical conditions or disabilities to obtain the
+              reasonable accommodations their private doctors prescribe in
+              accordance with either the <em
+                >Americans with Disabilities Act (US)</em
+              > or <em>Equality Act of 2010 (UK)</em>.
             </p>
           </div>
 
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div>
-              <h4 class="text-lg font-semibold mb-3 text-jpmc-gold-400">If you've been affected:</h4>
+              <h4 class="text-lg font-semibold mb-3 content-gold">
+                If you've been affected:
+              </h4>
               <ul class="space-y-2">
-                <li>• Especially if brought on by recent policy changes (RTO, hot-desking)</li>
+                <li>
+                  • Especially if brought on by recent policy changes (RTO,
+                  hot-desking)
+                </li>
                 <li>• We are looking to get in contact</li>
-                <li>• Time is of the essence - there are statutory time-limits</li>
+                <li>
+                  • Time is of the essence - there are statutory time-limits
+                </li>
               </ul>
             </div>
             <div>
-              <h4 class="text-lg font-semibold mb-3 text-jpmc-gold-400">Resources:</h4>
+              <h4 class="text-lg font-semibold mb-3 content-gold">
+                Resources:
+              </h4>
               <ul class="space-y-2">
-                <li><a href="contact" class="text-jpmc-blue-400 hover:text-jpmc-blue-300">Contact us about ADA / FWA accommodations!</a></li>
-                <li><a href="https://www.ada.gov/resources/disability-rights-guide/" class="text-jpmc-blue-400 hover:text-jpmc-blue-300">US: ADA.GOV Guide to Disability Rights Laws</a></li>
-                <li><a href="https://www.verywellhealth.com/americans-with-disabilities-act-5220487" class="text-jpmc-blue-400 hover:text-jpmc-blue-300">US: ADA Rights, Laws, Resources</a></li>
+                <li>
+                  <a
+                    href="contact"
+                    class="content-blue hover:text-jpmc-blue-300"
+                    >Contact us about ADA / FWA accommodations!</a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.ada.gov/resources/disability-rights-guide/"
+                    class="content-blue hover:text-jpmc-blue-300"
+                    >US: ADA.GOV Guide to Disability Rights Laws</a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.verywellhealth.com/americans-with-disabilities-act-5220487"
+                    class="content-blue hover:text-jpmc-blue-300"
+                    >US: ADA Rights, Laws, Resources</a>
+                </li>
               </ul>
             </div>
           </div>
@@ -166,32 +268,32 @@ import Layout from '../layouts/Layout.astro';
   </section>
 
   <!-- Geographic Presence -->
-  <section class="py-16 section-light">
+  <section class="py-16 content-blue">
     <div class="container mx-auto px-4">
       <div class="max-w-4xl mx-auto text-center">
-        <h2 class="text-3xl md:text-4xl font-bold mb-8 text-gray-900">
-          We Are Everywhere
-        </h2>
+        <h2 class="text-3xl md:text-4xl font-bold mb-8">We Are Everywhere</h2>
         <p class="text-xl text-muted mb-8">
-          We have members in New York, Delaware, Florida, Illinois, Ohio, Texas, Arizona, California, and Washington, 
-          as well as several cities in the United Kingdom.
+          We have members in New York, Delaware, Florida, Illinois, Ohio, Texas,
+          Arizona, California, and Washington, as well as several cities in the
+          United Kingdom.
         </p>
-        <a href="join-us" class="btn-primary">
-          Join the Movement!
-        </a>
+        <a href="join-us" class="btn-primary"> Join the Movement! </a>
       </div>
     </div>
   </section>
 
   <!-- Prior Operations -->
-  <section class="py-16 section-gray">
+  <section class="py-16 content-blue">
     <div class="container mx-auto px-4">
       <div class="max-w-4xl mx-auto">
-        <h2 class="text-3xl md:text-4xl font-bold text-center mb-8 text-gray-900">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-8">
           Prior Operations
         </h2>
-        <div class="card-elevated">
-          <a href="rto_petition_status" class="text-2xl font-bold text-jpmc-blue-600 hover:text-jpmc-blue-700">
+        <div class="card-elevated dark:bg-jpmc-gray-700">
+          <a
+            href="rto_petition_status"
+            class="text-2xl font-bold dark:bg-transparent hover:text-jpmc-blue-700"
+          >
             The Anti-RTO Petition
           </a>
         </div>
@@ -200,23 +302,18 @@ import Layout from '../layouts/Layout.astro';
   </section>
 
   <!-- Footer Call to Action -->
-  <section class="py-16 section-blue">
+  <section class="py-16 content-blue-light">
     <div class="container mx-auto px-4 text-center">
-      <h2 class="text-3xl md:text-4xl font-bold mb-6">
-        United, We Stand!
-      </h2>
-      <p class="text-xl mb-8 text-gray-800 max-w-2xl mx-auto">
-        Join thousands of JPMC employees who are standing together for better working conditions. 
-        Your voice matters, and together we're stronger.
+      <h2 class="text-3xl md:text-4xl font-bold mb-6">United, We Stand!</h2>
+      <p class="text-xl mb-8 max-w-2xl mx-auto">
+        Join thousands of JPMC employees who are standing together for better
+        working conditions. Your voice matters, and together we're stronger.
       </p>
       <div class="flex flex-col sm:flex-row gap-4 justify-center">
-        <a href="join-us" class="btn-primary">
-          Join the Alliance Today
-        </a>
-        <a href="contact" class="btn-secondary">
-          Contact Us
-        </a>
+        <a href="join-us" class="btn-primary"> Join the Alliance Today </a>
+        <a href="contact" class="btn-secondary"> Contact Us </a>
       </div>
     </div>
   </section>
-</Layout> 
+</Layout>
+

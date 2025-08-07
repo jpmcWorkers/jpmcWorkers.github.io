@@ -167,51 +167,127 @@
     text-decoration: underline;
   }
   
-  /* Improve text contrast for better readability */
+  /* Dark mode styles using Tailwind's dark: prefix */
+  .dark body {
+    color: var(--color-jpmc-gray-100);
+    background-color: var(--color-jpmc-gray-900);
+  }
+  
+  .dark h1,
+  .dark h2,
+  .dark h3,
+  .dark h4,
+  .dark h5,
+  .dark h6 {
+    color: var(--color-jpmc-gray-50);
+  }
+  
+  .dark a {
+    color: var(--color-jpmc-blue-300);
+  }
+  
+  .dark a:hover {
+    color: var(--color-jpmc-blue-200);
+  }
+}
+
+/* Content utility classes */
+@layer utilities {
+  /* Content Blue - White background with blue text in light mode, dark background with lighter blue in dark mode */
+  .content-blue {
+    background-color: white;
+    color: var(--color-jpmc-blue-700);
+  }
+  
+  .dark .content-blue {
+    background-color: var(--color-jpmc-gray-800);
+    color: var(--color-jpmc-blue-300);
+  }
+  
+  /* Content Blue Light - Light blue background with dark blue text in light mode, dark blue background with light blue in dark mode */
+  .content-blue-light {
+    background-color: var(--color-jpmc-blue-50);
+    color: var(--color-jpmc-blue-800);
+  }
+  
+  .dark .content-blue-light {
+    background-color: var(--color-jpmc-blue-900);
+    color: var(--color-jpmc-blue-200);
+  }
+  
+  /* Content Red - White background with red text in light mode, dark background with lighter red in dark mode */
+  .content-red {
+    background-color: white;
+    color: var(--color-jpmc-red-700);
+  }
+  
+  .dark .content-red {
+    background-color: var(--color-jpmc-gray-800);
+    color: var(--color-jpmc-red-300);
+  }
+  
+  /* Content Gold - White background with gold text in light mode, dark background with lighter gold in dark mode */
+  .content-gold {
+    background-color: white;
+    color: var(--color-jpmc-gold-700);
+  }
+  
+  .dark .content-gold {
+    background-color: var(--color-jpmc-gray-800);
+    color: var(--color-jpmc-gold-300);
+  }
+  
+  /* Text utilities with dark mode support */
   .text-muted {
-    color: var(--color-jpmc-gray-600) !important;
+    color: var(--color-jpmc-gray-600);
+  }
+  
+  .dark .text-muted {
+    color: var(--color-jpmc-gray-400);
   }
   
   .text-emphasis {
-    color: var(--color-jpmc-blue-700) !important;
+    color: var(--color-jpmc-blue-700);
     font-weight: 600;
   }
   
-  /* Dark mode media query for system preference */
-  @media (prefers-color-scheme: dark) {
-    html:not(.light) {
-      color-scheme: dark;
-    }
-    
-    html:not(.light) body {
-      color: var(--color-jpmc-gray-100);
-      background-color: var(--color-jpmc-gray-900);
-    }
-    
-    html:not(.light) h1,
-    html:not(.light) h2,
-    html:not(.light) h3,
-    html:not(.light) h4,
-    html:not(.light) h5,
-    html:not(.light) h6 {
-      color: var(--color-jpmc-gray-50);
-    }
-    
-    html:not(.light) a {
-      color: var(--color-jpmc-blue-300);
-    }
-    
-    html:not(.light) a:hover {
-      color: var(--color-jpmc-blue-200);
-    }
-    
-    html:not(.light) .text-muted {
-      color: var(--color-jpmc-gray-400) !important;
-    }
-    
-    html:not(.light) .text-emphasis {
-      color: var(--color-jpmc-blue-300) !important;
-    }
+  .dark .text-emphasis {
+    color: var(--color-jpmc-blue-300);
+  }
+  
+  /* Border utilities with dark mode support */
+  .border-content-subtle {
+    border-color: var(--color-jpmc-gray-200);
+  }
+  
+  .dark .border-content-subtle {
+    border-color: var(--color-jpmc-gray-600);
+  }
+  
+  .border-content-accent {
+    border-color: var(--color-jpmc-blue-200);
+  }
+  
+  .dark .border-content-accent {
+    border-color: var(--color-jpmc-blue-600);
+  }
+  
+  /* Additional utility classes */
+  .text-shadow {
+    text-shadow: 0 2px 4px rgb(0 0 0 / 0.1);
+  }
+  
+  .text-shadow-lg {
+    text-shadow: 0 4px 8px rgb(0 0 0 / 0.15);
+  }
+  
+  .glass-effect {
+    backdrop-filter: blur(10px);
+    background-color: rgb(255 255 255 / 0.8);
+  }
+  
+  .dark .glass-effect {
+    background-color: rgb(31 41 55 / 0.8);
   }
 }
 
@@ -271,6 +347,15 @@
   transition: box-shadow 0.3s;
 }
 
+@utility card-dark {
+  background-color: var(--color-jpmc-gray-800);
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.3);
+  border: 1px solid var(--color-jpmc-gray-600);
+  transition: box-shadow 0.3s;
+}
+
 @utility card-hover {
   box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
 }
@@ -281,6 +366,14 @@
   border-radius: 0.75rem;
   box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1);
   border: 1px solid var(--color-jpmc-gray-200);
+}
+
+@utility card-elevated-dark {
+  background-color: var(--color-jpmc-gray-800);
+  padding: 2rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.3);
+  border: 1px solid var(--color-jpmc-gray-600);
 }
 
 @utility gradient-hero {
@@ -301,37 +394,4 @@
 
 @utility section-blue {
   background-color: var(--color-jpmc-blue-50);
-}
-
-@utility text-muted {
-  color: var(--color-jpmc-gray-600);
-}
-
-@utility text-emphasis {
-  color: var(--color-jpmc-blue-700);
-  font-weight: 600;
-}
-
-@utility border-subtle {
-  border-color: var(--color-jpmc-gray-200);
-}
-
-@utility border-accent {
-  border-color: var(--color-jpmc-blue-200);
-}
-
-/* Custom utility styles */
-@layer utilities {
-  .text-shadow {
-    text-shadow: 0 2px 4px rgb(0 0 0 / 0.1);
-  }
-  
-  .text-shadow-lg {
-    text-shadow: 0 4px 8px rgb(0 0 0 / 0.15);
-  }
-  
-  .glass-effect {
-    backdrop-filter: blur(10px);
-    background-color: rgb(255 255 255 / 0.8);
-  }
 } 
