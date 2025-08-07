@@ -1,3 +1,8 @@
+---
+title: "Pre-Majority Union / Minority Union"
+description: "Learn the difference"
+order: 1
+---
 # Pre-Majority Union / Minority Union
 
 * Video Link: [What is Pre-Majority Unionism?](https://www.youtube.com/watch?v=8STqCY-7kkw)

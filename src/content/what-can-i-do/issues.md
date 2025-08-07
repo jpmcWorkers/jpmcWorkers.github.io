@@ -1,3 +1,8 @@
+---
+title: "JWA: Issues"
+description: "Issues as of 04/03/2025"
+order: 1
+---
 # JWA: Issues 
 
 The RTO mandate of early 2025 brought us together, but here's an abstraction of what our members have brought up.

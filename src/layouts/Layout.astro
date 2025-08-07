@@ -27,10 +27,10 @@ const {
       rel="stylesheet"
     />
   </head>
-  <body class="bg-jpmc-light text-jpmc-dark min-h-screen">
+  <body class="bg-jpmc-light dark:bg-gray-900 text-jpmc-dark dark:text-gray-100 min-h-screen transition-colors duration-200">
     <div class="flex flex-col min-h-screen">
       <!-- Header -->
-      <header class="bg-white shadow-lg border-b-4 border-jpmc-blue">
+      <header class="bg-white dark:bg-gray-800 shadow-lg border-b-4 border-jpmc-blue dark:border-jpmc-blue-600 transition-colors duration-200">
         <div class="container mx-auto px-4 py-4">
           <div class="flex items-center justify-between">
             <!-- Logo -->
@@ -47,13 +47,23 @@ const {
               </div>
             </div>
 
-            <!-- Page Title -->
-            <div class="flex-1 text-center hidden md:block">
-              <h1 class="text-2xl font-bold text-jpmc-dark">{title}</h1>
-            </div>
+                         <!-- Page Title -->
+             <div class="flex-1 text-center hidden md:block">
+               <h1 class="text-2xl font-bold text-jpmc-dark dark:text-gray-100">{title}</h1>
+             </div>
 
-            <!-- Mobile menu button -->
-            <button class="md:hidden p-2" id="mobile-menu-button">
+             <!-- Dark mode toggle -->
+             <button class="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors" id="dark-mode-toggle">
+               <svg class="w-6 h-6 hidden dark:block" fill="currentColor" viewBox="0 0 20 20">
+                 <path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"></path>
+               </svg>
+               <svg class="w-6 h-6 dark:hidden" fill="currentColor" viewBox="0 0 20 20">
+                 <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+               </svg>
+             </button>
+
+             <!-- Mobile menu button -->
+             <button class="md:hidden p-2" id="mobile-menu-button">
               <svg
                 class="w-6 h-6"
                 fill="none"
@@ -70,9 +80,9 @@ const {
           </div>
         </div>
 
-        <!-- Mobile menu -->
-        <div class="md:hidden hidden" id="mobile-menu">
-          <div class="px-4 py-2 space-y-2 bg-jpmc-gray-50">
+                 <!-- Mobile menu -->
+         <div class="md:hidden hidden" id="mobile-menu">
+           <div class="px-4 py-2 space-y-2 bg-jpmc-gray-50 dark:bg-gray-700">
             <a
               href="./"
               class="block py-2 text-jpmc-dark hover:text-jpmc-blue font-medium"
@@ -114,10 +124,10 @@ const {
 
       <!-- Main content with sidebar -->
       <div class="flex flex-1">
-        <!-- Sidebar -->
-        <aside
-          class="w-64 bg-white shadow-lg border-r border-gray-200 hidden lg:block"
-        >
+                 <!-- Sidebar -->
+         <aside
+           class="w-64 bg-white dark:bg-gray-800 shadow-lg border-r border-gray-200 dark:border-gray-700 hidden lg:block transition-colors duration-200"
+         >
           <div class="p-6">
             <!-- Navigation Links -->
             <nav class="space-y-4">
@@ -126,19 +136,19 @@ const {
               </h3>
 
               <!-- Main Pages -->
-              <div class="space-y-2">
-                <h4
-                  class="text-sm font-medium text-jpmc-blue uppercase tracking-wide"
-                >
-                  Main
-                </h4>
-                <ul class="space-y-1">
-                  <li>
-                    <a
-                      href="./"
-                      class="block py-2 px-3 text-jpmc-dark hover:text-jpmc-blue hover:bg-jpmc-gray-50 rounded-md transition-colors"
-                      >Home</a>
-                  </li>
+                             <div class="space-y-2">
+                 <h4
+                   class="text-sm font-medium text-jpmc-blue uppercase tracking-wide"
+                 >
+                   Main
+                 </h4>
+                 <ul class="space-y-1">
+                   <li>
+                     <a
+                       href="./"
+                       class="block py-2 px-3 text-jpmc-dark dark:text-gray-200 hover:text-jpmc-blue hover:bg-jpmc-gray-50 dark:hover:bg-gray-700 rounded-md transition-colors"
+                       >Home</a>
+                   </li>
                   <li>
                     <a
                       href="./mission"
@@ -292,13 +302,13 @@ const {
           </div>
         </aside>
 
-        <!-- Main content area -->
-        <main class="flex-1 bg-jpmc-gray-50">
-          <div class="container mx-auto px-4 py-8">
-            <!-- Mobile page title -->
-            <div class="lg:hidden mb-6">
-              <h1 class="text-2xl font-bold text-jpmc-dark">{title}</h1>
-            </div>
+                 <!-- Main content area -->
+         <main class="flex-1 bg-jpmc-gray-50 dark:bg-gray-900 transition-colors duration-200">
+           <div class="container mx-auto px-4 py-8">
+             <!-- Mobile page title -->
+             <div class="lg:hidden mb-6">
+               <h1 class="text-2xl font-bold text-jpmc-dark dark:text-gray-100">{title}</h1>
+             </div>
 
             <!-- Content slot -->
             <slot />
@@ -306,8 +316,8 @@ const {
         </main>
       </div>
 
-      <!-- Footer -->
-      <footer class="bg-jpmc-gray-100 text-jpmc-gray-800 py-8">
+             <!-- Footer -->
+       <footer class="bg-jpmc-gray-100 dark:bg-gray-800 text-jpmc-gray-800 dark:text-gray-200 py-8 transition-colors duration-200">
         <div class="container mx-auto px-4">
           <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
             <!-- Logo and description -->
@@ -331,7 +341,7 @@ const {
 
             <!-- Quick links -->
             <div class="space-y-4">
-              <h4 class="font-semibold text-jpmc-gold">Quick Links</h4>
+              <h4 class="font-semibold text-jpmc-gold dark:text-jpmc-gold-400">Quick Links</h4>
               <ul class="space-y-2 text-sm">
                 <li>
                   <a
@@ -366,7 +376,7 @@ const {
               <div class="flex space-x-4 ">
                 <a
                   href="https://discord.gg/BZA3pxppq9"
-                  class="text-jpmc-gray-800 hover:text-jpmc-blue transition-colors"
+                  class="text-jpmc-gray-800 dark:text-jpmc-gray-100 hover:text-jpmc-blue transition-colors"
                 >
                   <span class="sr-only">Discord</span>
                   <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
@@ -377,7 +387,7 @@ const {
                 </a>
                 <a
                   href="https://www.youtube.com/@jpmcWorkers"
-                  class="text-jpmc-gray-800 hover:text-jpmc-red transition-colors"
+                  class="text-jpmc-gray-800 dark:text-jpmc-gray-100 hover:text-jpmc-red transition-colors"
                 >
                   <span class="sr-only">YouTube</span>
                   <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
@@ -388,7 +398,7 @@ const {
                 </a>
                 <a
                   href="https://www.reddit.com/user/JPMCWorkers/"
-                  class="text-jpmc-gray-800 hover:text-jpmc-gold transition-colors"
+                  class="text-jpmc-gray-800 dark:text-jpmc-gray-100 hover:text-jpmc-gold transition-colors"
                 >
                   <span class="sr-only">Reddit</span>
                   <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
@@ -401,11 +411,11 @@ const {
             </div>
           </div>
 
-          <!-- Contact Information -->
-          <div class="border-t border-gray-700 mt-8 pt-8 rounded-lg">
-            <div class="max-w-4xl mx-auto">
-              <h3 class="text-xl font-bold text-jpmc-dark mb-4 text-center">Contact Us</h3>
-              <div class="bg-gray-50 p-6 rounded-lg shadow-md">
+                     <!-- Contact Information -->
+           <div class="border-t border-gray-700 dark:border-gray-600 mt-8 pt-8 rounded-lg">
+             <div class="max-w-4xl mx-auto">
+               <h3 class="text-xl font-bold text-jpmc-dark dark:text-gray-100 mb-4 text-center">Contact Us</h3>
+               <div class="bg-gray-50 dark:bg-gray-300 p-6 rounded-lg shadow-md">
                 <p class="text-jpmc-dark mb-4 font-medium">
                   <strong>Right now,</strong> the best way to reach us is:
                 </p>
@@ -428,11 +438,11 @@ const {
                   </div>
                 </div>
                 
-                                 <div class="bg-jpmc-blue/20 bg-opacity-10 p-4 rounded-lg border border-jpmc-blue border-opacity-30">
-                   <p class="text-jpmc-dark font-medium">
-                     You can also mail us directly. From our web address <code class="bg-gray-200 px-2 py-1 rounded">www.jpmcWorkers.com</code> remove the <code class="bg-gray-200 px-2 py-1 rounded">www.</code> and the <code class="bg-gray-200 px-2 py-1 rounded">.com</code>, then append <code class="bg-gray-200 px-2 py-1 rounded">@gmail.com</code>.
+                                 <div class="bg-jpmc-blue-800 bg-opacity-20 p-4 rounded-lg border border-jpmc-blue border-opacity-40">
+                   <p class="text-white font-medium">
+                     You can also mail us directly. From our web address <code class="bg-gray-300 px-2 py-1 rounded text-gray-800">www.jpmcWorkers.com</code> remove the <code class="bg-gray-300 px-2 py-1 rounded text-gray-800">www.</code> and the <code class="bg-gray-300 px-2 py-1 rounded text-gray-800">.com</code>, then append <code class="bg-gray-300 px-2 py-1 rounded text-gray-800">@gmail.com</code>.
                    </p>
-                   <p class="text-jpmc-dark text-sm mt-2 italic">
+                   <p class="text-gray-200 text-sm mt-2 italic">
                      *Thank a spammer for the need to obfuscate an e-mail address on the web!*
                    </p>
                  </div>
@@ -440,9 +450,9 @@ const {
             </div>
           </div>
 
-          <div
-            class="border-t border-gray-700 mt-8 pt-8 text-center text-sm text-jpmc-gray-600"
-          >
+                     <div
+             class="border-t border-gray-700 dark:border-gray-600 mt-8 pt-8 text-center text-sm text-jpmc-gray-600 dark:text-gray-400"
+           >
             <p>&copy; 2025 JPMC Workers Alliance. All rights reserved.</p>
             <p class="mt-2">
               See any broken links? Write to jpmcWorkers at gmail dot com.
@@ -452,15 +462,42 @@ const {
       </footer>
     </div>
 
-    <script>
-      // Mobile menu toggle
-      const mobileMenuButton = document.getElementById("mobile-menu-button");
-      const mobileMenu = document.getElementById("mobile-menu");
+         <script>
+       // Dark mode functionality
+       function initDarkMode() {
+         const darkModeToggle = document.getElementById("dark-mode-toggle");
+         const html = document.documentElement;
+         
+         // Check for saved dark mode preference or default to light mode
+         const isDarkMode = localStorage.getItem("darkMode") === "true" || 
+                           (!localStorage.getItem("darkMode") && window.matchMedia("(prefers-color-scheme: dark)").matches);
+         
+         // Apply initial dark mode state
+         if (isDarkMode) {
+           html.classList.add("dark");
+         } else {
+           html.classList.remove("dark");
+         }
+         
+         // Toggle dark mode
+         darkModeToggle?.addEventListener("click", () => {
+           html.classList.toggle("dark");
+           const isDark = html.classList.contains("dark");
+           localStorage.setItem("darkMode", isDark.toString());
+         });
+       }
+       
+       // Mobile menu toggle
+       const mobileMenuButton = document.getElementById("mobile-menu-button");
+       const mobileMenu = document.getElementById("mobile-menu");
 
-      mobileMenuButton?.addEventListener("click", () => {
-        mobileMenu?.classList.toggle("hidden");
-      });
-    </script>
+       mobileMenuButton?.addEventListener("click", () => {
+         mobileMenu?.classList.toggle("hidden");
+       });
+       
+       // Initialize dark mode when DOM is loaded
+       document.addEventListener("DOMContentLoaded", initDarkMode);
+     </script>
   </body>
 </html>
 

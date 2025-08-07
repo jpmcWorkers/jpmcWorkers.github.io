@@ -1,3 +1,8 @@
+---
+title: "Our Goals and mission"
+description: "Learn what we are hearing from you"
+order: 1
+---
 # Our Real Goals:
 
 ## Work-Life-Balance in Employee Control!

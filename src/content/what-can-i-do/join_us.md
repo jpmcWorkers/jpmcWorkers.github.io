@@ -1,3 +1,8 @@
+---
+title: "Join us!"
+description: "We want to know what is going on for real"
+order: 1
+---
 # JPMC Workers Alliance - Join the Movement!
 
 ## Can I join?

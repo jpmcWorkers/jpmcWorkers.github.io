@@ -2,6 +2,8 @@
 @plugin "@tailwindcss/typography";
 
 @theme {
+  /* Dark mode configuration */
+  --color-scheme: light dark;
   /* Font families */
   --font-sans: "Inter", system-ui, sans-serif;
   --font-display: "Inter", system-ui, sans-serif;
@@ -173,6 +175,43 @@
   .text-emphasis {
     color: var(--color-jpmc-blue-700) !important;
     font-weight: 600;
+  }
+  
+  /* Dark mode media query for system preference */
+  @media (prefers-color-scheme: dark) {
+    html:not(.light) {
+      color-scheme: dark;
+    }
+    
+    html:not(.light) body {
+      color: var(--color-jpmc-gray-100);
+      background-color: var(--color-jpmc-gray-900);
+    }
+    
+    html:not(.light) h1,
+    html:not(.light) h2,
+    html:not(.light) h3,
+    html:not(.light) h4,
+    html:not(.light) h5,
+    html:not(.light) h6 {
+      color: var(--color-jpmc-gray-50);
+    }
+    
+    html:not(.light) a {
+      color: var(--color-jpmc-blue-300);
+    }
+    
+    html:not(.light) a:hover {
+      color: var(--color-jpmc-blue-200);
+    }
+    
+    html:not(.light) .text-muted {
+      color: var(--color-jpmc-gray-400) !important;
+    }
+    
+    html:not(.light) .text-emphasis {
+      color: var(--color-jpmc-blue-300) !important;
+    }
   }
 }
 
