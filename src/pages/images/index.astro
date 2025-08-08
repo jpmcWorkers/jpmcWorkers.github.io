@@ -1,0 +1,57 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { Image } from 'astro:assets';
+import { getCollection } from 'astro:content';
+
+// Get all images
+const imageEntries = await getCollection('images');
+---
+
+<Layout title="Images - JPMC Workers Alliance">
+  <div class="prose prose-lg max-w-none">
+    <h1 class="text-4xl font-bold text-jpmc-blue mb-8">Images & Materials</h1>
+    
+    <div class="mb-8">
+      <p class="text-xl text-gray-700">
+        Download and share these images and resources to support the JPMC Workers Alliance.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-[repeat(auto-fill,minmax(250px,1fr))]  gap-6">
+      {imageEntries.map((entry) => (
+        <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden border-2 border-gray-200 dark:border-gray-700">
+          {/* Preview Image */}
+          <div class="aspect-square bg-gray-100 dark:bg-gray-700 flex items-center justify-center">
+            
+              <Image
+                width={100}
+                // height={100}
+                src={`/src/content/images/${entry.data.preview || entry.data.file}`}
+                alt={entry.data.name}
+                class="w-full h-full object-cover"
+              />
+          </div>
+          
+          {/* Content */}
+          <div class="p-4">
+            <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2 truncate">
+              {entry.data.name.replace(/\.[^/.]+$/, '')}
+            </h3>
+            <p class="text-sm text-gray-600 dark:text-gray-400 mb-3">
+              {entry.data.type.toUpperCase()} • {entry.data.isFolder ? 'Folder' : 'File'}
+            </p>
+            
+            {/* Download Button */}
+            <a 
+              href={`/src/content/images/${entry.data.file}`}
+              download
+              class="inline-block w-full bg-jpmc-blue text-white text-center px-4 py-2 rounded-md hover:bg-jpmc-blue-700 transition-colors"
+            >
+              Download
+            </a>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</Layout> 
