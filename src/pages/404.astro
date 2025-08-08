@@ -1,0 +1,133 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Page Not Found - JPMC Workers Alliance">
+  <!-- 404 Hero Section -->
+  <section class="relative gradient-hero py-20">
+    <div class="absolute inset-0 bg-jpmc-blue-500"></div>
+    <div class="relative container mx-auto px-4 text-center text-white">
+      <div class="max-w-4xl mx-auto">
+        <div class="mb-8">
+          <h1 class="text-6xl md:text-8xl font-bold mb-4">
+            <span class="text-jpmc-red-300">404</span>
+          </h1>
+          <h2 class="text-3xl md:text-4xl font-bold mb-4">
+            <span class="text-jpmc-blue-200">Page</span>
+            <span class="text-white"> </span>
+            <span class="text-jpmc-gold-300">Not Found</span>
+          </h2>
+        </div>
+        <p class="text-xl md:text-2xl mb-8 text-gray-100">
+          The page you're looking for doesn't exist or has been moved.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="/" class="btn-primary">
+            Go Home
+          </a>
+          <a href="/contact" class="btn-secondary">
+            Contact Us
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Helpful Links Section -->
+  <section class="py-16 content-blue">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">
+          Looking for Something Specific?
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <a href="/mission" class="card group hover:border-jpmc-blue-300">
+            <h3 class="text-xl font-bold mb-2 content-blue group-hover:text-jpmc-blue-800">Our Mission</h3>
+            <p class="text-muted">Learn about our goals and objectives.</p>
+          </a>
+          <a href="/join-us" class="card group hover:border-jpmc-red-300">
+            <h3 class="text-xl font-bold mb-2 content-red group-hover:text-jpmc-red-800">Join the Alliance</h3>
+            <p class="text-muted">Become part of the movement for better working conditions.</p>
+          </a>
+          <a href="/issues" class="card group hover:border-jpmc-gold-300">
+            <h3 class="text-xl font-bold mb-2 content-gold group-hover:text-jpmc-gold-800">Key Issues</h3>
+            <p class="text-muted">Explore the issues we're addressing.</p>
+          </a>
+          <a href="/news" class="card group hover:border-jpmc-blue-300">
+            <h3 class="text-xl font-bold mb-2 content-blue group-hover:text-jpmc-blue-800">Latest News</h3>
+            <p class="text-muted">Stay updated with our latest activities.</p>
+          </a>
+          <a href="/contact" class="card group hover:border-gray-400">
+            <h3 class="text-xl font-bold mb-2 text-gray-700 group-hover:text-gray-800">Get in Touch</h3>
+            <p class="text-muted">Reach out to us with questions or concerns.</p>
+          </a>
+          <a href="/img/posters" class="card group hover:border-gray-400">
+            <h3 class="text-xl font-bold mb-2 text-gray-700 group-hover:text-gray-800">Resources</h3>
+            <p class="text-muted">Download educational materials and posters.</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Search Help Section -->
+  <section class="py-16 content-blue-light">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-3xl md:text-4xl font-bold mb-8">
+          Can't Find What You're Looking For?
+        </h2>
+        <div class="content-blue p-8 rounded-lg max-w-2xl mx-auto">
+          <p class="text-lg mb-6">
+            If you're looking for specific information about JPMC Workers Alliance, 
+            try these common search terms:
+          </p>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-left">
+            <div>
+              <h4 class="font-semibold mb-2 content-gold">Working Conditions</h4>
+              <ul class="space-y-1 text-sm">
+                <li>• Remote work policies</li>
+                <li>• Return to office</li>
+                <li>• Flexible work arrangements</li>
+                <li>• Accommodations</li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="font-semibold mb-2 content-gold">Employee Rights</h4>
+              <ul class="space-y-1 text-sm">
+                <li>• Union formation</li>
+                <li>• Protected activities</li>
+                <li>• ADA accommodations</li>
+                <li>• Workplace safety</li>
+              </ul>
+            </div>
+          </div>
+          <p class="mt-6 text-sm text-muted">
+            Still can't find what you need? <a href="/contact" class="content-blue hover:underline">Contact us directly</a> 
+            and we'll help you find the information you're looking for.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Call to Action -->
+  <section class="py-16 content-blue-light">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold mb-6">
+        Stay Connected
+      </h2>
+      <p class="text-xl mb-8 max-w-2xl mx-auto">
+        Don't let this 404 error stop you from joining the movement for better working conditions at JPMC.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="/join-us" class="btn-primary">
+          Join the Alliance Today
+        </a>
+        <a href="/contact" class="btn-secondary">
+          Get in Touch
+        </a>
+      </div>
+    </div>
+  </section>
+</Layout>
