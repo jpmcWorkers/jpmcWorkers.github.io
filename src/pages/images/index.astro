@@ -34,7 +34,7 @@ function calculateDisplayDimensions(width?: number, height?: number, maxSize: nu
     </div>
 
     <div class="grid grid-cols-[repeat(auto-fill,minmax(250px,1fr))]  gap-6">
-      {imageEntries.map((entry) => {
+      {imageEntries.map(async (entry) => {
         // Calculate proper dimensions for the preview image
         const imageToUse = entry.data.preview || entry.data.file;
         const dimensionsToUse = entry.data.preview 
@@ -61,7 +61,7 @@ function calculateDisplayDimensions(width?: number, height?: number, maxSize: nu
                 : <Image
                   width={displayDimensions.width}
                   height={displayDimensions.height}
-                  src={`/src/content/images/${imageToUse}`}
+                  src={await import(`/src/content/images/${imageToUse}`)}
                   alt={entry.data.name}
                   class="w-full h-full object-cover"
                 />}
