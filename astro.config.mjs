@@ -2,11 +2,16 @@ import { defineConfig } from 'astro/config';
 
 import tailwindcss from '@tailwindcss/vite';
 
+import markdoc from '@astrojs/markdoc';
+
+import sitemap from '@astrojs/sitemap';
+
 // https://astro.build/config
 export default defineConfig({
   site: 'https://nivoset.github.io',
   base: '/workers.github.io',
   output: 'static',
+
   redirects: {
     '/qa': '/what-can-i-do/qa',
     '/gender': '/what-can-i-do/gender',
@@ -19,4 +24,6 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()],
   },
+
+  integrations: [markdoc(), sitemap()],
 });

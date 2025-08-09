@@ -77,12 +77,12 @@ const allTags = Object.keys(tagCounts).sort(
             {/* Single line: Title: description...(tags)[read more] */}
             <div class="flex items-baseline gap-3 flex-wrap">
               {/* Title */}
-              <h2 class="text-xl font-bold text-jpmc-blue flex-shrink-0">
+              <h2 class="text-xl font-bold text-jpmc-blue flex-shrink-0 border-r-2 border-jpmc-gray-300 pr-2">
                 <a
                   href={`content/${entry.id}`}
                   class="hover:text-jpmc-blue-700 transition-colors dark:text-gray-200"
                 >
-                  {entry.data.title}:
+                  {entry.data.title}
                 </a>
               </h2>
 
@@ -105,9 +105,11 @@ const allTags = Object.keys(tagCounts).sort(
               {/* Read More Button */}
               <a
                 href={`content/${entry.id}`}
-                class="flex-shrink-0 bg-jpmc-blue text-white px-6 py-2 text-sm rounded-md hover:bg-jpmc-blue-700 transition-colors"
+                class="flex-shrink-0 "
               >
-                Read More →
+                <button class="bg-jpmc-blue text-white px-6 py-2 text-sm rounded-md hover:bg-jpmc-blue-700 transition-colors cursor-pointer">
+                  Read More →
+                </button>
               </a>
             </div>
           </article>
