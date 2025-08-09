@@ -61,7 +61,7 @@ function calculateDisplayDimensions(width?: number, height?: number, maxSize: nu
                 : <Image
                   width={displayDimensions.width}
                   height={displayDimensions.height}
-                  src={await import(`/src/content/images/${imageToUse}`)}
+                  src={await import(`../../content/images/${imageToUse}`)}
                   alt={entry.data.name}
                   class="w-full h-full object-cover"
                 />}
