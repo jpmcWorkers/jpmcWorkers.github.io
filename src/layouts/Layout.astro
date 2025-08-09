@@ -37,8 +37,8 @@ const {
     <div class="flex flex-col min-h-screen">
       <!-- Header -->
       <header class="bg-white shadow-lg border-b-4 border-jpmc-blue transition-colors duration-200 dark:bg-jpmc-gray-800">
-        <div class="container mx-auto px-4 py-4">
-          <div class="flex items-center justify-between">
+        <div class="container mx-auto lg:px-4 py-4">
+          <div class="flex items-center stretch justify-between">
             <!-- Logo -->
             <div class="flex items-center space-x-4">
               <img
@@ -47,26 +47,33 @@ const {
                 class="w-12 h-12"
               />
               <div class="hidden md:block">
-                <h1 class="text-xl font-bold text-jpmc-blue">JPMC</h1>
-                <h2 class="text-lg font-semibold text-jpmc-red">WORKERS</h2>
-                <h3 class="text-sm font-medium text-jpmc-gold">ALLIANCE</h3>
+                <div class="text-xl font-bold text-jpmc-blue">JPMC</div>
+                <div class="text-lg font-semibold text-jpmc-red">WORKERS</div>
+                <div class="text-sm font-medium text-jpmc-gold">ALLIANCE</div>
               </div>
             </div>
 
                          <!-- Page Title -->
              <div class="flex-1 text-center hidden md:block">
-               <h1 class="text-2xl font-bold text-jpmc-dark dark:text-gray-100">{title}</h1>
+               <h1 class="text-2xl font-bold text-jpmc-dark dark:text-gray-100 md:text-xl">{title}</h1>
              </div>
 
 
 
              <!-- Mobile menu button -->
-             <button class="md:hidden p-2" id="mobile-menu-button">
+             <button 
+               class="lg:hidden p-2" 
+               id="mobile-menu-button"
+               aria-label="Toggle navigation menu"
+               aria-expanded="false"
+               aria-controls="mobile-menu"
+             >
               <svg
                 class="w-6 h-6"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
+                aria-hidden="true"
               >
                 <path
                   stroke-linecap="round"
@@ -79,7 +86,7 @@ const {
         </div>
 
                  <!-- Mobile menu -->
-         <div class="md:hidden hidden" id="mobile-menu">
+         <nav class="md:hidden hidden" id="mobile-menu" aria-label="Mobile navigation">
            <div class="px-4 py-2 space-y-2 bg-jpmc-gray-50 dark:bg-gray-500">
             <a
               href="./"
@@ -117,7 +124,7 @@ const {
               >Content</a
             >
           </div>
-        </div>
+        </nav>
       </header>
 
       <!-- Main content with sidebar -->
@@ -125,21 +132,22 @@ const {
                  <!-- Sidebar -->
          <aside
            class="w-64 bg-white dark:bg-gray-800 shadow-lg border-r border-gray-200 dark:border-gray-700 hidden lg:block transition-colors duration-200"
+           aria-label="Sidebar navigation"
          >
           <div class="p-6">
             <!-- Navigation Links -->
             <nav class="space-y-4">
-              <h3 class="text-lg font-semibold text-jpmc-dark mb-4">
+              <h2 class="text-lg font-semibold text-jpmc-dark mb-4">
                 Navigation
-              </h3>
+              </h2>
 
               <!-- Main Pages -->
                              <div class="space-y-2">
-                 <h4
+                 <h3
                    class="text-sm font-medium text-jpmc-blue uppercase tracking-wide"
                  >
                    Main
-                 </h4>
+                 </h3>
                  <ul class="space-y-1">
                    <li>
                      <a
@@ -170,11 +178,11 @@ const {
 
               <!-- News & Updates -->
               <div class="space-y-2">
-                <h4
+                <h3
                   class="text-sm font-medium text-jpmc-red uppercase tracking-wide"
                 >
                   News & Updates
-                </h4>
+                </h3>
                 <ul class="space-y-1">
                   <li>
                     <a
@@ -211,11 +219,11 @@ const {
 
               <!-- Issues & Resources -->
               <div class="space-y-2">
-                <h4
+                <h3
                   class="text-sm font-medium text-jpmc-gold uppercase tracking-wide"
                 >
                   Issues & Resources
-                </h4>
+                </h3>
                 <ul class="space-y-1">
                   <li>
                     <a
@@ -253,11 +261,11 @@ const {
 
               <!-- Content -->
               <div class="space-y-2">
-                <h4
+                <h3
                   class="text-sm font-medium text-jpmc-blue uppercase tracking-wide"
                 >
                   Content
-                </h4>
+                </h3>
                 <ul class="space-y-1">
                   <li>
                     <a
@@ -277,11 +285,11 @@ const {
 
             <!-- Social Links -->
             <div class="mt-8 pt-6 border-t border-gray-200">
-              <h4
+              <h3
                 class="text-sm font-medium text-jpmc-dark  dark:text-gray-200 uppercase tracking-wide mb-3"
               >
                 Connect With Us
-              </h4>
+              </h3>
               <div class="flex space-x-3">
                 <a
                   href="https://discord.gg/BZA3pxppq9"
@@ -348,9 +356,9 @@ const {
                   class="w-10 h-10"
                 />
                 <div>
-                  <h3 class="font-bold text-jpmc-blue">JPMC</h3>
-                  <h4 class="font-semibold text-jpmc-red">WORKERS</h4>
-                  <h5 class="font-medium text-jpmc-gold">ALLIANCE</h5>
+                  <div class="font-bold text-jpmc-blue">JPMC</div>
+                  <div class="font-semibold text-jpmc-red">WORKERS</div>
+                  <div class="font-medium text-jpmc-gold">ALLIANCE</div>
                 </div>
               </div>
               <p class="text-sm">
@@ -360,7 +368,7 @@ const {
 
             <!-- Quick links -->
             <div class="space-y-4">
-              <h4 class="font-semibold text-jpmc-gold dark:text-jpmc-gold-400">Quick Links</h4>
+              <h2 class="font-semibold text-jpmc-gold dark:text-jpmc-gold-400">Quick Links</h2>
               <ul class="space-y-2 text-sm">
                 <li>
                   <a
@@ -397,7 +405,7 @@ const {
 
             <!-- Social links -->
             <div class="space-y-4">
-              <h4 class="font-semibold text-jpmc-gold">Connect With Us</h4>
+              <h2 class="font-semibold text-jpmc-gold">Connect With Us</h2>
               <div class="flex space-x-4 ">
                 <a
                   href="https://discord.gg/BZA3pxppq9"
@@ -439,7 +447,7 @@ const {
                      <!-- Contact Information -->
            <div class="border-t border-gray-700 dark:border-gray-600 mt-8 pt-8 rounded-lg">
              <div class="max-w-4xl mx-auto">
-               <h3 class="text-xl font-bold text-jpmc-dark dark:text-gray-100 mb-4 text-center">Contact Us</h3>
+               <h2 class="text-xl font-bold text-jpmc-dark dark:text-gray-100 mb-4 text-center">Contact Us</h2>
                <div class="bg-gray-50 dark:bg-gray-300 p-6 rounded-lg shadow-md">
                 <p class="text-jpmc-dark mb-4 font-medium">
                   <strong>Right now,</strong> the best way to reach us is:
@@ -507,9 +515,10 @@ const {
        const mobileMenuButton = document.getElementById("mobile-menu-button");
        const mobileMenu = document.getElementById("mobile-menu");
 
-             mobileMenuButton?.addEventListener("click", () => {
-        mobileMenu?.classList.toggle("hidden");
-      });
+       mobileMenuButton?.addEventListener("click", () => {
+         const isHidden = mobileMenu?.classList.toggle("hidden");
+         mobileMenuButton.setAttribute("aria-expanded", isHidden ? "false" : "true");
+       });
     </script>
 
     <script>

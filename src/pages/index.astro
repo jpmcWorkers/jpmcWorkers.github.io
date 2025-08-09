@@ -1,5 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import { Picture } from 'astro:assets';
+import banner from "../img/banner.png";
 ---
 
 <Layout title="JPMC Workers Alliance - What can I do?">
@@ -9,8 +11,9 @@ import Layout from "../layouts/Layout.astro";
     <div class="relative container mx-auto px-4 text-center text-white">
       <div class="max-w-4xl mx-auto">
         <div class="flex justify-center mb-8">
-          <img
-            src="img/banner.png"
+          <Picture
+            src={banner}
+            widths={[100, 200, 300, 400, 500, 600, 700, 800, 900, 1000]}
             alt="JPMC Workers Alliance Banner"
             class="max-w-full h-auto rounded-lg shadow-2xl"
           />
