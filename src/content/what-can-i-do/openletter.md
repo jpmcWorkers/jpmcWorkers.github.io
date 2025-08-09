@@ -1,3 +1,10 @@
+---
+title: "Open Letter to Jamie Dimon (Alternate Version)"
+description: "Alternative version of the open letter to JPMC leadership addressing RTO mandate and demanding hybrid work flexibility."
+order: 10
+tags: ["rto", "open-letter", "leadership", "hybrid-work", "workplace-culture", "demands"]
+---
+
 # Open Letter to JPMorganChase Chairman and CEO Jamie Dimon
 
 We, the workers of JPMorganChase (JPMC), are concerned about the future of our workplace -
