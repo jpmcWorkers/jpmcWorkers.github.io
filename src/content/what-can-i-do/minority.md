@@ -2,6 +2,7 @@
 title: "Pre-Majority Union / Minority Union"
 description: "Learn the difference"
 order: 1
+tags: ["minority-union", "pre-majority", "union-formation", "organizing", "education", "strategy", "collective-action", "nlrb"]
 ---
 # Pre-Majority Union / Minority Union
 

@@ -2,6 +2,7 @@
 title: "Questions and Answers -- Countering the Propaganda"
 description: "Learn how to counter corporate propaganda and understand the real facts about unions and collective action."
 order: 1
+tags: ["qa", "counter-propaganda", "education", "myths", "facts", "collective-bargaining", "union-benefits", "organizing", "solidarity"]
 ---
 
 # Questions and Answers -- or, Countering the Propaganda

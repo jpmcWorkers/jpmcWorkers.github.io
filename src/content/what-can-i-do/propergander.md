@@ -2,6 +2,7 @@
 title: "Propaganda and Counter-Propaganda"
 description: "Understanding corporate propaganda and how to counter it with facts and solidarity."
 order: 5
+tags: ["propaganda", "counter-propaganda", "union-busting", "talking-points", "organizing", "collective-bargaining", "education", "solidarity"]
 ---
 
 # Management Talking Points:
