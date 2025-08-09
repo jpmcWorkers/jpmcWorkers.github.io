@@ -4,8 +4,8 @@ import tailwindcss from '@tailwindcss/vite';
 
 // https://astro.build/config
 export default defineConfig({
-  site: process.env.SITE,
-  base: process.env.BASE,
+  site: "https://nivoset.github.io",
+  base: "/workers.github.io/",
   output: 'static',
   redirects: {
     '/qa': '/what-can-i-do/qa',
@@ -20,6 +20,3 @@ export default defineConfig({
     plugins: [tailwindcss()],
   },
 });
-
-console.log(`process.env.SITE`);
-console.log(process.env.BASE);
