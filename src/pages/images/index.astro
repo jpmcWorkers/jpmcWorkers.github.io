@@ -5,6 +5,22 @@ import { getCollection } from 'astro:content';
 
 // Get all images
 const imageEntries = await getCollection('images');
+
+// Helper function to calculate display dimensions while maintaining aspect ratio
+function calculateDisplayDimensions(width?: number, height?: number, maxSize: number = 300) {
+  if (!width || !height) {
+    return { width: maxSize, height: maxSize };
+  }
+  
+  // Scale based on the larger dimension
+  const maxDimension = Math.max(width, height);
+  const scaleFactor = Math.min(maxSize / maxDimension, 1); // Don't upscale
+  
+  return {
+    width: Math.round(width * scaleFactor),
+    height: Math.round(height * scaleFactor)
+  };
+}
 ---
 
 <Layout title="Images - JPMC Workers Alliance">
@@ -18,25 +34,38 @@ const imageEntries = await getCollection('images');
     </div>
 
     <div class="grid grid-cols-[repeat(auto-fill,minmax(250px,1fr))]  gap-6">
-      {imageEntries.map((entry) => (
-        <div class="bg-white dark:bg-gray-800 rounded-lg shadow-xl overflow-hidden border-2 border-gray-200 dark:border-gray-700">
-          {/* Preview Image */}
-          <div class="aspect-square dark:bg-gray-700 flex items-center justify-center">
-            
-              {entry.data.type.toLowerCase() === 'pdf' && !(entry.data.preview?.trim()) 
-              ? (
-                <div
-                  class="text-gray-500 dark:text-gray-400 text-center p-4 min-h-[250px] object-cover">
-                    No Preview Available
-                </div>)
-              : <Image
-                width={100}
-                height={100}
-                src={`/src/content/images/${entry.data.preview || entry.data.file}`}
-                alt={entry.data.name}
-                class="w-full h-full object-cover"
-              />}
-          </div>
+      {imageEntries.map((entry) => {
+        // Calculate proper dimensions for the preview image
+        const imageToUse = entry.data.preview || entry.data.file;
+        const dimensionsToUse = entry.data.preview 
+          ? { width: entry.data.previewWidth, height: entry.data.previewHeight }
+          : { width: entry.data.width, height: entry.data.height };
+        
+        const displayDimensions = calculateDisplayDimensions(
+          dimensionsToUse.width, 
+          dimensionsToUse.height, 
+          300
+        );
+        
+        return (
+          <div class="bg-white dark:bg-gray-800 rounded-lg shadow-xl overflow-hidden border-2 border-gray-200 dark:border-gray-700 flex flex-col items-space-between">
+            {/* Preview Image */}
+            <div class="aspect-square dark:bg-gray-700 flex items-center justify-center">
+              
+                {entry.data.type.toLowerCase() === 'pdf' && !(entry.data.preview?.trim()) 
+                ? (
+                  <div
+                    class="text-gray-500 dark:text-gray-400 flex items-center justify-center p-4 min-h-[250px] object-cover">
+                      <span>No Preview Available</span>
+                  </div>)
+                : <Image
+                  width={displayDimensions.width}
+                  height={displayDimensions.height}
+                  src={`/src/content/images/${imageToUse}`}
+                  alt={entry.data.name}
+                  class="w-full h-full object-cover"
+                />}
+            </div>
           
           {/* Content */}
           <div class="p-4">
@@ -58,7 +87,8 @@ const imageEntries = await getCollection('images');
             </a>
           </div>
         </div>
-      ))}
+        );
+      })}
     </div>
   </div>
 </Layout>

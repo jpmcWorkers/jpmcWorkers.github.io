@@ -13,6 +13,7 @@ export default defineConfig({
     '/aeiou': '/what-can-i-do/aeiou',
     '/issues': '/what-can-i-do/issues',
     '/join_us': '/what-can-i-do/join-us',
+    '/discord': 'https://bit.ly/jpmcworkers',
   },
 
   vite: {

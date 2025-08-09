@@ -2,8 +2,27 @@ import { defineCollection, z } from 'astro:content';
 import { glob } from 'astro/loaders';
 import path from 'path';
 import fs from 'fs/promises';
+import sizeOf from 'image-size';
 
-
+// Helper function to get image dimensions
+async function getImageDimensions(filePath: string): Promise<{ width?: number; height?: number }> {
+  try {
+    const supportedImageTypes = ['png', 'jpg', 'jpeg', 'webp', 'gif'];
+    const ext = path.extname(filePath).toLowerCase().slice(1);
+    
+    if (supportedImageTypes.includes(ext)) {
+      const buffer = await fs.readFile(filePath);
+      const dimensions = sizeOf(buffer);
+      return {
+        width: dimensions.width,
+        height: dimensions.height
+      };
+    }
+  } catch (error) {
+    console.warn(`Could not read dimensions for ${filePath}:`, error);
+  }
+  return {};
+}
 
 const whatCanIDoCollection = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/what-can-i-do' }),
@@ -25,6 +44,10 @@ const imageCollection = defineCollection({
       preview: string | null;
       type: 'png' | 'jpg' | 'jpeg' | 'webp' | 'gif' | 'pdf';
       isFolder: boolean;
+      width?: number;
+      height?: number;
+      previewWidth?: number;
+      previewHeight?: number;
     }> = [];
     
     // Get all items in the images folder
@@ -47,6 +70,17 @@ const imageCollection = defineCollection({
         
         if (mainFile) {
           const ext = path.extname(mainFile).toLowerCase().slice(1);
+          
+          // Get dimensions for main file and preview
+          const mainFilePath = path.join(itemPath, mainFile);
+          const mainDimensions = await getImageDimensions(mainFilePath);
+          
+          let previewDimensions = {};
+          if (previewFile) {
+            const previewFilePath = path.join(itemPath, previewFile);
+            previewDimensions = await getImageDimensions(previewFilePath);
+          }
+          
           entries.push({
             id: item.name,
             name: item.name,
@@ -54,12 +88,20 @@ const imageCollection = defineCollection({
             preview: previewFile ? path.join(item.name, previewFile) : null,
             type: ext as 'png' | 'jpg' | 'jpeg' | 'webp' | 'gif' | 'pdf',
             isFolder: true,
+            width: mainDimensions.width,
+            height: mainDimensions.height,
+            previewWidth: previewDimensions.width,
+            previewHeight: previewDimensions.height,
           });
         }
       } else if (item.isFile()) {
         // Handle single files
         const ext = path.extname(item.name).toLowerCase().slice(1);
         if (['png', 'jpg', 'jpeg', 'webp', 'gif', 'pdf'].includes(ext)) {
+          // Get dimensions for single file
+          const filePath = path.join(basePath, item.name);
+          const dimensions = await getImageDimensions(filePath);
+          
           entries.push({
             id: item.name,
             name: item.name,
@@ -67,6 +109,8 @@ const imageCollection = defineCollection({
             preview: null,
             type: ext as 'png' | 'jpg' | 'jpeg' | 'webp' | 'gif' | 'pdf',
             isFolder: false,
+            width: dimensions.width,
+            height: dimensions.height,
           });
         }
       }
@@ -80,6 +124,10 @@ const imageCollection = defineCollection({
     preview: z.string().nullable(),
     type: z.enum(['png', 'jpg', 'jpeg', 'webp', 'gif', 'pdf']),
     isFolder: z.boolean(),
+    width: z.number().optional(),
+    height: z.number().optional(),
+    previewWidth: z.number().optional(),
+    previewHeight: z.number().optional(),
   }),
 });
 
