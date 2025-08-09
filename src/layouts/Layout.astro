@@ -32,25 +32,29 @@ const {
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <!-- OpenReplay Tracking Code with Partytown -->
-    <script type="text/partytown">
-      import('@openreplay/tracker').then(({ default: Tracker }) => {
-        const tracker = new Tracker({
-          projectKey: "NXWCm1D1FicSKMdGSXfs",
-          defaultInputMode: 2,
-          obscureTextNumbers: false,
-          obscureTextEmails: true,
-        });
-
-        tracker.start({
-          userID: ""
-        });
-
-        // Make tracker available globally
-        window.openReplayTracker = tracker;
-      }).catch(error => {
-        console.warn('OpenReplay failed to load:', error);
-      });
+    <!-- OpenReplay Tracking Code for my first project -->
+    <script>
+      var initOpts = {
+        projectKey: "NXWCm1D1FicSKMdGSXfs",
+        defaultInputMode: 2,
+        obscureTextNumbers: false,
+        obscureTextEmails: true,
+      };
+      var startOpts = { userID: "" };
+      (function(A,s,a,y,e,r){
+        r=window.OpenReplay=[e,r,y,[s-1, e]];
+        s=document.createElement('script');s.src=A;s.async=!a;
+        document.getElementsByTagName('head')[0].appendChild(s);
+        r.start=function(v){r.push([0])};
+        r.stop=function(v){r.push([1])};
+        r.setUserID=function(id){r.push([2,id])};
+        r.setUserAnonymousID=function(id){r.push([3,id])};
+        r.setMetadata=function(k,v){r.push([4,k,v])};
+        r.event=function(k,p,i){r.push([5,k,p,i])};
+        r.issue=function(k,p){r.push([6,k,p])};
+        r.isActive=function(){return false};
+        r.getSessionToken=function(){};
+      })("//static.openreplay.com/latest/openreplay.js",1,0,initOpts,startOpts);
     </script>
   </head>
   <body class="bg-jpmc-light dark:bg-gray-900 text-jpmc-dark dark:text-gray-100 min-h-screen transition-colors duration-200">
