@@ -8,12 +8,22 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "deploy": "npm run build"
+    "deploy": "npm run build",
+    "test": "playwright test",
+    "test:ui": "playwright test --ui",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+    "test:links": "playwright test tests/link-validation.spec.js",
+    "test:crawler": "playwright test tests/comprehensive-link-crawler.spec.js",
+    "test:report": "playwright show-report",
+    "test:quick": "node scripts/test-links.js"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.4",
     "@astrojs/markdoc": "^0.15.4",
+    "@astrojs/partytown": "^2.1.4",
     "@astrojs/sitemap": "^3.4.2",
+    "@openreplay/tracker": "^16.4.7",
     "@tailwindcss/typography": "^0.5.16",
     "@tailwindcss/vite": "^4.1.11",
     "astro": "^5.12.8",
@@ -22,6 +32,7 @@
     "typescript": "^5.9.2"
   },
   "devDependencies": {
+    "@playwright/test": "^1.54.2",
     "@vite-pwa/astro": "^1.1.0",
     "vite-plugin-pwa": "^1.0.2",
     "workbox-window": "^7.3.0"

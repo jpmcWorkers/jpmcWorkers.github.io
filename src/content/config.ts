@@ -1,5 +1,5 @@
 import { defineCollection, z } from 'astro:content';
-import { glob } from 'astro/loaders';
+import { glob, } from 'astro/loaders';
 import path from 'path';
 import fs from 'fs/promises';
 import sizeOf from 'image-size';
