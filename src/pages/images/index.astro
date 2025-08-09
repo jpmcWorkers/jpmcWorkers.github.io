@@ -3,8 +3,8 @@ import Layout from '../../layouts/Layout.astro';
 import { Image } from 'astro:assets';
 import { getCollection } from 'astro:content';
 
-// Pre-import all images using glob
-const allImages = import.meta.glob('../../content/images/**/*.{png,jpg,jpeg,webp,gif}', { eager: true });
+// Pre-import all images using glob from public directory
+const allImages = import.meta.glob('/public/images/**/*.{png,jpg,jpeg,webp,gif}', { eager: true });
 
 // Get all images
 const imageEntries = await getCollection('images');
@@ -51,7 +51,7 @@ function calculateDisplayDimensions(width?: number, height?: number, maxSize: nu
         );
         
         // Get the image from pre-imported images
-        const imagePath = `../../content/images/${imageToUse}`;
+        const imagePath = `/public/images/${imageToUse}`;
         const imageModule = allImages[imagePath] as { default: any } | undefined;
         
         return (
@@ -90,7 +90,7 @@ function calculateDisplayDimensions(width?: number, height?: number, maxSize: nu
             
             {/* Download Button */}
             <a 
-              href={`/src/content/images/${entry.data.file}`}
+              href={`/workers.github.io/images/${entry.data.file}`}
               download
               class="inline-block w-full bg-jpmc-blue text-white text-center px-4 py-2 rounded-md hover:bg-jpmc-blue-700 transition-colors"
             >

@@ -62,7 +62,8 @@ export default defineConfig({
     },
     workbox: {
       navigateFallback: '/workers.github.io/',
-      globPatterns: ['**/*.{css,js,html,svg,png,ico,txt}'],
+      globPatterns: ['**/*.{css,js,html,svg,ico,txt}'],
+      globIgnores: ['images/**/*'], // Exclude large images from service worker cache
       runtimeCaching: [
         {
           urlPattern: /^https:\/\/fonts\.googleapis\.com\/.*/i,

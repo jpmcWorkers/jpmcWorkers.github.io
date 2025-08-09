@@ -36,7 +36,7 @@ const whatCanIDoCollection = defineCollection({
 
 const imageCollection = defineCollection({
   loader: async () => {
-    const basePath = path.resolve(import.meta.dirname, 'images');
+    const basePath = path.resolve(import.meta.dirname, '../../public/images');
     const entries: Array<{
       id: string;
       name: string;
