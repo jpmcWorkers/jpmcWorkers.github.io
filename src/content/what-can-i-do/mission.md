@@ -2,7 +2,7 @@
 title: "Our Goals and mission"
 description: "Learn what we are hearing from you"
 order: 1
-tags: ["mission", "goals", "work-life-balance", "culture", "wealth-sharing", "collective-bargaining", "hybrid-work", "employee-control"]
+tags: ["workplace-issues", "union-structure", "hybrid-work", "collective-bargaining", "goals"]
 ---
 # Our Real Goals:
 

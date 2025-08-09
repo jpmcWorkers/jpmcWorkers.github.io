@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 on:
   # Runs on pushes targeting the default branch
   push:
-    branches: ["main", "astro"]
+    branches: ["main"]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -14,8 +14,8 @@ permissions:
   pages: write
   id-token: write
 env:
-  SITE: ${{ secrets.SITE }}
-  BASE: ${{ secrets.BASE }}
+  SITE: "${{ secrets.SITE }}"
+  BASE: "/workers.github.io/"
 
 # Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
 # However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.

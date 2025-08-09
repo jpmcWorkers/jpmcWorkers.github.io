@@ -2,7 +2,7 @@
 title: "MayDay 2025 Newsletter"
 description: "JWA newsletter celebrating our first public in-person event - pizza party at McCoy Center and updates on organizing efforts."
 order: 9
-tags: ["newsletter", "mayday", "events", "pizza-party", "organizing", "recruitment"]
+tags: ["organizing", "recruitment", "resources", "events", "newsletter"]
 ---
 
 Happy May, JWA!

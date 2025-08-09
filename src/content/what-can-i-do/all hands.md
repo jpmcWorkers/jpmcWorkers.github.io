@@ -2,7 +2,7 @@
 title: "All Hands Meeting Guide"
 description: "Guidance for participating in all-hands meetings and asking questions about working conditions."
 order: 6
-tags: ["meetings", "organizing", "recruitment", "volunteer"]
+tags: ["organizing", "recruitment", "resources", "meetings", "volunteer"]
 ---
 
 # All Hands On Deck!

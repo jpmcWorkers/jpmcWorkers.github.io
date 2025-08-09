@@ -2,7 +2,7 @@
 title: "JPMC Workers Alliance -- Quick Intro and Enlistment Guide"
 description: "Learn how to join the JPMC Workers Alliance and get involved in improving working conditions."
 order: 2
-tags: ["getting-started", "enlistment", "membership", "organizing", "alliance", "resources", "training", "recruitment"]
+tags: ["organizing", "education", "recruitment", "getting-started", "membership"]
 ---
 
 # JPMC Workers Alliance -- Quick Intro and Enlistment Guide
