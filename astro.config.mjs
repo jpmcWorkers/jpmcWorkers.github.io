@@ -5,7 +5,7 @@ import tailwindcss from '@tailwindcss/vite';
 // https://astro.build/config
 export default defineConfig({
   site: process.env.site,
-  base: process.env.base,
+  base: "/workers.github.io/",
   output: 'static',
   redirects: {
     '/qa': '/what-can-i-do/qa',

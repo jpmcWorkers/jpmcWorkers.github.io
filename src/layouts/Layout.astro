@@ -3,7 +3,6 @@ export interface Props {
   title: string;
   description?: string;
 }
-import "../styles/global.css";
 const {
   title,
   description = "We are a dedicated team of JPMC employees devoted to a simple mission: Better working conditions for all JPMC employees worldwide.",
@@ -18,6 +17,7 @@ const {
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <base href="/workers.github.io/" />
     <link rel="icon" type="image/png" href="./img/96x96.png" />
+    <link rel="stylesheet" href="../styles/global.css" />
     <title>{title}</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
