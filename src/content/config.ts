@@ -3,12 +3,15 @@ import { glob } from 'astro/loaders';
 import path from 'path';
 import fs from 'fs/promises';
 
+
+
 const whatCanIDoCollection = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/what-can-i-do' }),
   schema: z.object({
     title: z.string(),
     description: z.string().optional(),
     order: z.number().optional(),
+    tags: z.array(z.string()).default([]),
   }),
 });
 

@@ -1,0 +1,51 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getCollection, render } from 'astro:content';
+
+export async function getStaticPaths() {
+  const whatCanIDoEntries = await getCollection('what-can-i-do');
+  return whatCanIDoEntries.map((entry) => ({
+    params: { slug: entry.id },
+    props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+---
+
+<Layout title={`${entry.data.title} - JPMC Workers Alliance`}>
+  <article class="prose prose-lg max-w-none">
+    <header class="mb-8">
+      <h1 class="text-4xl font-bold text-jpmc-blue mb-4">{entry.data.title}</h1>
+      {entry.data.description && (
+        <p class="text-xl text-gray-600">{entry.data.description}</p>
+      )}
+      
+      {/* Tags - inline */}
+      {entry.data.tags.length > 0 && (
+        <div class="mt-4">
+          <span class="text-sm text-gray-500 mr-2">Tags:</span>
+          {entry.data.tags.map((tag, index) => (
+            <span class="text-sm text-jpmc-blue-700">
+              {tag}{index < entry.data.tags.length - 1 ? ', ' : ''}
+            </span>
+          ))}
+        </div>
+      )}
+    </header>
+    
+    <div class="bg-white p-8 rounded-lg shadow-md dark:bg-jpmc-gray-300">
+      <Content />
+    </div>
+    
+    <div class="mt-8">
+      <a 
+        href="/content" 
+        class="inline-block bg-jpmc-blue text-white px-4 py-2 rounded-md hover:bg-jpmc-blue-700 transition-colors"
+      >
+        ← Back to Guides & Resources
+      </a>
+    </div>
+  </article>
+</Layout>

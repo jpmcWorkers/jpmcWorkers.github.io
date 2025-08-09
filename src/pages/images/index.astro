@@ -19,17 +19,23 @@ const imageEntries = await getCollection('images');
 
     <div class="grid grid-cols-[repeat(auto-fill,minmax(250px,1fr))]  gap-6">
       {imageEntries.map((entry) => (
-        <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden border-2 border-gray-200 dark:border-gray-700">
+        <div class="bg-white dark:bg-gray-800 rounded-lg shadow-xl overflow-hidden border-2 border-gray-200 dark:border-gray-700">
           {/* Preview Image */}
-          <div class="aspect-square bg-gray-100 dark:bg-gray-700 flex items-center justify-center">
+          <div class="aspect-square dark:bg-gray-700 flex items-center justify-center">
             
-              <Image
+              {entry.data.type.toLowerCase() === 'pdf' && !(entry.data.preview?.trim()) 
+              ? (
+                <div
+                  class="text-gray-500 dark:text-gray-400 text-center p-4 min-h-[250px] object-cover">
+                    No Preview Available
+                </div>)
+              : <Image
                 width={100}
-                // height={100}
+                height={100}
                 src={`/src/content/images/${entry.data.preview || entry.data.file}`}
                 alt={entry.data.name}
                 class="w-full h-full object-cover"
-              />
+              />}
           </div>
           
           {/* Content */}
@@ -40,6 +46,7 @@ const imageEntries = await getCollection('images');
             <p class="text-sm text-gray-600 dark:text-gray-400 mb-3">
               {entry.data.type.toUpperCase()} • {entry.data.isFolder ? 'Folder' : 'File'}
             </p>
+            {/* <pre>{JSON.stringify(entry.data, null, 2)}</pre> */}
             
             {/* Download Button */}
             <a 
@@ -54,4 +61,6 @@ const imageEntries = await getCollection('images');
       ))}
     </div>
   </div>
-</Layout> 
+</Layout>
+
+ 

@@ -1,41 +1,160 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import { getCollection } from 'astro:content';
+import Layout from "../layouts/Layout.astro";
+import { getCollection } from "astro:content";
 
 // Get all what-can-i-do content
-const whatCanIDoEntries = await getCollection('what-can-i-do');
-const sortedEntries = whatCanIDoEntries.sort((a, b) => (a.data.order || 999) - (b.data.order || 999));
+const whatCanIDoEntries = await getCollection("what-can-i-do");
+const sortedEntries = whatCanIDoEntries.sort(
+  (a, b) => (a.data.order || 999) - (b.data.order || 999)
+);
+
+// Get all unique tags sorted by count (most popular first)
+const tagCounts = {};
+sortedEntries.forEach((entry) => {
+  entry.data.tags.forEach((tag) => {
+    tagCounts[tag] = (tagCounts[tag] || 0) + 1;
+  });
+});
+const allTags = Object.keys(tagCounts).sort(
+  (a, b) => tagCounts[b] - tagCounts[a]
+);
 ---
 
-<Layout title="What Can I Do - JPMC Workers Alliance">
+<Layout title="Content - JPMC Workers Alliance">
   <div class="prose prose-lg max-w-none">
-    <h1 class="text-4xl font-bold text-jpmc-blue mb-8">What Can I Do</h1>
-    
+    <h1 class="text-4xl font-bold text-jpmc-blue mb-8">Guides & Resources</h1>
+
     <div class="mb-8">
-      <p class="text-xl text-gray-700">
-        Ready to take action? Here are resources and guides to help you get involved in improving working conditions at JPMC.
+      <p class="text-xl text-gray-700 mb-6">
+        Ready to take action? Here are resources and guides to help you get
+        involved in improving working conditions at JPMC.
       </p>
+
+      <!-- Tag Filter UI -->
+      {
+        allTags.length > 0 && (
+          <div class="bg-white dark:bg-gray-800 rounded-lg p-4 shadow-md border border-gray-200 dark:border-gray-700">
+            <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-3">
+              Filter by Category:
+            </h3>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <button
+                class="tag-filter-btn active px-3 py-1 text-sm rounded-full border-2 border-jpmc-blue bg-jpmc-blue text-white hover:bg-jpmc-blue-700 transition-colors"
+                data-tag="all"
+              >
+                All ({sortedEntries.length})
+              </button>
+              {allTags.map((tag) => {
+                const count = sortedEntries.filter((entry) =>
+                  entry.data.tags.includes(tag)
+                ).length;
+                return (
+                  <button
+                    class="tag-filter-btn px-3 py-1 text-sm rounded-full border-2 border-jpmc-blue text-jpmc-blue hover:bg-jpmc-blue hover:text-white transition-colors"
+                    data-tag={tag}
+                  >
+                    {tag} ({count})
+                  </button>
+                );
+              })}
+            </div>
+            <div class="text-sm text-gray-600 dark:text-gray-400">
+              <span id="showing-count">{sortedEntries.length}</span> resources
+              shown
+            </div>
+          </div>
+        )
+      }
     </div>
 
-               <div class="grid gap-8">
-             {sortedEntries.map((entry) => (
-               <article class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md border-l-4 border-jpmc-blue dark:border-jpmc-blue-600">
-          <h2 class="text-2xl font-bold text-jpmc-blue mb-2">
-            <a href={`what-can-i-do/${entry.id}`} class="hover:text-jpmc-blue-700 transition-colors dark:text-gray-200">
-              {entry.data.title}
-            </a>
-          </h2>
-          {entry.data.description && (
-            <p class="text-gray-600 mb-4 dark:text-gray-400">{entry.data.description}</p>
-          )}
-          <a 
-            href={`what-can-i-do/${entry.id}`}
-            class="inline-block bg-jpmc-blue text-white px-4 py-2 rounded-md hover:bg-jpmc-blue-700 transition-colors"
+    <div class="grid gap-8" id="resources-grid">
+      {
+        sortedEntries.map((entry) => (
+          <article
+            class="resource-card bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md border-l-4 border-jpmc-blue dark:border-jpmc-blue-600"
+            data-tags={entry.data.tags.join(",")}
           >
-            Read More →
-          </a>
-        </article>
-      ))}
+            {/* Single line: Title: description...(tags)[read more] */}
+            <div class="flex items-baseline gap-3 flex-wrap">
+              {/* Title */}
+              <h2 class="text-xl font-bold text-jpmc-blue flex-shrink-0">
+                <a
+                  href={`content/${entry.id}`}
+                  class="hover:text-jpmc-blue-700 transition-colors dark:text-gray-200"
+                >
+                  {entry.data.title}:
+                </a>
+              </h2>
+
+              {/* Description */}
+              {entry.data.description && (
+                <p class="text-gray-600 dark:text-gray-400 flex-1 min-w-0">
+                  {entry.data.description}
+                </p>
+              )}
+
+              {/* Tags */}
+              <div class="flex flex-wrap gap-1 flex-shrink-0">
+                {entry.data.tags.map((tag) => (
+                  <span class="inline-block px-2 py-1 text-xs bg-jpmc-blue-100 text-jpmc-blue-800 rounded-full">
+                    {tag}
+                  </span>
+                ))}
+              </div>
+
+              {/* Read More Button */}
+              <a
+                href={`content/${entry.id}`}
+                class="flex-shrink-0 bg-jpmc-blue text-white px-6 py-2 text-sm rounded-md hover:bg-jpmc-blue-700 transition-colors"
+              >
+                Read More →
+              </a>
+            </div>
+          </article>
+        ))
+      }
     </div>
   </div>
-</Layout> 
+</Layout>
+
+<script>
+  // Tag filtering functionality for What Can I Do resources
+  document.addEventListener("DOMContentLoaded", function () {
+    const filterButtons = document.querySelectorAll(".tag-filter-btn");
+    const resourceCards = document.querySelectorAll(".resource-card");
+    const showingCount = document.getElementById("showing-count");
+
+    filterButtons.forEach((button) => {
+      button.addEventListener("click", function () {
+        const selectedTag = this.getAttribute("data-tag");
+
+        // Update active button
+        filterButtons.forEach((btn) => {
+          btn.classList.remove("active", "bg-jpmc-blue", "text-white");
+          btn.classList.add("text-jpmc-blue");
+        });
+        this.classList.add("active", "bg-jpmc-blue", "text-white");
+        this.classList.remove("text-jpmc-blue");
+
+        // Filter cards
+        let visibleCount = 0;
+        resourceCards.forEach((card) => {
+          const cardTags = card.getAttribute("data-tags")?.split(",") || [];
+
+          if (selectedTag === "all" || cardTags.includes(selectedTag)) {
+            card.style.display = "block";
+            visibleCount++;
+          } else {
+            card.style.display = "none";
+          }
+        });
+
+        // Update count
+        if (showingCount) {
+          showingCount.textContent = visibleCount.toString();
+        }
+      });
+    });
+  });
+</script>
+

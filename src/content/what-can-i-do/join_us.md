@@ -2,6 +2,7 @@
 title: "Join us!"
 description: "We want to know what is going on for real"
 order: 1
+tags: ["getting-started", "membership", "organizing", "action"]
 ---
 # JPMC Workers Alliance - Join the Movement!
 
