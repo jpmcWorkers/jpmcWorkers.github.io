@@ -19,6 +19,13 @@ const {
     <base href="/workers.github.io/" />
     <link rel="icon" type="image/png" href="./img/96x96.png" />
     <title>{title}</title>
+    
+    <!-- PWA Meta Tags -->
+    <meta name="theme-color" content="#1d4ed8" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="JWA" />
+    <link rel="apple-touch-icon" href="./img/96x96.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -500,10 +507,41 @@ const {
        const mobileMenuButton = document.getElementById("mobile-menu-button");
        const mobileMenu = document.getElementById("mobile-menu");
 
-       mobileMenuButton?.addEventListener("click", () => {
-         mobileMenu?.classList.toggle("hidden");
-       });
-     </script>
+             mobileMenuButton?.addEventListener("click", () => {
+        mobileMenu?.classList.toggle("hidden");
+      });
+    </script>
+
+    <script>
+      import { registerSW } from 'virtual:pwa-register'
+
+      const updateSW = registerSW({
+        onNeedRefresh() {
+          if (confirm('New content available. Reload?')) {
+            updateSW(true)
+          }
+        },
+        onOfflineReady() {
+          console.log('App ready to work offline')
+          // Optional: Show a toast notification
+          const notification = document.createElement('div');
+          notification.textContent = '✅ App is ready to work offline!';
+          notification.style.cssText = `
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: #10b981;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 8px;
+            z-index: 1000;
+            font-weight: 500;
+          `;
+          document.body.appendChild(notification);
+          setTimeout(() => notification.remove(), 5000);
+        },
+      })
+    </script>
   </body>
 </html>
 
