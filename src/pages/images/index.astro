@@ -3,6 +3,9 @@ import Layout from '../../layouts/Layout.astro';
 import { Image } from 'astro:assets';
 import { getCollection } from 'astro:content';
 
+// Pre-import all images using glob
+const allImages = import.meta.glob('../../content/images/**/*.{png,jpg,jpeg,webp,gif}', { eager: true });
+
 // Get all images
 const imageEntries = await getCollection('images');
 
@@ -47,6 +50,10 @@ function calculateDisplayDimensions(width?: number, height?: number, maxSize: nu
           300
         );
         
+        // Get the image from pre-imported images
+        const imagePath = `../../content/images/${imageToUse}`;
+        const imageModule = allImages[imagePath] as { default: any } | undefined;
+        
         return (
           <div class="bg-white dark:bg-gray-800 rounded-lg shadow-xl overflow-hidden border-2 border-gray-200 dark:border-gray-700 flex flex-col items-space-between">
             {/* Preview Image */}
@@ -58,13 +65,17 @@ function calculateDisplayDimensions(width?: number, height?: number, maxSize: nu
                     class="text-gray-500 dark:text-gray-400 flex items-center justify-center p-4 min-h-[250px] object-cover">
                       <span>No Preview Available</span>
                   </div>)
-                : <Image
+                : imageModule ? <Image
                   width={displayDimensions.width}
                   height={displayDimensions.height}
-                  src={await import(`../../${imageToUse}`)}
+                  src={imageModule.default}
                   alt={entry.data.name}
                   class="w-full h-full object-cover"
-                />}
+                /> : (
+                  <div class="text-gray-500 dark:text-gray-400 flex items-center justify-center p-4 min-h-[250px] object-cover">
+                    <span>Image not found: {imageToUse}</span>
+                  </div>
+                )}
             </div>
           
           {/* Content */}
