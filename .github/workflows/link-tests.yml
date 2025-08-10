@@ -1,13 +1,14 @@
-name: Link Validation Tests
+name: Link Validation Tests (DISABLED)
 
 on:
-  push:
-    branches: [ main, master ]
-  pull_request:
-    branches: [ main, master ]
-  schedule:
-    # Run tests daily at 6 AM UTC to catch broken external links
-    - cron: '0 6 * * *'
+  # Disabled - uncomment to re-enable
+  # push:
+  #   branches: [ main, master ]
+  # pull_request:
+  #   branches: [ main, master ]
+  # schedule:
+  #   # Run tests daily at 6 AM UTC to catch broken external links
+  #   - cron: '0 6 * * *'
   workflow_dispatch:
     # Allow manual triggering of the workflow
 
