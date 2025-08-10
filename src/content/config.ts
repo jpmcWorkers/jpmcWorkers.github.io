@@ -84,8 +84,8 @@ const imageCollection = defineCollection({
           entries.push({
             id: item.name,
             name: item.name,
-            file: path.join(item.name, mainFile),
-            preview: previewFile ? path.join(item.name, previewFile) : null,
+            file: `${item.name}/${mainFile}`,
+            preview: previewFile ? `${item.name}/${previewFile}` : null,
             type: ext as 'png' | 'jpg' | 'jpeg' | 'webp' | 'gif' | 'pdf',
             isFolder: true,
             width: mainDimensions.width,
