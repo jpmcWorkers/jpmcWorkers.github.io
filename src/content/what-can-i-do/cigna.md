@@ -1,8 +1,9 @@
 ---
 title: "Gender Affirming Care via Cigna"
 description: "Complete guide to accessing gender-affirming care coverage through Cigna, including electrolysis procedures and medical necessity requirements."
-order: 8
-tags: ["workplace-issues", "benefits", "resources", "healthcare", "insurance"]
+order: 1
+tags: ["benefits", "healthcare", "gender-affirming-care", "cigna", "insurance"]
+redirect_from: ["/gender"]
 ---
 
 # Gender Affirming Care via Cigna

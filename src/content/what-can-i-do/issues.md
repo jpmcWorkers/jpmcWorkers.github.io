@@ -3,6 +3,7 @@ title: "JWA: Issues"
 description: "Issues as of 04/03/2025"
 order: 1
 tags: ["workplace-issues", "rto", "benefits", "policy"]
+redirect_from: ["/issues"]
 ---
 # JWA: Issues 
 
