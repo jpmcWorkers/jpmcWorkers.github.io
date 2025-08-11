@@ -3,7 +3,7 @@ title: "For Sympathetic Managers / Supervisors"
 description: "Guidance for determining if you are considered a manager under labor law and what that means for union participation."
 order: 4
 tags: ["education", "leadership", "solidarity", "management", "legal-guidance"]
-redirect_from: ["/mgr"]
+redirect_from: ["/mgr", "/workers.github.io/mgr"]
 ---
 
 # For Sympathetic Managers / Supervisors

@@ -3,7 +3,7 @@ title: "Conversation and Recruitment Training - AEIOU"
 description: "Learn the AEIOU method for effective one-on-one organizing conversations and recruitment training."
 order: 1
 tags: ["training", "organizing", "recruitment", "conversation", "education"]
-redirect_from: ["/aeiou"]
+redirect_from: ["/aeiou", "/workers.github.io/aeiou"]
 ---
 
 # Conversation and Recruitment Training
