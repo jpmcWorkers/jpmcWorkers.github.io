@@ -32,50 +32,61 @@ const {
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <!-- OpenReplay Tracking Code for my first project (Production Only) -->
+    <!-- OpenReplay Tracking Code (Production Only) -->
     <script is:inline define:vars={{ isProduction: import.meta.env.PROD }}>
       // Only load OpenReplay in production
       if (isProduction) {
         var initOpts = {
           projectKey: "NXWCm1D1FicSKMdGSXfs",
-          defaultInputMode: 2,
+          // Privacy-first configuration - obscure everything by default
+          defaultInputMode: 2, // 2 = ignore all inputs by default
           obscureTextNumbers: true,
           obscureTextEmails: true,
           obscureInputNumbers: true,
           obscureInputEmails: true,
           obscureInputDates: true,
+          // Custom DOM sanitizer to obscure all elements unless marked with data-visible
+          domSanitizer: function(node) {
+            // If element has data-visible attribute, show it plainly
+            if (node.hasAttribute && node.hasAttribute('data-visible')) {
+              return 0; // Plain (0) - show as is
+            }
+            
+            // Check for sensitive elements that should always be obscured
+            if (node.tagName === 'INPUT' || 
+                node.tagName === 'TEXTAREA' || 
+                node.tagName === 'SELECT' ||
+                node.classList && (
+                  node.classList.contains('sensitive') ||
+                  node.classList.contains('private') ||
+                  node.classList.contains('personal')
+                )) {
+              return 1; // Obscured (1) - mask the content
+            }
+            
+            // For all other elements, obscure by default
+            return 1; // Obscured (1) - mask the content
+          }
         };
+        
         var startOpts = { userID: "" };
+        
         (function (A, s, a, y, e, r) {
           r = window.OpenReplay = [e, r, y, [s - 1, e]];
           s = document.createElement("script");
           s.src = A;
           s.async = !a;
           document.getElementsByTagName("head")[0].appendChild(s);
-          r.start = function (v) {
-            r.push([0]);
-          };
-          r.stop = function (v) {
-            r.push([1]);
-          };
-          r.setUserID = function (id) {
-            r.push([2, id]);
-          };
-          r.setUserAnonymousID = function (id) {
-            r.push([3, id]);
-          };
-          r.setMetadata = function (k, v) {
-            r.push([4, k, v]);
-          };
-          r.event = function (k, p, i) {
-            r.push([5, k, p, i]);
-          };
-          r.issue = function (k, p) {
-            r.push([6, k, p]);
-          };
-          r.isActive = function () {
-            return false;
-          };
+          
+          // OpenReplay API methods
+          r.start = function (v) { r.push([0]); };
+          r.stop = function (v) { r.push([1]); };
+          r.setUserID = function (id) { r.push([2, id]); };
+          r.setUserAnonymousID = function (id) { r.push([3, id]); };
+          r.setMetadata = function (k, v) { r.push([4, k, v]); };
+          r.event = function (k, p, i) { r.push([5, k, p, i]); };
+          r.issue = function (k, p) { r.push([6, k, p]); };
+          r.isActive = function () { return false; };
           r.getSessionToken = function () {};
         })(
           "//static.openreplay.com/latest/openreplay.js",
