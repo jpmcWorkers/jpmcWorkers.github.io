@@ -21,7 +21,7 @@ const allTags = Object.keys(tagCounts).sort(
 ---
 
 <Layout title="Content - JPMC Workers Alliance">
-  <div class="prose prose-lg max-w-none">
+  <div class="prose prose-lg max-w-none ">
     <h1 class="text-4xl font-bold text-jpmc-blue mb-8">Guides & Resources</h1>
 
     <div class="mb-8">
@@ -50,7 +50,7 @@ const allTags = Object.keys(tagCounts).sort(
                 ).length;
                 return (
                   <button
-                    class="tag-filter-btn px-3 py-1 text-sm rounded-full border-2 border-jpmc-blue text-jpmc-blue hover:bg-jpmc-blue hover:text-white transition-colors"
+                    class="tag-filter-btn px-3 py-1 text-sm rounded-full border-2 border-jpmc-blue text-jpmc-blue hover:bg-jpmc-blue hover:text-white transition-colors cursor-pointer"
                     data-tag={tag}
                   >
                     {tag} ({count})
@@ -67,50 +67,66 @@ const allTags = Object.keys(tagCounts).sort(
       }
     </div>
 
-    <div class="grid gap-8" id="resources-grid">
+    <div class="flex flex-col gap-8" id="resources-grid">
       {
         sortedEntries.map((entry) => (
           <article
-            class="resource-card bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md border-l-4 border-jpmc-blue dark:border-jpmc-blue-600"
+            class="resource-card bg-white dark:bg-gray-800 py-3 px-6 rounded-lg shadow-md border-l-4 border-jpmc-blue dark:border-jpmc-blue-600"
             data-tags={entry.data.tags.join(",")}
           >
-            {/* Single line: Title: description...(tags)[read more] */}
-            <div class="flex items-baseline gap-3 flex-wrap">
-              {/* Title */}
-              <h2 class="text-xl font-bold text-jpmc-blue flex-shrink-0 border-r-2 border-jpmc-gray-300 pr-2">
+            {/* Two lines on small screens, single line on larger screens */}
+            <div class="flex flex-col @md:flex-row @md:items-baseline gap-3">
+              {/* First line on small screens: Title, Tags, and Read More */}
+              <div class="flex items-baseline gap-3 flex-wrap">
+                {/* Title */}
+                <h2 class="text-xl font-bold text-jpmc-blue flex-shrink-0 border-r-2 border-jpmc-gray-300 pr-2">
+                  <a
+                    href={`content/${entry.id}`}
+                    class="hover:text-jpmc-blue-700 transition-colors dark:text-gray-200"
+                  >
+                    {entry.data.title}
+                  </a>
+                </h2>
+
+                {/* Tags - moved to first line */}
+                <div class="flex flex-wrap gap-1 flex-shrink-0">
+                  {entry.data.tags.map((tag) => (
+                    <span class="inline-block px-2 py-1 text-xs bg-jpmc-blue-100 text-jpmc-blue-800 rounded-full">
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+
+                {/* Read More Button - moves to first line on small screens */}
                 <a
                   href={`content/${entry.id}`}
-                  class="hover:text-jpmc-blue-700 transition-colors dark:text-gray-200"
+                  class="flex-shrink-0 @md:hidden"
                 >
-                  {entry.data.title}
+                  <button class="bg-jpmc-blue text-white px-4 py-1 text-sm rounded-md hover:bg-jpmc-blue-700 transition-colors cursor-pointer">
+                    Read More →
+                  </button>
                 </a>
-              </h2>
-
-              {/* Description */}
-              {entry.data.description && (
-                <p class="text-gray-600 dark:text-gray-400 flex-1 min-w-0 truncate">
-                  {entry.data.description}
-                </p>
-              )}
-
-              {/* Tags */}
-              <div class="flex flex-wrap gap-1 flex-shrink-0">
-                {entry.data.tags.map((tag) => (
-                  <span class="inline-block px-2 py-1 text-xs bg-jpmc-blue-100 text-jpmc-blue-800 rounded-full">
-                    {tag}
-                  </span>
-                ))}
               </div>
 
-              {/* Read More Button */}
-              <a
-                href={`content/${entry.id}`}
-                class="flex-shrink-0 "
-              >
-                <button class="bg-jpmc-blue text-white px-6 py-2 text-sm rounded-md hover:bg-jpmc-blue-700 transition-colors cursor-pointer">
-                  Read More →
-                </button>
-              </a>
+              {/* Second line on small screens: Description only */}
+              <div class="flex flex-col @md:flex-row @md:items-baseline gap-3 flex-1">
+                {/* Description */}
+                {entry.data.description && (
+                  <p class="text-gray-600 dark:text-gray-400 flex-1 min-w-0 @md:truncate">
+                    {entry.data.description}
+                  </p>
+                )}
+
+                {/* Read More Button - hidden on small screens, shown on larger screens */}
+                <a
+                  href={`content/${entry.id}`}
+                  class="flex-shrink-0 hidden @md:block"
+                >
+                  <button class="bg-jpmc-blue text-white px-6 py-2 text-sm rounded-md hover:bg-jpmc-blue-700 transition-colors cursor-pointer">
+                    Read More →
+                  </button>
+                </a>
+              </div>
             </div>
           </article>
         ))
@@ -144,10 +160,10 @@ const allTags = Object.keys(tagCounts).sort(
           const cardTags = card.getAttribute("data-tags")?.split(",") || [];
 
           if (selectedTag === "all" || cardTags.includes(selectedTag)) {
-            card.style.display = "block";
+            (card as HTMLElement).style.display = "block";
             visibleCount++;
           } else {
-            card.style.display = "none";
+            (card as HTMLElement).style.display = "none";
           }
         });
 

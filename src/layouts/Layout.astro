@@ -16,8 +16,7 @@ const {
     <meta charset="UTF-8" />
     <meta name="description" content={description} />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <base href="/workers.github.io/" />
-    <link rel="icon" type="image/png" href="./img/96x96.png" />
+    <link rel="icon" type="image/png" href="/img/96x96.png" />
     <title>{title}</title>
 
     <!-- PWA Meta Tags -->
@@ -25,13 +24,14 @@ const {
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="default" />
     <meta name="apple-mobile-web-app-title" content="JWA" />
-    <link rel="apple-touch-icon" href="./img/96x96.png" />
+    <link rel="apple-touch-icon" href="/img/96x96.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+
     <!-- OpenReplay Tracking Code (Production Only) -->
     <script is:inline define:vars={{ isProduction: import.meta.env.PROD }}>
       // Only load OpenReplay in production
@@ -164,37 +164,37 @@ const {
         >
           <div class="px-4 py-2 space-y-2 bg-jpmc-gray-50 dark:bg-gray-500">
             <a
-              href="./"
+              href="/"
               class="block py-2 text-jpmc-dark hover:text-jpmc-blue font-medium"
               >Home</a
             >
             <a
-              href="./mission"
+              href="/mission"
               class="block py-2 text-jpmc-dark hover:text-jpmc-blue font-medium"
               >Mission</a
             >
             <a
-              href="./join-us"
+              href="/join-us"
               class="block py-2 text-jpmc-dark hover:text-jpmc-blue font-medium"
               >Join Us</a
             >
             <!-- <a
-              href="./contact"
+              href="/contact"
               class="block py-2 text-jpmc-dark hover:text-jpmc-blue font-medium"
               >Contact</a
             > -->
-            <a
-              href="./news"
+            <!-- <a
+              href="/news"
               class="block py-2 text-jpmc-dark hover:text-jpmc-blue font-medium"
               >News & Announcements</a
-            >
+            > -->
             <a
-              href="./issues-and-resources"
+              href="/issues-and-resources"
               class="block py-2 text-jpmc-dark hover:text-jpmc-blue font-medium"
               >Issues & Resources</a
             >
             <a
-              href="./content"
+              href="/content"
               class="block py-2 text-jpmc-dark hover:text-jpmc-blue font-medium"
               >Content</a
             >
@@ -226,21 +226,21 @@ const {
                 <ul class="space-y-1">
                   <li>
                     <a
-                      href="./"
+                      href="/"
                       class="block py-2 px-3 text-jpmc-dark dark:text-gray-200 hover:text-jpmc-blue hover:bg-jpmc-gray-50 dark:hover:bg-gray-700 rounded-md transition-colors"
                       >Home</a
                     >
                   </li>
                   <li>
                     <a
-                      href="./mission"
+                      href="/mission"
                       class="block py-2 px-3 text-jpmc-dark dark:text-gray-200 hover:text-jpmc-blue hover:bg-jpmc-gray-50 rounded-md transition-colors"
                       >Our Mission</a
                     >
                   </li>
                   <li>
                     <a
-                      href="./join-us"
+                      href="/join-us"
                       class="block py-2 px-3 text-jpmc-dark dark:text-gray-200 hover:text-jpmc-blue hover:bg-jpmc-gray-50 rounded-md transition-colors"
                       >Join the Alliance</a
                     >
@@ -249,7 +249,7 @@ const {
               </div>
 
               <!-- News & Updates -->
-              <div class="space-y-2">
+              <!-- <div class="space-y-2">
                 <h3
                   class="text-sm font-medium text-jpmc-red uppercase tracking-wide"
                 >
@@ -258,13 +258,13 @@ const {
                 <ul class="space-y-1">
                   <li>
                     <a
-                      href="./news"
+                      href="/news"
                       class="block py-2 px-3 text-jpmc-dark dark:text-gray-200 hover:text-jpmc-red hover:bg-jpmc-gray-50 rounded-md transition-colors"
                       >News & Announcements</a
                     >
                   </li>
                 </ul>
-              </div>
+              </div> -->
 
               <!-- Issues & Resources -->
               <div class="space-y-2">
@@ -276,7 +276,7 @@ const {
                 <ul class="space-y-1">
                   <li>
                     <a
-                      href="./issues-and-resources"
+                      href="/issues-and-resources"
                       class="block py-2 px-3 text-jpmc-dark dark:text-gray-200 hover:text-jpmc-gold hover:bg-jpmc-gray-50 rounded-md transition-colors"
                       >Issues & Resources</a
                     >
@@ -294,14 +294,14 @@ const {
                 <ul class="space-y-1">
                   <li>
                     <a
-                      href="./content"
+                      href="/content"
                       class="block py-2 px-3 text-jpmc-dark dark:text-gray-200 hover:text-jpmc-blue hover:bg-jpmc-gray-50 dark:hover:bg-gray-700 rounded-md transition-colors"
                       >Guides & Resources</a
                     >
                   </li>
                   <li>
                     <a
-                      href="./images"
+                      href="/images"
                       class="block py-2 px-3 text-jpmc-dark dark:text-gray-200 hover:text-jpmc-blue hover:bg-jpmc-gray-50 dark:hover:bg-gray-700 rounded-md transition-colors"
                       >Images & Materials</a
                     >
@@ -410,34 +410,34 @@ const {
               <ul class="space-y-2 text-sm">
                 <li>
                   <a
-                    href="./mission"
+                    href="/mission"
                     class="hover:text-jpmc-blue transition-colors"
                     >Our Mission</a
                   >
                 </li>
                 <li>
                   <a
-                    href="./join-us"
+                    href="/join-us"
                     class="hover:text-jpmc-blue transition-colors"
                     >Join the Alliance</a
                   >
                 </li>
                 <!-- <li>
                   <a
-                    href="./contact"
+                    href="/contact"
                     class="hover:text-jpmc-blue transition-colors"
                     >Contact Us</a>
                 </li> -->
-                <li>
+                <!-- <li>
                   <a
-                    href="./news"
+                    href="/news"
                     class="hover:text-jpmc-blue transition-colors"
                     >Latest News</a
                   >
-                </li>
+                </li> -->
                 <li>
                   <a
-                    href="./content"
+                    href="/content"
                     class="hover:text-jpmc-blue transition-colors">Content</a
                   >
                 </li>

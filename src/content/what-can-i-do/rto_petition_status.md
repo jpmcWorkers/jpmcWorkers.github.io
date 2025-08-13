@@ -3,6 +3,7 @@ title: "RTO Petition Status"
 description: "Update on the status of the RTO petition, CEO response, and next steps for building the movement."
 order: 11
 tags: ["workplace-issues", "organizing", "rto", "petition", "status-update"]
+redirect_from: ["/rto_petition_status"]
 ---
 
 # RTO Petition Status

@@ -11,8 +11,8 @@ import redirectFrom from 'astro-redirect-from';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://nivoset.github.io',
-  base: '/workers.github.io',
+  // site: 'https://nivoset.github.io',
+  // base: '/workers.github.io',
   output: 'static',
 
   redirects: {
@@ -23,14 +23,6 @@ export default defineConfig({
     '/issues': '/what-can-i-do/issues',
     '/join_us': '/what-can-i-do/join-us',
     '/discord': 'https://bit.ly/jpmcworkers',
-    // GitHub Pages redirects
-    '/workers.github.io/qa': '/what-can-i-do/qa',
-    '/workers.github.io/mgr': '/what-can-i-do/mgr',
-    '/workers.github.io/gender': '/what-can-i-do/cigna',
-    '/workers.github.io/aeiou': '/what-can-i-do/aeiou',
-    '/workers.github.io/issues': '/what-can-i-do/issues',
-    '/workers.github.io/join_us': '/what-can-i-do/join-us',
-    '/workers.github.io/discord': 'https://bit.ly/jpmcworkers',
   },
 
   vite: {
