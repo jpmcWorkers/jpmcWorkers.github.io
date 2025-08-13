@@ -13,9 +13,6 @@ permissions:
   contents: read
   pages: write
   id-token: write
-env:
-  SITE: "${{ secrets.SITE }}"
-  BASE: "/workers.github.io/"
 
 # Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
 # However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
@@ -32,6 +29,7 @@ jobs:
         uses: actions/checkout@v4
       - name: Install, build, and upload your site
         uses: withastro/action@v3
+        # since this is not a jekyl site, we need to set nojekyll to true
         with:
           nojekyll: true
 

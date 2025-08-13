@@ -11,32 +11,32 @@ import redirectFrom from 'astro-redirect-from';
 
 // https://astro.build/config
 export default defineConfig({
-  // site: 'https://nivoset.github.io',
-  // base: '/workers.github.io',
   output: 'static',
 
-  redirects: {
-    '/qa': '/resources/qa',
-    'mgr': '/resources/mgr',
-    '/gender': '/resources/cigna',
-    '/aeiou': '/resources/aeiou',
-    '/issues': '/resources/issues',
-    '/join_us': '/resources/join-us',
-    '/discord': 'https://bit.ly/jpmcworkers',
-  },
+  // This only works if not static
+  // redirects: {
+  //   '/qa': '/resources/qa',
+  //   'mgr': '/resources/mgr',
+  //   '/gender': '/resources/cigna',
+  //   '/aeiou': '/resources/aeiou',
+  //   '/issues': '/resources/issues',
+  //   '/join_us': '/resources/join-us',
+  //   '/discord': 'https://bit.ly/jpmcworkers',
+  // },
 
   vite: {
     plugins: [tailwindcss()],
   },
 
   integrations: [
+    // Sitemap for searchyness
     sitemap(), 
+    // plugin to help easily generate redirects in files
     redirectFrom(),
+    // PWA! offline access and performance things, can technically improve
     AstroPWA({
       mode: 'production',
-      base: '/workers.github.io',
-      scope: '/workers.github.io',
-      includeAssets: ['favicon.ico', 'img/**/*'],
+      includeAssets: ['favicon.ico', 'img/**/*',],
       registerType: 'autoUpdate',
       manifest: {
         name: 'JPMC Workers Alliance',
@@ -67,7 +67,6 @@ export default defineConfig({
         ]
       },
       workbox: {
-        navigateFallback: '/workers.github.io/',
         globPatterns: ['**/*.{css,js,html,svg,ico,txt}'],
         globIgnores: ['images/**/*'], // Exclude large images from service worker cache
         runtimeCaching: [
@@ -101,18 +100,6 @@ export default defineConfig({
           }
         ]
       }
-    }), 
-    partytown({
-      config: {
-        forward: ['openReplayTracker'],
-        resolveUrl: (url, location, type) => {
-          // Allow OpenReplay domain
-          if (url.hostname === 'static.openreplay.com') {
-            return url;
-          }
-          return null;
-        }
-      }
-    })
+    }),
   ],
 });
