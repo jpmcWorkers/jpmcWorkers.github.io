@@ -2,9 +2,9 @@
 import Layout from "../layouts/Layout.astro";
 import { getCollection } from "astro:content";
 
-// Get all what-can-i-do content
-const whatCanIDoEntries = await getCollection("what-can-i-do");
-const sortedEntries = whatCanIDoEntries.sort(
+// Get all resources content
+const resourcesEntries = await getCollection("resources");
+const sortedEntries = resourcesEntries.sort(
   (a, b) => (a.data.order || 999) - (b.data.order || 999)
 );
 

@@ -16,12 +16,12 @@ export default defineConfig({
   output: 'static',
 
   redirects: {
-    '/qa': '/what-can-i-do/qa',
-    'mgr': '/what-can-i-do/mgr',
-    '/gender': '/what-can-i-do/cigna',
-    '/aeiou': '/what-can-i-do/aeiou',
-    '/issues': '/what-can-i-do/issues',
-    '/join_us': '/what-can-i-do/join-us',
+    '/qa': '/resources/qa',
+    'mgr': '/resources/mgr',
+    '/gender': '/resources/cigna',
+    '/aeiou': '/resources/aeiou',
+    '/issues': '/resources/issues',
+    '/join_us': '/resources/join-us',
     '/discord': 'https://bit.ly/jpmcworkers',
   },
 
