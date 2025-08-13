@@ -4,7 +4,7 @@ import { getCollection, render } from 'astro:content';
 
 export async function getStaticPaths() {
   const resourcesEntries = await getCollection('resources');
-  return whatCanIDoEntries.map((entry) => ({
+  return resourcesEntries.map((entry) => ({
     params: { slug: entry.id },
     props: { entry },
   }));
