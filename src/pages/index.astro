@@ -319,15 +319,3 @@ import banner from "../img/banner.png";
     </div>
   </section>
 </Layout>
-
-
-<script is:inline>
-  // get the current url, if it matches the redirect object, then redirect to the new url
-  const currentUrl = window.location.href;
-  const redirectObject = {
-    "/mgr": "/resources/mgr",
-  };
-  if (redirectObject[currentUrl]) {
-    window.location.href = redirectObject[currentUrl];
-  }
-</script>
