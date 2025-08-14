@@ -1,1 +1,7 @@
 .~lock.*#
+node_modules
+dist
+.astro
+.vscode
+test-results
+playwright-report

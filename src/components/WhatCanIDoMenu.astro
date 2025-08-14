@@ -1,0 +1,25 @@
+---
+import { getCollection } from 'astro:content';
+
+// Get all resources content
+const resourcesEntries = await getCollection('resources');
+const sortedEntries = resourcesEntries.sort((a, b) => (a.data.order || 999) - (b.data.order || 999));
+---
+
+<div class="space-y-2">
+  <a href="/resources">
+    <h4 class="text-sm font-medium text-jpmc-blue uppercase tracking-wide">Resources</h4>
+  </a>
+  <ul class="space-y-1">
+    {sortedEntries.map((entry) => (
+      <li>
+        <a 
+          href={`/resources/${entry.id}`} 
+          class="block py-2 px-3 text-jpmc-dark dark:text-gray-200 hover:text-jpmc-blue hover:bg-jpmc-gray-50 dark:hover:bg-gray-700 rounded-md transition-colors"
+        >
+          {entry.data.title}
+        </a>
+      </li>
+    ))}
+  </ul>
+</div> 

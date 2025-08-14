@@ -1,0 +1,30 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getCollection, render } from 'astro:content';
+
+export async function getStaticPaths() {
+  const resourcesEntries = await getCollection('resources');
+  return resourcesEntries.map((entry) => ({
+    params: { slug: entry.id },
+    props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+---
+
+<Layout title={`${entry.data.title} - JPMC Workers Alliance`}>
+  <article class="prose prose-lg max-w-none">
+    <header class="mb-8">
+      <h1 class="text-4xl font-bold text-jpmc-blue mb-4">{entry.data.title}</h1>
+      {entry.data.description && (
+        <p class="text-xl text-gray-600">{entry.data.description}</p>
+      )}
+    </header>
+    
+    <div class="bg-white p-8 rounded-lg shadow-md dark:bg-jpmc-gray-300">
+      <Content />
+    </div>
+  </article>
+</Layout> 

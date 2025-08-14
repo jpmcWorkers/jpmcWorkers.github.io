@@ -1,0 +1,178 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { getCollection } from "astro:content";
+
+// Get all resources content
+const resourcesEntries = await getCollection("resources");
+const sortedEntries = resourcesEntries.sort(
+  (a, b) => (a.data.order || 999) - (b.data.order || 999)
+);
+
+// Get all unique tags sorted by count (most popular first)
+const tagCounts = {};
+sortedEntries.forEach((entry) => {
+  entry.data.tags.forEach((tag) => {
+    tagCounts[tag] = (tagCounts[tag] || 0) + 1;
+  });
+});
+const allTags = Object.keys(tagCounts).sort(
+  (a, b) => tagCounts[b] - tagCounts[a]
+);
+---
+
+<Layout title="Content - JPMC Workers Alliance">
+  <div class="prose prose-lg max-w-none ">
+    <h1 class="text-4xl font-bold text-jpmc-blue mb-8">Guides & Resources</h1>
+
+    <div class="mb-8">
+      <p class="text-xl text-gray-700 mb-6">
+        Ready to take action? Here are resources and guides to help you get
+        involved in improving working conditions at JPMC.
+      </p>
+
+      <!-- Tag Filter UI -->
+      {
+        allTags.length > 0 && (
+          <div class="bg-white dark:bg-gray-800 rounded-lg p-4 shadow-md border border-gray-200 dark:border-gray-700">
+            <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-3">
+              Filter by Category:
+            </h3>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <button
+                class="tag-filter-btn active px-3 py-1 text-sm rounded-full border-2 border-jpmc-blue bg-jpmc-blue text-white hover:bg-jpmc-blue-700 transition-colors"
+                data-tag="all"
+              >
+                All ({sortedEntries.length})
+              </button>
+              {allTags.map((tag) => {
+                const count = sortedEntries.filter((entry) =>
+                  entry.data.tags.includes(tag)
+                ).length;
+                return (
+                  <button
+                    class="tag-filter-btn px-3 py-1 text-sm rounded-full border-2 border-jpmc-blue text-jpmc-blue hover:bg-jpmc-blue hover:text-white transition-colors cursor-pointer"
+                    data-tag={tag}
+                  >
+                    {tag} ({count})
+                  </button>
+                );
+              })}
+            </div>
+            <div class="text-sm text-gray-600 dark:text-gray-400">
+              <span id="showing-count">{sortedEntries.length}</span> resources
+              shown
+            </div>
+          </div>
+        )
+      }
+    </div>
+
+    <div class="flex flex-col gap-8" id="resources-grid">
+      {
+        sortedEntries.map((entry) => (
+          <article
+            class="resource-card bg-white dark:bg-gray-800 py-3 px-6 rounded-lg shadow-md border-l-4 border-jpmc-blue dark:border-jpmc-blue-600"
+            data-tags={entry.data.tags.join(",")}
+          >
+            {/* Two lines on small screens, single line on larger screens */}
+            <div class="flex flex-col @md:flex-row @md:items-baseline gap-3">
+              {/* First line on small screens: Title, Tags, and Read More */}
+              <div class="flex items-baseline gap-3 flex-wrap">
+                {/* Title */}
+                <h2 class="text-xl font-bold text-jpmc-blue flex-shrink-0 border-r-2 border-jpmc-gray-300 pr-2">
+                  <a
+                    href={`content/${entry.id}`}
+                    class="hover:text-jpmc-blue-700 transition-colors dark:text-gray-200"
+                  >
+                    {entry.data.title}
+                  </a>
+                </h2>
+
+                {/* Tags - moved to first line */}
+                <div class="flex flex-wrap gap-1 flex-shrink-0">
+                  {entry.data.tags.map((tag) => (
+                    <span class="inline-block px-2 py-1 text-xs bg-jpmc-blue-100 text-jpmc-blue-800 rounded-full">
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+
+                {/* Read More Button - moves to first line on small screens */}
+                <a
+                  href={`content/${entry.id}`}
+                  class="flex-shrink-0 @md:hidden"
+                >
+                  <button class="bg-jpmc-blue text-white px-4 py-1 text-sm rounded-md hover:bg-jpmc-blue-700 transition-colors cursor-pointer">
+                    Read More →
+                  </button>
+                </a>
+              </div>
+
+              {/* Second line on small screens: Description only */}
+              <div class="flex flex-col @md:flex-row @md:items-baseline gap-3 flex-1">
+                {/* Description */}
+                {entry.data.description && (
+                  <p class="text-gray-600 dark:text-gray-400 flex-1 min-w-0 @md:truncate">
+                    {entry.data.description}
+                  </p>
+                )}
+
+                {/* Read More Button - hidden on small screens, shown on larger screens */}
+                <a
+                  href={`content/${entry.id}`}
+                  class="flex-shrink-0 hidden @md:block"
+                >
+                  <button class="bg-jpmc-blue text-white px-6 py-2 text-sm rounded-md hover:bg-jpmc-blue-700 transition-colors cursor-pointer">
+                    Read More →
+                  </button>
+                </a>
+              </div>
+            </div>
+          </article>
+        ))
+      }
+    </div>
+  </div>
+</Layout>
+
+<script>
+  // Tag filtering functionality for What Can I Do resources
+  document.addEventListener("DOMContentLoaded", function () {
+    const filterButtons = document.querySelectorAll(".tag-filter-btn");
+    const resourceCards = document.querySelectorAll(".resource-card");
+    const showingCount = document.getElementById("showing-count");
+
+    filterButtons.forEach((button) => {
+      button.addEventListener("click", function () {
+        const selectedTag = this.getAttribute("data-tag");
+
+        // Update active button
+        filterButtons.forEach((btn) => {
+          btn.classList.remove("active", "bg-jpmc-blue", "text-white");
+          btn.classList.add("text-jpmc-blue");
+        });
+        this.classList.add("active", "bg-jpmc-blue", "text-white");
+        this.classList.remove("text-jpmc-blue");
+
+        // Filter cards
+        let visibleCount = 0;
+        resourceCards.forEach((card) => {
+          const cardTags = card.getAttribute("data-tags")?.split(",") || [];
+
+          if (selectedTag === "all" || cardTags.includes(selectedTag)) {
+            (card as HTMLElement).style.display = "block";
+            visibleCount++;
+          } else {
+            (card as HTMLElement).style.display = "none";
+          }
+        });
+
+        // Update count
+        if (showingCount) {
+          showingCount.textContent = visibleCount.toString();
+        }
+      });
+    });
+  });
+</script>
+
