@@ -210,8 +210,8 @@ test.describe('Comprehensive Link Crawler', () => {
   test('Test What Can I Do menu links', async ({ page }) => {
     await page.goto('/');
     
-    // First test links to what-can-i-do and content sections
-    const sectionResults = await navHelper.testLinksBySelector('a[href*="what-can-i-do"], a[href*="content"]', 'What Can I Do section links');
+    // First test links to resources and content sections
+    const sectionResults = await navHelper.testLinksBySelector('a[href*="resources"], a[href*="content"]', 'What Can I Do section links');
     
     if (sectionResults.length > 0) {
       navHelper.assertNobrokenLinks(sectionResults, expect);

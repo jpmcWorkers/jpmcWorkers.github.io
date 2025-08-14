@@ -180,11 +180,11 @@ test.describe('Link Validation Tests', () => {
 
   test('All redirects work correctly', async ({ page }) => {
     const redirects = [
-      { from: '/qa', to: '/what-can-i-do/qa' },
-      { from: '/gender', to: '/what-can-i-do/gender' },
-      { from: '/aeiou', to: '/what-can-i-do/aeiou' },
-      { from: '/issues', to: '/what-can-i-do/issues' },
-      { from: '/join_us', to: '/what-can-i-do/join-us' },
+      { from: '/qa', to: '/resources/qa' },
+      { from: '/gender', to: '/resources/gender' },
+      { from: '/aeiou', to: '/resources/aeiou' },
+      { from: '/issues', to: '/resources/issues' },
+      { from: '/join_us', to: '/resources/join-us' },
     ];
     
     for (const redirect of redirects) {
