@@ -397,3 +397,24 @@
 @utility section-blue {
   background-color: var(--color-jpmc-blue-50);
 } 
+
+
+
+/* View transition styles, page to page navigation */
+@view-transition {
+  navigation: auto;
+}
+::view-transition-old(hero) {
+  animation: fade-out 0.2s linear forwards;
+}
+::view-transition-new(hero) {
+  animation: fade-in 0.3s linear reverse;
+}
+@keyframes fade-out {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+@keyframes fade-in {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
