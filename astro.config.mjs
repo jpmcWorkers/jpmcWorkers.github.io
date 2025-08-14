@@ -5,8 +5,6 @@ import tailwindcss from '@tailwindcss/vite';
 
 import sitemap from '@astrojs/sitemap';
 
-import partytown from '@astrojs/partytown';
-
 import redirectFrom from 'astro-redirect-from';
 
 // https://astro.build/config
