@@ -33,72 +33,6 @@ const {
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-
-    <!-- OpenReplay Tracking Code (Production Only) -->
-    <script is:inline define:vars={{ isProduction: import.meta.env.PROD }}>
-      // Only load OpenReplay in production
-      if (isProduction) {
-        var initOpts = {
-          projectKey: "NXWCm1D1FicSKMdGSXfs",
-          // Privacy-first configuration - obscure everything by default
-          defaultInputMode: 2, // 2 = ignore all inputs by default
-          obscureTextNumbers: true,
-          obscureTextEmails: true,
-          obscureInputNumbers: true,
-          obscureInputEmails: true,
-          obscureInputDates: true,
-          // Custom DOM sanitizer to obscure all elements unless marked with data-visible
-          domSanitizer: function(node) {
-            // If element has data-visible attribute, show it plainly
-            if (node.hasAttribute && node.hasAttribute('data-visible')) {
-              return 0; // Plain (0) - show as is
-            }
-            
-            // Check for sensitive elements that should always be obscured
-            if (node.tagName === 'INPUT' || 
-                node.tagName === 'TEXTAREA' || 
-                node.tagName === 'SELECT' ||
-                node.classList && (
-                  node.classList.contains('sensitive') ||
-                  node.classList.contains('private') ||
-                  node.classList.contains('personal')
-                )) {
-              return 1; // Obscured (1) - mask the content
-            }
-            
-            // For all other elements, obscure by default
-            return 1; // Obscured (1) - mask the content
-          }
-        };
-        
-        var startOpts = { userID: "" };
-        
-        (function (A, s, a, y, e, r) {
-          r = window.OpenReplay = [e, r, y, [s - 1, e]];
-          s = document.createElement("script");
-          s.src = A;
-          s.async = !a;
-          document.getElementsByTagName("head")[0].appendChild(s);
-          
-          // OpenReplay API methods
-          r.start = function (v) { r.push([0]); };
-          r.stop = function (v) { r.push([1]); };
-          r.setUserID = function (id) { r.push([2, id]); };
-          r.setUserAnonymousID = function (id) { r.push([3, id]); };
-          r.setMetadata = function (k, v) { r.push([4, k, v]); };
-          r.event = function (k, p, i) { r.push([5, k, p, i]); };
-          r.issue = function (k, p) { r.push([6, k, p]); };
-          r.isActive = function () { return false; };
-          r.getSessionToken = function () {};
-        })(
-          "//static.openreplay.com/latest/openreplay.js",
-          1,
-          0,
-          initOpts,
-          startOpts
-        );
-      }
-    </script>
   </head>
   <body
     class="bg-jpmc-light dark:bg-gray-900 text-jpmc-dark dark:text-gray-100 min-h-screen transition-colors duration-200"
@@ -211,7 +145,7 @@ const {
           class="w-64 bg-white dark:bg-gray-800 shadow-lg border-r border-gray-200 dark:border-gray-700 hidden lg:block transition-colors duration-200"
           aria-label="Sidebar navigation"
         >
-          <div class="p-6" data-openreplay-obscured>
+          <div class="p-6">
             <!-- Navigation Links -->
             <nav class="space-y-4">
               <h2 class="text-lg font-semibold text-jpmc-dark mb-4">
@@ -313,7 +247,7 @@ const {
             </nav>
 
             <!-- Social Links -->
-            <div data-openreplay-obscured>
+            <div >
               <SocialLinks variant="sidebar" />
             </div>
           </div>
@@ -323,7 +257,7 @@ const {
         <main
           class="flex-1 bg-jpmc-gray-50 dark:bg-gray-900 transition-colors duration-200"
         >
-          <div class="container mx-auto px-4 py-8" data-openreplay-obscured>
+          <div class="container mx-auto px-4 py-8" >
             <!-- Mobile page title -->
             <div class="lg:hidden mb-6">
               <h1 class="text-2xl font-bold text-jpmc-dark dark:text-gray-100">
