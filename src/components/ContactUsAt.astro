@@ -9,58 +9,22 @@ export interface Props {
   description: string;
   link: string;
   buttonText: string;
-  hoverColor?: string;
-  buttonStyle?: ButtonVariantProps['intent'];
+
 }
 
-const { color, svg, title, description, link, buttonText, hoverColor: customHoverColor, buttonStyle = "solid" } = Astro.props;
+const { color, svg, title, description, link, buttonText } = Astro.props;
 
-// Map the color classes to button intents with style variants
-function getButtonIntent(color: string, style: ButtonVariantProps['intent']): ButtonVariantProps['intent'] {
-  if (color.includes('jpmc-blue')) {
-    switch (style) {
-      case "solid": return "primary";
-      case "outline": return "primaryOutline";
-      case "ghost": return "primaryGhost";
-    }
-  }
-  if (color.includes('jpmc-red')) {
-    switch (style) {
-      case "solid": return "secondary";
-      case "outline": return "secondaryOutline";
-      case "ghost": return "secondaryGhost";
-    }
-  }
-  if (color.includes('jpmc-gold')) {
-    switch (style) {
-      case "solid": return "accent";
-      case "outline": return "accentOutline";
-      case "ghost": return "accentGhost";
-    }
-  }
-  if (color.includes('purple')) {
-    switch (style) {
-      case "solid": return "primary";
-      case "outline": return "primaryOutline";
-      case "ghost": return "primaryGhost";
-    }
-  }
-  if (color.includes('black')) {
-    switch (style) {
-      case "solid": return "primary";
-      case "outline": return "primaryOutline";
-      case "ghost": return "primaryGhost";
-    }
-  }
-  // Fallback
-  switch (style) {
-    case "solid": return "primary";
-    case "outline": return "primaryOutline";
-    case "ghost": return "primaryGhost";
-  }
+// Map the color classes to button intents
+function getButtonIntent(color: string): ButtonVariantProps['intent'] {
+  if (color.includes('jpmc-blue')) return "primary";
+  if (color.includes('jpmc-red')) return "secondary";
+  if (color.includes('jpmc-gold')) return "accent";
+  if (color.includes('purple')) return "primary";
+  if (color.includes('black')) return "primary";
+  return "primary"; // Fallback
 }
 
-const buttonIntent = getButtonIntent(color, buttonStyle);
+const buttonIntent = getButtonIntent(color);
 ---
 
 <div class="bg-white p-6 rounded-lg shadow-lg text-center hover:shadow-xl transition-shadow duration-300">
