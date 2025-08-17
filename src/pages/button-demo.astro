@@ -1,0 +1,174 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Button from "../components/Button.astro";
+---
+
+<Layout title="Button Component Demo">
+  <div class="max-w-6xl mx-auto p-8">
+    <h1 class="text-4xl font-bold text-jpmc-dark mb-8">Button Component Demo</h1>
+    
+    <div class="space-y-12">
+      <!-- Solid Intent Variants -->
+      <section>
+        <h2 class="text-2xl font-semibold text-jpmc-dark mb-6">Solid Intent Variants</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+          <Button intent="primary">Primary</Button>
+          <Button intent="secondary">Secondary</Button>
+          <Button intent="accent">Accent</Button>
+          <Button intent="destructive">Destructive</Button>
+          <Button intent="success">Success</Button>
+          <Button intent="warning">Warning</Button>
+        </div>
+      </section>
+
+      <!-- Outline Intent Variants -->
+      <section>
+        <h2 class="text-2xl font-semibold text-jpmc-dark mb-6">Outline Intent Variants (White with Colored Borders)</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+          <Button intent="primaryOutline">Primary Outline</Button>
+          <Button intent="secondaryOutline">Secondary Outline</Button>
+          <Button intent="accentOutline">Accent Outline</Button>
+          <Button intent="outline">Gray Outline</Button>
+        </div>
+      </section>
+
+      <!-- Ghost Intent Variants -->
+      <section>
+        <h2 class="text-2xl font-semibold text-jpmc-dark mb-6">Ghost Intent Variants (Transparent with Colored Text)</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+          <Button intent="primaryGhost">Primary Ghost</Button>
+          <Button intent="secondaryGhost">Secondary Ghost</Button>
+          <Button intent="accentGhost">Accent Ghost</Button>
+          <Button intent="ghost">Gray Ghost</Button>
+        </div>
+      </section>
+
+      <!-- Size Variants -->
+      <section>
+        <h2 class="text-2xl font-semibold text-jpmc-dark mb-6">Size Variants</h2>
+        <div class="flex flex-wrap items-center gap-4">
+          <Button size="sm">Small</Button>
+          <Button size="md">Medium</Button>
+          <Button size="lg">Large</Button>
+          <Button size="xl">Extra Large</Button>
+          <Button size="2xl">2XL</Button>
+        </div>
+      </section>
+
+      <!-- Full Width -->
+      <section>
+        <h2 class="text-2xl font-semibold text-jpmc-dark mb-6">Full Width</h2>
+        <div class="space-y-4">
+          <Button intent="primary" fullWidth={true}>Full Width Primary</Button>
+          <Button intent="secondary" fullWidth={true}>Full Width Secondary</Button>
+          <Button intent="accent" fullWidth={true}>Full Width Accent</Button>
+        </div>
+      </section>
+
+      <!-- Loading States -->
+      <section>
+        <h2 class="text-2xl font-semibold text-jpmc-dark mb-6">Loading States</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <Button intent="primary" loading={true}>Loading Primary</Button>
+          <Button intent="secondary" loading={true}>Loading Secondary</Button>
+          <Button intent="accent" loading={true}>Loading Accent</Button>
+        </div>
+      </section>
+
+      <!-- Disabled States -->
+      <section>
+        <h2 class="text-2xl font-semibold text-jpmc-dark mb-6">Disabled States</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <Button intent="primary" disabled={true}>Disabled Primary</Button>
+          <Button intent="secondary" disabled={true}>Disabled Secondary</Button>
+          <Button intent="accent" disabled={true}>Disabled Accent</Button>
+        </div>
+      </section>
+
+      <!-- Link Buttons -->
+      <section>
+        <h2 class="text-2xl font-semibold text-jpmc-dark mb-6">Link Buttons</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <Button intent="primary" href="/mission">Link to Mission</Button>
+          <Button intent="secondary" href="/join-us" target="_blank">Join Us (New Tab)</Button>
+          <Button intent="accent" href="/contact">Contact Us</Button>
+        </div>
+      </section>
+
+      <!-- Compound Variants -->
+      <section>
+        <h2 class="text-2xl font-semibold text-jpmc-dark mb-6">Compound Variants (Large + Bold)</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <Button intent="primary" size="lg">Primary Large</Button>
+          <Button intent="secondary" size="lg">Secondary Large</Button>
+          <Button intent="accent" size="lg">Accent Large</Button>
+        </div>
+      </section>
+
+      <!-- Custom Classes -->
+      <section>
+        <h2 class="text-2xl font-semibold text-jpmc-dark mb-6">Custom Classes</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <Button intent="primary" class="shadow-lg transform hover:scale-105">
+            Custom Shadow & Hover
+          </Button>
+          <Button intent="secondary" class="rounded-full">
+            Rounded Full
+          </Button>
+        </div>
+      </section>
+
+      <!-- Button Types -->
+      <section>
+        <h2 class="text-2xl font-semibold text-jpmc-dark mb-6">Button Types</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <Button type="button">Button Type</Button>
+          <Button type="submit">Submit Type</Button>
+          <Button type="reset">Reset Type</Button>
+        </div>
+      </section>
+
+      <!-- Hover Effects Demo -->
+      <section>
+        <h2 class="text-2xl font-semibold text-jpmc-dark mb-6">Hover Effects Demo</h2>
+        <div class="bg-gray-100 p-6 rounded-lg">
+          <p class="text-gray-600 mb-4">Hover over these buttons to see the color transitions:</p>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <Button intent="primaryOutline">Primary Outline (White → Blue)</Button>
+            <Button intent="secondaryOutline">Secondary Outline (White → Red)</Button>
+            <Button intent="accentOutline">Accent Outline (White → Gold)</Button>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
+            <Button intent="primaryGhost">Primary Ghost (Transparent → Blue)</Button>
+            <Button intent="secondaryGhost">Secondary Ghost (Transparent → Red)</Button>
+            <Button intent="accentGhost">Accent Ghost (Transparent → Gold)</Button>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Usage Examples -->
+    <section class="mt-16">
+      <h2 class="text-2xl font-semibold text-jpmc-dark mb-6">Usage Examples</h2>
+      <div class="bg-gray-100 p-6 rounded-lg">
+        <h3 class="text-lg font-semibold mb-4">Basic Usage:</h3>
+        <pre class="bg-gray-800 text-green-400 p-4 rounded overflow-x-auto"><code>&lt;Button intent="primary"&gt;Click me&lt;/Button&gt;</code></pre>
+        
+        <h3 class="text-lg font-semibold mb-4 mt-6">Outline Style:</h3>
+        <pre class="bg-gray-800 text-green-400 p-4 rounded overflow-x-auto"><code>&lt;Button intent="primaryOutline"&gt;White with Blue Border&lt;/Button&gt;</code></pre>
+        
+        <h3 class="text-lg font-semibold mb-4 mt-6">Ghost Style:</h3>
+        <pre class="bg-gray-800 text-green-400 p-4 rounded overflow-x-auto"><code>&lt;Button intent="primaryGhost"&gt;Transparent with Blue Text&lt;/Button&gt;</code></pre>
+        
+        <h3 class="text-lg font-semibold mb-4 mt-6">With Variants:</h3>
+        <pre class="bg-gray-800 text-green-400 p-4 rounded overflow-x-auto"><code>&lt;Button intent="secondary" size="lg" fullWidth={true}&gt;Large Full Width&lt;/Button&gt;</code></pre>
+        
+        <h3 class="text-lg font-semibold mb-4 mt-6">As Link:</h3>
+        <pre class="bg-gray-800 text-green-400 p-4 rounded overflow-x-auto"><code>&lt;Button intent="accent" href="/mission"&gt;Go to Mission&lt;/Button&gt;</code></pre>
+        
+        <h3 class="text-lg font-semibold mb-4 mt-6">Loading State:</h3>
+        <pre class="bg-gray-800 text-green-400 p-4 rounded overflow-x-auto"><code>&lt;Button intent="primary" loading={true}&gt;Processing...&lt;/Button&gt;</code></pre>
+      </div>
+    </section>
+  </div>
+</Layout>
