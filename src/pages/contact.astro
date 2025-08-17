@@ -1,91 +1,50 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import SocialLinks from "../components/SocialLinks.astro";
+import Button from "../components/Button.astro";
 ---
 
 <Layout title="Contact Us">
-  <div class="max-w-6xl mx-auto lg:pr-6">
+  <div class="max-w-6xl mx-auto lg:pr-6 flex flex-col lg:items-center gap-y-16">
     <!-- Hero Section -->
-    <div class="text-center mb-12">
-      <h1 class="text-4xl font-bold text-jpmc-dark mb-4">Connect With Us</h1>
-      <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-        Join our community across various platforms to stay connected, informed, and engaged with the JPMC Workers Alliance.
-      </p>
-    </div>
+    <section class="relative bg-gradient-to-r from-jpmc-blue to-jpmc-gold py-20 rounded-3xl">
+      <div class="absolute inset-0 bg-opacity-30"></div>
+      <div class="relative container mx-auto px-4 text-center text-white">
+        <div class="max-w-4xl mx-auto drop-shadow-lg drop-shadow-gray-900">
+          <h1 class="text-4xl md:text-6xl font-bold mb-6 text-gray-200">Connect With Us</h1>
+          <p class="text-xl md:text-2xl mb-8 text-gray-100">
+            Follow us on social media to stay updated with the latest news, resources, and ways to get involved.
+          </p>
+        </div>
+      </div>
+    </section>
 
     <!-- Social Media Grid -->
-    <section class="mb-16">
+    <section class="">
       <SocialLinks 
         variant="contact" 
         title="Social Media"
       />
     </section>
 
-    <!-- Additional Contact Information -->
-    <section class="bg-white rounded-lg shadow-lg p-8 mb-8">
-      <h2 class="text-2xl font-bold text-jpmc-dark mb-6">Additional Contact Information</h2>
-      
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <!-- Email Contact -->
-        <div class="space-y-4">
-          <h3 class="text-lg font-semibold text-jpmc-blue">Email Contact</h3>
-          <div class="bg-gray-50 p-4 rounded-lg">
-            <p class="text-gray-700 mb-2">
-              <strong>Direct Email:</strong>
-            </p>
-            <p class="text-sm text-gray-600">
-              From our web address <code class="bg-gray-200 px-2 py-1 rounded">www.jpmcWorkers.com</code> 
-              remove the <code class="bg-gray-200 px-2 py-1 rounded">www.</code> and the 
-              <code class="bg-gray-200 px-2 py-1 rounded">.com</code>, then append 
-              <code class="bg-gray-200 px-2 py-1 rounded">@gmail.com</code>.
-            </p>
-            <p class="text-xs text-gray-500 mt-2 italic">
-              *Thank a spammer for the need to obfuscate an e-mail address on the web!*
-            </p>
-          </div>
-        </div>
-
-        <!-- Organizational Partners -->
-        <div class="space-y-4">
-          <h3 class="text-lg font-semibold text-jpmc-red">Organizational Partners</h3>
-          <div class="space-y-3">
-            <div>
-              <p class="font-medium text-gray-700">In the United States:</p>
-              <p class="text-sm text-gray-600">
-                Contact via the <a href="https://betterbanks.org/contact" class="text-jpmc-blue hover:underline">Committee for Better Banks</a>, 
-                a sub-organization of the <a href="https://cwa-union.org/" class="text-jpmc-blue hover:underline">Communication Workers of America</a>.
-              </p>
-            </div>
-            <div>
-              <p class="font-medium text-gray-700">In the United Kingdom:</p>
-              <p class="text-sm text-gray-600">
-                Contact via the <a href="https://www.cwu.org/" class="text-jpmc-blue hover:underline">Communication Workers Union</a>.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <!-- Call to Action -->
-    <section class="text-center bg-gradient-to-r from-jpmc-blue to-jpmc-blue-700 text-white rounded-lg p-8">
-      <h2 class="text-2xl font-bold mb-4">Ready to Get Involved?</h2>
-      <p class="text-lg mb-6 opacity-90">
-        Join our community and help us build better working conditions for all JPMC employees worldwide.
-      </p>
-      <div class="flex flex-col sm:flex-row gap-4 justify-center">
-        <a 
-          href="/join-us" 
-          class="bg-white text-jpmc-blue font-semibold py-3 px-6 rounded-lg hover:bg-gray-100 transition-colors"
-        >
-          Join the Alliance
-        </a>
-        <a 
-          href="/mission" 
-          class="border-2 border-white text-white font-semibold py-3 px-6 rounded-lg hover:bg-white hover:text-jpmc-blue transition-colors"
-        >
-          Learn More
-        </a>
+    <section class="py-8 px-24 bg-jpmc-gray-50 rounded-lg text-jpmc-gray-900">
+      <div class="container mx-auto px-4 text-center">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6 text-jpmc-gray-900">
+          Ready to Get Involved?
+        </h2>
+        <p class="text-xl mb-8 text-jpmc-gray-900 max-w-2xl mx-auto">
+          Follow us on social media, join our community, and help us fight for better working conditions for all JPMC employees.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          
+          <Button style="primary" color="blue" size="lg" href="/join-us">
+            Join the Alliance
+          </Button>
+          <Button style="secondary" color="gold" size="lg" href="https://actionnetwork.org/forms/jpmcworkers-signup">
+            Subscribe to Updates
+          </Button>
+        </div>
       </div>
     </section>
   </div>
