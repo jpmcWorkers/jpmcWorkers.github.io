@@ -1,0 +1,187 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Button from "../components/Button.astro";
+---
+
+<Layout title="Button Component Demo">
+  <div class="max-w-6xl mx-auto p-8">
+    <h1 class="text-4xl font-bold text-jpmc-dark mb-8">Button Component Demo</h1>
+    
+    <!-- Style Variants -->
+    <section class="mb-12">
+      <h2 class="text-2xl font-bold text-jpmc-dark mb-6">Style Variants</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="space-y-4">
+          <h3 class="text-lg font-semibold text-jpmc-blue">Primary Style</h3>
+          <p class="text-sm text-gray-600">Solid background with white text</p>
+          <div class="space-y-2">
+            <Button style="primary" color="blue" size="md">Primary Blue</Button>
+            <Button style="primary" color="red" size="md">Primary Red</Button>
+            <Button style="primary" color="gold" size="md">Primary Gold</Button>
+          </div>
+        </div>
+        
+        <div class="space-y-4">
+          <h3 class="text-lg font-semibold text-jpmc-red">Secondary Style</h3>
+          <p class="text-sm text-gray-600">White background with colored border</p>
+          <div class="space-y-2">
+            <Button style="secondary" color="blue" size="md">Secondary Blue</Button>
+            <Button style="secondary" color="red" size="md">Secondary Red</Button>
+            <Button style="secondary" color="gold" size="md">Secondary Gold</Button>
+          </div>
+        </div>
+        
+        <div class="space-y-4">
+          <h3 class="text-lg font-semibold text-jpmc-gold">Tertiary Style</h3>
+          <p class="text-sm text-gray-600">Transparent background with colored text</p>
+          <div class="space-y-2">
+            <Button style="tertiary" color="blue" size="md">Tertiary Blue</Button>
+            <Button style="tertiary" color="red" size="md">Tertiary Red</Button>
+            <Button style="tertiary" color="gold" size="md">Tertiary Gold</Button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Color Variants -->
+    <section class="mb-12">
+      <h2 class="text-2xl font-bold text-jpmc-dark mb-6">Color Variants</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="space-y-4">
+          <h3 class="text-lg font-semibold text-jpmc-blue">JPMC Brand Colors</h3>
+          <div class="space-y-2">
+            <Button style="primary" color="blue" size="md">Blue Primary</Button>
+            <Button style="secondary" color="blue" size="md">Blue Secondary</Button>
+            <Button style="tertiary" color="blue" size="md">Blue Tertiary</Button>
+          </div>
+          <div class="space-y-2">
+            <Button style="primary" color="red" size="md">Red Primary</Button>
+            <Button style="secondary" color="red" size="md">Red Secondary</Button>
+            <Button style="tertiary" color="red" size="md">Red Tertiary</Button>
+          </div>
+          <div class="space-y-2">
+            <Button style="primary" color="gold" size="md">Gold Primary</Button>
+            <Button style="secondary" color="gold" size="md">Gold Secondary</Button>
+            <Button style="tertiary" color="gold" size="md">Gold Tertiary</Button>
+          </div>
+        </div>
+        
+        <div class="space-y-4">
+          <h3 class="text-lg font-semibold text-jpmc-red">Status Colors</h3>
+          <div class="space-y-2">
+            <Button style="primary" color="destructive" size="md">Destructive</Button>
+            <Button style="secondary" color="destructive" size="md">Destructive Secondary</Button>
+            <Button style="tertiary" color="destructive" size="md">Destructive Tertiary</Button>
+          </div>
+          <div class="space-y-2">
+            <Button style="primary" color="success" size="md">Success</Button>
+            <Button style="secondary" color="success" size="md">Success Secondary</Button>
+            <Button style="tertiary" color="success" size="md">Success Tertiary</Button>
+          </div>
+          <div class="space-y-2">
+            <Button style="primary" color="warning" size="md">Warning</Button>
+            <Button style="secondary" color="warning" size="md">Warning Secondary</Button>
+            <Button style="tertiary" color="warning" size="md">Warning Tertiary</Button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Size Variants -->
+    <section class="mb-12">
+      <h2 class="text-2xl font-bold text-jpmc-dark mb-6">Size Variants</h2>
+      <div class="space-y-4">
+        <div class="flex items-center gap-4">
+          <span class="w-20 text-sm font-medium">Small:</span>
+          <Button style="primary" color="blue" size="sm">Small Button</Button>
+          <Button style="secondary" color="red" size="sm">Small Button</Button>
+          <Button style="tertiary" color="gold" size="sm">Small Button</Button>
+        </div>
+        <div class="flex items-center gap-4">
+          <span class="w-20 text-sm font-medium">Medium:</span>
+          <Button style="primary" color="blue" size="md">Medium Button</Button>
+          <Button style="secondary" color="red" size="md">Medium Button</Button>
+          <Button style="tertiary" color="gold" size="md">Medium Button</Button>
+        </div>
+        <div class="flex items-center gap-4">
+          <span class="w-20 text-sm font-medium">Large:</span>
+          <Button style="primary" color="blue" size="lg">Large Button</Button>
+          <Button style="secondary" color="red" size="lg">Large Button</Button>
+          <Button style="tertiary" color="gold" size="lg">Large Button</Button>
+        </div>
+        <div class="flex items-center gap-4">
+          <span class="w-20 text-sm font-medium">XL:</span>
+          <Button style="primary" color="blue" size="xl">XL Button</Button>
+          <Button style="secondary" color="red" size="xl">XL Button</Button>
+          <Button style="tertiary" color="gold" size="xl">XL Button</Button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Full Width Variants -->
+    <section class="mb-12">
+      <h2 class="text-2xl font-bold text-jpmc-dark mb-6">Full Width Variants</h2>
+      <div class="space-y-4">
+        <Button style="primary" color="blue" size="md" fullWidth={true}>
+          Full Width Primary Blue
+        </Button>
+        <Button style="secondary" color="red" size="md" fullWidth={true}>
+          Full Width Secondary Red
+        </Button>
+        <Button style="tertiary" color="gold" size="md" fullWidth={true}>
+          Full Width Tertiary Gold
+        </Button>
+      </div>
+    </section>
+
+    <!-- Link Buttons -->
+    <section class="mb-12">
+      <h2 class="text-2xl font-bold text-jpmc-dark mb-6">Link Buttons</h2>
+      <div class="flex flex-wrap gap-4">
+        <Button style="primary" color="blue" size="md" href="/contact">
+          Contact Us
+        </Button>
+        <Button style="secondary" color="red" size="md" href="/mission">
+          Our Mission
+        </Button>
+        <Button style="tertiary" color="gold" size="md" href="/join-us">
+          Join Us
+        </Button>
+      </div>
+    </section>
+
+    <!-- Usage Examples -->
+    <section class="mb-12">
+      <h2 class="text-2xl font-bold text-jpmc-dark mb-6">Usage Examples</h2>
+      <div class="bg-gray-50 p-6 rounded-lg">
+        <h3 class="text-lg font-semibold mb-4">Code Examples</h3>
+        <div class="space-y-4 text-sm">
+          <div>
+            <p class="font-medium mb-2">Primary Blue Button:</p>
+            <code class="bg-gray-200 px-2 py-1 rounded">
+              &lt;Button style="primary" color="blue" size="md"&gt;Click me&lt;/Button&gt;
+            </code>
+          </div>
+          <div>
+            <p class="font-medium mb-2">Secondary Red Button:</p>
+            <code class="bg-gray-200 px-2 py-1 rounded">
+              &lt;Button style="secondary" color="red" size="lg"&gt;Click me&lt;/Button&gt;
+            </code>
+          </div>
+          <div>
+            <p class="font-medium mb-2">Tertiary Gold Link Button:</p>
+            <code class="bg-gray-200 px-2 py-1 rounded">
+              &lt;Button style="tertiary" color="gold" size="md" href="/contact"&gt;Contact&lt;/Button&gt;
+            </code>
+          </div>
+          <div>
+            <p class="font-medium mb-2">Full Width Destructive Button:</p>
+            <code class="bg-gray-200 px-2 py-1 rounded">
+              &lt;Button style="primary" color="destructive" size="md" fullWidth={true}&gt;Delete&lt;/Button&gt;
+            </code>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</Layout>
