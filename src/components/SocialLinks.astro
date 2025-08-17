@@ -14,7 +14,6 @@ export interface Props {
   title?: string;
   links?: SocialLink[];
   variant?: "sidebar" | "footer" | "contact";
-  showDescriptions?: boolean;
   className?: string;
 }
 
@@ -58,7 +57,6 @@ const {
   title = "Connect With Us",
   links = defaultSocialLinks,
   variant = "sidebar",
-  showDescriptions = false,
   className = ""
 } = Astro.props;
 
