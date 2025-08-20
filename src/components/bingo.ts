@@ -2,14 +2,11 @@
 export const PRO_UNION_BINGO_ITEMS = [
   { name: "Lunch Bunch", desc: "lunch chat with union members." },
   { name: "Spread the Word", desc: "Have one 1:1 convo this week." },
-  { name: "Hand Out Flyers", desc: "Shift-change, non-work areas/off-hours." },
   { name: "Sticker Day", desc: "Wear the same sticker for visibility." },
   { name: "Solidarity Color", desc: "Match shirts/ribbons one day." },
   { name: "Button Day", desc: "Pins on bags, jackets, or lanyards." },
   { name: "Share NLRB Rights", desc: "Post a QR to Section 7 rights." },
-  { name: "Start a Signal Chat", desc: "Create a private off-hours group." },
   { name: "Build a Contact List", desc: "Name, dept, personal phone/email." },
-  { name: "Buddy Up", desc: "Each pair reaches 3 coworkers." },
   { name: "Invite One", desc: "Bring a coworker to the next meet-up." },
   { name: "Mini Survey", desc: "Rank top 3 workplace issues." },
   { name: "Collect Stories", desc: "3 short examples of the same issue." },
@@ -18,7 +15,6 @@ export const PRO_UNION_BINGO_ITEMS = [
   { name: "Bring-a-Friend", desc: "Each attendee invites one person." },
   { name: "Simple FAQ", desc: "Basics on dues, strikes, elections." },
   { name: "Know-Your-Rights Post", desc: "Share key legal protections." },
-  { name: "QR Table Tent", desc: "Info card where allowed." },
   { name: "Welcome New Hires", desc: "Friendly intro + rights link." },
   { name: "Craft Your Ask", desc: "30-sec ‘why union’ + next step." },
   { name: "Role-Play 1:1", desc: "Practice AEIOU-style convo." },
@@ -29,18 +25,16 @@ export const PRO_UNION_BINGO_ITEMS = [
   { name: "Wristband/Lanyard", desc: "Small visible sign (allowed)." },
   { name: "Carpool Conversation", desc: "Talk issues on the commute." },
   { name: "Lunch & Learn", desc: "Peer-led 10-min rights primer." },
-  { name: "Myth vs Fact", desc: "One-page shareable graphic." },
+  { name: "Myth vs Fact", desc: "talk with someone about myths vs facts" },
   { name: "Weekly Win", desc: "Post one small success." },
   { name: "Shared Calendar", desc: "List meet-ups & actions." },
-  { name: "Low-Risk Petition", desc: "Common fix with broad support." },
   { name: "Reply Scripts", desc: "Calm answers to anti-union lines." },
   { name: "Questions Box", desc: "Collect anonymously, answer weekly." },
-  { name: "Mini-Flyer", desc: "2-per-page handout with QR." },
-  { name: "Coverage Tracker", desc: "Who’s been asked? Mark it." },
+  { name: "Grab Sized Docs", desc: "booklets" },
   { name: "New Supporter Checklist", desc: "3 starter steps to take." },
   { name: "Practice Night", desc: "Run organizing convo drills." },
   { name: "Petition Delivery Plan", desc: "Polite delegation walk-in." },
-  { name: "Button/Sticker Refill", desc: "Restock before big meetings." }
+  { name: "Button/Booklet Refill", desc: "Restock before big meetings." }
 ] as const;
 
 
