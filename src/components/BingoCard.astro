@@ -7,11 +7,11 @@ interface Props {
   theme?: 'default' | 'jpmc' | 'union';
   className?: string;
 }
-import { firstRound } from './bingo';
+import { PRO_UNION_BINGO_ITEMS } from './bingo';
 
 const {
   title = "Bingo Card",
-  items = firstRound,
+  items = PRO_UNION_BINGO_ITEMS.map(item => item.name),
   theme = 'default',
   className = ""
 } = Astro.props;
@@ -97,7 +97,7 @@ const shuffledItems = [...items].sort(() => Math.random() - 0.5).slice(0, 24);
 
 <script>
   // Make bingo items available globally
-  import { firstRound } from './bingo';
+  import { PRO_UNION_BINGO_ITEMS } from './bingo';
   
   class BingoCard {
     cells: NodeListOf<Element>;
@@ -159,10 +159,10 @@ const shuffledItems = [...items].sort(() => Math.random() - 0.5).slice(0, 24);
         return;
       }
       
-      const items = firstRound;
+      const items = PRO_UNION_BINGO_ITEMS.map(item => item.name);
       
       // Shuffle and take first 24 (middle is free space)
-      const shuffledItems = [...items].sort(() => Math.random() - 0.5).slice(0, 24);
+      const shuffledItems = items.toSorted(() => Math.random() - 0.5).slice(0, 24);
       
       // Update cell content
       this.cells.forEach((cell, index) => {
@@ -285,7 +285,12 @@ const shuffledItems = [...items].sort(() => Math.random() - 0.5).slice(0, 24);
       ];
       
       const hasWin = winPatterns.some(pattern => 
-        pattern.every(index => this.cells[index].classList.contains('marked'))
+        pattern.every(index => {
+          const cell = this.cells[index];
+          // Middle space (index 12) is always considered marked
+          if (index === 12) return true;
+          return cell.classList.contains('marked');
+        })
       );
       
       if (hasWin && !this.hasWon) {
