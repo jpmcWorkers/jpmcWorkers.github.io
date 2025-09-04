@@ -4,7 +4,6 @@ date: 2025-06-20
 description: "Business Insider covers our organizing efforts and pizza party events, highlighting the growing worker movement at JPMC"
 excerpt: "Business Insider published a comprehensive article about our organizing efforts, featuring our May Day pizza party and the broader union drive at JPMC."
 tags: ["media-coverage", "business-insider", "organizing", "pizza-party", "union-drive"]
-featured: true
 ---
 
 # JPMorgan Chase Union Drive: Workers Alliance Organizing Efforts Featured in Business Insider
