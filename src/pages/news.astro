@@ -1,179 +1,89 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+import Card from '../components/Card.astro';
+import Button from '../components/Button.astro';
+
+// Get all newsletters from the content collection
+const newsletters = await getCollection('newsletters');
+
+// Sort newsletters by date (newest first)
+const sortedNewsletters = newsletters.sort((a, b) => {
+  const dateA = typeof a.data.date === 'string' ? new Date(a.data.date) : a.data.date;
+  const dateB = typeof b.data.date === 'string' ? new Date(b.data.date) : b.data.date;
+  return dateB.getTime() - dateA.getTime();
+});
+
+// Get featured items
+const featuredNewsletters = sortedNewsletters.filter(item => item.data.featured);
+
+// Format date for display
+function formatDate(date: Date): string {
+  return new Intl.DateTimeFormat('en-US', { 
+    year: 'numeric', 
+    month: 'long', 
+    day: 'numeric' 
+  }).format(date);
+}
 ---
 
 <Layout title="News & Announcements">
   <div class="max-w-4xl mx-auto">
     <div class="mb-8">
-      <h1 class="text-3xl font-bold text-jpmc-light bg-red-600 mb-4">News & Announcements (INW)</h1>
+      <h1 class="text-3xl font-bold text-jpmc-dark mb-4">News & Announcements</h1>
       <p class="text-lg text-gray-600">
         Stay updated with the latest news, announcements, and developments in the JPMC Workers Alliance organizing efforts.
       </p>
     </div>
 
-    <!-- Latest News Section -->
+    <!-- Latest Newsletters Section -->
     <section class="mb-12">
-      <h2 class="text-2xl font-semibold text-jpmc-blue mb-6">Latest News</h2>
+      <h2 class="text-2xl font-semibold text-jpmc-blue mb-6">Latest Newsletters</h2>
       <div class="grid md:grid-cols-2 gap-6">
-        <div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-jpmc-blue">
-          <h3 class="text-xl font-semibold text-jpmc-dark mb-3">
-            <a href="/docs/news/2025-07" class="hover:text-jpmc-blue transition-colors">July 2025 Updates</a>
-          </h3>
-          <p class="text-gray-600 mb-4">
-            Latest developments and organizing activities from July 2025.
-          </p>
-          <div class="text-sm text-gray-500">
-            <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded">Latest</span>
-            <span class="ml-2 text-gray-400">July 2025</span>
-          </div>
-        </div>
-
-        <div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-jpmc-red">
-          <h3 class="text-xl font-semibold text-jpmc-dark mb-3">
-            <a href="/docs/news/2025-06" class="hover:text-jpmc-red transition-colors">June 2025 Updates</a>
-          </h3>
-          <p class="text-gray-600 mb-4">
-            Organizing activities and developments from June 2025.
-          </p>
-          <div class="text-sm text-gray-500">
-            <span class="bg-red-100 text-red-800 px-2 py-1 rounded">News</span>
-            <span class="ml-2 text-gray-400">June 2025</span>
-          </div>
-        </div>
-
-        <div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-jpmc-gold">
-          <h3 class="text-xl font-semibold text-jpmc-dark mb-3">
-            <a href="/docs/news/2025-05" class="hover:text-jpmc-gold transition-colors">May 2025 Updates</a>
-          </h3>
-          <p class="text-gray-600 mb-4">
-            Key developments and organizing progress from May 2025.
-          </p>
-          <div class="text-sm text-gray-500">
-            <span class="bg-yellow-100 text-yellow-800 px-2 py-1 rounded">News</span>
-            <span class="ml-2 text-gray-400">May 2025</span>
-          </div>
-        </div>
-
-        <div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-green-500">
-          <h3 class="text-xl font-semibold text-jpmc-dark mb-3">
-            <a href="/docs/news" class="hover:text-green-600 transition-colors">All News Archive</a>
-          </h3>
-          <p class="text-gray-600 mb-4">
-            Complete archive of all news updates and announcements.
-          </p>
-          <div class="text-sm text-gray-500">
-            <span class="bg-green-100 text-green-800 px-2 py-1 rounded">Archive</span>
-          </div>
-        </div>
+        {sortedNewsletters.slice(0, 6).map((newsletter) => (
+          <Card
+            title={newsletter.data.title}
+            description={newsletter.data.excerpt || newsletter.data.description}
+            link={`/newsletters/${newsletter.id}`}
+            borderColor="blue"
+            hoverColor="jpmc-blue"
+            badges={[
+              { text: "Newsletter", color: "text-red-800", bgColor: "bg-red-100" }
+            ]}
+            date={formatDate(typeof newsletter.data.date === 'string' ? new Date(newsletter.data.date) : newsletter.data.date)}
+          />
+        ))}
       </div>
-    </section>
-
-    <!-- Blog & Articles Section -->
-    <section class="mb-12">
-      <h2 class="text-2xl font-semibold text-jpmc-blue mb-6">Blog & Articles</h2>
-      <div class="grid md:grid-cols-2 gap-6">
-        <div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-purple-500">
-          <h3 class="text-xl font-semibold text-jpmc-dark mb-3">
-            <a href="/docs/blog/2025-02-14-Hello" class="hover:text-purple-600 transition-colors">Hello from the Alliance</a>
-          </h3>
-          <p class="text-gray-600 mb-4">
-            Introduction and welcome message from the JPMC Workers Alliance.
-          </p>
-          <div class="text-sm text-gray-500">
-            <span class="bg-purple-100 text-purple-800 px-2 py-1 rounded">Blog</span>
-            <span class="ml-2 text-gray-400">Feb 14, 2025</span>
-          </div>
+      
+      {sortedNewsletters.length > 6 && (
+        <div class="text-center mt-6">
+          <Button 
+            href="/newsletters"
+            style="primary"
+            color="blue"
+            size="md">
+            View All Newsletters →
+          </Button>
         </div>
-
-        <div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-indigo-500">
-          <h3 class="text-xl font-semibold text-jpmc-dark mb-3">
-            <a href="/docs/propergander" class="hover:text-indigo-600 transition-colors">Propaganda Analysis</a>
-          </h3>
-          <p class="text-gray-600 mb-4">
-            Analysis of corporate messaging and propaganda tactics used against organizing efforts.
-          </p>
-          <div class="text-sm text-gray-500">
-            <span class="bg-indigo-100 text-indigo-800 px-2 py-1 rounded">Analysis</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Letters & Communications Section -->
-    <section class="mb-12">
-      <h2 class="text-2xl font-semibold text-jpmc-blue mb-6">Letters & Communications</h2>
-      <div class="grid md:grid-cols-2 gap-6">
-        <div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-teal-500">
-          <h3 class="text-xl font-semibold text-jpmc-dark mb-3">
-            <a href="/docs/openletter" class="hover:text-teal-600 transition-colors">Open Letter to Management</a>
-          </h3>
-          <p class="text-gray-600 mb-4">
-            Open letter addressing key workplace issues and demands to JPMC management.
-          </p>
-          <div class="text-sm text-gray-500">
-            <span class="bg-teal-100 text-teal-800 px-2 py-1 rounded">Letter</span>
-          </div>
-        </div>
-
-        <div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-pink-500">
-          <h3 class="text-xl font-semibold text-jpmc-dark mb-3">
-            <a href="/docs/letter2" class="hover:text-pink-600 transition-colors">Additional Correspondence</a>
-          </h3>
-          <p class="text-gray-600 mb-4">
-            Additional letters and communications related to organizing efforts.
-          </p>
-          <div class="text-sm text-gray-500">
-            <span class="bg-pink-100 text-pink-800 px-2 py-1 rounded">Correspondence</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Status Updates Section -->
-    <section class="mb-12">
-      <h2 class="text-2xl font-semibold text-jpmc-blue mb-6">Status Updates</h2>
-      <div class="grid md:grid-cols-2 gap-6">
-        <div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-orange-500">
-          <h3 class="text-xl font-semibold text-jpmc-dark mb-3">
-            <a href="/docs/rto_petition_status" class="hover:text-orange-600 transition-colors">RTO Petition Status</a>
-          </h3>
-          <p class="text-gray-600 mb-4">
-            Current status and progress of the Return-to-Office petition campaign.
-          </p>
-          <div class="text-sm text-gray-500">
-            <span class="bg-orange-100 text-orange-800 px-2 py-1 rounded">Petition</span>
-          </div>
-        </div>
-
-        <div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-cyan-500">
-          <h3 class="text-xl font-semibold text-jpmc-dark mb-3">
-            <a href="/newsletters/MayDay2025" class="hover:text-cyan-600 transition-colors">May Day Newsletter</a>
-          </h3>
-          <p class="text-gray-600 mb-4">
-            Special May Day newsletter celebrating International Workers' Day.
-          </p>
-          <div class="text-sm text-gray-500">
-            <span class="bg-cyan-100 text-cyan-800 px-2 py-1 rounded">Newsletter</span>
-          </div>
-        </div>
-      </div>
+      )}
     </section>
 
     <!-- Newsletter Signup -->
-    <section class="bg-gradient-to-r from-jpmc-blue to-jpmc-red p-8 rounded-lg text-white mb-8">
+    <section class="bg-gradient-to-br from-jpmc-gold to-jpmc-red p-8 rounded-lg text-white mb-8">
       <h3 class="text-2xl font-bold mb-4 text-jpmc-light">Stay Updated</h3>
       <p class="text-lg mb-6">
         Subscribe to our newsletter to receive the latest updates and organizing news directly in your inbox.
       </p>
       <div class="flex flex-col sm:flex-row gap-4">
-        <a href="https://actionnetwork.org/forms/jpmcworkers-signup" 
-           class="bg-white text-jpmc-blue px-6 py-3 rounded-lg font-semibold hover:bg-jpmc-gray-100 transition-colors text-center">
+        <Button 
+          href="https://actionnetwork.org/forms/jpmcworkers-signup"
+          target="_blank"
+          style="secondary"
+          color="gray"
+          size="lg"
+          >
           Subscribe to Newsletter
-        </a>
-        <a href="/docs/contact" 
-           class="border-2 border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-jpmc-blue transition-colors text-center">
-          Contact Us
-        </a>
+        </Button>
       </div>
     </section>
   </div>

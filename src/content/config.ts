@@ -34,6 +34,20 @@ const resourcesCollection = defineCollection({
   }),
 });
 
+const newslettersCollection = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/newsletters' }),
+  schema: z.object({
+    title: z.string(),
+    date: z.coerce.date(),
+    version: z.string().optional(),
+    lastUpdated: z.coerce.date().optional(),
+    author: z.string().optional(),
+    description: z.string().optional(),
+    excerpt: z.string().optional(),
+    featured: z.boolean().default(false),
+  }),
+});
+
 const imageCollection = defineCollection({
   loader: async () => {
     const basePath = path.resolve(import.meta.dirname, '../../public/images');
@@ -134,4 +148,5 @@ const imageCollection = defineCollection({
 export const collections = {
   'resources': resourcesCollection,
   'images': imageCollection,
+  'newsletters': newslettersCollection,
 }; 

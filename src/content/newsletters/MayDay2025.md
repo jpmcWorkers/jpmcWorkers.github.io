@@ -1,4 +1,12 @@
-Happy May, JWA!
+---
+title: "May Day Newsletter - International Workers' Day Celebration"
+date: 2025-05-01
+description: "Special May Day newsletter celebrating International Workers' Day and our first public in-person event"
+excerpt: "MayDay marked a big accomplishment for the JPMC Workers Alliance with our first coordinated public event - a pizza party in the 2J wing of the 1111 Polaris office."
+tags: ["newsletter", "may-day", "events", "organizing"]
+---
+
+# Happy May, JWA!
 
 May 1st was MayDay, also known as International Workers' Day!
 
@@ -10,7 +18,7 @@ We [advertised](https://jpmcworkers.com/img/posters/Pizza%20party.png) ahead of 
 We purchased and served 45 large pizzas, accompanied by approximately 300 tri-fold pamphlets (See [front](https://jpmcworkers.com/img/posters/Trifold%20side%201.png) and [back](https://jpmcworkers.com/img/posters/Trifold%20side%202.png)) to our hungry colleagues.
 And most importantly, we had active, engaging, and agitating conversations with our peers, finding common ground and the beginnings of support.
 
-What's next?
+## What's next?
 
 If you are interested in getting involved in the planning of more events and outreach like this,
 or simply wish to provide feedback, or air your Employee Opinion to an audience who will actually care what you have to say,
@@ -18,7 +26,7 @@ please respond to this email, and we will be with you as soon as we can. Or join
 
 In addition to the pizza party activity, we are still collecting testimonies of those who are [struggling with the ADA/Reasonable Accommodations process](https://jpmcworkers.com/img/posters/Reasonable_Accommodations0.5x.png), with several interested parties to speak to.
 
-Change is coming. Be a part of it.
+**Change is coming. Be a part of it.**
 
-Excitedly,
+Excitedly,  
 The JWA

@@ -24,6 +24,9 @@ interface Props {
   linkText?: string;
   borderColor?: keyof typeof borderColors;
   className?: string;
+  badges?: Array<{ text: string; color: string; bgColor: string }>;
+  date?: string;
+  hoverColor?: string;
 }
 
 const {
@@ -32,7 +35,10 @@ const {
   link,
   linkText = title,
   borderColor = "cyan",
-  className = ""
+  className = "",
+  badges = [],
+  date,
+  hoverColor = "cyan-600"
 } = Astro.props;
 
 ---
@@ -44,7 +50,7 @@ const {
     {link ? (
       <a
         href={link}
-        class="hover:text-cyan-600 transition-colors"
+        class={`hover:text-${hoverColor} transition-colors`}
       >
         {linkText}
       </a>
@@ -55,4 +61,17 @@ const {
   <p class="text-gray-600 mb-4">
     {description}
   </p>
+  
+  {(badges.length > 0 || date) && (
+    <div class="text-sm text-gray-500">
+      {badges.map((badge) => (
+        <span class={`${badge.bgColor} ${badge.color} px-2 py-1 rounded mr-2`}>
+          {badge.text}
+        </span>
+      ))}
+      {date && (
+        <span class="text-gray-400">{date}</span>
+      )}
+    </div>
+  )}
 </div>
