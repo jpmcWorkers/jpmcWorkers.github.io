@@ -1,71 +1,93 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+
+// Get all newsletters from the content collection
+const newsletters = await getCollection('newsletters');
+
+// Sort newsletters by date (newest first)
+const sortedNewsletters = newsletters.sort((a, b) => {
+  const dateA = typeof a.data.date === 'string' ? new Date(a.data.date) : a.data.date;
+  const dateB = typeof b.data.date === 'string' ? new Date(b.data.date) : b.data.date;
+  return dateB.getTime() - dateA.getTime();
+});
+
+// Get featured items
+const featuredNewsletters = sortedNewsletters.filter(item => item.data.featured);
+
+// Format date for display
+function formatDate(date: Date): string {
+  return new Intl.DateTimeFormat('en-US', { 
+    year: 'numeric', 
+    month: 'long', 
+    day: 'numeric' 
+  }).format(date);
+}
 ---
 
 <Layout title="News & Announcements">
   <div class="max-w-4xl mx-auto">
     <div class="mb-8">
-      <h1 class="text-3xl font-bold text-jpmc-light bg-red-600 mb-4">News & Announcements (INW)</h1>
+      <h1 class="text-3xl font-bold text-jpmc-dark mb-4">News & Announcements</h1>
       <p class="text-lg text-gray-600">
         Stay updated with the latest news, announcements, and developments in the JPMC Workers Alliance organizing efforts.
       </p>
     </div>
 
-    <!-- Latest News Section -->
+    <!-- Featured Newsletters Section -->
+    {featuredNewsletters.length > 0 && (
+      <section class="mb-12">
+        <h2 class="text-2xl font-semibold text-jpmc-blue mb-6">Featured Newsletters</h2>
+        <div class="grid md:grid-cols-2 gap-6">
+          {featuredNewsletters.slice(0, 4).map((newsletter) => (
+            <div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-jpmc-blue">
+              <h3 class="text-xl font-semibold text-jpmc-dark mb-3">
+                <a href={`/newsletters/${newsletter.id}`} class="hover:text-jpmc-blue transition-colors">
+                  {newsletter.data.title}
+                </a>
+              </h3>
+              <p class="text-gray-600 mb-4">
+                {newsletter.data.excerpt || newsletter.data.description}
+              </p>
+              <div class="text-sm text-gray-500">
+                <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded">Featured</span>
+                <span class="ml-2 text-gray-400">{formatDate(typeof newsletter.data.date === 'string' ? new Date(newsletter.data.date) : newsletter.data.date)}</span>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+    )}
+
+    <!-- Latest Newsletters Section -->
     <section class="mb-12">
-      <h2 class="text-2xl font-semibold text-jpmc-blue mb-6">Latest News</h2>
+      <h2 class="text-2xl font-semibold text-jpmc-blue mb-6">Latest Newsletters</h2>
       <div class="grid md:grid-cols-2 gap-6">
-        <div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-jpmc-blue">
-          <h3 class="text-xl font-semibold text-jpmc-dark mb-3">
-            <a href="/docs/news/2025-07" class="hover:text-jpmc-blue transition-colors">July 2025 Updates</a>
-          </h3>
-          <p class="text-gray-600 mb-4">
-            Latest developments and organizing activities from July 2025.
-          </p>
-          <div class="text-sm text-gray-500">
-            <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded">Latest</span>
-            <span class="ml-2 text-gray-400">July 2025</span>
+        {sortedNewsletters.slice(0, 6).map((newsletter) => (
+          <div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-jpmc-red">
+            <h3 class="text-xl font-semibold text-jpmc-dark mb-3">
+              <a href={`/newsletters/${newsletter.id}`} class="hover:text-jpmc-red transition-colors">
+                {newsletter.data.title}
+              </a>
+            </h3>
+            <p class="text-gray-600 mb-4">
+              {newsletter.data.excerpt || newsletter.data.description}
+            </p>
+            <div class="text-sm text-gray-500">
+              <span class="bg-red-100 text-red-800 px-2 py-1 rounded">Newsletter</span>
+              <span class="ml-2 text-gray-400">{formatDate(typeof newsletter.data.date === 'string' ? new Date(newsletter.data.date) : newsletter.data.date)}</span>
+            </div>
           </div>
-        </div>
-
-        <div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-jpmc-red">
-          <h3 class="text-xl font-semibold text-jpmc-dark mb-3">
-            <a href="/docs/news/2025-06" class="hover:text-jpmc-red transition-colors">June 2025 Updates</a>
-          </h3>
-          <p class="text-gray-600 mb-4">
-            Organizing activities and developments from June 2025.
-          </p>
-          <div class="text-sm text-gray-500">
-            <span class="bg-red-100 text-red-800 px-2 py-1 rounded">News</span>
-            <span class="ml-2 text-gray-400">June 2025</span>
-          </div>
-        </div>
-
-        <div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-jpmc-gold">
-          <h3 class="text-xl font-semibold text-jpmc-dark mb-3">
-            <a href="/docs/news/2025-05" class="hover:text-jpmc-gold transition-colors">May 2025 Updates</a>
-          </h3>
-          <p class="text-gray-600 mb-4">
-            Key developments and organizing progress from May 2025.
-          </p>
-          <div class="text-sm text-gray-500">
-            <span class="bg-yellow-100 text-yellow-800 px-2 py-1 rounded">News</span>
-            <span class="ml-2 text-gray-400">May 2025</span>
-          </div>
-        </div>
-
-        <div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-green-500">
-          <h3 class="text-xl font-semibold text-jpmc-dark mb-3">
-            <a href="/docs/news" class="hover:text-green-600 transition-colors">All News Archive</a>
-          </h3>
-          <p class="text-gray-600 mb-4">
-            Complete archive of all news updates and announcements.
-          </p>
-          <div class="text-sm text-gray-500">
-            <span class="bg-green-100 text-green-800 px-2 py-1 rounded">Archive</span>
-          </div>
-        </div>
+        ))}
       </div>
+      
+      {sortedNewsletters.length > 6 && (
+        <div class="text-center mt-6">
+          <a href="/newsletters" class="text-jpmc-blue hover:text-jpmc-red transition-colors font-semibold">
+            View All Newsletters →
+          </a>
+        </div>
+      )}
     </section>
 
     <!-- Blog & Articles Section -->
@@ -147,13 +169,13 @@ import Layout from '../layouts/Layout.astro';
 
         <div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-cyan-500">
           <h3 class="text-xl font-semibold text-jpmc-dark mb-3">
-            <a href="/newsletters/MayDay2025" class="hover:text-cyan-600 transition-colors">May Day Newsletter</a>
+            <a href="/docs/contact" class="hover:text-cyan-600 transition-colors">Contact Us</a>
           </h3>
           <p class="text-gray-600 mb-4">
-            Special May Day newsletter celebrating International Workers' Day.
+            Get in touch with the JPMC Workers Alliance leadership team.
           </p>
           <div class="text-sm text-gray-500">
-            <span class="bg-cyan-100 text-cyan-800 px-2 py-1 rounded">Newsletter</span>
+            <span class="bg-cyan-100 text-cyan-800 px-2 py-1 rounded">Contact</span>
           </div>
         </div>
       </div>
