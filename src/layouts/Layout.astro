@@ -230,6 +230,13 @@ const {
                       >Images & Materials</a
                     >
                   </li>
+                  <!-- <li>
+                    <a
+                      href="/bingo"
+                      class="block py-2 px-3 text-jpmc-dark dark:text-gray-200 hover:text-jpmc-blue hover:bg-jpmc-gray-50 dark:hover:bg-gray-700 rounded-md transition-colors"
+                      >Bingo Card Generator</a
+                    >
+                  </li> -->
                 </ul>
               </div>
             </nav>
@@ -304,8 +311,8 @@ const {
                     >Latest News</a
                   >
                 </li>
-                <li>
-                  <a
+                 <li>
+                   <a
                     href="/join-us"
                     class="hover:text-jpmc-blue transition-colors"
                     >Join the Alliance</a
@@ -417,4 +424,12 @@ const {
     console.warn(`The link ${currentUrl} is no longer valid, re-directing to ${redirectObject[currentUrl]}`);
     window.location.href = redirectObject[currentUrl];
   }
+
+  document.addEventListener('DOMContentLoaded', () => {
+    console.log("DOMContentLoaded");
+    if (redirectObject[currentUrl]) {
+      console.warn(`The link ${currentUrl} is no longer valid, re-directing to ${redirectObject[currentUrl]}`);
+      window.location.href = redirectObject[currentUrl] + window.location.search;
+    } 
+  });
 </script>
