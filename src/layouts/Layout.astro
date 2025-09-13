@@ -1,6 +1,7 @@
 ---
 import "../styles/global.css";
 import SocialLinks from "../components/SocialLinks.astro";
+import { navigationConfig, getSidebarNavigation, isActiveLink } from "../config/navigation";
 
 export interface Props {
   title: string;
@@ -10,6 +11,12 @@ const {
   title,
   description = "We are a dedicated team of JPMC employees devoted to a simple mission: Better working conditions for all JPMC employees worldwide.",
 } = Astro.props;
+
+// Get current path for active link detection
+const currentPath = Astro.url.pathname;
+
+// Get navigation sections for sidebar
+const sidebarNavigation = getSidebarNavigation();
 ---
 
 <!doctype html>
@@ -99,41 +106,18 @@ const {
           aria-label="Mobile navigation"
         >
           <div class="px-4 py-2 space-y-2 bg-jpmc-gray-50 dark:bg-gray-500">
-            <a
-              href="/"
-              class="block py-2 text-jpmc-dark hover:text-jpmc-blue font-medium"
-              >Home</a
-            >
-            <a
-              href="/mission"
-              class="block py-2 text-jpmc-dark hover:text-jpmc-blue font-medium"
-              >Mission</a
-            >
-            <a
-              href="/join-us"
-              class="block py-2 text-jpmc-dark hover:text-jpmc-blue font-medium"
-              >Join Us</a
-            >
-            <!-- <a
-              href="/contact"
-              class="block py-2 text-jpmc-dark hover:text-jpmc-blue font-medium"
-              >Contact</a
-            > -->
-            <a
-              href="/news"
-              class="block py-2 text-jpmc-dark hover:text-jpmc-blue font-medium"
-              >News & Announcements</a
-            >
-            <a
-              href="/issues-and-resources"
-              class="block py-2 text-jpmc-dark hover:text-jpmc-blue font-medium"
-              >Issues & Resources</a
-            >
-            <a
-              href="/content"
-              class="block py-2 text-jpmc-dark hover:text-jpmc-blue font-medium"
-              >Content</a
-            >
+            {Object.values(navigationConfig).flat().filter(item => !item.skipMobile).map((item) => (
+              <a
+                href={item.href}
+                class={`block py-2 font-medium transition-colors ${
+                  isActiveLink(currentPath, item.href)
+                    ? "text-jpmc-blue font-semibold"
+                    : "text-jpmc-dark hover:text-jpmc-blue"
+                }`}
+              >
+                {item.label}
+              </a>
+            ))}
           </div>
         </nav>
       </header>
@@ -152,93 +136,31 @@ const {
                 Navigation
               </h2>
 
-              <!-- Main Pages -->
-              <div class="space-y-2">
-                <h3
-                  class="text-sm font-medium text-jpmc-blue uppercase tracking-wide"
-                >
-                  Main
-                </h3>
-                <ul class="space-y-1">
-                  <li>
-                    <a
-                      href="/"
-                      class="block py-2 px-3 text-jpmc-dark dark:text-gray-200 hover:text-jpmc-blue hover:bg-jpmc-gray-50 dark:hover:bg-gray-700 rounded-md transition-colors"
-                      >Home</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="/news"
-                      class="block py-2 px-3 text-jpmc-dark dark:text-gray-200 hover:text-jpmc-red hover:bg-jpmc-gray-50 rounded-md transition-colors"
-                      >News & Announcements</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="/mission"
-                      class="block py-2 px-3 text-jpmc-dark dark:text-gray-200 hover:text-jpmc-blue hover:bg-jpmc-gray-50 rounded-md transition-colors"
-                      >Our Mission</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="/join-us"
-                      class="block py-2 px-3 text-jpmc-dark dark:text-gray-200 hover:text-jpmc-blue hover:bg-jpmc-gray-50 rounded-md transition-colors"
-                      >Join the Alliance</a
-                    >
-                  </li>
-                </ul>
-              </div>
-              <!-- Issues & Resources -->
-              <div class="space-y-2">
-                <h3
-                  class="text-sm font-medium text-jpmc-gold uppercase tracking-wide"
-                >
-                  Issues & Resources
-                </h3>
-                <ul class="space-y-1">
-                  <li>
-                    <a
-                      href="/issues-and-resources"
-                      class="block py-2 px-3 text-jpmc-dark dark:text-gray-200 hover:text-jpmc-gold hover:bg-jpmc-gray-50 rounded-md transition-colors"
-                      >Issues & Resources</a
-                    >
-                  </li>
-                </ul>
-              </div>
-
-              <!-- Content -->
-              <div class="space-y-2">
-                <h3
-                  class="text-sm font-medium text-jpmc-blue uppercase tracking-wide"
-                >
-                  Content
-                </h3>
-                <ul class="space-y-1">
-                  <li>
-                    <a
-                      href="/content"
-                      class="block py-2 px-3 text-jpmc-dark dark:text-gray-200 hover:text-jpmc-blue hover:bg-jpmc-gray-50 dark:hover:bg-gray-700 rounded-md transition-colors"
-                      >Guides & Resources</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="/image"
-                      class="block py-2 px-3 text-jpmc-dark dark:text-gray-200 hover:text-jpmc-blue hover:bg-jpmc-gray-50 dark:hover:bg-gray-700 rounded-md transition-colors"
-                      >Images & Materials</a
-                    >
-                  </li>
-                  <!-- <li>
-                    <a
-                      href="/bingo"
-                      class="block py-2 px-3 text-jpmc-dark dark:text-gray-200 hover:text-jpmc-blue hover:bg-jpmc-gray-50 dark:hover:bg-gray-700 rounded-md transition-colors"
-                      >Bingo Card Generator</a
-                    >
-                  </li> -->
-                </ul>
-              </div>
+              {sidebarNavigation.map((section) => (
+                <div class="space-y-2">
+                  <h3
+                    class={`text-sm font-medium text-${section.color} uppercase tracking-wide`}
+                  >
+                    {section.title}
+                  </h3>
+                  <ul class="space-y-1">
+                    {section.items.map((item) => (
+                      <li>
+                        <a
+                          href={item.href}
+                          class={`block py-2 px-3 rounded-md transition-colors ${
+                            isActiveLink(currentPath, item.href)
+                              ? `text-${section.color} bg-${section.color === 'jpmc-blue' ? 'jpmc-gray-50' : 'jpmc-gray-50'} dark:bg-gray-700 font-semibold`
+                              : `text-jpmc-dark dark:text-gray-200 hover:text-${section.color} hover:bg-jpmc-gray-50 dark:hover:bg-gray-700`
+                          }`}
+                        >
+                          {item.label}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
             </nav>
 
             <!-- Social Links -->
@@ -297,33 +219,16 @@ const {
                 Quick Links
               </h2>
               <ul class="space-y-2 text-sm">
-                <li>
-                  <a
-                    href="/mission"
-                    class="hover:text-jpmc-blue transition-colors"
-                    >Our Mission</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="/news"
-                    class="hover:text-jpmc-blue transition-colors"
-                    >Latest News</a
-                  >
-                </li>
-                 <li>
-                   <a
-                    href="/join-us"
-                    class="hover:text-jpmc-blue transition-colors"
-                    >Join the Alliance</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="/content"
-                    class="hover:text-jpmc-blue transition-colors">Content</a
-                  >
-                </li>
+                {navigationConfig.footer.map((item) => (
+                  <li>
+                    <a
+                      href={item.href}
+                      class="hover:text-jpmc-blue transition-colors"
+                    >
+                      {item.label}
+                    </a>
+                  </li>
+                ))}
               </ul>
             </div>
 

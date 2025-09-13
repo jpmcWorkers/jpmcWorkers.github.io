@@ -1,0 +1,59 @@
+---
+import Card from './Card.astro';
+import { sortedExternalNews } from '../data/external-news';
+import { fetchLinkMetadata } from '../utils/metadata';
+
+// Fetch metadata for external news items
+const externalNewsWithMetadata = await Promise.all(
+  sortedExternalNews.slice(0, 6).map(async (item) => {
+    const metadata = await fetchLinkMetadata(item.url);
+    return {
+      ...item,
+      title: item.title || metadata.title,
+      description: item.description || metadata.description,
+      publishedDate: item.publishedDate || metadata.publishedDate,
+      domain: metadata.domain
+    };
+  })
+);
+
+// Format date for display
+function formatDate(date: Date | string): string {
+  const dateObj = typeof date === 'string' ? new Date(date) : date;
+  return new Intl.DateTimeFormat('en-US', { 
+    year: 'numeric', 
+    month: 'long', 
+    day: 'numeric' 
+  }).format(dateObj);
+}
+---
+
+<section class="mb-12 @container">
+  <h2 class="text-xl @sm:text-2xl @lg:text-3xl font-semibold text-jpmc-blue mb-4 @sm:mb-6">Us in the News</h2>
+  <p class="text-sm @sm:text-base @lg:text-lg text-gray-600 mb-4 @sm:mb-6">
+    Media coverage of JPMC Workers Alliance organizing efforts and workplace issues.
+  </p>
+  <div class="grid gap-4 @sm:gap-6 @lg:gap-8 grid-cols-1 @lg:grid-cols-2 @5xl:grid-cols-3">
+    {externalNewsWithMetadata.map((newsItem) => (
+      <Card
+        title={newsItem.title}
+        description={newsItem.description}
+        link={newsItem.url}
+        borderColor="purple"
+        hoverColor="jpmc-purple"
+        external={true}
+        badges={[
+          { text: "Media Coverage", color: "text-purple-800", bgColor: "bg-purple-100" },
+          { text: newsItem.domain, color: "text-gray-600", bgColor: "bg-gray-100" }
+        ]}
+        date={newsItem.publishedDate ? formatDate(newsItem.publishedDate) : undefined}
+      />
+    ))}
+  </div>
+  
+  {externalNewsWithMetadata.length === 0 && (
+    <div class="text-center py-8 text-gray-500">
+      <p>No external news coverage available at this time.</p>
+    </div>
+  )}
+</section>

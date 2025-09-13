@@ -27,6 +27,7 @@ interface Props {
   badges?: Array<{ text: string; color: string; bgColor: string }>;
   date?: string;
   hoverColor?: string;
+  external?: boolean;
 }
 
 const {
@@ -38,8 +39,27 @@ const {
   className = "",
   badges = [],
   date,
-  hoverColor = "cyan-600"
+  hoverColor = "cyan-600",
+  external = false
 } = Astro.props;
+
+// Calculate datetime from date (assuming ET start of day)
+function calculateDatetime(dateString: string): string {
+  try {
+    // Parse the date string and create a date object
+    const date = new Date(dateString);
+    
+    // Set to Eastern Time start of day (00:00:00)
+    const etDate = new Date(date.toLocaleString("en-US", { timeZone: "America/New_York" }));
+    etDate.setHours(0, 0, 0, 0);
+    
+    // Return in ISO format
+    return etDate.toISOString();
+  } catch (error) {
+    // If parsing fails, return the original string
+    return dateString;
+  }
+}
 
 ---
 
@@ -51,8 +71,11 @@ const {
       <a
         href={link}
         class={`hover:text-${hoverColor} transition-colors`}
+        target={external ? "_blank" : undefined}
+        rel={external ? "noopener noreferrer" : undefined}
       >
         {linkText}
+        {external && <span class="ml-1 text-sm">↗</span>}
       </a>
     ) : (
       title
@@ -62,16 +85,18 @@ const {
     {description}
   </p>
   
-  {(badges.length > 0 || date) && (
-    <div class="text-sm text-gray-500">
+  {badges.length > 0 && (
+    <div class="text-sm text-gray-500 mb-2">
       {badges.map((badge) => (
         <span class={`${badge.bgColor} ${badge.color} px-2 py-1 rounded mr-2`}>
           {badge.text}
         </span>
       ))}
-      {date && (
-        <span class="text-gray-400">{date}</span>
-      )}
     </div>
+  )}
+  {date && (
+    <time class="text-sm text-gray-400" datetime={calculateDatetime(date)}>
+      {date}
+    </time>
   )}
 </div>

@@ -3,6 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import { getCollection } from 'astro:content';
 import Card from '../components/Card.astro';
 import Button from '../components/Button.astro';
+import UsInTheNews from '../components/UsInTheNews.astro';
 
 // Get all newsletters from the content collection
 const newsletters = await getCollection('newsletters');
@@ -67,6 +68,9 @@ function formatDate(date: Date): string {
         </div>
       )}
     </section>
+
+    <!-- Us in the News Section -->
+    <UsInTheNews />
 
     <!-- Newsletter Signup -->
     <section class="bg-gradient-to-br from-jpmc-gold to-jpmc-red p-8 rounded-lg text-white mb-8">
