@@ -8,7 +8,7 @@ redirect_from: ["/rto_petition_status"]
 
 # RTO Petition Status
 
-If you have already signed [the petition](/content/openletter) as an employee,
+If you have already signed [the petition](/openletter) as an employee,
 thank you for your courage and solidarity.
 
 At this point, that particular operation has largely run its course.
