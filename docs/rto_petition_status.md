@@ -1,6 +1,6 @@
 # RTO Petition Status
 
-If you have already signed [the petition](/openletter) as an employee,
+If you have already signed [the petition](https://www.coworker.org/petitions/professional-dignity) as an employee,
 thank you for your courage and solidarity.
 
 At this point, that particular operation has largely run its course.

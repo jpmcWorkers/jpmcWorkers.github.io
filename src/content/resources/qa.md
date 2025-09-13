@@ -67,7 +67,7 @@ To do that, we will need to understand:
 * What is the true situation of the company, so that we can suss out what is achievable?
 * What steps will bring us towards our goals *as a society of workers* rather than as individuals in zero-sum competition with each other?
 
-The same group of employees behind the [now-famous petition](/openletter)
+The same group of employees behind the [now-famous petition](https://www.coworker.org/petitions/professional-dignity)
 (Thanks for the shout-out, Jamie Dimon!)
 collected data from a survey that went around in January.
 It shows that 95% of us are unhappy with how the company treats us.
