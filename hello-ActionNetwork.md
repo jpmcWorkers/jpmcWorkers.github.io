@@ -4,7 +4,7 @@ Whether you found our mailing list as a continuation of the Coworker.org petitio
 
 To recap the effort so far: 
 * On January 20th 2025, JPMC corporate announced internally that flexible and remote work would be ending. Employees started speaking out via internal channels of communication, which led to like-minded discussion via external channels of communication.
-* On February 10th, we published [our petition](https://www.coworker.org/petitions/professional-dignity). By the time Jamie Dimon [disregarded it verbally](https://www.reuters.com/business/finance/jpmorgan-ceo-dimon-derides-in-office-work-pushback-demands-efficiency-2025-02-13/) during his town hall on February 12th, it already had hundreds of signatures.
+* On February 10th, we published [our petition](/openletter). By the time Jamie Dimon [disregarded it verbally](https://www.reuters.com/business/finance/jpmorgan-ceo-dimon-derides-in-office-work-pushback-demands-efficiency-2025-02-13/) during his town hall on February 12th, it already had hundreds of signatures.
 * On March 3rd, many JPMC corporate sites started the 5-day return to office. Many more sites will be starting on April 21st, and several other corporations continue to follow the RTO trend. 
 
 The reasons given for full-time RTO are disingeuous and clearly refutable. By now, there are nearly 2000 signatures on the original petition, and corporate disregard of employee voices only serves to prove that they do not have our best interests at heart.
@@ -24,7 +24,7 @@ You're already subscribed to hear about our progress. How else can you help?
 * Track JPMC practices in relation to labor laws and violations. Bring your observations with you to the online community, where we have been curating them.
 * Submit reports, complaints, tips, and other forms of official outreach (both within the firm and via government routes) in order to grease the wheels of bureaucracy.
 * Spread the word: Print and display or distribute as many of [these posters/business cards](https://github.com/jpmcWorkers/jpmcWorkers.github.io/tree/main/docs/img/posters) as you feel comfortable with.
-* Continue to encourage more people to also sign [the petition](https://www.coworker.org/petitions/professional-dignity), as continual growth of the number of signers will lend credence and confidence to our cause.
+* Continue to encourage more people to also sign [the petition](/openletter), as continual growth of the number of signers will lend credence and confidence to our cause.
 * Give any amount of time, money, or effort to improve our conditions as JPMC employees and build a community that cannot be divided.
 
 As our first communication via this mailing list, which is graciously hosted by ActionNetwork, we thank you kindly for your time in reading this. Remember, you can unsubscribe at any time, but we hope you will stick around at whichever level of engagement you can handle.
