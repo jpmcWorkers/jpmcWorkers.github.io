@@ -1,7 +1,8 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import { Picture } from 'astro:assets';
+import { Picture } from "astro:assets";
 import banner from "../img/banner.png";
+import UsInTheNews from "../components/UsInTheNews.astro";
 ---
 
 <Layout title="JPMC Workers Alliance">
@@ -10,7 +11,9 @@ import banner from "../img/banner.png";
     <div class="absolute inset-0"></div>
     <div class="relative container mx-auto px-4 text-center text-white">
       <div class="max-w-4xl mx-auto drop-shadow-lg drop-shadow-gray-900">
-        <div class="flex justify-center mb-8 drop-shadow-sm drop-shadow-transparent">
+        <div
+          class="flex justify-center mb-8 drop-shadow-sm drop-shadow-transparent"
+        >
           <Picture
             src={banner}
             widths={[100, 200, 300, 400, 500, 600, 700, 800, 900, 1000]}
@@ -38,100 +41,10 @@ import banner from "../img/banner.png";
       </div>
     </div>
   </section>
-
-  <!-- Quick Links Section -->
   <section class="py-16 content-blue">
     <div class="container mx-auto px-4">
-      <div class="max-w-4xl mx-auto">
-        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12"> We're in the news! </h2>
-        <p>
-            21 August 2025: Barron's: <a href="https://www.barrons.com/articles/jpmorgan-chase-union-ffd01326">A Union Push at JPMorgan Reveals Tensions Inside America’s Largest Bank</a>
-        </p>
-        <p>
-            7 June 2025: Business Insider: <a href="https://www.businessinsider.com/jpmorgan-chase-union-drive-workers-alliance-wells-fargo-pizza-parties-2025-6">Can JPMorgan be unionized? Employees turn to their peers at Wells Fargo for advice.</a>
-        </p>
-        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">
-          Get Involved
-        </h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <a
-            href="https://actionnetwork.org/forms/jpmcworkers-signup?source=website"
-            class="card group hover:border-jpmc-blue-300 dark:bg-jpmc-gray-800"
-          >
-            <h3
-              class="text-xl font-bold mb-2 content-blue group-hover:text-jpmc-blue-800"
-            >
-              Sign up for e-mail alerts!
-            </h3>
-            <p class="text-muted">
-              Stay informed about our latest updates and actions.
-            </p>
-          </a>
-          <a
-            href="/issues-and-resources"
-            class="card group hover:border-jpmc-red-300 dark:bg-jpmc-gray-800"
-          >
-            <h3
-              class="text-xl font-bold mb-2 content-red group-hover:text-jpmc-red-800"
-            >
-              Issues & Resources
-            </h3>
-            <p class="text-muted">Explore workplace issues and educational materials.</p>
-          </a>
-          <a
-            href="/content"
-            class="card group hover:border-jpmc-gold-300 dark:bg-jpmc-gray-800"
-          >
-            <h3
-              class="text-xl font-bold mb-2 content-gold group-hover:text-jpmc-gold-800"
-            >
-              Guides & Materials
-            </h3>
-            <p class="text-muted">
-              Access training guides and organizing resources.
-            </p>
-          </a>
-          <a
-            href="/join-us"
-            class="card group hover:border-jpmc-blue-300 dark:bg-jpmc-gray-800"
-          >
-            <h3
-              class="text-xl font-bold mb-2 content-blue group-hover:text-jpmc-blue-800"
-            >
-              Join Us!
-            </h3>
-            <p class="text-muted">
-              Become part of the movement for better working conditions.
-            </p>
-          </a>
-          <a
-            href="/images"
-            class="card group hover:border-gray-400 dark:bg-jpmc-gray-800"
-          >
-            <h3
-              class="text-xl font-bold mb-2 text-gray-700 group-hover:text-gray-800 dark:text-jpmc-gray-300"
-            >
-              Images & Materials
-            </h3>
-            <p class="text-muted">
-              Download posters and visual materials.
-            </p>
-          </a>
-                     <a
-             href="/resources"
-             class="card group hover:border-gray-400 dark:bg-jpmc-gray-800"
-           >
-             <h3
-               class="text-xl font-bold mb-2 text-gray-700 group-hover:text-gray-800 dark:text-jpmc-gray-300"
-             >
-               Resources
-             </h3>
-             <p class="text-muted">
-               Educational materials, guides, and resources to help you get involved.
-             </p>
-           </a>
-        </div>
-      </div>
+      <div class="max-w-4xl mx-auto"></div>
+      <UsInTheNews />
     </div>
   </section>
 
@@ -165,7 +78,7 @@ import banner from "../img/banner.png";
           </div>
 
           <div
-            class=" p-6 rounded-lg border-l-4 border-jpmc-gold-500 bg-jpmc-gold-50 dark:bg-jpmc-gray-700!"
+            class="p-6 rounded-lg border-l-4 border-jpmc-gold-500 bg-jpmc-gold-50 dark:bg-jpmc-gray-700!"
           >
             <h3 class="text-xl font-bold mb-4">
               You ARE Allowed to Talk About:
@@ -215,7 +128,7 @@ import banner from "../img/banner.png";
           </p>
 
           <div
-            class="content-red p-6 rounded-lg border-l-4 border-jpmc-red-500 mb-6 dark:bg-jpmc-gray-700!  bg-jpmc-red-50!"
+            class="content-red p-6 rounded-lg border-l-4 border-jpmc-red-500 mb-6 dark:bg-jpmc-gray-700! bg-jpmc-red-50!"
           >
             <h3 class="text-xl font-bold mb-3">
               This Pattern is Illegal and Unethical
@@ -255,19 +168,22 @@ import banner from "../img/banner.png";
                   <a
                     href="contact"
                     class="content-blue hover:text-jpmc-blue-300"
-                    >Contact us about ADA / FWA accommodations!</a>
+                    >Contact us about ADA / FWA accommodations!</a
+                  >
                 </li>
                 <li>
                   <a
                     href="https://www.ada.gov/resources/disability-rights-guide/"
                     class="content-blue hover:text-jpmc-blue-300"
-                    >US: ADA.GOV Guide to Disability Rights Laws</a>
+                    >US: ADA.GOV Guide to Disability Rights Laws</a
+                  >
                 </li>
                 <li>
                   <a
                     href="https://www.verywellhealth.com/americans-with-disabilities-act-5220487"
                     class="content-blue hover:text-jpmc-blue-300"
-                    >US: ADA Rights, Laws, Resources</a>
+                    >US: ADA Rights, Laws, Resources</a
+                  >
                 </li>
               </ul>
             </div>
