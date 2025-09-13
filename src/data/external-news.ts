@@ -128,6 +128,13 @@ export const externalNewsItems: ExternalNewsItem[] = [
     url: "https://www.cnbc.com/2024/12/01/jpmorgan-chase-workers-union-efforts",
     publishedDate: "2024-12-01",
   },
+  {
+    url: "https://www.instagram.com/barrons/reel/DOOzF7XimbZ/?hl=en",
+    featured: true,
+    publishedDate: "2025-09-05",
+    title: "Inside JPMorgan's Union Push",
+    description: "Barron's Instagram reel covering the union push at JPMorgan Chase.",
+  },
 ];
 
 // Sort by date (newest first)
