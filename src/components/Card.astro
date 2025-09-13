@@ -43,6 +43,24 @@ const {
   external = false
 } = Astro.props;
 
+// Calculate datetime from date (assuming ET start of day)
+function calculateDatetime(dateString: string): string {
+  try {
+    // Parse the date string and create a date object
+    const date = new Date(dateString);
+    
+    // Set to Eastern Time start of day (00:00:00)
+    const etDate = new Date(date.toLocaleString("en-US", { timeZone: "America/New_York" }));
+    etDate.setHours(0, 0, 0, 0);
+    
+    // Return in ISO format
+    return etDate.toISOString();
+  } catch (error) {
+    // If parsing fails, return the original string
+    return dateString;
+  }
+}
+
 ---
 
 <div
@@ -77,8 +95,8 @@ const {
     </div>
   )}
   {date && (
-    <div class="text-sm text-gray-400">
+    <time class="text-sm text-gray-400" datetime={calculateDatetime(date)}>
       {date}
-    </div>
+    </time>
   )}
 </div>
