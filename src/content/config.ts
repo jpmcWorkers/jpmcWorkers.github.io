@@ -48,6 +48,9 @@ const newslettersCollection = defineCollection({
   }),
 });
 
+const images = ['png', 'jpg', 'jpeg', 'webp', 'gif', 'pdf', 'zip', 'mp4']
+type ImageType = typeof images[number]
+
 const imageCollection = defineCollection({
   loader: async () => {
     const basePath = path.resolve(import.meta.dirname, '../../public/images');
@@ -56,7 +59,7 @@ const imageCollection = defineCollection({
       name: string;
       file: string;
       preview: string | null;
-      type: 'png' | 'jpg' | 'jpeg' | 'webp' | 'gif' | 'pdf' | 'zip' | 'mp4';
+      type: ImageType;
       isFolder: boolean;
       width?: number;
       height?: number;
@@ -78,7 +81,7 @@ const imageCollection = defineCollection({
         // Find the main file (not the preview file)
         const mainFile = subItems.find(file => {
           const ext = path.extname(file).toLowerCase().slice(1);
-          return ['png', 'jpg', 'jpeg', 'webp', 'gif', 'pdf', 'zip', 'mp4'].includes(ext) && 
+          return images.includes(ext as ImageType) && 
                  !file.startsWith('preview.');
         });
         
@@ -100,7 +103,7 @@ const imageCollection = defineCollection({
             name: item.name,
             file: `${item.name}/${mainFile}`,
             preview: previewFile ? `${item.name}/${previewFile}` : null,
-            type: ext as 'png' | 'jpg' | 'jpeg' | 'webp' | 'gif' | 'pdf' | 'zip' | 'mp4',
+            type: ext as ImageType,
             isFolder: true,
             width: mainDimensions.width,
             height: mainDimensions.height,
@@ -111,7 +114,7 @@ const imageCollection = defineCollection({
       } else if (item.isFile()) {
         // Handle single files
         const ext = path.extname(item.name).toLowerCase().slice(1);
-        if (['png', 'jpg', 'jpeg', 'webp', 'gif', 'pdf', 'zip', 'mp4'].includes(ext)) {
+        if (images.includes(ext as ImageType)) {
           // Get dimensions for single file
           const filePath = path.join(basePath, item.name);
           const dimensions = await getImageDimensions(filePath);
@@ -121,7 +124,7 @@ const imageCollection = defineCollection({
             name: item.name,
             file: item.name,
             preview: null,
-            type: ext as 'png' | 'jpg' | 'jpeg' | 'webp' | 'gif' | 'pdf' | 'zip' | 'mp4',
+            type: ext as ImageType,
             isFolder: false,
             width: dimensions.width,
             height: dimensions.height,
@@ -136,7 +139,7 @@ const imageCollection = defineCollection({
     name: z.string(),
     file: z.string(),
     preview: z.string().nullable(),
-    type: z.enum(['png', 'jpg', 'jpeg', 'webp', 'gif', 'pdf', 'zip', 'mp4']),
+    type: z.enum(images),
     isFolder: z.boolean(),
     width: z.number().optional(),
     height: z.number().optional(),
