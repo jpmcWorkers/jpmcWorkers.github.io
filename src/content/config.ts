@@ -56,7 +56,7 @@ const imageCollection = defineCollection({
       name: string;
       file: string;
       preview: string | null;
-      type: 'png' | 'jpg' | 'jpeg' | 'webp' | 'gif' | 'pdf';
+      type: 'png' | 'jpg' | 'jpeg' | 'webp' | 'gif' | 'pdf' | 'zip' | 'mp4';
       isFolder: boolean;
       width?: number;
       height?: number;
@@ -73,12 +73,12 @@ const imageCollection = defineCollection({
       if (item.isDirectory()) {
         // Handle subfolders with any file type and optional preview
         const subItems = await fs.readdir(itemPath);
-        const previewFile = subItems.find(file => file === 'preview.png' || file === 'preview.jpg' || file === 'preview.webp');
+        const previewFile = subItems.find(file => file.startsWith('preview.'));
         
         // Find the main file (not the preview file)
         const mainFile = subItems.find(file => {
           const ext = path.extname(file).toLowerCase().slice(1);
-          return ['png', 'jpg', 'jpeg', 'webp', 'gif', 'pdf'].includes(ext) && 
+          return ['png', 'jpg', 'jpeg', 'webp', 'gif', 'pdf', 'zip', 'mp4'].includes(ext) && 
                  !file.startsWith('preview.');
         });
         
@@ -89,7 +89,7 @@ const imageCollection = defineCollection({
           const mainFilePath = path.join(itemPath, mainFile);
           const mainDimensions = await getImageDimensions(mainFilePath);
           
-          let previewDimensions = {};
+          let previewDimensions: { width?: number; height?: number } = {};
           if (previewFile) {
             const previewFilePath = path.join(itemPath, previewFile);
             previewDimensions = await getImageDimensions(previewFilePath);
@@ -100,7 +100,7 @@ const imageCollection = defineCollection({
             name: item.name,
             file: `${item.name}/${mainFile}`,
             preview: previewFile ? `${item.name}/${previewFile}` : null,
-            type: ext as 'png' | 'jpg' | 'jpeg' | 'webp' | 'gif' | 'pdf',
+            type: ext as 'png' | 'jpg' | 'jpeg' | 'webp' | 'gif' | 'pdf' | 'zip' | 'mp4',
             isFolder: true,
             width: mainDimensions.width,
             height: mainDimensions.height,
@@ -111,7 +111,7 @@ const imageCollection = defineCollection({
       } else if (item.isFile()) {
         // Handle single files
         const ext = path.extname(item.name).toLowerCase().slice(1);
-        if (['png', 'jpg', 'jpeg', 'webp', 'gif', 'pdf'].includes(ext)) {
+        if (['png', 'jpg', 'jpeg', 'webp', 'gif', 'pdf', 'zip', 'mp4'].includes(ext)) {
           // Get dimensions for single file
           const filePath = path.join(basePath, item.name);
           const dimensions = await getImageDimensions(filePath);
@@ -121,7 +121,7 @@ const imageCollection = defineCollection({
             name: item.name,
             file: item.name,
             preview: null,
-            type: ext as 'png' | 'jpg' | 'jpeg' | 'webp' | 'gif' | 'pdf',
+            type: ext as 'png' | 'jpg' | 'jpeg' | 'webp' | 'gif' | 'pdf' | 'zip' | 'mp4',
             isFolder: false,
             width: dimensions.width,
             height: dimensions.height,
@@ -136,7 +136,7 @@ const imageCollection = defineCollection({
     name: z.string(),
     file: z.string(),
     preview: z.string().nullable(),
-    type: z.enum(['png', 'jpg', 'jpeg', 'webp', 'gif', 'pdf']),
+    type: z.enum(['png', 'jpg', 'jpeg', 'webp', 'gif', 'pdf', 'zip', 'mp4']),
     isFolder: z.boolean(),
     width: z.number().optional(),
     height: z.number().optional(),
