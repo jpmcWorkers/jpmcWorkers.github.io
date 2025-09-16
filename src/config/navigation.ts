@@ -59,6 +59,11 @@ export const navigationConfig = {
       href: "/image",
       label: "Images & Materials",
       description: "Visual resources and materials"
+    },
+    {
+      href: "/booklet",
+      label: "Booklets",
+      description: "Printable booklets for organizing"
     }
     // Commented out bingo card generator
     // {
