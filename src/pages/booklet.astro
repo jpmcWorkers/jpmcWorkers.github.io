@@ -1,77 +1,36 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import { Image } from 'astro:assets';
+import { getCollection } from 'astro:content';
 
-// Function to get all booklets from the public/booklets directory
+// Interface to match the content collection schema
 interface Booklet {
+  id: string;
   name: string;
+  file: string;
+  preview: string | null;
   type: string;
-  pdfPath: string;
-  previewPath: string | null;
   isFolder: boolean;
+  width?: number;
+  height?: number;
+  previewWidth?: number;
+  previewHeight?: number;
 }
 
-async function getBooklets(): Promise<Booklet[]> {
-  const booklets: Booklet[] = [];
-  
-  // Get all items in the booklets directory
-  const allBookletFiles = import.meta.glob('/public/booklets/**/*', { eager: true });
-  
-  // Track which folders we've processed
-  const processedFolders = new Set();
-  
-  // Process each file
-  for (const [path, module] of Object.entries(allBookletFiles)) {
-    const relativePath = path.replace('/public/booklets/', '');
-    const pathParts = relativePath.split('/');
-    
-    if (pathParts.length === 1) {
-      // This is a file directly in the booklets directory
-      const fileName = pathParts[0];
-      if (fileName.endsWith('.pdf')) {
-        booklets.push({
-          name: fileName.replace('.pdf', ''),
-          type: 'pdf',
-          pdfPath: `/booklets/${fileName}`,
-          previewPath: null,
-          isFolder: false
-        } as Booklet);
-      }
-    } else if (pathParts.length === 2) {
-      // This is a file in a subfolder
-      const folderName = pathParts[0];
-      const fileName = pathParts[1];
-      
-      if (!processedFolders.has(folderName)) {
-        processedFolders.add(folderName);
-        
-        // Look for PDF and preview files in this folder
-        const pdfFile = Object.keys(allBookletFiles).find(p => 
-          p.includes(`/public/booklets/${folderName}/`) && p.endsWith('.pdf')
-        );
-        const previewFile = Object.keys(allBookletFiles).find(p => 
-          p.includes(`/public/booklets/${folderName}/`) && 
-          (p.endsWith('.jpg') || p.endsWith('.jpeg') || p.endsWith('.png') || p.endsWith('.webp'))
-        );
-        
-        if (pdfFile) {
-          const pdfFileName = pdfFile.split('/').pop() || '';
-          booklets.push({
-            name: folderName,
-            type: 'pdf',
-            pdfPath: `/booklets/${folderName}/${pdfFileName}`,
-            previewPath: previewFile ? previewFile.replace('/public', '') : null,
-            isFolder: true
-          } as Booklet);
-        }
-      }
-    }
-  }
-  
-  return booklets;
-}
-
-const booklets = await getBooklets();
+// Load booklets from content collection
+const bookletEntries = await getCollection('booklets');
+const booklets: Booklet[] = bookletEntries.map(entry => ({
+  id: entry.id,
+  name: entry.data.name,
+  file: entry.data.file,
+  preview: entry.data.preview,
+  type: entry.data.type,
+  isFolder: entry.data.isFolder,
+  width: entry.data.width,
+  height: entry.data.height,
+  previewWidth: entry.data.previewWidth,
+  previewHeight: entry.data.previewHeight,
+}));
 ---
 
 <Layout title="Booklets - JPMC Workers Alliance">
@@ -113,11 +72,11 @@ const booklets = await getBooklets();
           <div class="bg-white dark:bg-gray-800 rounded-lg shadow-xl overflow-hidden border-2 border-gray-200 dark:border-gray-700 flex flex-col">
             {/* Preview Image */}
             <div class="aspect-square dark:bg-gray-700 flex items-center justify-center">
-              {booklet.previewPath ? (
+              {booklet.preview ? (
                 <Image
                   width={300}
                   height={300}
-                  src={booklet.previewPath}
+                  src={`/booklets/${booklet.preview}`}
                   alt={booklet.name}
                   loading="lazy"
                   class="w-full h-full object-cover"
@@ -145,7 +104,7 @@ const booklets = await getBooklets();
               
               {/* Download Button */}
               <a 
-                href={booklet.pdfPath}
+                href={`/booklets/${booklet.file}`}
                 download
                 class="inline-block w-full bg-jpmc-blue text-white text-center px-4 py-2 rounded-md hover:bg-jpmc-blue-700 transition-colors mt-auto"
               >
