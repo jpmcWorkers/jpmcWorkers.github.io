@@ -1,0 +1,168 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { Image } from 'astro:assets';
+import { getCollection } from 'astro:content';
+
+// Interface to match the content collection schema
+interface Booklet {
+  id: string;
+  name: string;
+  file: string;
+  preview: string | null;
+  type: string;
+  isFolder: boolean;
+  width?: number;
+  height?: number;
+  previewWidth?: number;
+  previewHeight?: number;
+}
+
+// Load booklets from content collection
+const bookletEntries = await getCollection('booklets');
+const booklets: Booklet[] = bookletEntries.map(entry => ({
+  id: entry.id,
+  name: entry.data.name,
+  file: entry.data.file,
+  preview: entry.data.preview,
+  type: entry.data.type,
+  isFolder: entry.data.isFolder,
+  width: entry.data.width,
+  height: entry.data.height,
+  previewWidth: entry.data.previewWidth,
+  previewHeight: entry.data.previewHeight,
+}));
+---
+
+<Layout title="Booklets - JPMC Workers Alliance">
+  <div class="container mx-auto px-4 py-8">
+    <div class="max-w-4xl mx-auto">
+      <h1 class="text-4xl font-bold text-jpmc-blue mb-8">Booklets</h1>
+      
+      <div class="prose prose-lg max-w-none mb-8">
+        <p>These should be PDFs that you can send directly to a printing service, or they should work on any printer.</p>
+        
+        <p><a href="https://www.youtube.com/watch?v=CnHDdw4_2n0" target="_blank" rel="noopener noreferrer">Here's a video on how to fold them.</a></p>
+        
+        <p>The following booklets make specific reference to US labor law, and are sized to fit US Letter (8.5 x 11 inch) paper.</p>
+      </div>
+
+      <div class="mb-8">
+        <div class="aspect-video">
+          <iframe 
+            width="560" 
+            height="315" 
+            src="https://www.youtube-nocookie.com/embed/CnHDdw4_2n0?si=4cQ8qlr2bymKDczF" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" 
+            allowfullscreen
+            class="w-full h-full rounded-lg">
+          </iframe>
+        </div>
+      </div>
+
+      <div class="prose prose-lg max-w-none mb-8">
+        <p><em>We would love if someone would create booklets suitable for other countries.</em></p>
+        <p><strong>Tips on authoring booklets of your own are at the bottom of this page.</strong></p>
+      </div>
+
+      <div class="grid grid-cols-[repeat(auto-fill,minmax(250px,1fr))] gap-6 mb-8">
+        {booklets.map((booklet) => (
+          <div class="bg-white dark:bg-gray-800 rounded-lg shadow-xl overflow-hidden border-2 border-gray-200 dark:border-gray-700 flex flex-col">
+            {/* Preview Image */}
+            <div class="aspect-square dark:bg-gray-700 flex items-center justify-center">
+              {booklet.preview ? (
+                <Image
+                  width={300}
+                  height={300}
+                  src={`/booklets/${booklet.preview}`}
+                  alt={booklet.name}
+                  loading="lazy"
+                  class="w-full h-full object-cover"
+                />
+              ) : (
+                <div class="text-gray-500 dark:text-gray-400 flex items-center justify-center p-4 min-h-[250px]">
+                  <div class="text-center">
+                    <svg class="w-16 h-16 mx-auto mb-2" fill="currentColor" viewBox="0 0 20 20">
+                      <path fill-rule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z" clip-rule="evenodd"></path>
+                    </svg>
+                    <span class="text-sm">PDF Document</span>
+                  </div>
+                </div>
+              )}
+            </div>
+          
+            {/* Content */}
+            <div class="p-4 flex-1 flex flex-col">
+              <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2 truncate">
+                {booklet.name}
+              </h3>
+              <p class="text-sm text-gray-600 dark:text-gray-400 mb-3">
+                PDF • {booklet.isFolder ? 'Folder' : 'File'}
+              </p>
+              
+              {/* Download Button */}
+              <a 
+                href={`/booklets/${booklet.file}`}
+                download
+                class="inline-block w-full bg-jpmc-blue text-white text-center px-4 py-2 rounded-md hover:bg-jpmc-blue-700 transition-colors mt-auto"
+              >
+                Download PDF
+              </a>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <section class="mt-12">
+        <h2 class="text-3xl font-bold text-jpmc-blue mb-6">Authoring Booklets</h2>
+        
+        <div class="prose prose-lg max-w-none">
+          <p><strong>Keep it terse. You have no room!</strong></p>
+          
+          <p>Remember visual hierarchy: Use different font sizes and styles to distinguish headers and bullet points from body text.</p>
+          
+          <p>Reggie recommends around 750 words.</p>
+          
+          <p>
+            <a href="https://inkscape.org/" target="_blank" rel="noopener noreferrer">Inkscape</a>
+            and
+            <a href="https://www.canva.com/" target="_blank" rel="noopener noreferrer">Canva</a>
+            have both worked, but in theory any drawing or desktop-publishing application should work.
+            One of us means to experiment with <a href="https://www.scribus.net/" target="_blank" rel="noopener noreferrer">Scribus</a>.
+            Paid choices include Adobe Illustrator and Corel Draw.
+          </p>
+          
+          <p>The discord may or may not offer templates for one or more of these formats.</p>
+          
+          <p>The basic layout is:</p>
+          
+          <div class="bg-neutral-100 shadow-2xl rounded-lg">
+            <div class="overflow-x-auto">
+              <div class="relative mx-auto w-full max-w-[1000px] bg-white shadow-3xl  ring-gray-300 [aspect-ratio:11/8.5]">
+                <!-- 8-up grid (4x2) representing a sheet split into 8 panels -->
+                <div class="grid h-full grid-cols-4 grid-rows-2">
+                  <!-- Row 1 -->
+                  <div class="flex items-center justify-center border border-gray-300 p-4 text-sm font-medium rotate-180">Page 6</div>
+                  <div class="flex items-center justify-center border border-gray-300 border-t-2 border-t-red-500 p-4 text-sm font-medium rotate-180">Page 5</div>
+                  <div class="flex items-center justify-center border border-gray-300 border-t-2 border-t-red-500 p-4 text-sm font-medium rotate-180">Page 4</div>
+                  <div class="flex items-center justify-center border border-gray-300 p-4 text-sm font-medium rotate-180">Page 3</div>
+          
+                  <!-- Row 2 -->
+                  <div class="flex items-center justify-center border border-gray-300 p-4 text-sm font-medium">Back Cover</div>
+                  <div class="flex items-center justify-center border border-gray-300 p-4 text-sm font-medium">Front Cover</div>
+                  <div class="flex items-center justify-center border border-gray-300 p-4 text-sm font-medium">Page 1</div>
+                  <div class="flex items-center justify-center border border-gray-300 p-4 text-sm font-medium">Page 2</div>
+                </div>
+          
+              </div>
+            </div>
+          </div>
+          
+          <p>Note that the top row is upside down.</p>
+        </div>
+      </section>
+    </div>
+  </div>
+</Layout>

@@ -68,8 +68,10 @@ function calculateDisplayDimensions(width?: number, height?: number, maxSize: nu
                 : imageModule ? <Image
                   width={displayDimensions.width}
                   height={displayDimensions.height}
+
                   src={imageModule.default}
                   alt={entry.data.name}
+                  loading="lazy"
                   class="w-full h-full object-cover"
                 /> : (
                   <div class="text-gray-500 dark:text-gray-400 flex items-center justify-center p-4 min-h-[250px] object-cover">
