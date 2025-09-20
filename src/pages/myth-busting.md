@@ -22,7 +22,7 @@ Below is a short, plain-language collection of common myths about unions and con
 
 ---
 
-#### Myth: Unions are outdated in today’s economy
+## Myth: Unions are outdated in today’s economy
 **Fact:** Unions are actively organizing in modern sectors (tech, logistics, retail, higher education) because they address current problems like surveillance, remote work rights, and pay equity.
 
 ---
