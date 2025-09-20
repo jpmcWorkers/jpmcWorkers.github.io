@@ -11,7 +11,6 @@ Below is a short, plain-language collection of common myths about unions and con
 ## How this page is organized
 - Myth — short statement
 - Fact — short, evidence-based reply you can share aloud
-- Sources — quick links you can reference
 
 ---
 
