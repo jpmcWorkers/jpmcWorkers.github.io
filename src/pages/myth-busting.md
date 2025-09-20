@@ -7,10 +7,7 @@ date: "2025-09-19"
 tableOfContents: true
 ---
 
-Below is a short, plain-language collection of common myths about unions and concise facts with sources. Use this to start conversations and share links — keep the sources handy.
-# How this page is organized
-- Myth — short statement
-- Fact — short, evidence-based reply you can share aloud
+Below is a short, plain-language collection of common myths about unions and concise facts.
 
 ---
 
