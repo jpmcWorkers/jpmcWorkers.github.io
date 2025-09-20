@@ -14,7 +14,7 @@ export interface NavigationSection {
 }
 
 export const navigationConfig = {
-  // Reorganized navigation to match requested structure. Existing hrefs/labels preserved where available.
+  // Reorganized navigation. Existing hrefs/labels preserved where available.
   startHere: [
     {
       href: "/",
@@ -43,7 +43,7 @@ export const navigationConfig = {
     {
       href: "/issues-and-resources",
       label: "Learn the Issues",
-      description: "Pay • Scheduling • Healthcare • Safety • Remote Work • AI/Automation",
+      description: "Remote Work / AI/Automation / Job Security",
       skipMobile: true
     }
   ],

@@ -41,8 +41,7 @@ function getHeaderDepthClass(depth: number) {
     title: "Page title"
     description: "Short description"
 
-  This component renders an article wrapper (prose classes) and a small
-  client-side Table of Contents generator for h2/h3 headings.
+  This component renders an article wrapper (prose classes) and a Table of Contents if desired.
 -->
 
 <Layout title={title} description={description}>
@@ -61,7 +60,7 @@ function getHeaderDepthClass(depth: number) {
           <h2 class="text-lg font-semibold mb-2">Table of Contents</h2>
           <ul class="list-disc list-inside">
             {headings.map(heading => (
-              <li class={getHeaderDepthClass(heading.depth)}>
+              <li class={`${getHeaderDepthClass(heading.depth)} not-prose`}>
                 <a href={`#${heading.slug}`} class="text-jpmc-blue no-underline hover:underline">
                   {heading.text}
                 </a>
