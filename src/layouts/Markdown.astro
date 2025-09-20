@@ -6,10 +6,20 @@ export interface Props {
     description?: string;
     author?: string;
     date?: string;
-  }
+    tableOfContents?: boolean
+  },
+  headings: {
+    depth: number;
+    text: string;
+    slug: string;
+  }[]
 }
 
-const { title, description = '', author, date } = Astro.props.content;
+const { title, description = '', author, date, tableOfContents } = Astro.props.content;
+
+const { headings } = Astro.props;
+
+console.log(headings)
 ---
 
 <!--
@@ -35,10 +45,20 @@ const { title, description = '', author, date } = Astro.props.content;
           {date && <time datetime={date}>{date}</time>}
         </div>
       </header>
-
-      <nav id="toc" aria-label="Table of contents" class="mb-6 hidden md:block">
-        <!-- Table of contents will be populated by the script below -->
-      </nav>
+      {tableOfContents && headings.length > 0 && (
+        <nav id="toc" aria-label="Table of contents" class="mb-6 hidden md:block">
+          <h2 class="text-lg font-semibold mb-2">Table of Contents</h2>
+          <ul class="list-disc list-inside">
+            {headings.map(heading => (
+              <li class={`ml-${(heading.depth - 2) * 4}`}>
+                <a href={`#${heading.slug}`} class="text-blue-600 hover:underline">
+                  {heading.text}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </nav>
+      )}
 
       <section id="content">
         <slot />
@@ -53,38 +73,4 @@ const { title, description = '', author, date } = Astro.props.content;
     </div>
   </article>
 
-  <script>
-    // Build a simple Table of Contents from h2/h3 headings for accessibility
-    (function () {
-      try {
-        const content = document.getElementById('content');
-        const toc = document.getElementById('toc');
-        if (!content || !toc) return;
-
-        const headings = content.querySelectorAll('h2, h3');
-        if (!headings.length) return;
-
-        const list = document.createElement('ul');
-        list.className = 'space-y-1 text-sm';
-
-        headings.forEach(h => {
-          if (!h.id) {
-            h.id = h.textContent.trim().toLowerCase().replace(/[^a-z0-9]+/g, '-');
-          }
-          const li = document.createElement('li');
-          li.innerHTML = `<a href="#${h.id}" class="text-jpmc-blue-700 dark:text-jpmc-blue-300 hover:underline">${h.textContent}</a>`;
-          list.appendChild(li);
-        });
-
-        const heading = document.createElement('div');
-        heading.className = 'font-semibold mb-2';
-        heading.textContent = 'Contents';
-        toc.appendChild(heading);
-        toc.appendChild(list);
-      } catch (e) {
-        // fail silently
-        console.warn('TOC generation failed', e);
-      }
-    })();
-  </script>
 </Layout>

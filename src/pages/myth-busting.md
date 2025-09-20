@@ -4,11 +4,11 @@ title: "Myth Busting: Common Claims and the Facts"
 description: "Short myth/fact guide to common anti-union claims with sources and short explanations."
 author: "JPMC Workers Alliance"
 date: "2025-09-19"
-
+tableOfContents: true
 ---
 
 Below is a short, plain-language collection of common myths about unions and concise facts with sources. Use this to start conversations and share links — keep the sources handy.
-## How this page is organized
+# How this page is organized
 - Myth — short statement
 - Fact — short, evidence-based reply you can share aloud
 

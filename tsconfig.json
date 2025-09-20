@@ -15,6 +15,12 @@
       "~/*": ["./src/*"],
     }
   },
-  "include": ["src/**/*", "astro.config.mjs", "tests/**/*", "scripts/**/*"],
+  "include": [
+    "src/**/*", 
+    "astro.config.mjs",
+    "tests/**/*",
+    "scripts/**/*",
+    "global.d.ts"
+  ],
   "exclude": ["node_modules", "dist"]
 }
