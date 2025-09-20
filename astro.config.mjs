@@ -2,6 +2,7 @@ import { defineConfig } from 'astro/config';
 import AstroPWA from '@vite-pwa/astro';
 
 import tailwindcss from '@tailwindcss/vite';
+import viteTsconfigPaths from 'vite-tsconfig-paths';
 
 import sitemap from '@astrojs/sitemap';
 
@@ -23,7 +24,10 @@ export default defineConfig({
   // },
 
   vite: {
-    plugins: [tailwindcss()],
+    plugins: [
+      tailwindcss(),
+      viteTsconfigPaths(),
+    ],
   },
 
   integrations: [

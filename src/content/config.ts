@@ -135,7 +135,7 @@ const newslettersCollection = defineCollection({
   }),
 });
 
-const contentList = ['png', 'jpg', 'jpeg', 'webp', 'gif', 'pdf', 'zip', 'mp4']
+const contentList = ['png', 'jpg', 'jpeg', 'webp', 'gif', 'pdf', 'zip', 'mp4'] as const;
 type ContentType = typeof contentList[number]
 const imagePath = path.resolve(import.meta.dirname, '../../public/images');
 const bookletPath = path.resolve(import.meta.dirname, '../../public/booklets');

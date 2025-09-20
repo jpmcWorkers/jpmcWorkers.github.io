@@ -1,0 +1,86 @@
+---
+import Layout from './Layout.astro';
+export interface Props {
+  content: {
+    title: string;
+    description?: string;
+    author?: string;
+    date?: string;
+    tableOfContents?: boolean
+  },
+  headings: {
+    depth: number;
+    text: string;
+    slug: string;
+  }[]
+}
+
+const { title, description = '', author, date, tableOfContents } = Astro.props.content;
+
+const { headings } = Astro.props;
+
+function getHeaderDepthClass(depth: number) {
+  switch (depth) {
+    case 2:
+      return 'ml-0';
+    case 3:
+      return 'ml-4';
+    case 4:
+      return 'ml-8';
+    default:
+      return 'ml-0';
+  }
+}
+---
+
+<!--
+  Markdown.astro
+  A focused markdown layout that composes into the site's primary `Layout.astro`.
+  Usage (in a markdown page frontmatter):
+    layout: ~/layouts/Markdown.astro
+    title: "Page title"
+    description: "Short description"
+
+  This component renders an article wrapper (prose classes) and a Table of Contents if desired.
+-->
+
+<Layout title={title} description={description}>
+  <article class="container mx-auto px-4 py-10">
+    <div class="prose lg:prose-lg dark:prose-invert max-w-none">
+      <header class="mb-6">
+        <h1 class="text-3xl font-bold">{title}</h1>
+        <div class="text-sm text-muted mt-1">
+          {author && <span>By {author}</span>}
+          {author && date && <span class="mx-2">•</span>}
+          {date && <time datetime={date}>{date}</time>}
+        </div>
+      </header>
+      {tableOfContents && headings.length > 0 && (
+        <nav id="toc" aria-label="Table of contents" class="mb-6 hidden md:block">
+          <h2 class="text-lg font-semibold mb-2">Table of Contents</h2>
+          <ul class="list-disc list-inside">
+            {headings.map(heading => (
+              <li class={`${getHeaderDepthClass(heading.depth)} not-prose`}>
+                <a href={`#${heading.slug}`} class="text-jpmc-blue no-underline hover:underline">
+                  {heading.text}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </nav>
+      )}
+
+      <section id="content">
+        <slot />
+      </section>
+
+      <footer class="mt-8 text-sm text-muted border-t border-jpmc-gray-200 pt-4">
+        <p>
+          Sources and links within are provided inline. For corrections or
+          suggestions, please send us an email or let us know on discord.
+        </p>
+      </footer>
+    </div>
+  </article>
+
+</Layout>
