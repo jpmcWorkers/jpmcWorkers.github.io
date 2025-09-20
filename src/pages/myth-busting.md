@@ -2,7 +2,7 @@
 layout: ~/layouts/Markdown.astro
 title: "Myth Busting: Common Claims and the Facts"
 description: "Short myth/fact guide to common anti-union claims with sources and short explanations."
-author: "JPMC Workers Alliance"
+author: "BK"
 date: "2025-09-19"
 tableOfContents: true
 ---
