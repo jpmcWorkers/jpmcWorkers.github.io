@@ -19,7 +19,18 @@ const { title, description = '', author, date, tableOfContents } = Astro.props.c
 
 const { headings } = Astro.props;
 
-console.log(headings)
+function getHeaderDepthClass(depth: number) {
+  switch (depth) {
+    case 2:
+      return 'ml-0';
+    case 3:
+      return 'ml-4';
+    case 4:
+      return 'ml-8';
+    default:
+      return 'ml-0';
+  }
+}
 ---
 
 <!--
@@ -50,8 +61,8 @@ console.log(headings)
           <h2 class="text-lg font-semibold mb-2">Table of Contents</h2>
           <ul class="list-disc list-inside">
             {headings.map(heading => (
-              <li class={`ml-${(heading.depth - 2) * 4}`}>
-                <a href={`#${heading.slug}`} class="text-blue-600 hover:underline">
+              <li class={getHeaderDepthClass(heading.depth)}>
+                <a href={`#${heading.slug}`} class="text-jpmc-blue no-underline hover:underline">
                   {heading.text}
                 </a>
               </li>
