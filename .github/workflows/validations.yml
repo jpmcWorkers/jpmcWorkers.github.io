@@ -1,4 +1,4 @@
-name: Link Validation Tests (DISABLED)
+name: Playwright Tests
 
 on:
   # Disabled - uncomment to re-enable
@@ -21,7 +21,7 @@ jobs:
     
     - uses: actions/setup-node@v4
       with:
-        node-version: 18
+        node-version: 22
         cache: 'npm'
     
     - name: Install dependencies
