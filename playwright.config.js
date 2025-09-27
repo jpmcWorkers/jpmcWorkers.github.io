@@ -25,6 +25,8 @@ export default defineConfig({
     baseURL: 'http://localhost:4321/workers.github.io',
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on-first-retry',
+    screenshot: 'only-on-failure',
+    video: 'retain-on-failure',
   },
 
   /* Configure projects for major browsers */
@@ -58,7 +60,7 @@ export default defineConfig({
   /* Run your local dev server before starting the tests */
   webServer: {
     command: 'npm run preview',
-    url: 'http://localhost:4321/workers.github.io',
+    url: 'http://localhost:4321',
     reuseExistingServer: !process.env.CI,
   },
 });
