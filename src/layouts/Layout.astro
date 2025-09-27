@@ -104,6 +104,7 @@ const sidebarNavigation = getSidebarNavigation();
           class="md:hidden hidden"
           id="mobile-menu"
           aria-label="Mobile navigation"
+          data-testid="mobile-menu"
         >
           <div class="px-4 py-2 space-y-2 bg-jpmc-gray-50 dark:bg-gray-500">
             {Object.values(navigationConfig).flat().filter(item => !item.skipMobile).map((item) => (

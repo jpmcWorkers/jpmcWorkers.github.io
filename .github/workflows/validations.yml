@@ -1,11 +1,11 @@
-name: Link Validation Tests (DISABLED)
+name: Playwright Tests
 
 on:
   # Disabled - uncomment to re-enable
-  # push:
-  #   branches: [ main, master ]
-  # pull_request:
-  #   branches: [ main, master ]
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
   # schedule:
   #   # Run tests daily at 6 AM UTC to catch broken external links
   #   - cron: '0 6 * * *'
@@ -21,7 +21,7 @@ jobs:
     
     - uses: actions/setup-node@v4
       with:
-        node-version: 18
+        node-version: 22
         cache: 'npm'
     
     - name: Install dependencies
