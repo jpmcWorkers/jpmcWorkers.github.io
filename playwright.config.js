@@ -16,6 +16,7 @@ export default defineConfig({
   reporter: [
     ['list'],
     ['html', { open: 'never' }],
+    ['json', { outputFile: 'test-results.json' }],
   ],
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
   reporter: 'html',
@@ -25,8 +26,9 @@ export default defineConfig({
     baseURL: 'http://localhost:4321/workers.github.io',
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on-first-retry',
-    screenshot: 'only-on-failure',
+    screenshot: 'on',
     video: 'retain-on-failure',
+
   },
 
   /* Configure projects for major browsers */
