@@ -62,7 +62,7 @@ export const externalNewsItems: ExternalNewsItem[] = [
       "Fortune reports that RTO backlash is fueling union talk, citing Wells Fargo’s organizing as a template.",
   },
   {
-    url: "https://fortune.com/2025/01/17/jpmorgan-chase-union-jamie-dimon-wall-street-return-to-work-employees-anger/",
+    url: "https://www.msn.com/en-us/money/companies/inside-jpmorgan-employee-backlash-over-5-day-rto-mandate-gains-steam/ar-AA1xojN0",
     featured: false,
     publishedDate: "2025-01-17",
     title:
