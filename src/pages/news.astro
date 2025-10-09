@@ -15,9 +15,6 @@ const sortedNewsletters = newsletters.sort((a, b) => {
   return dateB.getTime() - dateA.getTime();
 });
 
-// Get featured items
-const featuredNewsletters = sortedNewsletters.filter(item => item.data.featured);
-
 // Format date for display
 function formatDate(date: Date): string {
   return new Intl.DateTimeFormat('en-US', { 
@@ -41,10 +38,10 @@ function formatDate(date: Date): string {
     <section class="mb-12">
       <h2 class="text-2xl font-semibold text-jpmc-blue mb-6">Latest Newsletters</h2>
       <div class="grid md:grid-cols-2 gap-6">
-        {sortedNewsletters.slice(0, 6).map((newsletter) => (
+        {sortedNewsletters.map((newsletter) => (
           <Card
             title={newsletter.data.title}
-            description={newsletter.data.excerpt || newsletter.data.description}
+            description={newsletter.data.excerpt || newsletter.data.description!}
             link={`/newsletters/${newsletter.id}`}
             borderColor="blue"
             hoverColor="jpmc-blue"
