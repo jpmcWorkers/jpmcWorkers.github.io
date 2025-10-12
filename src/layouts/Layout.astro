@@ -1,7 +1,11 @@
 ---
 import "../styles/global.css";
 import SocialLinks from "../components/SocialLinks.astro";
-import { navigationConfig, getSidebarNavigation, isActiveLink } from "../config/navigation";
+import {
+  navigationConfig,
+  getSidebarNavigation,
+  isActiveLink,
+} from "../config/navigation";
 
 export interface Props {
   title: string;
@@ -107,18 +111,23 @@ const sidebarNavigation = getSidebarNavigation();
           data-testid="mobile-menu"
         >
           <div class="px-4 py-2 space-y-2 bg-jpmc-gray-50 dark:bg-gray-500">
-            {Object.values(navigationConfig).flat().filter(item => !item.skipMobile).map((item) => (
-              <a
-                href={item.href}
-                class={`block py-2 font-medium transition-colors ${
-                  isActiveLink(currentPath, item.href)
-                    ? "text-jpmc-blue font-semibold"
-                    : "text-jpmc-dark hover:text-jpmc-blue"
-                }`}
-              >
-                {item.label}
-              </a>
-            ))}
+            {
+              Object.values(navigationConfig)
+                .flat()
+                .filter((item) => !item.skipMobile)
+                .map((item) => (
+                  <a
+                    href={item.href}
+                    class={`block py-2 font-medium transition-colors ${
+                      isActiveLink(currentPath, item.href)
+                        ? "text-jpmc-blue font-semibold"
+                        : "text-jpmc-dark hover:text-jpmc-blue"
+                    }`}
+                  >
+                    {item.label}
+                  </a>
+                ))
+            }
           </div>
         </nav>
       </header>
@@ -133,36 +142,37 @@ const sidebarNavigation = getSidebarNavigation();
           <div class="p-6">
             <!-- Navigation Links -->
             <nav class="space-y-4">
-
-              {sidebarNavigation.map((section) => (
-                <div class="space-y-2">
-                  <h3
-                    class={`text-sm font-medium text-${section.color} uppercase tracking-wide`}
-                  >
-                    {section.title}
-                  </h3>
-                  <ul class="space-y-1">
-                    {section.items.map((item) => (
-                      <li>
-                        <a
-                          href={item.href}
-                          class={`block py-2 px-3 rounded-md transition-colors ${
-                            isActiveLink(currentPath, item.href)
-                              ? `text-${section.color} bg-${section.color === 'jpmc-blue' ? 'jpmc-gray-50' : 'jpmc-gray-50'} dark:bg-gray-700 font-semibold`
-                              : `text-jpmc-dark dark:text-gray-200 hover:text-${section.color} hover:bg-jpmc-gray-50 dark:hover:bg-gray-700`
-                          }`}
-                        >
-                          {item.label}
-                        </a>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              ))}
+              {
+                sidebarNavigation.map((section) => (
+                  <div class="space-y-2">
+                    <h3
+                      class={`text-sm font-medium text-${section.color} uppercase tracking-wide`}
+                    >
+                      {section.title}
+                    </h3>
+                    <ul class="space-y-1">
+                      {section.items.map((item) => (
+                        <li>
+                          <a
+                            href={item.href}
+                            class={`block py-2 px-3 rounded-md transition-colors ${
+                              isActiveLink(currentPath, item.href)
+                                ? `text-${section.color} bg-${section.color === "jpmc-blue" ? "jpmc-gray-50" : "jpmc-gray-50"} dark:bg-gray-700 font-semibold`
+                                : `text-jpmc-dark dark:text-gray-200 hover:text-${section.color} hover:bg-jpmc-gray-50 dark:hover:bg-gray-700`
+                            }`}
+                          >
+                            {item.label}
+                          </a>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                ))
+              }
             </nav>
 
             <!-- Social Links -->
-            <div >
+            <div>
               <SocialLinks variant="sidebar" />
             </div>
           </div>
@@ -172,7 +182,7 @@ const sidebarNavigation = getSidebarNavigation();
         <main
           class="flex-1 bg-jpmc-gray-50 dark:bg-gray-900 transition-colors duration-200"
         >
-          <div class="container mx-auto px-4 py-8" >
+          <div class="container mx-auto px-4 py-8">
             <!-- Mobile page title -->
             <div class="lg:hidden mb-6">
               <h1 class="text-2xl font-bold text-jpmc-dark dark:text-gray-100">
@@ -217,23 +227,24 @@ const sidebarNavigation = getSidebarNavigation();
                 Quick Links
               </h2>
               <ul class="space-y-2 text-sm">
-                {navigationConfig.footer.map((item) => (
-                  <li>
-                    <a
-                      href={item.href}
-                      class="hover:text-jpmc-blue transition-colors"
-                    >
-                      {item.label}
-                    </a>
-                  </li>
-                ))}
+                {
+                  navigationConfig.footer.map((item) => (
+                    <li>
+                      <a
+                        href={item.href}
+                        class="hover:text-jpmc-blue transition-colors"
+                      >
+                        {item.label}
+                      </a>
+                    </li>
+                  ))
+                }
               </ul>
             </div>
 
-                         <!-- Social links -->
-             <SocialLinks variant="footer" />
+            <!-- Social links -->
+            <SocialLinks variant="footer" />
           </div>
-
 
           <div
             class="border-t border-gray-700 dark:border-gray-600 mt-8 pt-8 text-center text-sm text-jpmc-gray-600 dark:text-gray-400"
@@ -309,30 +320,34 @@ const sidebarNavigation = getSidebarNavigation();
   </body>
 </html>
 
-
 <script is:inline>
   console.log("currentUrl", window.location.href);
   // get the current url, if it matches the redirect object, then redirect to the new url
   const currentUrl = window.location.pathname;
   const redirectObject = {
     "/mgr": "/resources/mgr",
-    '/qa': '/resources/qa',
-    '/gender': '/resources/cigna',
-    '/aeiou': '/resources/aeiou',
-    '/issues': '/resources/issues',
-    '/join_us': '/resources/join-us',
-    '/discord': 'https://bit.ly/jpmcworkers',
+    "/qa": "/resources/qa",
+    "/gender": "/resources/cigna",
+    "/aeiou": "/resources/aeiou",
+    "/issues": "/resources/issues",
+    "/join_us": "/resources/join-us",
+    "/discord": "https://bit.ly/jpmcworkers",
   };
   if (redirectObject[currentUrl]) {
-    console.warn(`The link ${currentUrl} is no longer valid, re-directing to ${redirectObject[currentUrl]}`);
+    console.warn(
+      `The link ${currentUrl} is no longer valid, re-directing to ${redirectObject[currentUrl]}`
+    );
     window.location.href = redirectObject[currentUrl];
   }
 
-  document.addEventListener('DOMContentLoaded', () => {
+  document.addEventListener("DOMContentLoaded", () => {
     console.log("DOMContentLoaded");
     if (redirectObject[currentUrl]) {
-      console.warn(`The link ${currentUrl} is no longer valid, re-directing to ${redirectObject[currentUrl]}`);
-      window.location.href = redirectObject[currentUrl] + window.location.search;
-    } 
+      console.warn(
+        `The link ${currentUrl} is no longer valid, re-directing to ${redirectObject[currentUrl]}`
+      );
+      window.location.href =
+        redirectObject[currentUrl] + window.location.search;
+    }
   });
 </script>

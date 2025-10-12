@@ -26,6 +26,7 @@ export const buttonVariants = cva(
           "bg-transparent border border-transparent",
           "focus-visible:ring-offset-2",
         ],
+        fabulous: ['fabulous']
       },
       color: {
         // JPMC brand colors
