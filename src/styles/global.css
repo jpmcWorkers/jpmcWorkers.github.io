@@ -418,3 +418,45 @@
   from { opacity: 1; }
   to { opacity: 0; }
 }
+
+
+
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: true;
+}
+@keyframes rotate {
+  to {
+    --angle: 1turn;
+  }
+}
+
+.fabulous {
+  color: black;
+  padding: 0.5em 1.25em;
+  border-radius: 100vw;
+
+  border: 1px solid transparent;
+  background:
+    linear-gradient(white, white) padding-box,
+    conic-gradient(
+        from var(--angle, 0deg),
+        #ff0000,
+        #ff7f00,
+        #ffff00,
+        #00ff00,
+        #0000ff,
+        #4b0082,
+        #8b00ff,
+        #ff0000
+      )
+      border-box;
+  animation: rotate 3s linear infinite;
+  animation-play-state: paused;
+}
+
+.fabulous:hover,
+.fabulous:focus-visible {
+  animation-play-state: running;
+}

@@ -11,9 +11,10 @@ export interface NavigationSection {
   title: string;
   items: NavigationItem[];
   color?: string;
+  skipMobile?: boolean;
 }
 
-export const navigationConfig = {
+export const navigationConfig: Record<string, NavigationItem[]> = {
   // Reorganized navigation. Existing hrefs/labels preserved where available.
   startHere: [
     {
@@ -110,7 +111,7 @@ export const navigationConfig = {
       skipMobile: true
     }
   ],
-} satisfies Record<string, NavigationItem[]>;
+};
 
 // Backwards-compatible aliases for code that expects the old keys
 // Keep these so existing imports/usages don't break; remove when callers are updated.
