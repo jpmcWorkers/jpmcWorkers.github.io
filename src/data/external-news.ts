@@ -9,6 +9,14 @@ export interface ExternalNewsItem {
 // External news articles featuring JPMC Workers Alliance
 export const externalNewsItems: ExternalNewsItem[] = [
   {
+    url: "https://nonprofitquarterly.org/bank-worker-organizing-gains-ground/",
+    featured: true,
+    publishedDate: "2025-10-23",
+    title: "Bank Worker Organizing Gains Ground",
+    description:
+      "NPQ reports growing union momentum in U.S. banking: Wells Fargo branch employees continue voting to join CWA, citing understaffing, pay disparities, and declining benefits. The piece also highlights JP Morgan Chase workers forming the JPMC Workers Alliance amid backlash to return-to-office mandates and rising workplace inequality.",
+  },
+  {
     url: "https://www.reuters.com/business/finance/jpmorgan-ceo-dimon-derides-in-office-work-pushback-demands-efficiency-2025-02-13/",
     featured: true,
     publishedDate: "2025-02-13",
@@ -133,7 +141,8 @@ export const externalNewsItems: ExternalNewsItem[] = [
     featured: true,
     publishedDate: "2025-09-05",
     title: "Inside JPMorgan's Union Push",
-    description: "Barron's Instagram reel covering the union push at JPMorgan Chase.",
+    description:
+      "After a seven-year build costing about $3 billion, JPMorgan Chase’s Midtown Manhattan headquarters nears completion — but some workers aren’t enthusiastic about the forced return-to-office mandate accompanying the move.",
   },
 ];
 
