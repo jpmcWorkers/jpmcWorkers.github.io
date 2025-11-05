@@ -433,6 +433,7 @@
 }
 
 .fabulous {
+  --angle: 0deg;
   color: black;
   padding: 0.5em 1.25em;
   border-radius: 100vw;
@@ -452,8 +453,8 @@
         #ff0000
       )
       border-box;
-  animation: rotate 3s linear infinite;
-  animation-play-state: paused;
+      animation: rotate 3s linear infinite;
+      animation-play-state: paused;
 }
 
 .fabulous:hover,

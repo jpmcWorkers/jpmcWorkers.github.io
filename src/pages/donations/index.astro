@@ -1,0 +1,23 @@
+---
+import Donation from "~/components/Donation.astro";
+import Layout from "~/layouts/Layout.astro";
+
+---
+<Layout title="Donate" description="Support our work by making a donation.">
+  <main class="container mx-auto px-4 py-12">
+<Donation
+  presetsOneTime={[
+    { label: '$10', href: 'https://buy.stripe.com/...10...' },
+    { label: '$25', href: 'https://buy.stripe.com/...25...' },
+    { label: '$50', href: 'https://buy.stripe.com/...50...' },
+    { label: '$100', href: 'https://buy.stripe.com/...100...' },
+  ]}
+  presetsMonthly={[
+    { label: '$10/mo', href: 'https://buy.stripe.com/...10mo...' },
+    { label: '$25/mo', href: 'https://buy.stripe.com/...25mo...' },
+  ]}
+/>
+
+  </main>
+</Layout>
+
