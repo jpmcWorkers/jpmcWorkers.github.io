@@ -17,6 +17,11 @@ interface Booklet {
   previewHeight?: number;
 }
 
+// Helper function to encode file paths properly (preserves slashes, encodes special chars)
+function encodeFilePath(filePath: string): string {
+  return filePath.split('/').map(segment => encodeURIComponent(segment)).join('/');
+}
+
 // Load booklets from content collection
 const bookletEntries = await getCollection('booklets');
 const booklets: Booklet[] = bookletEntries.map(entry => ({
@@ -107,8 +112,8 @@ const booklets: Booklet[] = bookletEntries.map(entry => ({
               
               {/* Download Button */}
               <a 
-                href={`/booklets/${booklet.file}`}
-                download
+                href={`/booklets/${encodeFilePath(booklet.file)}`}
+                download={booklet.file.split('/').pop()}
                 class="inline-block w-full bg-jpmc-blue text-white text-center px-4 py-2 rounded-md hover:bg-jpmc-blue-700 transition-colors mt-auto"
               >
                 Download PDF
