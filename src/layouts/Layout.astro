@@ -6,6 +6,7 @@ import {
   getSidebarNavigation,
   isActiveLink,
 } from "../config/navigation";
+import Button from "~/components/Button.astro";
 
 export interface Props {
   title: string;
@@ -53,7 +54,7 @@ const sidebarNavigation = getSidebarNavigation();
       <header
         class="bg-white shadow-lg border-b-4 border-jpmc-blue transition-colors duration-200 dark:bg-jpmc-gray-800"
       >
-        <div class="container mx-auto lg:px-4 py-4">
+        <div class="container mx-auto lg:pl-4 py-4">
           <div class="flex items-center stretch justify-between">
             <!-- Logo -->
             <div class="flex items-center space-x-4">
@@ -76,6 +77,32 @@ const sidebarNavigation = getSidebarNavigation();
               >
                 {title}
               </h1>
+            </div>
+
+            <!-- Donation Button -->
+            <div class="hidden md:flex items-center">
+              <Button
+                href="https://buy.stripe.com/dRm28sevA9pw4yo5J657W00"
+                style="fabulous"
+                target="_blank"
+                aria-label="Support the JPMC Workers Alliance"
+              >
+                <svg
+                  class="w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+                  ></path>
+                </svg>
+                <span>Support Us</span>
+              </Button>
             </div>
 
             <!-- Mobile menu button -->
@@ -128,6 +155,30 @@ const sidebarNavigation = getSidebarNavigation();
                   </a>
                 ))
             }
+            <!-- Mobile Donation Button -->
+            <Button
+              href="https://buy.stripe.com/dRm28sevA9pw4yo5J657W00"
+              class="w-full"
+              style="fabulous"
+              target="_blank"
+              aria-label="Support the JPMC Workers Alliance"
+            >
+              <svg
+                class="w-5 h-5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+                ></path>
+              </svg>
+              <span>Support Us</span>
+            </Button>
           </div>
         </nav>
       </header>
