@@ -3,6 +3,7 @@ title: "Open Letter to CEO Jamie Dimon"
 description: "Formal letter to JPMorganChase leadership addressing concerns about RTO mandate, hybrid work benefits, and workplace culture."
 order: 7
 tags: ["workplace-issues", "rto", "leadership", "hybrid-work", "open-letter"]
+layout: ~/layouts/Markdown.astro
 ---
 
 # Open Letter to JPMorganChase Chairman and CEO Jamie Dimon

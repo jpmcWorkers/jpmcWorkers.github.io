@@ -4,6 +4,7 @@ description: "Update on the status of the RTO petition, CEO response, and next s
 order: 11
 tags: ["workplace-issues", "organizing", "rto", "petition", "status-update"]
 redirect_from: ["/rto_petition_status"]
+layout: ~/layouts/Markdown.astro
 ---
 
 # RTO Petition Status

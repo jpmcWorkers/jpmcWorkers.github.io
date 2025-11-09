@@ -112,7 +112,7 @@ async function getImageDimensions(filePath: string): Promise<{ width?: number; h
 }
 
 const resourcesCollection = defineCollection({
-  loader: glob({ pattern: '**/*.md', base: './src/content/resources' }),
+  loader: glob({ pattern: '**/*.md', base: './src/pages/content' }),
   schema: z.object({
     title: z.string(),
     description: z.string().optional(),

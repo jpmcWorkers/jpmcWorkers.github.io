@@ -3,6 +3,7 @@ title: "Pre-Majority Union / Minority Union"
 description: "Learn the difference"
 order: 1
 tags: ["union-structure", "education", "collective-action", "strategy", "pre-majority"]
+layout: ~/layouts/Markdown.astro
 ---
 # Pre-Majority Union / Minority Union
 

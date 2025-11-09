@@ -4,6 +4,7 @@ description: "Alternative version of the open letter to JPMC leadership addressi
 order: 10
 tags: ["workplace-issues", "rto", "leadership", "hybrid-work", "open-letter"]
 redirect_from: ["/openletter","/open-letter"]
+layout: ~/layouts/Markdown.astro
 ---
 
 # Open Letter to JPMorganChase Chairman and CEO Jamie Dimon

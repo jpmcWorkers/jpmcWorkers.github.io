@@ -4,6 +4,7 @@ description: "Learn the AEIOU method for effective one-on-one organizing convers
 order: 1
 tags: ["training", "organizing", "recruitment", "conversation", "education"]
 redirect_from: ["/aeiou", "/workers.github.io/aeiou"]
+layout: ~/layouts/Markdown.astro
 ---
 
 # Conversation and Recruitment Training

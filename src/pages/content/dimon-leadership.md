@@ -3,6 +3,7 @@ title: "Jamie Dimon's Leadership: A Shift Away from Data-Driven Decision Making"
 description: "An analysis of Jamie Dimon's recent public statements showing a pattern of moving away from fact-based leadership toward impulsive reaction."
 order: 20
 tags: ["leadership", "workplace-issues", "policy", "analysis"]
+layout: ~/layouts/Markdown.astro
 ---
 
 # Jamie Dimon's recent remarks point to a shift in how he leads, and it is not a data driven one
