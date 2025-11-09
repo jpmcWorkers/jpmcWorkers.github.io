@@ -4,6 +4,7 @@ date: 2025-05-01
 description: "Special May Day newsletter celebrating International Workers' Day and our first public in-person event"
 excerpt: "MayDay marked a big accomplishment for the JPMC Workers Alliance with our first coordinated public event - a pizza party in the 2J wing of the 1111 Polaris office."
 tags: ["newsletter", "may-day", "events", "organizing"]
+layout: ~/layouts/Markdown.astro
 ---
 
 # Happy May, JWA!

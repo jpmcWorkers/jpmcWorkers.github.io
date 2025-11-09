@@ -1,4 +1,5 @@
 ---
+import { formatDate } from '~/utils/datetime';
 import Layout from './Layout.astro';
 export interface Props {
   content: {
@@ -18,6 +19,14 @@ export interface Props {
 const { title, description = '', author, date, tableOfContents } = Astro.props.content;
 
 const { headings } = Astro.props;
+
+// Get current path and calculate parent folder
+const currentPath = Astro.url.pathname;
+const pathSegments = currentPath.split('/').filter(Boolean);
+const hasParentFolder = pathSegments.length > 1;
+const parentPath = hasParentFolder 
+  ? '/' + pathSegments.slice(0, -1).join('/')
+  : null;
 
 function getHeaderDepthClass(depth: number) {
   switch (depth) {
@@ -47,12 +56,25 @@ function getHeaderDepthClass(depth: number) {
 <Layout title={title} description={description}>
   <article class="container mx-auto px-4 py-10">
     <div class="prose lg:prose-lg dark:prose-invert max-w-none">
+      {parentPath && (
+        <div class="mb-4 not-prose">
+          <a 
+            href={parentPath} 
+            class="inline-flex items-center text-jpmc-blue hover:text-jpmc-red transition-colors text-sm font-medium"
+          >
+            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+            </svg>
+            Back
+          </a>
+        </div>
+      )}
       <header class="mb-6">
         <h1 class="text-3xl font-bold">{title}</h1>
         <div class="text-sm text-muted mt-1">
           {author && <span>By {author}</span>}
           {author && date && <span class="mx-2">•</span>}
-          {date && <time datetime={date}>{date}</time>}
+          {date && <time datetime={date}>{formatDate(new Date(date))}</time>}
         </div>
       </header>
       {tableOfContents && headings.length > 0 && (

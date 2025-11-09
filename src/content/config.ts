@@ -122,7 +122,7 @@ const resourcesCollection = defineCollection({
 });
 
 const newslettersCollection = defineCollection({
-  loader: glob({ pattern: '**/*.md', base: './src/content/newsletters' }),
+  loader: glob({ pattern: '**/*.md', base: './src/pages/newsletters' }),
   schema: z.object({
     title: z.string(),
     date: z.coerce.date(),

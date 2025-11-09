@@ -1,5 +1,6 @@
 ---
-import Layout from '../../layouts/Layout.astro';
+import { formatDate } from '~/utils/datetime';
+import Layout from '~/layouts/Layout.astro';
 import { getCollection } from 'astro:content';
 
 // Get all newsletters from the content collection
@@ -12,14 +13,6 @@ const sortedNewsletters = newsletters.sort((a, b) => {
   return dateB.getTime() - dateA.getTime();
 });
 
-// Format date for display
-function formatDate(date: Date): string {
-  return new Intl.DateTimeFormat('en-US', { 
-    year: 'numeric', 
-    month: 'long', 
-    day: 'numeric' 
-  }).format(date);
-}
 ---
 
 <Layout title="Newsletters">
