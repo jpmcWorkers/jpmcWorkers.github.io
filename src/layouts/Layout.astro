@@ -345,34 +345,3 @@ const sidebarNavigation = getSidebarNavigation();
   </body>
 </html>
 
-<script is:inline>
-  console.log("currentUrl", window.location.href);
-  // get the current url, if it matches the redirect object, then redirect to the new url
-  const currentUrl = window.location.pathname;
-  const redirectObject = {
-    "/mgr": "/resources/mgr",
-    "/qa": "/resources/qa",
-    "/gender": "/resources/cigna",
-    "/aeiou": "/resources/aeiou",
-    "/issues": "/resources/issues",
-    "/join_us": "/resources/join-us",
-    "/discord": "https://bit.ly/jpmcworkers",
-  };
-  if (redirectObject[currentUrl]) {
-    console.warn(
-      `The link ${currentUrl} is no longer valid, re-directing to ${redirectObject[currentUrl]}`
-    );
-    window.location.href = redirectObject[currentUrl];
-  }
-
-  document.addEventListener("DOMContentLoaded", () => {
-    console.log("DOMContentLoaded");
-    if (redirectObject[currentUrl]) {
-      console.warn(
-        `The link ${currentUrl} is no longer valid, re-directing to ${redirectObject[currentUrl]}`
-      );
-      window.location.href =
-        redirectObject[currentUrl] + window.location.search;
-    }
-  });
-</script>

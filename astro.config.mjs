@@ -11,6 +11,7 @@ import redirectFrom from 'astro-redirect-from';
 // https://astro.build/config
 export default defineConfig({
   output: 'static',
+  
 
   // This only works if not static
   // redirects: {
