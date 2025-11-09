@@ -6,6 +6,7 @@ import {
   getSidebarNavigation,
   isActiveLink,
 } from "../config/navigation";
+import Button from "~/components/Button.astro";
 
 export interface Props {
   title: string;
@@ -53,7 +54,7 @@ const sidebarNavigation = getSidebarNavigation();
       <header
         class="bg-white shadow-lg border-b-4 border-jpmc-blue transition-colors duration-200 dark:bg-jpmc-gray-800"
       >
-        <div class="container mx-auto lg:px-4 py-4">
+        <div class="container mx-auto px-4 lg:pr-0 py-4">
           <div class="flex items-center stretch justify-between">
             <!-- Logo -->
             <div class="flex items-center space-x-4">
@@ -76,6 +77,19 @@ const sidebarNavigation = getSidebarNavigation();
               >
                 {title}
               </h1>
+            </div>
+
+            <!-- Donation Button -->
+            <div class="hidden lg:flex items-center">
+              <Button
+                href="https://buy.stripe.com/dRm28sevA9pw4yo5J657W00"
+                style="fabulous"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Support the JPMC Workers Alliance"
+              >
+                Donate
+              </Button>
             </div>
 
             <!-- Mobile menu button -->
@@ -112,8 +126,8 @@ const sidebarNavigation = getSidebarNavigation();
         >
           <div class="px-4 py-2 space-y-2 bg-jpmc-gray-50 dark:bg-gray-500">
             {
-              Object.values(navigationConfig)
-                .flat()
+              Object.values(getSidebarNavigation())
+                .flatMap((section) => section.items)
                 .filter((item) => !item.skipMobile)
                 .map((item) => (
                   <a
@@ -128,6 +142,17 @@ const sidebarNavigation = getSidebarNavigation();
                   </a>
                 ))
             }
+            <!-- Mobile Donation Button -->
+            <Button
+              href="https://buy.stripe.com/dRm28sevA9pw4yo5J657W00"
+              class="w-full my-4"
+              style="fabulous"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Support the JPMC Workers Alliance"
+            >
+              Donate
+            </Button>
           </div>
         </nav>
       </header>
