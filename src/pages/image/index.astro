@@ -93,7 +93,7 @@ function calculateDisplayDimensions(width?: number, height?: number, maxSize: nu
             {/* Download Button */}
             <a 
               href={`/images/${entry.data.file}`}
-              download
+              download={entry.data.file.split('/').pop()}
               class="inline-block w-full bg-jpmc-blue text-white text-center px-4 py-2 rounded-md hover:bg-jpmc-blue-700 transition-colors"
             >
               Download
