@@ -85,6 +85,11 @@ export const navigationConfig: Record<string, NavigationItem[]> = {
       href: "/mission",
       label: "About Us",
       description: "Mission • Who we are • Contact & Social"
+    },
+    {                
+      href: "https://buy.stripe.com/dRm28sevA9pw4yo5J657W00",
+      label:"Donations Accepted",
+      description:"Support the JPMC Workers Alliance",
     }
   ],
 
