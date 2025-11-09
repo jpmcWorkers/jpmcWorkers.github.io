@@ -320,35 +320,28 @@ const sidebarNavigation = getSidebarNavigation();
       tracker.start();
     </script>
 
-    <script>
-      import { registerSW } from "virtual:pwa-register";
-
-      const updateSW = registerSW({
-        onNeedRefresh() {
-          if (confirm("New content available. Reload?")) {
-            updateSW(true);
+    <script is:inline>
+      // Unregister any existing service workers
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.getRegistrations().then(function(registrations) {
+          for(let registration of registrations) {
+            registration.unregister().then(function(success) {
+              if (success) {
+                console.log('Service worker unregistered successfully');
+              }
+            });
           }
-        },
-        onOfflineReady() {
-          console.log("App ready to work offline");
-          // Optional: Show a toast notification
-          const notification = document.createElement("div");
-          notification.textContent = "✅ App is ready to work offline!";
-          notification.style.cssText = `
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            background: #10b981;
-            color: white;
-            padding: 12px 20px;
-            border-radius: 8px;
-            z-index: 1000;
-            font-weight: 500;
-          `;
-          document.body.appendChild(notification);
-          setTimeout(() => notification.remove(), 5000);
-        },
-      });
+        });
+        
+        // Also try to unregister by scope
+        navigator.serviceWorker.ready.then(function(registration) {
+          registration.unregister().then(function(success) {
+            if (success) {
+              console.log('Service worker unregistered successfully');
+            }
+          });
+        });
+      }
     </script>
   </body>
 </html>
