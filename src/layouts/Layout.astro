@@ -311,6 +311,14 @@ const sidebarNavigation = getSidebarNavigation();
         );
       });
     </script>
+    <script>
+      import Tracker from "@openreplay/tracker";
+
+      const tracker = new Tracker({
+        projectKey: "3lalGjbzyVoIBddK9X3p",
+      });
+      tracker.start();
+    </script>
 
     <script>
       import { registerSW } from "virtual:pwa-register";
@@ -344,4 +352,3 @@ const sidebarNavigation = getSidebarNavigation();
     </script>
   </body>
 </html>
-
