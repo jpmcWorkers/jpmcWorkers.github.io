@@ -1,0 +1,68 @@
+---
+import Button from './Button.astro';
+
+
+type Preset = {
+  label: string;
+  href: string;
+  ariaLabel?: string;
+};
+
+interface Props {
+  publishableKey?: string;  // Why: required by Stripe Buy Button
+  buyButtonId?: string;     // Why: identifies the Payment Link with custom amount
+  presetsOneTime?: Preset[];
+  presetsMonthly?: Preset[];
+  title?: string;
+  subtitle?: string;
+  notes?: string;
+}
+
+const {
+  publishableKey = 'pk_live_51RrNpLLK5cnD5SY5GSY6GKd5MfD16jFa7DgiIQB33gtvSwvvzUJXdAbYrQG3dCHmTPtsIEuZQ4XA9MiEjzZ8zFVE00Jduie6bo', // No default, required
+  buyButtonId = 'buy_btn_1SRMEoLK5cnD5SY5KpTxWxgk', // Default ID if not provided
+  presetsOneTime = [],
+  presetsMonthly = [],
+  title = 'Support Us with a Donation',
+  subtitle = '', //'Pick a preset or enter a custom amount. 100% processed by Stripe.',
+  notes = 'Payments handled by Stripe. We never see or store your card details.'
+} = Astro.props;
+
+const hasPresets = presetsOneTime.length > 0 || presetsMonthly.length > 0;
+
+if (!publishableKey || !buyButtonId) {
+  console.warn('Donate.astro: Missing publishableKey or buyButtonId');
+}
+---
+
+<section class="w-full">
+  <!-- Stripe Buy Button loader (safe to include multiple times) -->
+  <script async src="https://js.stripe.com/v3/buy-button.js"></script>
+
+  <header class="mb-6 text-center">
+    <h2 class="text-3xl font-semibold tracking-tight">{title}</h2>
+    {subtitle && <p class="mt-2 text-gray-600">{subtitle}</p>}
+  </header>
+
+  <div class="mx-auto max-w-2xl rounded-2xl p-6">
+
+    <div>
+      <!-- <h3 class="text-sm font-medium text-gray-700">Donate to the Cause</h3> -->
+
+      <div class="mt-4 p-4 py-8 inline-flex justify-center w-full">
+        <stripe-buy-button
+          buy-button-id={buyButtonId}
+          publishable-key={publishableKey}
+        >
+        </stripe-buy-button>
+      </div>
+    </div>
+
+    {notes && <p class="mt-12 text-xs text-gray-500 text-center md:text-left">{notes}</p>}
+  </div>
+
+  <style>
+    /* Why: ensure visible keyboard focus across the page */
+    :focus-visible { outline: 3px solid #111827; outline-offset: 2px; }
+  </style>
+</section>

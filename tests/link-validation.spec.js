@@ -114,10 +114,11 @@ test('Mobile overall Linkage', async ({ page, isMobile }) => {
       - /url: /myth-busting
     - link "About Us":
       - /url: /mission
-    - link "Start Here":
-      - /url: /
-    - link "Organizer Toolkit":
-      - /url: /content`);
+    - link "Donations Accepted":
+      - /url: https://buy.stripe.com/dRm28sevA9pw4yo5J657W00
+    - link "Support the JPMC Workers Alliance":
+      - /url: https://buy.stripe.com/dRm28sevA9pw4yo5J657W00
+      - text: Donate`);
 
   await expect(page.getByRole('contentinfo')).toMatchAriaSnapshot(`
     - contentinfo:

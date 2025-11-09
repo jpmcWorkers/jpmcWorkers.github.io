@@ -96,7 +96,7 @@ function encodeFilePath(filePath: string): string {
             
             {/* Download Button */}
             <a 
-              href={`/images/${encodeFilePath(entry.data.file)}`}
+              href={`/images/${entry.data.file}`}
               download={entry.data.file.split('/').pop()}
               class="inline-block w-full bg-jpmc-blue text-white text-center px-4 py-2 rounded-md hover:bg-jpmc-blue-700 transition-colors"
             >

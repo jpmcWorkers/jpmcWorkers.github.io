@@ -6,6 +6,7 @@ import {
   getSidebarNavigation,
   isActiveLink,
 } from "../config/navigation";
+import Button from "~/components/Button.astro";
 
 export interface Props {
   title: string;
@@ -53,7 +54,7 @@ const sidebarNavigation = getSidebarNavigation();
       <header
         class="bg-white shadow-lg border-b-4 border-jpmc-blue transition-colors duration-200 dark:bg-jpmc-gray-800"
       >
-        <div class="container mx-auto lg:px-4 py-4">
+        <div class="container mx-auto px-4 lg:pr-0 py-4">
           <div class="flex items-center stretch justify-between">
             <!-- Logo -->
             <div class="flex items-center space-x-4">
@@ -76,6 +77,19 @@ const sidebarNavigation = getSidebarNavigation();
               >
                 {title}
               </h1>
+            </div>
+
+            <!-- Donation Button -->
+            <div class="hidden lg:flex items-center">
+              <Button
+                href="https://buy.stripe.com/dRm28sevA9pw4yo5J657W00"
+                style="fabulous"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Support the JPMC Workers Alliance"
+              >
+                Donate
+              </Button>
             </div>
 
             <!-- Mobile menu button -->
@@ -112,8 +126,8 @@ const sidebarNavigation = getSidebarNavigation();
         >
           <div class="px-4 py-2 space-y-2 bg-jpmc-gray-50 dark:bg-gray-500">
             {
-              Object.values(navigationConfig)
-                .flat()
+              Object.values(getSidebarNavigation())
+                .flatMap((section) => section.items)
                 .filter((item) => !item.skipMobile)
                 .map((item) => (
                   <a
@@ -128,6 +142,17 @@ const sidebarNavigation = getSidebarNavigation();
                   </a>
                 ))
             }
+            <!-- Mobile Donation Button -->
+            <Button
+              href="https://buy.stripe.com/dRm28sevA9pw4yo5J657W00"
+              class="w-full my-4"
+              style="fabulous"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Support the JPMC Workers Alliance"
+            >
+              Donate
+            </Button>
           </div>
         </nav>
       </header>
@@ -286,68 +311,37 @@ const sidebarNavigation = getSidebarNavigation();
         );
       });
     </script>
-
     <script>
-      import { registerSW } from "virtual:pwa-register";
+      import Tracker from "@openreplay/tracker";
 
-      const updateSW = registerSW({
-        onNeedRefresh() {
-          if (confirm("New content available. Reload?")) {
-            updateSW(true);
-          }
-        },
-        onOfflineReady() {
-          console.log("App ready to work offline");
-          // Optional: Show a toast notification
-          const notification = document.createElement("div");
-          notification.textContent = "✅ App is ready to work offline!";
-          notification.style.cssText = `
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            background: #10b981;
-            color: white;
-            padding: 12px 20px;
-            border-radius: 8px;
-            z-index: 1000;
-            font-weight: 500;
-          `;
-          document.body.appendChild(notification);
-          setTimeout(() => notification.remove(), 5000);
-        },
+      const tracker = new Tracker({
+        projectKey: "3lalGjbzyVoIBddK9X3p",
       });
+      tracker.start();
+    </script>
+
+    <script is:inline>
+      // Unregister any existing service workers
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.getRegistrations().then(function(registrations) {
+          for(let registration of registrations) {
+            registration.unregister().then(function(success) {
+              if (success) {
+                console.log('Service worker unregistered successfully');
+              }
+            });
+          }
+        });
+        
+        // Also try to unregister by scope
+        navigator.serviceWorker.ready.then(function(registration) {
+          registration.unregister().then(function(success) {
+            if (success) {
+              console.log('Service worker unregistered successfully');
+            }
+          });
+        });
+      }
     </script>
   </body>
 </html>
-
-<script is:inline>
-  console.log("currentUrl", window.location.href);
-  // get the current url, if it matches the redirect object, then redirect to the new url
-  const currentUrl = window.location.pathname;
-  const redirectObject = {
-    "/mgr": "/resources/mgr",
-    "/qa": "/resources/qa",
-    "/gender": "/resources/cigna",
-    "/aeiou": "/resources/aeiou",
-    "/issues": "/resources/issues",
-    "/join_us": "/resources/join-us",
-    "/discord": "https://bit.ly/jpmcworkers",
-  };
-  if (redirectObject[currentUrl]) {
-    console.warn(
-      `The link ${currentUrl} is no longer valid, re-directing to ${redirectObject[currentUrl]}`
-    );
-    window.location.href = redirectObject[currentUrl];
-  }
-
-  document.addEventListener("DOMContentLoaded", () => {
-    console.log("DOMContentLoaded");
-    if (redirectObject[currentUrl]) {
-      console.warn(
-        `The link ${currentUrl} is no longer valid, re-directing to ${redirectObject[currentUrl]}`
-      );
-      window.location.href =
-        redirectObject[currentUrl] + window.location.search;
-    }
-  });
-</script>
