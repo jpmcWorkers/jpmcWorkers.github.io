@@ -39,7 +39,7 @@ export default defineConfig({
     // PWA! offline access and performance things, can technically improve
     AstroPWA({
       mode: 'production',
-      includeAssets: ['favicon.ico', 'img/**/*',],
+      includeAssets: ['favicon.ico', 'img/**/*', 'images/**/*'],
       registerType: 'autoUpdate',
       manifest: {
         name: 'JPMC Workers Alliance',
@@ -70,8 +70,8 @@ export default defineConfig({
         ]
       },
       workbox: {
-        globPatterns: ['**/*.{css,js,html,svg,ico,txt}'],
-        globIgnores: ['images/**/*'], // Exclude large images from service worker cache
+        globPatterns: ['**/*.{css,js,html,svg,ico,txt,png,jpg,jpeg,webp,gif,pdf}'],
+        globIgnores: [], // Include images in service worker cache
         runtimeCaching: [
           {
             urlPattern: /^https:\/\/fonts\.googleapis\.com\/.*/i,
@@ -100,6 +100,10 @@ export default defineConfig({
                 statuses: [0, 200]
               }
             }
+          },
+          {
+            urlPattern: /\/images\/.*/i,
+            handler: 'NetworkOnly',
           }
         ]
       }
