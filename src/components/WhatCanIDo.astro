@@ -81,7 +81,7 @@ const allTags = Object.keys(tagCounts).sort(
                 {/* Title */}
                 <h2 class="text-xl font-bold text-jpmc-blue flex-shrink-0 border-r-2 border-jpmc-gray-300 pr-2">
                   <a
-                    href={`content/${entry.id}`}
+                    href={`/content/${entry.id}`}
                     class="hover:text-jpmc-blue-700 transition-colors dark:text-gray-200"
                   >
                     {entry.data.title}
@@ -99,7 +99,7 @@ const allTags = Object.keys(tagCounts).sort(
 
                 {/* Read More Button - moves to first line on small screens */}
                 <a
-                  href={`content/${entry.id}`}
+                  href={`/content/${entry.id}`}
                   class="flex-shrink-0 @md:hidden"
                 >
                   <button class="bg-jpmc-blue text-white px-4 py-1 text-sm rounded-md hover:bg-jpmc-blue-700 transition-colors cursor-pointer">
