@@ -3,6 +3,7 @@ title: "JWA Carpool Program"
 description: "Information about the JPMC Workers Alliance carpool program to help with commuting costs and environmental impact."
 order: 3
 tags: ["workplace-issues", "benefits", "resources", "environment", "commuting"]
+layout: ~/layouts/Markdown.astro
 ---
 
 # JWA Carpool Program

@@ -4,6 +4,7 @@ description: "We want to know what is going on for real"
 order: 1
 tags: ["organizing", "education", "getting-started", "membership"]
 redirect_from: ["/join_us", "/workers.github.io/join_us"]
+layout: ~/layouts/Markdown.astro
 ---
 # JPMC Workers Alliance - Join the Movement!
 

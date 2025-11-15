@@ -3,6 +3,7 @@ title: "Propaganda and Counter-Propaganda"
 description: "Understanding corporate propaganda and how to counter it with facts and solidarity."
 order: 5
 tags: ["education", "organizing", "solidarity", "counter-propaganda", "talking-points"]
+layout: ~/layouts/Markdown.astro
 ---
 
 # Management Talking Points:

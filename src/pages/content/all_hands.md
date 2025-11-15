@@ -3,6 +3,7 @@ title: "All Hands Meeting Guide"
 description: "Guidance for participating in all-hands meetings and asking questions about working conditions."
 order: 6
 tags: ["organizing", "recruitment", "resources", "meetings", "volunteer"]
+layout: ~/layouts/Markdown.astro
 ---
 
 # All Hands On Deck!

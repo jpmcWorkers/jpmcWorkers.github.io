@@ -4,6 +4,7 @@ description: "Learn how to counter corporate propaganda and understand the real 
 order: 1
 tags: ["education", "union-structure", "solidarity", "collective-bargaining", "counter-propaganda"]
 redirect_from: ["/qa", "/workers.github.io/qa", "/faq"]
+layout: ~/layouts/Markdown.astro
 ---
 
 # Questions and Answers -- or, Countering the Propaganda

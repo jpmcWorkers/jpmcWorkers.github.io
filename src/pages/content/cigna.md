@@ -4,6 +4,7 @@ description: "Complete guide to accessing gender-affirming care coverage through
 order: 1
 tags: ["benefits", "healthcare", "gender-affirming-care", "cigna", "insurance"]
 redirect_from: ["/gender", "/workers.github.io/gender"]
+layout: ~/layouts/Markdown.astro
 ---
 
 # Gender Affirming Care via Cigna

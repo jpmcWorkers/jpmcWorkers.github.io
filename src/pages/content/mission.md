@@ -3,6 +3,7 @@ title: "Our Goals and mission"
 description: "Learn what we are hearing from you"
 order: 1
 tags: ["workplace-issues", "union-structure", "hybrid-work", "collective-bargaining", "goals"]
+layout: ~/layouts/Markdown.astro
 ---
 # Our Real Goals:
 

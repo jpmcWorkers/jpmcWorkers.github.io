@@ -24,6 +24,11 @@ function calculateDisplayDimensions(width?: number, height?: number, maxSize: nu
     height: Math.round(height * scaleFactor)
   };
 }
+
+// Helper function to encode file paths properly (preserves slashes, encodes special chars)
+function encodeFilePath(filePath: string): string {
+  return filePath.split('/').map(segment => encodeURIComponent(segment)).join('/');
+}
 ---
 
 <Layout title="Images - JPMC Workers Alliance">
@@ -88,7 +93,6 @@ function calculateDisplayDimensions(width?: number, height?: number, maxSize: nu
             <p class="text-sm text-gray-600 dark:text-gray-400 mb-3">
               {entry.data.type.toUpperCase()} • {entry.data.isFolder ? 'Folder' : 'File'}
             </p>
-            {/* <pre>{JSON.stringify(entry.data, null, 2)}</pre> */}
             
             {/* Download Button */}
             <a 
