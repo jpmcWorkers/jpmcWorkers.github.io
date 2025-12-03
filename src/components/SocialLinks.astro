@@ -98,7 +98,9 @@ const config = variantConfig[variant];
 ---
 
 <div class={`${config.containerClass} ${className}`}>
-  <h3 class={config.titleClass}>{title}</h3>
+  <h3 class={config.titleClass}>
+    {Astro.slots.title ? <slot name="title" /> : title}
+  </h3>
   
   {variant === "contact" ? (
     <!-- Contact page flex layout -->
