@@ -8,6 +8,7 @@ export interface SocialLink {
   color: string;
   textColor: string;
   description: string;
+  iconOnly?: boolean; // If true, only shows in icon rendering (sidebar/footer), not in contact cards
 }
 
 export interface Props {
@@ -50,6 +51,15 @@ const defaultSocialLinks: SocialLink[] = [
     color: "bg-gradient-to-r from-purple-500 to-pink-500",
     textColor: "text-purple-500 hover:text-purple-600",
     description: "Follow us on Instagram for visual updates and behind-the-scenes content"
+  },
+  {
+    name: "Email",
+    url: "mailto:jpmcworkers@gmail.com",
+    icon: `<path d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z" /><path d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z" />`,
+    color: "bg-jpmc-blue",
+    textColor: "text-jpmc-blue hover:text-jpmc-blue-700",
+    description: "Send us an email at jpmcworkers@gmail.com",
+    iconOnly: true
   }
 ];
 
@@ -88,17 +98,19 @@ const config = variantConfig[variant];
 ---
 
 <div class={`${config.containerClass} ${className}`}>
-  <h3 class={config.titleClass}>{title}</h3>
+  <h3 class={config.titleClass}>
+    {Astro.slots.title ? <slot name="title" /> : title}
+  </h3>
   
   {variant === "contact" ? (
-    <!-- Contact page grid layout -->
-    <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
-      {links.map((link) => (
+    <!-- Contact page flex layout -->
+    <div class="flex flex-wrap justify-center gap-6">
+      {links.filter(link => !link.iconOnly).map((link) => (
         <ContactUsAt
           color={link.color}
           svg={link.icon}
           title={link.name}
-          buttonText={`Visit ${link.name}`}
+          buttonText={link.url.startsWith('mailto:') ? `Send ${link.name}` : `Visit ${link.name}`}
           description={link.description}
           link={link.url}
         />
@@ -110,8 +122,8 @@ const config = variantConfig[variant];
       {links.map((link) => (
         <a
           href={link.url}
-          target="_blank"
-          rel="noopener noreferrer"
+          target={link.url.startsWith('mailto:') ? undefined : "_blank"}
+          rel={link.url.startsWith('mailto:') ? undefined : "noopener noreferrer"}
           class={`${config.linkClass} ${link.textColor}`}
           title={link.name}
         >
