@@ -24,18 +24,6 @@ While we focus on safe growth, you can help prepare the way.
 
 ### Step One: Form Strong Social Bonds with Genuine Workers
 
-The CEO seems to want us insular, divided, and defeated -- in short, powerless.
-That is why we've been conditioned to leave off socializing with work colleagues;
-to treat the relationship as one of strictly business. To borrow a phrase, it's semi-diseased.
-By rebuilding the social relationships that might have formed naturally in a healthier environment,
-we begin to heal ourselves. We begin to form community. We begin to unite. For **United, We Stand!**
-
-* Get to know your colleagues as people, not mere cogs in a machine. Learn what they enjoy doing, what makes them happy, etc.
-* Include members of your own team, others you collaborate with, and those you regularly bump into.
-* If possible, eat together. However, **Avoid clique behavior:** Don't always eat with the same group of people, for instance.
-* From time to time, coordinate non-work activities among this social group. Try to select activities where conversation is likely.
-* Keep the faith. We are working behind the scenes, but **you are part of the solution.**
-
 If those bullet points seem like effort, that's because they are.
 The status quo is always easier in the short term.
 Good things in life take an investment.

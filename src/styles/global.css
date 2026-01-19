@@ -136,6 +136,36 @@
   --color-error-700: #b91c1c;
   --color-error-800: #991b1b;
   --color-error-900: #7f1d1d;
+
+  /* Valentine's Day Colors - Pink & Rose Palette */
+  --color-valentine-pink-50: #fdf2f8;
+  --color-valentine-pink-100: #fce7f3;
+  --color-valentine-pink-200: #fbcfe8;
+  --color-valentine-pink-300: #f9a8d4;
+  --color-valentine-pink-400: #f472b6;
+  --color-valentine-pink-500: #ec4899;
+  --color-valentine-pink-600: #db2777;
+  --color-valentine-pink-700: #be185d;
+  --color-valentine-pink-800: #9f1239;
+  --color-valentine-pink-900: #831843;
+  --color-valentine-pink-950: #500724;
+
+  --color-valentine-rose-50: #fff1f2;
+  --color-valentine-rose-100: #ffe4e6;
+  --color-valentine-rose-200: #fecdd3;
+  --color-valentine-rose-300: #fda4af;
+  --color-valentine-rose-400: #fb7185;
+  --color-valentine-rose-500: #f43f5e;
+  --color-valentine-rose-600: #e11d48;
+  --color-valentine-rose-700: #be123c;
+  --color-valentine-rose-800: #9f1239;
+  --color-valentine-rose-900: #881337;
+  --color-valentine-rose-950: #4c0519;
+
+  /* Valentine's Day Semantic Colors */
+  --color-valentine-pink: #ec4899; /* Primary Valentine pink */
+  --color-valentine-rose: #f43f5e; /* Rose red for Valentine's */
+  --color-valentine-heart: #f472b6; /* Soft heart pink */
 }
 
 /* Custom base styles */
