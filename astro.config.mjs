@@ -34,6 +34,13 @@ export default defineConfig({
     // Sitemap for searchyness
     sitemap(), 
     // plugin to help easily generate redirects in files
-    redirectFrom(),
+    redirectFrom({
+      redirects: {
+        '/Vdaycards': '/vdaycards',
+        '/VDAYCARDS': '/vdaycards',
+        '/VdayCards': '/vdaycards',
+        '/VDayCards': '/vdaycards',
+      },
+    }),
   ],
 });
