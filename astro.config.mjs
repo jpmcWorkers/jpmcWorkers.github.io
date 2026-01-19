@@ -23,6 +23,7 @@ export default defineConfig({
   //   '/discord': 'https://bit.ly/jpmcworkers',
   // },
 
+  site: 'https://www.jpmcworkers.com',
   vite: {
     plugins: [
       tailwindcss(),
@@ -34,13 +35,6 @@ export default defineConfig({
     // Sitemap for searchyness
     sitemap(), 
     // plugin to help easily generate redirects in files
-    redirectFrom({
-      redirects: {
-        '/Vdaycards': '/vdaycards',
-        '/VDAYCARDS': '/vdaycards',
-        '/VdayCards': '/vdaycards',
-        '/VDayCards': '/vdaycards',
-      },
-    }),
+    redirectFrom(),
   ],
 });
