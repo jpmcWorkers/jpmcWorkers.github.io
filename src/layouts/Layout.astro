@@ -323,26 +323,28 @@ const sidebarNavigation = getSidebarNavigation();
     </script>
 
     <script is:inline>
-      // Unregister any existing service workers
-      if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.getRegistrations().then(function(registrations) {
-          for(let registration of registrations) {
-            registration.unregister().then(function(success) {
-              if (success) {
-                console.log('Service worker unregistered successfully');
-              }
-            });
-          }
-        });
-        
-        // Also try to unregister by scope
-        navigator.serviceWorker.ready.then(function(registration) {
-          registration.unregister().then(function(success) {
-            if (success) {
-              console.log('Service worker unregistered successfully');
-            }
+      /**
+       * TEMPORARY SERVICE WORKER REGISTRATION - FOR CLEANUP ONLY
+       * 
+       * This registers a cleanup service worker that will:
+       * 1. Delete all existing caches
+       * 2. Unregister itself
+       * 3. Reload all clients
+       * 
+       * IMPORTANT: This code should be REMOVED after ~24 hours
+       * along with /public/service-worker.js
+       * 
+       * Purpose: Clean up old PWA service workers that are causing caching issues
+       */
+      if ("serviceWorker" in navigator) {
+        // Register the cleanup service worker
+        navigator.serviceWorker.register("/service-worker.js")
+          .then(function(registration) {
+            console.log('[SW Cleanup] Cleanup service worker registered:', registration.scope);
+          })
+          .catch(function(error) {
+            console.error('[SW Cleanup] Service worker registration failed:', error);
           });
-        });
       }
     </script>
   </body>
