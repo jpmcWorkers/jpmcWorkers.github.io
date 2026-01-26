@@ -31,6 +31,7 @@
     "class-variance-authority": "^0.7.1",
     "got": "^14.4.8",
     "image-size": "^2.0.2",
+    "qrcode": "^1.5.4",
     "stripe": "^19.1.0",
     "tailwind-merge": "^3.3.1",
     "tailwindcss": "^4.1.11",
@@ -38,6 +39,7 @@
   },
   "devDependencies": {
     "@playwright/test": "^1.54.2",
+    "@types/qrcode": "^1.5.6",
     "@vite-pwa/astro": "^1.1.0",
     "vite-plugin-pwa": "^1.0.2",
     "vite-tsconfig-paths": "^4.0.0",
