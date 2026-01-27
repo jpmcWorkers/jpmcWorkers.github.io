@@ -1,0 +1,395 @@
+---
+/**
+ * QR Code Generator Page
+ * 
+ * This page generates QR codes dynamically based on the 'value' query parameter.
+ * QR code generation happens client-side to support static site deployment.
+ * 
+ * Usage: /qr-code?value=<text-to-encode>
+ * 
+ * @example
+ * /qr-code?value=https://example.com
+ * /qr-code?value=Hello%20World
+ */
+import Layout from '../layouts/Layout.astro';
+
+// Extract the 'value' query parameter from the URL for display
+const value = Astro.url.searchParams.get('value');
+---
+
+<Layout title="QR Code Generator - JPMC Workers Alliance">
+  <div class="max-w-2xl mx-auto p-8">
+    <!-- QR Code Generator Interface -->
+    <div class="bg-white rounded-lg shadow-lg p-8">
+      <h1 class="text-3xl font-bold text-jpmc-blue mb-6 text-center">QR Code Generator</h1>
+      
+      <!-- Text Input Field -->
+      <div class="mb-6">
+        <label for="qr-value-input" class="block text-sm font-medium text-gray-700 mb-2">
+          Enter text to encode:
+        </label>
+        <input
+          type="text"
+          id="qr-value-input"
+          value={value || ''}
+          placeholder="Enter text, URL, or any value to encode..."
+          class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-jpmc-blue focus:border-transparent text-base"
+        />
+        <p class="mt-2 text-sm text-gray-500">
+          The QR code will update automatically as you type.
+        </p>
+      </div>
+
+      <!-- QR Code Options -->
+      <div class="mb-6 grid grid-cols-2 gap-4">
+        <!-- Size (Width) -->
+        <div>
+          <label for="qr-size-input" class="block text-sm font-medium text-gray-700 mb-2">
+            Size (Width):
+          </label>
+          <select
+            id="qr-size-input"
+            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-jpmc-blue focus:border-transparent text-base"
+          >
+            <option value="256">256px</option>
+            <option value="512" selected>512px</option>
+            <option value="768">768px</option>
+            <option value="1024">1024px</option>
+          </select>
+        </div>
+
+        <!-- Error Correction Level -->
+        <div>
+          <label for="qr-error-level-input" class="block text-sm font-medium text-gray-700 mb-2">
+            Error Correction Level:
+          </label>
+          <select
+            id="qr-error-level-input"
+            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-jpmc-blue focus:border-transparent text-base"
+          >
+            <option value="L">L - Low (~7%)</option>
+            <option value="M" selected>M - Medium (~15%)</option>
+            <option value="Q">Q - Quartile (~25%)</option>
+            <option value="H">H - High (~30%)</option>
+          </select>
+        </div>
+
+        <!-- Version -->
+        <div>
+          <label for="qr-version-input" class="block text-sm font-medium text-gray-700 mb-2">
+            Version:
+          </label>
+          <select
+            id="qr-version-input"
+            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-jpmc-blue focus:border-transparent text-base"
+          >
+            <option value="">Auto (Recommended)</option>
+            {Array.from({ length: 40 }, (_, i) => i + 1).map((v) => (
+              <option value={v}>{v}</option>
+            ))}
+          </select>
+        </div>
+
+        <!-- Mask Pattern -->
+        <div>
+          <label for="qr-mask-input" class="block text-sm font-medium text-gray-700 mb-2">
+            Mask Pattern:
+          </label>
+          <select
+            id="qr-mask-input"
+            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-jpmc-blue focus:border-transparent text-base"
+          >
+            <option value="" selected>Auto (Recommended)</option>
+            {Array.from({ length: 8 }, (_, i) => i).map((m) => (
+              <option value={m}>{m}</option>
+            ))}
+          </select>
+        </div>
+      </div>
+      
+      <!-- QR Code Image Container -->
+      <div class="mb-6 flex justify-center">
+        <div id="qr-code-container" class="border-2 border-gray-200 rounded-lg shadow-md bg-white p-4 flex items-center justify-center" style="min-height: 256px; min-width: 256px;">
+          {value ? (
+            <div class="text-gray-400">Generating QR code...</div>
+          ) : (
+            <div class="text-gray-400 text-center">
+              <p class="mb-2">Enter text above to generate a QR code</p>
+              <p class="text-sm">Or visit with a query parameter:</p>
+              <code class="text-xs mt-2 block">/qr-code?value=your-text-here</code>
+            </div>
+          )}
+        </div>
+      </div>
+      
+      <!-- Display the encoded value -->
+      <div class="bg-gray-50 rounded-lg p-4 mb-4">
+        <p class="text-sm text-gray-600 mb-2">Encoded Value:</p>
+        <p id="encoded-value" class="text-base font-mono break-all text-gray-800 min-h-[1.5rem]">
+          {value || '—'}
+        </p>
+      </div>
+      
+      <!-- Direct image link for embedding -->
+      <div class="bg-blue-50 rounded-lg p-4">
+        <p class="text-sm text-gray-600 mb-2">Direct Image URL:</p>
+        <code id="direct-url" class="text-xs font-mono break-all text-blue-800 bg-blue-100 px-2 py-1 rounded block min-h-[1.5rem]">
+          {value ? `${Astro.url.origin}/qr-code?value=${encodeURIComponent(value)}` : '—'}
+        </code>
+      </div>
+    </div>
+  </div>
+</Layout>
+
+<!-- Client-side QR code generation script -->
+<script>
+  import QRCode from 'qrcode';
+
+  /**
+   * Get current QR code options from the form controls
+   * 
+   * @returns Object containing QR code generation options
+   */
+  function getQROptions() {
+    const sizeEl = document.getElementById('qr-size-input') as HTMLSelectElement;
+    const errorLevelEl = document.getElementById('qr-error-level-input') as HTMLSelectElement;
+    const versionEl = document.getElementById('qr-version-input') as HTMLSelectElement;
+    const maskEl = document.getElementById('qr-mask-input') as HTMLSelectElement;
+
+    // Build options object with user-selected values
+    // Using 'any' type to avoid strict type checking issues with QRCode library types
+    const options: any = {
+      errorCorrectionLevel: (errorLevelEl?.value as 'L' | 'M' | 'Q' | 'H') || 'M',
+      type: 'image/png',
+      margin: 1,
+      width: parseInt(sizeEl?.value || '512', 10),
+      color: {
+        dark: '#000000',  // QR code color (black)
+        light: '#FFFFFF'  // Background color (white)
+      }
+    };
+
+    // Add version if specified (not auto)
+    if (versionEl?.value && versionEl.value !== '') {
+      const version = parseInt(versionEl.value, 10);
+      if (version >= 1 && version <= 40) {
+        options.version = version;
+      }
+    }
+
+    // Add mask pattern if specified (not auto)
+    if (maskEl?.value && maskEl.value !== '') {
+      const mask = parseInt(maskEl.value, 10);
+      if (mask >= 0 && mask <= 7) {
+        options.maskPattern = mask;
+      }
+    }
+
+    return options;
+  }
+
+  /**
+   * Generate QR code from a given value and display it in the container
+   * 
+   * @param {string} value - The text to encode in the QR code
+   * @param {HTMLElement} container - The container element to display the QR code
+   */
+  async function generateQRCode(value: string, container: HTMLElement) {
+    // Clear the container and show loading state
+    container.innerHTML = '<div class="text-gray-400">Generating QR code...</div>';
+    
+    // If value is empty, show placeholder
+    if (!value || value.trim() === '') {
+      container.innerHTML = `
+        <div class="text-gray-400 text-center">
+          <p class="mb-2">Enter text above to generate a QR code</p>
+          <p class="text-sm">Or visit with a query parameter:</p>
+          <code class="text-xs mt-2 block">/qr-code?value=your-text-here</code>
+        </div>
+      `;
+      return;
+    }
+    
+    try {
+      // Get current options from form controls
+      const options = getQROptions();
+
+      // Generate QR code as a data URL (base64 encoded PNG)
+      // Options are dynamically retrieved from the form controls
+      // TypeScript type assertion needed due to library type definitions with 'any' options
+      const qrCodeResult = QRCode.toDataURL(value, options) as unknown;
+      const qrCodeDataUrl = await (qrCodeResult as Promise<string>);
+      
+      // Create and insert the QR code image
+      const img = document.createElement('img');
+      img.src = qrCodeDataUrl;
+      img.alt = `QR Code for: ${value}`;
+      img.className = 'max-w-full h-auto';
+      
+      // Clear the container and add the image
+      container.innerHTML = '';
+      container.appendChild(img);
+    } catch (error) {
+      // Handle any errors during QR code generation
+      // This could happen if the value is too long, version is too small, or contains invalid characters
+      console.error('Error generating QR code:', error);
+      container.innerHTML = `
+        <div class="text-red-600 text-center p-4">
+          <p class="font-semibold mb-2">Error Generating QR Code</p>
+          <p class="text-sm">${error instanceof Error ? error.message : 'Unknown error occurred'}</p>
+          <p class="text-xs mt-2 text-gray-500">Try adjusting the version or error correction level.</p>
+        </div>
+      `;
+    }
+  }
+
+  /**
+   * Update the encoded value display and direct URL
+   * 
+   * @param {string} value - The current value being encoded
+   */
+  function updateDisplay(value: string) {
+    const encodedValueEl = document.getElementById('encoded-value');
+    const directUrlEl = document.getElementById('direct-url');
+    
+    if (encodedValueEl) {
+      encodedValueEl.textContent = value || '—';
+    }
+    
+    if (directUrlEl) {
+      if (value && value.trim() !== '') {
+        const url = new URL(window.location.href);
+        url.searchParams.set('value', value);
+        directUrlEl.textContent = url.toString();
+      } else {
+        directUrlEl.textContent = '—';
+      }
+    }
+  }
+
+  /**
+   * Update the URL query parameter without page reload
+   * 
+   * @param {string} value - The value to set in the query parameter
+   */
+  function updateURL(value: string) {
+    const url = new URL(window.location.href);
+    if (value && value.trim() !== '') {
+      url.searchParams.set('value', value);
+    } else {
+      url.searchParams.delete('value');
+    }
+    // Update URL without page reload using history API
+    window.history.replaceState({}, '', url.toString());
+  }
+
+  /**
+   * Update container size based on selected size option
+   * 
+   * @param {number} size - The width/height in pixels
+   */
+  function updateContainerSize(size: number) {
+    const container = document.getElementById('qr-code-container');
+    if (container) {
+      // Set minimum size to match the selected size
+      container.style.minWidth = `${size}px`;
+      container.style.minHeight = `${size}px`;
+    }
+  }
+
+  /**
+   * Regenerate QR code with current input value and options
+   * This function is called when options change
+   */
+  async function regenerateQRCode() {
+    const input = document.getElementById('qr-value-input') as HTMLInputElement;
+    const container = document.getElementById('qr-code-container');
+    const sizeInput = document.getElementById('qr-size-input') as HTMLSelectElement;
+    
+    if (!input || !container) {
+      return;
+    }
+    
+    // Update container size if size option changed
+    if (sizeInput) {
+      const size = parseInt(sizeInput.value, 10);
+      updateContainerSize(size);
+    }
+    
+    const value = (input as HTMLInputElement).value;
+    await generateQRCode(value, container);
+  }
+
+  /**
+   * Initialize the QR code generator
+   * Sets up event listeners and generates initial QR code if value exists
+   */
+  (async () => {
+    // Get DOM elements
+    const input = document.getElementById('qr-value-input');
+    const container = document.getElementById('qr-code-container');
+    const sizeInput = document.getElementById('qr-size-input');
+    const errorLevelInput = document.getElementById('qr-error-level-input');
+    const versionInput = document.getElementById('qr-version-input');
+    const maskInput = document.getElementById('qr-mask-input');
+    
+    if (!input || !container) {
+      console.error('Required DOM elements not found');
+      return;
+    }
+    
+    // Get initial value from URL query parameters
+    const urlParams = new URLSearchParams(window.location.search);
+    const initialValue = urlParams.get('value') || '';
+    
+    // Set initial input value if it exists
+    if (initialValue) {
+      (input as HTMLInputElement).value = initialValue;
+    }
+    
+    // Set initial container size based on default size option
+    if (sizeInput) {
+      const initialSize = parseInt((sizeInput as HTMLSelectElement).value, 10);
+      updateContainerSize(initialSize);
+    }
+    
+    // Generate initial QR code if value exists
+    if (initialValue) {
+      await generateQRCode(initialValue, container);
+      updateDisplay(initialValue);
+    }
+    
+    // Debounce function to limit QR code generation frequency
+    let debounceTimer: ReturnType<typeof setTimeout> | null = null;
+    
+    // Listen for input changes and update QR code in real-time
+    input.addEventListener('input', (e) => {
+      const value = (e.target as HTMLInputElement).value;
+      
+      // Update display immediately
+      updateDisplay(value);
+      updateURL(value);
+      
+      // Debounce QR code generation to avoid excessive updates while typing
+      if (debounceTimer) {
+        clearTimeout(debounceTimer);
+      }
+      
+      debounceTimer = setTimeout(async () => {
+        await generateQRCode(value, container);
+      }, 300); // Wait 300ms after user stops typing
+    });
+
+    // Listen for option changes and regenerate QR code immediately
+    // Size, error level, version, and mask changes trigger immediate regeneration
+    const optionInputs = [sizeInput, errorLevelInput, versionInput, maskInput];
+    optionInputs.forEach((optionInput) => {
+      if (optionInput) {
+        optionInput.addEventListener('change', async () => {
+          // Regenerate QR code immediately when options change
+          await regenerateQRCode();
+        });
+      }
+    });
+  })();
+</script>

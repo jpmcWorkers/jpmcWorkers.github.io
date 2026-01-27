@@ -6,39 +6,26 @@ import {
   filterEntriesByPath,
   getBreadcrumbs,
   getImagePath,
+  decodeFolderPath,
 } from '../../utils/imageUtils';
+import { getImageFolderPaths } from '../../utils/imagePaths';
 
-/**
- * Pre-import all images using glob from public directory
- * This allows Astro to optimize and process images at build time
- */
-const allImages = import.meta.glob('/public/images/**/*.{png,jpg,jpeg,webp,gif}', {
-  eager: true,
-});
+export const getStaticPaths = getImageFolderPaths;
 
-/**
- * Get all image entries from the collection
- */
+const allImages = import.meta.glob('/public/images/**/*.{png,jpg,jpeg,webp,gif}', { eager: true });
 const allImageEntries = await getCollection('images');
 
-/**
- * Filter to show only root-level items (parentPath === '')
- */
-const rootEntries = filterEntriesByPath(allImageEntries, '');
+const folderPathFromProps = Astro.props.folderPath as string | undefined;
+const { slug } = Astro.params;
+// Handle slug parameter - it can be string or number, but for our use case it should be a string
+const slugString = typeof slug === 'string' ? slug : String(slug || '');
+const folderPath: string = folderPathFromProps || (slugString 
+  ? slugString.split('/').map(decodeURIComponent).join('/')
+  : '');
 
-/**
- * Generate breadcrumb navigation (just the root level)
- */
-const breadcrumbs = getBreadcrumbs('');
+const currentEntries = filterEntriesByPath(allImageEntries, folderPath);
+const breadcrumbs = getBreadcrumbs(folderPath);
 
-/**
- * Calculate display dimensions for images while maintaining aspect ratio
- * 
- * @param width - Original image width
- * @param height - Original image height
- * @param maxSize - Maximum dimension size (default: 300px)
- * @returns Calculated display dimensions
- */
 function calculateDisplayDimensions(
   width?: number,
   height?: number,
@@ -47,23 +34,23 @@ function calculateDisplayDimensions(
   if (!width || !height) {
     return { width: maxSize, height: maxSize };
   }
-
-  // Scale based on the larger dimension
   const maxDimension = Math.max(width, height);
-  const scaleFactor = Math.min(maxSize / maxDimension, 1); // Don't upscale
-
+  const scaleFactor = Math.min(maxSize / maxDimension, 1);
   return {
     width: Math.round(width * scaleFactor),
     height: Math.round(height * scaleFactor),
   };
 }
+
+const pageTitle = folderPath
+  ? `${folderPath.split('/').pop()} - Images & Materials`
+  : 'Images & Materials';
 ---
 
-<Layout title="Images - JPMC Workers Alliance">
+<Layout title={`${pageTitle} - JPMC Workers Alliance`}>
   <div class="prose prose-lg max-w-none">
     <h1 class="text-4xl font-bold text-jpmc-blue mb-8">Images & Materials</h1>
 
-    {/* Breadcrumb Navigation */}
     <nav class="mb-8" aria-label="Breadcrumb">
       <ol class="flex flex-wrap items-center gap-2 text-sm text-gray-600 dark:text-gray-400">
         {breadcrumbs.map((crumb, index) => (
@@ -88,19 +75,21 @@ function calculateDisplayDimensions(
 
     <div class="mb-8">
       <p class="text-xl text-gray-700 dark:text-gray-300">
-        Download and share these images and resources to support the JPMC Workers Alliance.
+        {folderPath
+          ? `Contents of "${folderPath.split('/').pop()}"`
+          : 'Download and share these images and resources to support the JPMC Workers Alliance.'}
       </p>
     </div>
 
-    {rootEntries.length === 0 ? (
+    {currentEntries.length === 0 ? (
       <div class="text-center py-12">
         <p class="text-gray-500 dark:text-gray-400 text-lg">
-          No images or folders found.
+          This folder is empty.
         </p>
       </div>
     ) : (
       <div class="grid grid-cols-[repeat(auto-fill,minmax(250px,1fr))] gap-6">
-        {rootEntries.map(async (entry) => {
+        {currentEntries.map(async (entry) => {
           // For folders, prioritize preview file first, then fall back to main file
           // For regular files, use the file itself
           const isFolder = entry.data.isFolder;
@@ -128,8 +117,7 @@ function calculateDisplayDimensions(
           // Glob keys use forward slashes: /public/images/Abstract Agitation/preview.png
           const imagePath = getImagePath(imageToUse).replace(/\\/g, '/');
           const imageModule = allImages[imagePath] as { default: any } | undefined;
-          // For folder URLs, encode each path segment separately to preserve slashes
-          // This matches how getStaticPaths generates the paths
+
           const folderUrl = isFolder
             ? `/image/${entry.data.relativePath.split('/').map(encodeURIComponent).join('/')}`
             : null;
@@ -137,7 +125,6 @@ function calculateDisplayDimensions(
 
           return (
             <div class="bg-white dark:bg-gray-800 rounded-lg shadow-xl overflow-hidden border-2 border-gray-200 dark:border-gray-700 flex flex-col">
-              {/* Preview Image */}
               <div class="aspect-square dark:bg-gray-700 flex items-center justify-center">
                 {entry.data.type.toLowerCase() === 'pdf' &&
                 !entry.data.preview?.trim() ? (
@@ -160,7 +147,6 @@ function calculateDisplayDimensions(
                 )}
               </div>
 
-              {/* Content */}
               <div class="p-4 flex flex-col flex-grow">
                 <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2 truncate">
                   {entry.data.name.replace(/\.[^/.]+$/, '')}
@@ -170,7 +156,6 @@ function calculateDisplayDimensions(
                   {isFolder ? 'Folder' : 'File'}
                 </p>
 
-                {/* Action Button */}
                 {isFolder ? (
                   <a
                     href={folderUrl!}
@@ -195,5 +180,3 @@ function calculateDisplayDimensions(
     )}
   </div>
 </Layout>
-
- 
