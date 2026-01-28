@@ -62,60 +62,45 @@ async function scanDirectoryRecursive(
         }
       }
 
-      // Check if this directory contains content files (to treat it as a folder entry)
+      // Build folder entry for every directory so the mapping is: folder path → its direct children.
+      // Each folder uses its own preview file for the tile; otherwise fallback to first displayable file.
       const subItems = await fs.readdir(itemPath);
-      
-      // Look for preview files (preview.png or preview.jpeg)
       const previewFile = subItems.find(file => {
         const lowerFile = file.toLowerCase();
         return lowerFile === 'preview.png' || lowerFile === 'preview.jpeg' || lowerFile === 'preview.jpg';
       });
-
-      // Find the main file (not the preview file)
       const mainFile = subItems.find(file => {
         const ext = path.extname(file).toLowerCase().slice(1);
         return contentList.includes(ext as ContentType) &&
           !file.toLowerCase().startsWith('preview.');
       });
-
-      // Only create folder entry if there's a main file (not just preview files)
-      // If preview.png or preview.jpeg exists, we'll use those as the preview image
-      if (mainFile) {
-        const ext = path.extname(mainFile).toLowerCase().slice(1);
-        const mainFilePath = path.join(itemPath, mainFile);
-        const mainDimensions = await getImageDimensions(mainFilePath);
-
-        let previewDimensions: { width?: number; height?: number; } = {};
-        // Use preview.png or preview.jpeg if they exist
-        if (previewFile) {
-          const previewFilePath = path.join(itemPath, previewFile);
-          previewDimensions = await getImageDimensions(previewFilePath);
-        }
-
-        // Create entry ID from relative path
-        const entryId = relativeItemPath.replace(/\//g, '--');
-
-        entries.push({
-          id: entryId,
-          name: item.name,
-          file: `${relativeItemPath}/${mainFile}`,
-          // Prioritize preview.png/jpeg as the preview image for folders
-          // If preview exists, use it; otherwise fall back to the main file
-          preview: previewFile ? `${relativeItemPath}/${previewFile}` : null,
-          type: ext as ContentType,
-          isFolder: true,
-          // Use preview dimensions if available, otherwise use main file dimensions
-          width: previewDimensions.width || mainDimensions.width,
-          height: previewDimensions.height || mainDimensions.height,
-          previewWidth: previewDimensions.width,
-          previewHeight: previewDimensions.height,
-          relativePath: relativeItemPath,
-          parentPath: parentPath,
-          depth: depth,
-        });
+      // Fallback for tile: folder's preview file if present, else first content file (mainFile), else null
+      const displayFile = previewFile || mainFile || null;
+      const ext = displayFile
+        ? (path.extname(displayFile).toLowerCase().slice(1) as ContentType)
+        : ('png' as ContentType);
+      const displayFilePath = displayFile ? path.join(itemPath, displayFile) : null;
+      const mainDimensions = displayFilePath ? await getImageDimensions(displayFilePath) : {};
+      let previewDimensions: { width?: number; height?: number } = {};
+      if (previewFile) {
+        previewDimensions = await getImageDimensions(path.join(itemPath, previewFile));
       }
-      // If directory only contains preview files (or is named "preview"), don't create a folder entry
-      // The preview files will be handled as regular files if needed
+      const entryId = relativeItemPath.replace(/\//g, '--');
+      entries.push({
+        id: entryId,
+        name: item.name,
+        file: displayFile ? `${relativeItemPath}/${displayFile}` : `${relativeItemPath}/.folder`,
+        preview: previewFile ? `${relativeItemPath}/${previewFile}` : null,
+        type: ext,
+        isFolder: true,
+        width: previewDimensions.width ?? mainDimensions.width,
+        height: previewDimensions.height ?? mainDimensions.height,
+        previewWidth: previewDimensions.width,
+        previewHeight: previewDimensions.height,
+        relativePath: relativeItemPath,
+        parentPath: parentPath,
+        depth: depth,
+      });
     } else if (item.isFile()) {
       // Skip preview files - they should not be rendered as individual tiles
       // Preview files (preview.png, preview.jpeg, preview.jpg) are used as preview images for folders

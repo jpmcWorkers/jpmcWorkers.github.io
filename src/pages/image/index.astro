@@ -105,12 +105,13 @@ function calculateDisplayDimensions(
           // For regular files, use the file itself
           const isFolder = entry.data.isFolder;
           
-          // Determine which image to use - for folders, prefer preview if available
+          // Each folder uses its own preview file for the tile; otherwise fallback to file (or placeholder)
           const imageToUse = isFolder && entry.data.preview
             ? entry.data.preview
-            : (isFolder ? entry.data.file : entry.data.file);
-          
-          // Use preview dimensions if preview exists, otherwise use file dimensions
+            : entry.data.file;
+          const isPlaceholder = isFolder && (entry.data.file.endsWith('/.folder') || !entry.data.preview);
+
+          // Use preview dimensions if preview exists, otherwise file dimensions
           const dimensionsToUse = entry.data.preview
             ? {
                 width: entry.data.previewWidth || entry.data.width,
@@ -124,10 +125,9 @@ function calculateDisplayDimensions(
             300
           );
 
-          // Get the image path and normalize it for the glob lookup
           // Glob keys use forward slashes: /public/images/Abstract Agitation/preview.png
           const imagePath = getImagePath(imageToUse).replace(/\\/g, '/');
-          const imageModule = allImages[imagePath] as { default: any } | undefined;
+          const imageModule = isPlaceholder ? undefined : (allImages[imagePath] as { default: any } | undefined);
           // For folder URLs, encode each path segment separately to preserve slashes
           // This matches how getStaticPaths generates the paths
           const folderUrl = isFolder
@@ -136,32 +136,58 @@ function calculateDisplayDimensions(
           const downloadUrl = !isFolder ? `/images/${entry.data.relativePath}` : null;
 
           return (
-            <div class="bg-white dark:bg-gray-800 rounded-lg shadow-xl overflow-hidden border-2 border-gray-200 dark:border-gray-700 flex flex-col">
-              {/* Preview Image */}
-              <div class="aspect-square dark:bg-gray-700 flex items-center justify-center">
-                {entry.data.type.toLowerCase() === 'pdf' &&
-                !entry.data.preview?.trim() ? (
-                  <div class="text-gray-500 dark:text-gray-400 flex items-center justify-center p-4 min-h-[250px] object-cover">
-                    <span>No Preview Available</span>
-                  </div>
-                ) : imageModule ? (
-                  <Image
-                    width={displayDimensions.width}
-                    height={displayDimensions.height}
-                    src={imageModule.default}
-                    alt={entry.data.name}
-                    loading="lazy"
-                    class="w-full h-full object-cover"
-                  />
-                ) : (
-                  <div class="text-gray-500 dark:text-gray-400 flex items-center justify-center p-4 min-h-[250px] object-cover">
-                    <span>Image not found: {imageToUse}</span>
-                  </div>
-                )}
-              </div>
+            <div class="bg-white dark:bg-gray-800 rounded-lg shadow-xl overflow-hidden border-2 border-gray-200 dark:border-gray-700 flex flex-col h-full">
+              {/* Preview image: for folders, wrap in link so clicking the preview opens the folder */}
+              {isFolder && folderUrl ? (
+                <a
+                  href={folderUrl}
+                  class="aspect-square dark:bg-gray-700 flex items-center justify-center block cursor-pointer hover:opacity-95 focus:outline-none focus:ring-2 focus:ring-jpmc-blue focus:ring-inset"
+                  aria-label={`Open folder ${entry.data.name}`}
+                >
+                  {(isFolder && isPlaceholder) ? (
+                    <div class="text-gray-500 dark:text-gray-400 flex items-center justify-center p-4 min-h-[250px] object-cover w-full">
+                      <span>Folder</span>
+                    </div>
+                  ) : imageModule ? (
+                    <Image
+                      width={displayDimensions.width}
+                      height={displayDimensions.height}
+                      src={imageModule.default}
+                      alt=""
+                      loading="lazy"
+                      class="max-w-full max-h-full object-contain"
+                    />
+                  ) : (
+                    <div class="text-gray-500 dark:text-gray-400 flex items-center justify-center p-4 min-h-[250px] object-cover w-full">
+                      <span>Image not found: {imageToUse}</span>
+                    </div>
+                  )}
+                </a>
+              ) : (
+                <div class="aspect-square dark:bg-gray-700 flex items-center justify-center">
+                  {(entry.data.type.toLowerCase() === 'pdf' && !entry.data.preview?.trim()) ? (
+                    <div class="text-gray-500 dark:text-gray-400 flex items-center justify-center p-4 min-h-[250px] object-cover">
+                      <span>No Preview Available</span>
+                    </div>
+                  ) : imageModule ? (
+                    <Image
+                      width={displayDimensions.width}
+                      height={displayDimensions.height}
+                      src={imageModule.default}
+                      alt={entry.data.name}
+                      loading="lazy"
+                      class="max-w-full max-h-full object-contain"
+                    />
+                  ) : (
+                    <div class="text-gray-500 dark:text-gray-400 flex items-center justify-center p-4 min-h-[250px] object-cover">
+                      <span>Image not found: {imageToUse}</span>
+                    </div>
+                  )}
+                </div>
+              )}
 
               {/* Content */}
-              <div class="p-4 flex flex-col flex-grow">
+              <div class="p-4 flex flex-col mt-auto">
                 <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2 truncate">
                   {entry.data.name.replace(/\.[^/.]+$/, '')}
                 </h3>
