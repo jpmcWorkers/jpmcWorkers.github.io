@@ -23,9 +23,7 @@ export async function getImageFolderPaths(): Promise<GetStaticPathsResult> {
   // Filter to only folders (entries that represent folders, not individual files)
   const folderEntries = allImageEntries.filter((entry) => entry.data.isFolder);
   
-  // Generate static paths for each folder
-  // For catch-all routes [...slug], the slug should be the full path as a string
-  // Astro will handle URL encoding when generating the actual URLs
+  // slug must be string or number for getStaticPaths; use full path string
   return folderEntries.map((entry) => ({
     params: { slug: entry.data.relativePath },
     props: { folderPath: entry.data.relativePath },
