@@ -82,7 +82,7 @@ to find contact information for your elected representatives. Tell them:
 *Make sure to hit that "red-blooded American" phrase, especially with older representatives.*
 *It will really resonate with the cold-war vibes they grew up with.*
 
-**Protests rallies can also help send a message, especially with journalistic connections. Stay safe out there!**
+**Protest rallies can also help send a message, especially with journalistic connections. Stay safe out there!**
 
 ## Update: Senate Blocks ICE Funding! (For Now.)
 
