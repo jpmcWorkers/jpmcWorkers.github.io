@@ -13,7 +13,7 @@ JPMC Workers Alliance Discord Server (30 January 2026) --
 
 On 7 January 2026, agents of the United States Federal Government acting under the banner
 of Immigration and Customs Enforcement (ICE) in Minneapolis, Minnesota, shot and killed
-US citizen Renee Good in her car after she had done nothing worse than criticize the
+US citizen Renee Nicole Good in her car after she had done nothing worse than criticize the
 agency's presence and actions in her city.
 
 Seventeen days later, on 24 January 2026, agents under the same banner murdered US citizen
@@ -24,16 +24,22 @@ Both of these outrages were captured on amateur video from many angles and share
 as to the true course of events. If you have the stomach to watch, there is only one conclusion:
 US citizens are being killed for exercising their civil rights.
 
-This is not the America that any of us grew up in, and it is not the America that we should
-hand down to posterity. As citizens of these fifty states we call home, and even as humans
-worthy of the title, the members of the JPMC Workers Alliance can no longer stand silent.
+These are only two among eight deaths at ICE hands just in January, along with at least 32 more in 2025,
+according to <a href="https://www.theguardian.com/us-news/2026/jan/28/deaths-ice-2026-" target="blank">this article in The Guardian</a>.
+These two might be especially high-profile because they happened to be white and natural-born citizens.
+Others just in January include Luis Gustavo Núñez Cáceres, Geraldo Lunas Campos, Víctor Manuel Díaz,
+Parady La, Luis Beltrán Yáñez–Cruz, and Heber Sánchez Domínguez. Regardless of their circumstances,
+human dignity and the government's duty of care are not negotiable.
+
+As citizens of these fifty states we call home, and even as humans worthy of the name,
+the members of the JPMC Workers Alliance can no longer stand silent.
 We must stand together, speak out, and take actions as necessary to end this reign of terror
 that an out-of-control and unjustly-militarized federal agency is visiting upon our cities.
 
 ## We Condemn ICE Actions in Minneapolis and Across the Land.
 
-We strongly condemn the violence, terror, and instability caused by ICE enforcement
-actions that have led to deaths, family separation, and deep trauma in our communities.
+We strongly condemn the deaths, family separation, and deep trauma inflicted by ICE enforcement.
+These abhorrent actions spread violence, terror, and instability in our communities.
 As workers, we do not leave our compassion at the door when we come in.
 We are community members first -— neighbors, parents, siblings, friends -— many of us living in
 neighborhoods directly impacted by immigration raids and enforcement.
@@ -80,7 +86,7 @@ to find contact information for your elected representatives. Tell them:
 
 ## Update: Senate Blocks ICE Funding! (For Now.)
 
-https://newrepublic.com/post/205890/eight-republicans-senate-democrats-block-dhs-funding-bill
+<a href="https://newrepublic.com/post/205890/eight-republicans-senate-democrats-block-dhs-funding-bill" target="blank">Source Article</a>
 
 TLDR: Thursday, 29 January, eight Republican senators joined every Democrat to block a budget
 that would have funded ICE. This risks government shut-down, but shows Republicans stepping up.
