@@ -41,6 +41,7 @@
   },
   "devDependencies": {
     "@playwright/test": "^1.54.2",
+    "@types/qrcode": "^1.5.6",
     "@vite-pwa/astro": "^1.1.0",
     "vite-plugin-pwa": "^1.0.2",
     "vite-tsconfig-paths": "^4.0.0",
