@@ -23,6 +23,7 @@ export default defineConfig({
   //   '/discord': 'https://bit.ly/jpmcworkers',
   // },
 
+  site: 'https://www.jpmcworkers.com',
   vite: {
     plugins: [
       tailwindcss(),

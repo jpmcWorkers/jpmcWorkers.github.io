@@ -16,13 +16,15 @@
     "test:links": "playwright test tests/link-validation.spec.js",
     "test:crawler": "playwright test tests/comprehensive-link-crawler.spec.js",
     "test:report": "playwright show-report",
-    "test:quick": "node scripts/test-links.js"
+    "test:quick": "node scripts/test-links.js",
+    "sitemap:parse": "node scripts/parse-sitemap.js dist/sitemap-0.xml",
+    "sitemap:urls": "node scripts/parse-sitemap.js dist/sitemap-0.xml --json"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.5",
     "@astrojs/markdoc": "^0.15.6",
     "@astrojs/sitemap": "^3.5.1",
-    "@openreplay/tracker": "^16.4.10",
+    "@openreplay/tracker": "^17.1.5",
     "@tailwindcss/typography": "^0.5.16",
     "@tailwindcss/vite": "^4.1.11",
     "astro": "^5.13.7",

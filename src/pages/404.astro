@@ -132,4 +132,10 @@ import Layout from '../layouts/Layout.astro';
       </div>
     </div>
   </section>
+  <script>
+    import { initSitemapRedirect } from '../utils/sitemap-redirect';
+
+    // Initialize sitemap-based redirect on page load
+    initSitemapRedirect();
+  </script>
 </Layout>
