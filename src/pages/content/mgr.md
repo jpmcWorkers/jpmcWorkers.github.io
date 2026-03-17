@@ -7,12 +7,23 @@ layout: ~/layouts/Markdown.astro
 redirect_from: ["/mgr", "/workers.github.io/mgr"]
 ---
 
-# For Sympathetic Managers / Supervisors
-
-If you are a supervisor, the law considers you an *agent of the employer* and prevents you from joining a union.
 Whether you want to support our mission or just want to stay on the right side of the law, this document is for you.
 
-**This document is broken into three parts:**
+**Managers can still join our Discord server** and the affinity-group channels therein.
+We have set up fine-grained access controls so that you won't be exposed to information you should not see.
+
+**In the USA:** If you are a supervisor, labor law considers you an *agent of the employer* and prevents you from joining a union.
+However, there are still things you can do and bits of labor law you may not have been taught.
+
+**Elsewhere:** Some places (like the UK) legally allow managers to join trade-unions,
+but joining a global organizing group like ours would still be really awkward and
+create some difficult conflicts of interest. Therefore, to keep things simple,
+the global JWA follows the US model.
+
+UK-based managers interested in joining a union are encouraged to check out the
+<a href="https://utaw.tech/" target="blank">United Tech and Allied Workers</a>.
+
+## Structuire of this Document:
 
 * How to tell if you are *in fact* a supervisor in the eyes of the law.
 * Can you be fired? (Spoiler: You'd have to try.)
@@ -64,9 +75,9 @@ the same conversation.
 
 ## Can I be fired for this?
 
-Certain activities are considered *unfair labor practices* by the employer.
-*Don't do those things,* and you should be fine from a legal perspective.
-Doing those illegal things could create liability for the employer,
+The law considers certain activities to be *unfair labor practices by the employer.*
+**Don't do those things,** and you should be fine from a legal perspective.
+Doing those illegal things could create liability and reputational risk for the employer,
 which may be the fastest path to a pointed conversation with an HR representative.
 
 Later on in this document there are some links to resources that should help keep you on the right side of the law.
@@ -76,7 +87,7 @@ Arguably that's short-sighted, because a healthy relationship between management
 tends to be good for both in the long run. However, institutions naturally resist change,
 and so it may be wise to keep your support on the down-low.
 
-**The question comes up about joining our discord.**
+**The question comes up about joining our discord:**
 
 Certain people in the finance industry are subject to invasive monitoring of their personal lives.
 If you are one of those people, the company has probably demanded that you install monitoring software on your cell phone, on pain of being fired.
@@ -150,7 +161,7 @@ This may be risky, but if you leave your statements as something along the lines
 The easiest and least obtrusive way would be to advise that manager that their action violates the NLRA,
 and that you want to look out for them to protect them from legal blowback.
 If you’re feeling especially bold, you can even report that as a ULP
-(Unfair Labor Practice – see [29 US Code § 158(a)](https://www.law.cornell.edu/uscode/text/29/158)).
+(Unfair Labor Practice – see [29 US Code § 158](https://www.law.cornell.edu/uscode/text/29/158)).
 You do not have to be the target of a ULP, or even have "standing" in the usual legal sense, to file a ULP.
 Anyone can file a ULP on behalf of anyone else, publicly or anonymously.
 
