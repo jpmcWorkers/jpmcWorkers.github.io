@@ -169,6 +169,63 @@ function loadContentInDirectory(basePath: string) {
   };
 }
 
+function loadBookletsInDirectory(basePath: string) {
+  return async () => {
+    const items = await fs.readdir(basePath, { withFileTypes: true });
+    const entries: Array<{
+      id: string;
+      name: string;
+      file: string;
+      preview: string | null;
+      type: ContentType;
+      width?: number;
+      height?: number;
+      previewWidth?: number;
+      previewHeight?: number;
+    }> = [];
+
+    for (const item of items) {
+      if (!item.isDirectory()) {
+        continue;
+      }
+
+      const itemPath = path.join(basePath, item.name);
+      const subItems = await fs.readdir(itemPath);
+      const previewFile = subItems.find((file) => {
+        const lowerFile = file.toLowerCase();
+        return lowerFile === 'preview.png' || lowerFile === 'preview.jpeg' || lowerFile === 'preview.jpg';
+      });
+      const mainFile = subItems.find((file) => {
+        const ext = path.extname(file).toLowerCase().slice(1);
+        return contentList.includes(ext as ContentType) && !file.toLowerCase().startsWith('preview.');
+      });
+
+      if (!mainFile) {
+        continue;
+      }
+
+      const mainFilePath = path.join(itemPath, mainFile);
+      const previewPath = previewFile ? path.join(itemPath, previewFile) : null;
+      const mainDimensions = await getImageDimensions(mainFilePath);
+      const previewDimensions = previewPath ? await getImageDimensions(previewPath) : {};
+
+      entries.push({
+        id: item.name.replace(/\//g, '--'),
+        name: item.name,
+        file: `${item.name}/${mainFile}`,
+        preview: previewFile ? `${item.name}/${previewFile}` : null,
+        type: path.extname(mainFile).toLowerCase().slice(1) as ContentType,
+        width: previewDimensions.width ?? mainDimensions.width,
+        height: previewDimensions.height ?? mainDimensions.height,
+        previewWidth: previewDimensions.width,
+        previewHeight: previewDimensions.height,
+      });
+    }
+
+    return entries;
+  };
+}
+
 // Helper function to get image dimensions
 async function getImageDimensions(filePath: string): Promise<{ width?: number; height?: number }> {
   try {
@@ -237,20 +294,16 @@ const imageCollection = defineCollection({
 });
 
 const bookletCollection = defineCollection({
-  loader: loadContentInDirectory(bookletPath),
+  loader: loadBookletsInDirectory(bookletPath),
   schema: z.object({
     name: z.string(),
     file: z.string(),
     preview: z.string().nullable(),
     type: z.enum(contentList),
-    isFolder: z.boolean(),
     width: z.number().optional(),
     height: z.number().optional(),
     previewWidth: z.number().optional(),
     previewHeight: z.number().optional(),
-    relativePath: z.string(),
-    parentPath: z.string(),
-    depth: z.number(),
   }),
 });
 
