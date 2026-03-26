@@ -23,7 +23,7 @@ the global JWA follows the US model.
 UK-based managers interested in joining a union are encouraged to check out the
 <a href="https://utaw.tech/" target="blank">United Tech and Allied Workers</a>.
 
-## Structuire of this Document:
+## Structure of this Document:
 
 * How to tell if you are *in fact* a supervisor in the eyes of the law.
 * Can you be fired? (Spoiler: You'd have to try.)
