@@ -36,7 +36,7 @@ test('Desktop overall Linkage', async ({ page, isMobile }) => {
             - /url: /mission
     - heading "Connect With Us" [level=3]
     - link "Discord":
-      - /url: https://discord.gg/BZA3pxppq9
+      - /url: https://discord.gg/PR3ezg2Bvx
       - img
     - link "YouTube":
       - /url: https://www.youtube.com/@jpmcWorkers
@@ -74,7 +74,7 @@ test('Desktop overall Linkage', async ({ page, isMobile }) => {
             - /url: /content
       - heading "Connect With Us" [level=3]
       - link "Discord":
-        - /url: https://discord.gg/BZA3pxppq9
+        - /url: https://discord.gg/PR3ezg2Bvx
         - img
       - link "YouTube":
         - /url: https://www.youtube.com/@jpmcWorkers
@@ -141,7 +141,7 @@ test('Mobile overall Linkage', async ({ page, isMobile }) => {
             - /url: /content
       - heading "Connect With Us" [level=3]
       - link "Discord":
-        - /url: https://discord.gg/BZA3pxppq9
+        - /url: https://discord.gg/PR3ezg2Bvx
         - img
       - link "YouTube":
         - /url: https://www.youtube.com/@jpmcWorkers

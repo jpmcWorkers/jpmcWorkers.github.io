@@ -41,5 +41,5 @@ layout: ~/layouts/Markdown.astro
 **A:** Totally cool. Spread the word, help organize, or just encourage teammates to give it a try. Small changes lead to big improvements when done together.
 
 **Q:** Where can I sign up or learn more?  
-**A:** We’re working on a system in [Discord](https://discord.gg/BZA3pxppq9) where you can find matches, share ride offers, or get involved. Drop your info and let’s get rolling.
+**A:** We’re working on a system in [Discord](https://discord.gg/PR3ezg2Bvx) where you can find matches, share ride offers, or get involved. Drop your info and let’s get rolling.
 

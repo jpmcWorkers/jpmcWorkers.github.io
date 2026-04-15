@@ -23,7 +23,7 @@ And most importantly, we had active, engaging, and agitating conversations with 
 
 If you are interested in getting involved in the planning of more events and outreach like this,
 or simply wish to provide feedback, or air your Employee Opinion to an audience who will actually care what you have to say,
-please respond to this email, and we will be with you as soon as we can. Or join [our community](https://discord.gg/BZA3pxppq9) directly!
+please respond to this email, and we will be with you as soon as we can. Or join [our community](https://discord.gg/PR3ezg2Bvx) directly!
 
 In addition to the pizza party activity, we are still collecting testimonies of those who are [struggling with the ADA/Reasonable Accommodations process](https://jpmcworkers.com/img/posters/Reasonable_Accommodations0.5x.png), with several interested parties to speak to.
 
