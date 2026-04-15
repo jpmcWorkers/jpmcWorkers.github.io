@@ -1,4 +1,4 @@
-PR3ezg2Bvx# Bargaining Unit Mapping
+# Bargaining Unit Mapping
 
 When you think of a union, what do you imagine? Probably the *United Auto Workers,* right?
 Or maybe you think of *Wells Fargo Workers United,* the group that proved bank workers can have unions too.
