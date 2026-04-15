@@ -1,4 +1,4 @@
-import { test, expect } from '@playwright/test';
+PR3ezg2Bvximport { test, expect } from '@playwright/test';
 
 test('Desktop overall Linkage', async ({ page, isMobile }) => {
   test.skip(isMobile, 'Skip mobile for now, as the sidebar is hidden behind a hamburger menu');
