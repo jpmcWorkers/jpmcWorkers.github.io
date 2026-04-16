@@ -27,6 +27,16 @@ jobs:
     steps:
       - name: Checkout your repository using git
         uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: 'pnpm'
+      - name: Enable pnpm
+        run: |
+          corepack enable
+          corepack prepare pnpm@10.24.0 --activate
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
       - name: Install, build, and upload your site
         uses: withastro/action@v3
         # since this is not a jekyl site, we need to set nojekyll to true

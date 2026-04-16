@@ -2,13 +2,14 @@
   "name": "jpmc-workers-astro",
   "type": "module",
   "version": "0.0.1",
+  "packageManager": "pnpm@10.24.0",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "deploy": "npm run build",
+    "deploy": "astro build",
     "test": "playwright test",
     "test:ui": "playwright test --ui",
     "test:headed": "playwright test --headed",
@@ -21,30 +22,24 @@
     "sitemap:urls": "node scripts/parse-sitemap.js dist/sitemap-0.xml --json"
   },
   "dependencies": {
-    "@astrojs/check": "^0.9.5",
-    "@astrojs/markdoc": "^0.15.6",
-    "@astrojs/sitemap": "^3.5.1",
-    "@openreplay/tracker": "^17.1.5",
-    "@tailwindcss/typography": "^0.5.16",
-    "@tailwindcss/vite": "^4.1.11",
-    "astro": "^5.13.7",
-    "astro-redirect-from": "^1.3.3",
-    "cheerio": "^1.1.2",
-    "class-variance-authority": "^0.7.1",
-    "got": "^14.4.8",
-    "image-size": "^2.0.2",
-    "qrcode": "^1.5.4",
-    "stripe": "^19.1.0",
-    "tailwind-merge": "^3.3.1",
-    "tailwindcss": "^4.1.11",
-    "typescript": "^5.9.3"
+    "@astrojs/sitemap": "3.7.0",
+    "@openreplay/tracker": "17.1.6",
+    "@tailwindcss/typography": "0.5.19",
+    "@tailwindcss/vite": "4.1.18",
+    "astro": "5.17.1",
+    "astro-redirect-from": "1.3.4",
+    "cheerio": "1.2.0",
+    "class-variance-authority": "0.7.1",
+    "got": "14.6.6",
+    "image-size": "2.0.2",
+    "qrcode": "1.5.4",
+    "tailwind-merge": "3.4.0",
+    "tailwindcss": "4.1.18",
+    "typescript": "5.9.3"
   },
   "devDependencies": {
-    "@playwright/test": "^1.54.2",
-    "@types/qrcode": "^1.5.6",
-    "@vite-pwa/astro": "^1.1.0",
-    "vite-plugin-pwa": "^1.0.2",
-    "vite-tsconfig-paths": "^4.0.0",
-    "workbox-window": "^7.3.0"
+    "@playwright/test": "1.58.1",
+    "@types/qrcode": "1.5.6",
+    "vite-tsconfig-paths": "4.3.2"
   }
 }

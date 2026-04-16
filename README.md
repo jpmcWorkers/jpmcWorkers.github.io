@@ -6,17 +6,19 @@ This is the repository for the [JPMC Workers Alliance website](https://jpmcWorke
 
 ```bash
 # Install dependencies
-npm install
+pnpm install
 
 # Start development server
-npm run dev
+pnpm run dev
 
 # Build for production
-npm run build
+pnpm run build
 
 # Preview production build
-npm run preview
+pnpm run preview
 ```
+
+Dependency installs are gated by pnpm's `minimumReleaseAge` policy in `pnpm-workspace.yaml`, so newly published package versions must be at least 7 days old before they are eligible to install.
 
 ## Testing
 
@@ -26,28 +28,28 @@ The site includes comprehensive automated link validation tests using Playwright
 
 ```bash
 # Run all tests
-npm run test
+pnpm run test
 
 # Quick link check (local development)
-npm run test:quick
+pnpm run test:quick
 
 # Run specific test suites
-npm run test:links      # Link validation tests
-npm run test:crawler    # Comprehensive crawler tests
+pnpm run test:links      # Link validation tests
+pnpm run test:crawler    # Comprehensive crawler tests
 
 # Interactive testing
-npm run test:ui         # UI mode
-npm run test:headed     # Visible browser
-npm run test:debug      # Debug mode
+pnpm run test:ui         # UI mode
+pnpm run test:headed     # Visible browser
+pnpm run test:debug      # Debug mode
 
 # View test reports
-npm run test:report
+pnpm run test:report
 ```
 
 ### Prerequisites for Testing
 
-1. Build the site: `npm run build`
-2. Install Playwright browsers: `npx playwright install`
+1. Build the site: `pnpm run build`
+2. Install Playwright browsers: `pnpm exec playwright install`
 
 ### Automated Testing
 
