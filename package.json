@@ -33,6 +33,7 @@
     "got": "14.6.6",
     "image-size": "2.0.2",
     "qrcode": "1.5.4",
+    "sharp": "^0.34.5",
     "tailwind-merge": "3.4.0",
     "tailwindcss": "4.1.18",
     "typescript": "5.9.3"
