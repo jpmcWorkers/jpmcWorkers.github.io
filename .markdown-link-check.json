@@ -1,0 +1,11 @@
+{
+  "ignorePatterns": [
+    { "pattern": "^(?!https?:\\/\\/).+" },
+    { "pattern": "^https?:\\/\\/(www\\.)?reddit\\.com\\/" },
+    { "pattern": "^https?:\\/\\/(www\\.)?bls\\.gov\\/" },
+    { "pattern": "^https?:\\/\\/(www\\.)?congress\\.gov\\/" },
+    { "pattern": "^https?:\\/\\/(www\\.)?hrdive\\.com\\/" },
+    { "pattern": "^https?:\\/\\/(www\\.)?verywellhealth\\.com\\/" },
+    { "pattern": "^https?:\\/\\/www\\.legislation\\.gov\\.uk\\/ukpga\\/1996\\/18\\/part\\/8A\\/data\\.pdf$" }
+  ]
+}

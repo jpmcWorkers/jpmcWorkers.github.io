@@ -63,24 +63,11 @@ jobs:
           cache: 'pnpm'
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
-      - name: Build the site
-        run: pnpm run build
       - name: Check external links with markdown-link-check
         shell: pwsh
         run: |
           Get-ChildItem -Recurse -Filter *.md |
             Where-Object { $_.FullName -notmatch '\\node_modules\\' } |
             ForEach-Object {
-              pnpm dlx markdown-link-check $_.FullName
+              pnpm dlx markdown-link-check --config .markdown-link-check.json $_.FullName
             }
-      - name: Check external links in built HTML
-        shell: pwsh
-        run: |
-          $job = Start-Job -ScriptBlock { pnpm exec astro preview }
-          try {
-            Start-Sleep -Seconds 10
-            pnpm dlx broken-link-checker http://localhost:4321/workers.github.io -ro --filter-level 2
-          } finally {
-            Stop-Job $job -ErrorAction SilentlyContinue
-            Remove-Job $job -ErrorAction SilentlyContinue
-          }

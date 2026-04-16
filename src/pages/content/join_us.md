@@ -99,5 +99,5 @@ What are some ways recently-joined union members can show their enthusiasm for t
 * Post about us on social media and/or relevant sites, and share in the community so we know you did it and we can boost each others' posts
 * If you have conversations with your coworkers that are relevant, tell us about them! Mention names if you know them 🙂
 * Start to build out a list or map of other union-eligible colleagues in your bargaining unit, which can be loosely based on your cost center and/or manager's manager. Remember that they must reside in the same country you do! Emailing a complete list to jpmcworkers@gmail.com will gain you a pip of recognition in the community.
-* Equip yourself with [business cards](/img/posters/NOTICE_-_right_to_join_a_union_blue.png), know-your-rights posters, and [SPIT booklets](/img/posters/Union_Propaganda_Booklets_2.png) to hand to your office-mates when the need or opportunity arises.
+* Equip yourself with [business cards](/images/Join%20Notice/NOTICE%20-%20right%20to%20join%20a%20union%20blue.png), know-your-rights posters, and [SPIT booklets](/images/Union_Propaganda_Booklets_2.png) to hand to your office-mates when the need or opportunity arises.
 * Join in on the carpooling effort, and practice [AEIOU](https://jpmcworkers.com/aeiou) while you commute!
