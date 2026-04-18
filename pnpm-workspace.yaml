@@ -1,0 +1,11 @@
+# Delay newly published packages by 7 days so CI and local installs do not
+# immediately consume a just-published release before the ecosystem has had
+# time to surface malicious or broken packages.
+minimumReleaseAge: 10080
+
+# Restrict lifecycle builds to the native dependencies this site actually needs.
+# `esbuild` is required by the frontend toolchain, and `sharp` is required by
+# Astro's image pipeline. Keeping this list narrow reduces unnecessary script execution.
+onlyBuiltDependencies:
+  - esbuild
+  - sharp

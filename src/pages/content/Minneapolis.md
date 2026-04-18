@@ -72,7 +72,7 @@ All government operates by the consent of the governed. We must show our elected
 To that end, the JPMC Workers Alliance urges each and every citizen to visit, call, or write the
 office of their Senators and Congressmen and give their staff a piece of your mind.
 
-Follow <a href="https://www.congress.gov/members/find-your-member" target="blank">this link</a>
+Follow <a href="https://www.usa.gov/elected-officials" target="blank">this link</a>
 to find contact information for your elected representatives. Tell them:
 
 * How you feel about ICE's actions, and what you want done about it.

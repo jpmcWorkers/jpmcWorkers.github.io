@@ -60,7 +60,7 @@ Source: [Reuters](https://www.reuters.com/business/finance/jpmorgan-ceo-dimon-de
 
 That was his dismissal of an employee petition. The issue was not whether the petition took company time. It was signed off hours, so no work was lost. The problem is that employees organized around shared concerns and were ignored. That reaction shows how leadership views employee feedback, not as data but as something to silence.
 
-Ironically, in a 2022 interview Dimon himself said, "Weak CEOs don't take criticism well. Strong CEOs absorb it and learn from it." (Source: https://www.cnbc.com/2022/05/02/jpmorgan-ceo-jamie-dimon-says-weak-ceos-dont-take-criticism-well.html) The contrast between that statement and his reaction to the petition shows how far current leadership has drifted from its own stated values on listening and accountability.
+Ironically, in a 2024 CNBC interview, Dimon said strong leaders need to stay curious, get out from behind their desks, and treat complaints as a favor because they reveal broader problems (Source: https://www.cnbc.com/2024/07/16/jamie-dimon-good-ceos-share-crucial-soft-skill-fail-without-it.html). The contrast between that principle and his reaction to the petition shows how far current leadership has drifted from its own stated values on listening and accountability.
 
 ## 4. Public Insults to Political Opponents
 
