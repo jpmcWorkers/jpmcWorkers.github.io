@@ -1,0 +1,22 @@
+---
+const target = 'https://discord.gg/PR3ezg2Bvx';
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Redirecting to Discord</title>
+    <meta http-equiv="refresh" content={`0;url=${target}`} />
+    <meta name="robots" content="noindex" />
+    <link rel="canonical" href={target} />
+  </head>
+  <body>
+    <p>
+      Redirecting to <a href={target}>the JPMC Workers Alliance Discord</a>.
+    </p>
+    <script is:inline define:vars={{ target }}>
+      window.location.replace(target);
+    </script>
+  </body>
+</html>
