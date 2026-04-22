@@ -22,9 +22,9 @@ but we also want the benefits of collective bargaining and a union contract.
 
 To that end, we are organizing the workforce into collective-bargaining units, and we need your help.
 
-In [our discord](https://discord.gg/PR3ezg2Bvx),
+In [our discord](/discord),
 we have a channel called *Collective Action Announcements*.
 Therein, you'll find some first steps you can take to help the process along.
-While you're at it, you'll earn rank on [our discord](https://discord.gg/PR3ezg2Bvx).
+While you're at it, you'll earn rank on [our discord](/discord).
 (We're borrowing the structure from a certain well-known sci-fi franchise.)
 

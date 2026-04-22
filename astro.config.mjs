@@ -20,7 +20,6 @@ export default defineConfig({
   //   '/aeiou': '/resources/aeiou',
   //   '/issues': '/resources/issues',
   //   '/join_us': '/resources/join-us',
-  //   '/discord': 'https://bit.ly/jpmcworkers',
   // },
 
   site: 'https://www.jpmcworkers.com',
