@@ -38,20 +38,34 @@ We aim to get a UK review soon.
 
 ## Am I a manager or supervisor?
 
-Things that make you a manager:
+**Things that make you a manager:**
 
-* You formulate, determine, and effectuate management policies by expressing and making operative decisions of your employer.
+* You formulate, determine, ***and*** effectuate management policies ***by*** expressing and making operative decisions of your employer.
 
-Things that make you a supervisor:
+Clarification: Just because you *effectuate* policies does not, *by itself,* make you a manager in the eyes of the law.
+To fall into that category, you must *also* have the authority to *formulate and determine* such policies.
+
+*Manager Example:* Whoever decided that all company programmers must take and pass a *"Secure Coding"* class each year.
+
+*Non-example:* Whoever pushes the button each year to assign everyone the *"Secure Coding"* class in `go/learning`.
+
+*Manager example:* Whoever decided we need an "agile transformation".
+
+*Non-example:* The people employed to coach project managers and team leads through said "agile transformation".
+
+**Things that make you a supervisor:**
 
 * Authority to hire, fire, evaluate, discipline, or reassign employees (or contractors)
-* Employees (or contractors) who reasonably believe that you have such authority
+* Employees (or contractors) reasonably believing that you have such authority
 
-Things that do not make you a manager:
+**Things that do not (by themselves) make you a manager or supervisor:**
 
 * Participating in hiring interviews
 * Working in HR
 * Being a Senior Associate or VP
+* Being an agile coach
+* Reviewing other people's work-product for compliance with policies, standards, or regulations
+
 
 On the US side, there is a technical definition of
 [supervisor](https://www.law.cornell.edu/definitions/uscode.php?width=840&height=800&iframe=true&def_id=29-USC-1697229976-858777245&term_occur=999&term_src=title:29:chapter:7:subchapter:II:section:152)
