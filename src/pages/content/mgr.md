@@ -38,6 +38,11 @@ We aim to get a UK review soon.
 
 ## Am I a manager or supervisor?
 
+**Things that make you a supervisor:**
+
+* Authority to hire, fire, evaluate, discipline, or reassign employees (or contractors)
+* Employees (or contractors) reasonably believing that you have such authority
+
 **Things that make you a manager:**
 
 * You formulate, determine, ***and*** effectuate management policies ***by*** expressing and making operative decisions of your employer.
@@ -52,11 +57,6 @@ To fall into that category, you must *also* have the authority to *formulate and
 *Manager example:* Whoever decided we need an "agile transformation".
 
 *Non-example:* The people employed to coach project managers and team leads through said "agile transformation".
-
-**Things that make you a supervisor:**
-
-* Authority to hire, fire, evaluate, discipline, or reassign employees (or contractors)
-* Employees (or contractors) reasonably believing that you have such authority
 
 **Things that do not (by themselves) make you a manager or supervisor:**
 
