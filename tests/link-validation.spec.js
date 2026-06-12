@@ -17,6 +17,9 @@ test('Desktop overall Linkage', async ({ page, isMobile }) => {
           - link "Events & News":
             - /url: /news
         - listitem:
+          - link "Calendar":
+            - /url: /calendar
+        - listitem:
           - link "Learn the Issues":
             - /url: /issues-and-resources
         - listitem:
@@ -104,6 +107,8 @@ test('Mobile overall Linkage', async ({ page, isMobile }) => {
       - /url: /join-us
     - link "Events & News":
       - /url: /news
+    - link "Calendar":
+      - /url: /calendar
     - link "Organizer Toolkit":
       - /url: /content
     - link "Media Library":

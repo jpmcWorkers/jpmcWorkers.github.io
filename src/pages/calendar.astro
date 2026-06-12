@@ -1,0 +1,41 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+const calendarSrc =
+  "https://calendar.google.com/calendar/embed?src=jpmcworkers%40gmail.com&ctz=America%2FNew_York";
+---
+
+<Layout
+  title="Events Calendar"
+  description="Upcoming JPMC Workers Alliance events and shared calendar dates."
+>
+  <section class="max-w-6xl mx-auto space-y-6">
+    <div class="space-y-3">
+      <p class="text-lg text-muted">
+        Upcoming actions, meetings, trainings, and other shared dates from the
+        JPMC Workers Alliance calendar.
+      </p>
+      <a
+        href="https://calendar.google.com/calendar/u/1?cid=anBtY3dvcmtlcnNAZ21haWwuY29t"
+        class="inline-flex items-center font-semibold text-jpmc-blue hover:text-jpmc-blue-700 dark:text-jpmc-blue-300 dark:hover:text-jpmc-blue-200"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Open in Google Calendar
+      </a>
+    </div>
+
+    <div
+      class="overflow-hidden rounded-lg border border-jpmc-gray-200 bg-white shadow-lg dark:border-gray-700 dark:bg-gray-800"
+    >
+      <iframe
+        src={calendarSrc}
+        title="JPMC Workers Alliance Google Calendar"
+        class="block h-[720px] w-full"
+        loading="lazy"
+        frameborder="0"
+        scrolling="no"
+      ></iframe>
+    </div>
+  </section>
+</Layout>

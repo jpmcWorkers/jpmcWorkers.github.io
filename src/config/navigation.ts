@@ -37,6 +37,11 @@ export const navigationConfig: Record<string, NavigationItem[]> = {
       href: "/news",
       label: "Events & News",
       description: "Upcoming actions & trainings • News/press releases • Recaps"
+    },
+    {
+      href: "/calendar",
+      label: "Calendar",
+      description: "Shared calendar for actions, meetings, trainings, and events."
     }
   ],
 
