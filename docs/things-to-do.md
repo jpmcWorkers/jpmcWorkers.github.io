@@ -112,8 +112,9 @@ Support critical logistics and capture info:
 ## Event Logistics
 
 Behind-the-scenes work that keeps events smooth:
-- Task: Create a shared calendar invite for the next meeting; add Zoom link or room location  
-- Task: Coordinate light refreshments (order & pick up donuts or coffee)  
+- Task: Create a shared calendar invite for the next meeting; add Zoom link or room location
+- Task: Investigate per-event "Add to calendar" links from the public Google Calendar ICS feed (`https://calendar.google.com/calendar/ical/jpmcworkers%40gmail.com/public/basic.ics`); verify recurring events expand correctly before adding event-specific buttons to the site
+- Task: Coordinate light refreshments (order & pick up donuts or coffee)
 - Task: Set up chairs, test Zoom projector or mic
 
 **Best for:** Ambiverts or planner personalities; great for people who want influence, not visibility.

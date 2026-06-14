@@ -1,0 +1,74 @@
+---
+interface Props {
+  src: string;
+  title: string;
+  compactMode?: "AGENDA" | "WEEK" | "MONTH";
+  compactModeMaxWidth?: number;
+  class?: string;
+}
+
+const {
+  src,
+  title,
+  compactMode = "AGENDA",
+  compactModeMaxWidth = 640,
+  class: className = "block h-[720px] w-full",
+} = Astro.props;
+---
+
+<iframe
+  src={src}
+  title={title}
+  class={className}
+  data-responsive-calendar
+  data-default-src={src}
+  data-compact-mode={compactMode}
+  data-compact-mode-max-width={compactModeMaxWidth}
+  loading="lazy"
+  frameborder="0"
+  scrolling="no"
+></iframe>
+
+<script>
+  const calendars = document.querySelectorAll("[data-responsive-calendar]");
+
+  calendars.forEach((calendar) => {
+    if (!(calendar instanceof HTMLIFrameElement)) {
+      return;
+    }
+
+    if (calendar.dataset.responsiveCalendarReady === "true") {
+      return;
+    }
+
+    calendar.dataset.responsiveCalendarReady = "true";
+
+    const defaultSrc = calendar.dataset.defaultSrc || calendar.src;
+    const compactMode = calendar.dataset.compactMode || "AGENDA";
+    const compactModeMaxWidth = Number(
+      calendar.dataset.compactModeMaxWidth || 640
+    );
+    const compactSrc = new URL(defaultSrc);
+    compactSrc.searchParams.set("mode", compactMode);
+
+    const updateCalendarView = () => {
+      const shouldUseCompactMode =
+        calendar.getBoundingClientRect().width <= compactModeMaxWidth;
+      const nextSrc = shouldUseCompactMode ? compactSrc.toString() : defaultSrc;
+
+      if (calendar.src !== nextSrc) {
+        calendar.src = nextSrc;
+      }
+    };
+
+    updateCalendarView();
+
+    if ("ResizeObserver" in window) {
+      const observer = new ResizeObserver(updateCalendarView);
+      observer.observe(calendar);
+      return;
+    }
+
+    window.addEventListener("resize", updateCalendarView);
+  });
+</script>
