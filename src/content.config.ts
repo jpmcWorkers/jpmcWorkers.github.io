@@ -1,9 +1,9 @@
 import { defineCollection, z } from 'astro:content';
 import { glob } from 'astro/loaders';
 import path from 'path';
-import { loadBookletsInDirectory } from './loaders/booklets';
-import { loadContentInDirectory } from './loaders/images';
-import { contentList } from './loaders/shared';
+import { loadBookletsInDirectory } from './content/loaders/booklets';
+import { loadContentInDirectory } from './content/loaders/images';
+import { contentList } from './content/loaders/shared';
 
 const resourcesCollection = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/pages/content' }),
@@ -29,8 +29,8 @@ const newslettersCollection = defineCollection({
   }),
 });
 
-const imagePath = path.resolve(import.meta.dirname, '../../public/images');
-const bookletPath = path.resolve(import.meta.dirname, '../../public/booklets');
+const imagePath = path.resolve(import.meta.dirname, '../public/images');
+const bookletPath = path.resolve(import.meta.dirname, '../public/booklets');
 
 const imageCollection = defineCollection({
   loader: loadContentInDirectory(imagePath),
