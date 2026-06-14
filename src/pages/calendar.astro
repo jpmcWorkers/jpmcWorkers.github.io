@@ -1,5 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import ResponsiveCalendar from "../components/ResponsiveCalendar.astro";
 
 const calendarSrc =
   "https://calendar.google.com/calendar/embed?src=jpmcworkers%40gmail.com&ctz=America%2FNew_York";
@@ -28,14 +29,12 @@ const calendarSrc =
     <div
       class="overflow-hidden rounded-lg border border-jpmc-gray-200 bg-white shadow-lg dark:border-gray-700 dark:bg-gray-800"
     >
-      <iframe
+      <ResponsiveCalendar
         src={calendarSrc}
         title="JPMC Workers Alliance Google Calendar"
-        class="block h-[720px] w-full"
-        loading="lazy"
-        frameborder="0"
-        scrolling="no"
-      ></iframe>
+        compactMode="AGENDA"
+        compactModeMaxWidth={640}
+      />
     </div>
   </section>
 </Layout>
