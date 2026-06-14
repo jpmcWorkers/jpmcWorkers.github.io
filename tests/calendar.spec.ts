@@ -15,6 +15,19 @@ test("Visitors can view the shared events calendar", async ({ page }) => {
   );
 });
 
+test("Visitors can add the shared calendar to Google Calendar", async ({
+  page,
+}) => {
+  await page.goto("http://localhost:4321/calendar");
+
+  await expect(
+    page.getByRole("link", { name: "Add this calendar to Google Calendar" })
+  ).toHaveAttribute(
+    "href",
+    "https://calendar.google.com/calendar/u/1?cid=anBtY3dvcmtlcnNAZ21haWwuY29t"
+  );
+});
+
 test("Mobile visitors see the shared calendar in agenda view by default", async ({
   page,
   isMobile,
